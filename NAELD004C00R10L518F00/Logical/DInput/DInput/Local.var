@@ -1,0 +1,89 @@
+(*2019-03-25*)
+(**)
+(*Local Action, State & Status*)
+VAR
+	eStatus1 : eFBStatus := Idle;
+	eStatus2 : eFBStatus := Idle;
+	eStatus3 : eFBStatus := Idle;
+	eStatus4 : eFBStatus := Idle;
+	eStatus5 : eFBStatus := Idle;
+	eStatus6 : eFBStatus := Idle;
+	udiStatus1 : UDINT := 0;
+	udiStatus2 : UDINT := 0;
+	udiStatus3 : UDINT := 0;
+	udiStatus4 : UDINT := 0;
+	udiStatus5 : UDINT := 0;
+	udiStatus6 : UDINT := 0;
+END_VAR
+(**)
+(*Local Alarm*)
+VAR
+	tyAlmData1 : tyAlmDat;
+	tyAlmData2 : tyAlmDat;
+	tyAlmData3 : tyAlmDat;
+	tyAlmData4 : tyAlmDat;
+	tyAlmData5 : tyAlmDat;
+	tyAlmData6 : tyAlmDat;
+	a_tyAlmText : ARRAY[10000..10099] OF tyAlmTxt := [(sAlmText:='Emergency Stop Button Pressed',sRcyText:='Release The Emergency Stop Button And Reset The Error To Resume Operation.'),(sAlmText:='Door / Cover Opened',sRcyText:='Close The Door / Cover Tightly And Resume Operation.'),(sAlmText:='Lifter Timing Belt Broken',sRcyText:='Replace New Lifter Timing Belt.'),(sAlmText:='Lifter Reached Safety Limit Switch',sRcyText:='Move Lifter Upward And Make Sure There Is No Obstable Interrupting Lifter.'),(sAlmText:='Safety Relay Signal Off',sRcyText:='Please Check The Safety Relay Signal'),(sAlmText:='Safety Curtain Sensor Activated',sRcyText:='Please Clear The Area Of Safety Curtain Sensor And Resume Operation.'),94(0)];
+END_VAR
+(**)
+(*Local Output*)
+VAR
+	tyDInput : tyDigitalInput;
+	bSimServoEn : BOOL := TRUE;
+END_VAR
+(**)
+(*Local Input*)
+VAR
+	udiRstErr : UDINT := 0;
+	tyDISettings : tyDigitalInputSettings := (0);
+	sProgNm : STRING[15] := 'DInput';
+END_VAR
+(**)
+VAR
+	diConvLftSenOnTm : DINT := 0;
+	diConvLftSenOffTm : DINT := 50;
+	diConvRgtSenOnTm : DINT := 0;
+	diConvRgtSenOffTm : DINT := 50;
+	diMagConvEntSenOnTm : DINT := 0;
+	diMagConvEntSenOffTm : DINT := 50;
+	diMagConvPresentSenOnTm : DINT := 0;
+	diMagConvPresentSenOffTm : DINT := 50;
+	diConvClrSenOnTm : DINT := 0;
+	diConvClrSenOffTm : DINT := 0;
+	diTrolleySenOnTm : DINT := 1200;
+	diTrolleySenOffTm : DINT := 0;
+END_VAR
+(**)
+(*Local*)
+VAR
+	bRstErr : BOOL;
+	udiRstErrOld : UDINT;
+	bInitDone : BOOL;
+	bInitialDone : BOOL;
+	bSafetySigErrNoBuz : BOOL;
+	a_bPhysicalDI : ARRAY[1..c_udiDInputMax] OF BOOL;
+	fbConvLftSigFltr : fbSenFltr;
+	fbConvRgtSigFltr : fbSenFltr;
+	fbConvClrSigFltr : fbSenFltr;
+	fbMagConv1EntSigFltr : fbSenFltr;
+	fbMagConv2EntSigFltr : fbSenFltr;
+	fbMagConv3EntSigFltr : fbSenFltr;
+	fbMagConv4EntSigFltr : fbSenFltr;
+	fbMagConv1PresentSigFltr : fbSenFltr;
+	fbMagConv2PresentSigFltr : fbSenFltr;
+	fbMagConv3PresentSigFltr : fbSenFltr;
+	fbMagConv4PresentSigFltr : fbSenFltr;
+	fbTrolley1PresentSigFltr : fbSenFltr;
+	fbTrolley2PresentSigFltr : fbSenFltr;
+	bAgvComIODisabled : BOOL;
+	fbSelfTestTm1 : TON := (PT:=T#10s);
+	fbSelfTestTm2 : TON := (PT:=T#10s);
+	fbSelfTestTm3 : TON := (PT:=T#10s);
+	fbSelfTestTm4 : TON := (PT:=T#10s);
+	bSelfTest : BOOL := FALSE;
+	fbConvLftSenTm : TON := (PT:=T#1s);
+	fbSafetyRlyRstTm : TON := (PT:=T#2s);
+	fbCurtainSafetyRstTm : TON := (PT:=T#200ms);
+	udiModuleNum : UDINT := 5751;
+END_VAR

@@ -1,0 +1,51 @@
+(*2020-09-16*)
+(**)
+(*Action & State & Status*)
+VAR
+	p_StartupStat : UDINT;
+	p_StartupStatus : UDINT;
+	p_StartupStatTxt : UDINT;
+END_VAR
+(**)
+(*Alarm*)
+(**)
+(*Output*)
+VAR
+	p_StartupRun : UDINT;
+	p_StartupUsrFolderAct : UDINT;
+	p_StartupHWInfoAct : UDINT;
+	p_StartupLibVerAct : UDINT;
+	p_StartupNtParamAct : UDINT;
+	p_StartupMcParamAct : UDINT;
+	p_StartupProdRcpAct : UDINT;
+	p_StartupMpProdRcpAct : UDINT;
+	p_StartupMagRcpAct1 : UDINT;
+	p_StartupMagRcpAct : UDINT;
+	p_StartupUsrMgmtAct : UDINT;
+	p_StartupBuffer1Act : UDINT;
+	p_StartupBuffer2Act : UDINT;
+	p_StartupBuffer3Act : UDINT;
+	p_StartupBuffer4Act : UDINT;
+	p_StartupAlarmAct : UDINT;
+	p_StartupUIAct : UDINT;
+	p_StartupAWPushPulAct : UDINT;
+	p_StartupAWAct : UDINT;
+	p_StartupTravAct : UDINT;
+	p_StartupLifterAct : UDINT;
+	p_StartupHermesAct : UDINT;
+	p_StartupRmtHermesAct : UDINT;
+	p_StartupDSHermesAAct : UDINT;
+	p_StartupDSHermesBAct : UDINT;
+	p_StartupStep : UDINT;
+	p_StartupFrmAct : UDINT;
+	p_StartupUSBAct : UDINT;
+	p_StartupNtSettingsLoadDone : UDINT;
+	p_StartupUISettingsLoadDone : UDINT;
+	p_StartupSvyHermesAct : UDINT;
+	p_StartupWaitDecision : UDINT;
+	p_StartupAutoRcpsAct : UDINT;
+	p_StartupStepTxt : UDINT;
+	p_StartupGetConfigDone : UDINT;
+	p_StartupMismatchSetConfigDone : UDINT;
+	p_StartupServoPPAct : UDINT;
+END_VAR

@@ -1,0 +1,27 @@
+(*2020-08-29*)
+(**)
+(*General*)
+VAR
+	p_eAct : REFERENCE TO eUSBRdrAction;
+	p_udiRstErr : REFERENCE TO UDINT;
+	p_bPrep : REFERENCE TO BOOL;
+	p_bEn : REFERENCE TO BOOL;
+	p_bDis : REFERENCE TO BOOL;
+END_VAR
+(**)
+(*Configuration*)
+VAR
+	p_bManual : REFERENCE TO BOOL;
+	p_sProgNm : REFERENCE TO STRING[15];
+	p_bNtSettingsLoadDone : REFERENCE TO BOOL;
+	p_dtCurrDT : REFERENCE TO DATE_AND_TIME;
+	p_udiFileKeepDay : REFERENCE TO UDINT;
+END_VAR
+(**)
+(*Input*)
+VAR
+	p_diVendorID : REFERENCE TO DINT;
+	p_diProductID : REFERENCE TO DINT;
+	p_bUSBRun : REFERENCE TO BOOL;
+	p_bScannerEn : REFERENCE TO BOOL;
+END_VAR

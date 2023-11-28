@@ -1,0 +1,198 @@
+(*2021-05-18*)
+(**)
+(*Local Action, State & Status*)
+VAR
+	eAct : eAutoRcpAction;
+	eStatus : eFBStatus := Idle;
+	udiStatus : UDINT := 0;
+	eStatOld : eAutoRcpAction := AutoRcpActIdle;
+	eStat : eAutoRcpAction;
+	usiStep : USINT;
+END_VAR
+(**)
+(*Local Alarm*)
+VAR
+	tyAlmData : tyAlmDat;
+	tyInfoData : tyAlmDat;
+	tyInfoData1 : tyAlmDat;
+	a_tyAlmText : ARRAY[10000..10099] OF tyAlmTxt := [(sAlmText:='New Recipe Not Found In Product Recipe List',sRcyText:='Create New Recipe In Product Setting.'),(sAlmText:='Product Recipe Width Not Match',sRcyText:='Check Product Width And Leader Request Width'),(sAlmText:='New Recipe Not Found In Magazine Recipe List',sRcyText:='Create New Recipe In Magazine Setting.'),(sAlmText:='New Recipe Name Empty',sRcyText:='Request Recipe Name From Leader Is Empty, Check Leader Machine'),6((0)),(sAlmText:='Requested Width Lower Than Minimum Width Limit',sRcyText:='Check The Requested Width Within The Product Limit'),(sAlmText:='Requested Width Larger Than Maxnimum Width Limit',sRcyText:='Check The Requested Width Within The Product Limit'),(sAlmText:='Requested Thickness Larger Than Maximum Thickness Limit',sRcyText:='Check The Requested Thickness Within The Product Limit'),(sAlmText:='Requested Bottom Clearance Larger Than Maximum Bottom Clearance Limit',sRcyText:='Check The Requested Bottom Clearance Within The Product Limit'),(sAlmText:='Requested Top Clearance Larger Than Maximum Top Clearance Limit',sRcyText:='Check The Requested Top Clearance Within The Product Limit'),85((0))];
+END_VAR
+(**)
+(*Local Output*)
+VAR
+	bUSAllow : BOOL;
+	bDSAllow : BOOL;
+	tyLeaderInfo : tyLFLeaderInfo;
+	bDeleteSendWO : BOOL;
+END_VAR
+(**)
+(*Local Input*)
+VAR
+	udiRstErr : UDINT := 0;
+	bPrep : BOOL := TRUE;
+	bEn : BOOL := TRUE;
+	bDis : BOOL := FALSE;
+	sIPAddr : STRING[15] := '192.168.0.100';
+	sMcNm : STRING[30];
+	bAWPrep : BOOL := TRUE;
+	bAWDis : BOOL;
+	bMnlAccData : BOOL;
+	bSectionLeader : BOOL;
+	sMagRcpNm : STRING[30];
+	diWidthLimit : DINT;
+	bWidth2Prep : BOOL;
+	bUSWidthChkPrep : BOOL;
+	bBffrMagRemoved : BOOL;
+	bUSWidthChkEn : BOOL;
+	bUSWidthChkSen : BOOL;
+	bDSWidthChkPrep : BOOL;
+	bDSWidthChkEn : BOOL;
+	bDSWidthChkSen : BOOL;
+	bProdWidthChk : BOOL;
+	bUIProdAccData : BOOL;
+	bUIProdUpdtData : BOOL;
+	bUIMagAccData : BOOL;
+	tyCurrProdRcp : tyBoardProperty;
+	sCurrMagRcpNm : STRING[30];
+	eTimeStat : eTimeAction;
+	eTimeStatus : eFBStatus;
+	bAccNewRcpCond : BOOL;
+	bUpdtNewRcpCond : BOOL;
+	bAutoUpdtData : BOOL;
+	sInfoMsg : STRING[200];
+	bInternalUse : BOOL;
+	tyInternalReqProdRcp : tyProdRcpParam;
+	bNewBrdEnteredCond : BOOL;
+	bOldBrdExitedCond : BOOL;
+	bRlsBrd : BOOL;
+	tyToLeaderProdRcp : tyProdRcpParam;
+	a_bInternalReqProdRcpDiff : ARRAY[0..3] OF BOOL;
+	bUpdtProdRcpDiff : BOOL;
+	bRlsBrdProdRcpDiff : BOOL;
+	sProgNm : STRING[15] := 'AutoRcp';
+	bNtSettingsLoadDone : BOOL := TRUE;
+	tOnlineChkDlyTm : TIME;
+	bManual : BOOL := FALSE;
+	bErr : BOOL := FALSE;
+	bWarning : BOOL := FALSE;
+	bOps : BOOL := FALSE;
+	bStandby : BOOL := FALSE;
+	eAWStat : eAWAction;
+	bFileNotFound : BOOL;
+END_VAR
+(**)
+(*Local*)
+VAR
+	bRstErr : BOOL;
+	udiRstErrOld : UDINT;
+	bInitDone : BOOL;
+	bInitialDone : BOOL;
+	bAutoAccData : BOOL;
+	bProdRcpErr : BOOL;
+	bMagRcpErr : BOOL;
+	bSetTmErr : BOOL;
+	bProdAccDataReq : BOOL;
+	sReqProdRcpNm : STRING[254];
+	diReqProdRcpWidth : DINT;
+	bMagAccDataReq : BOOL;
+	sReqMagRcpNm : STRING[30];
+	usiProdAccDatStep : USINT;
+	usiMagAccDatStep : USINT;
+	usiProdUpdtDatStep : USINT;
+	tyRlsBrdProdRcpNm : tyProdRcpParam;
+	bNewBrdEntered : BOOL;
+	bOldBrdExited : BOOL;
+	i : INT;
+	usi : USINT;
+	bFollowerInfo : BOOL;
+	bDBAOnWOAlign : BOOL;
+	tyProRcpCurrRcp : USINT;
+	ProdRcpAct : USINT;
+	a_bBufferMagPresent : ARRAY[1..4] OF BOOL := [4(FALSE)];
+	a_bMagAWWidthDiff : ARRAY[1..4] OF BOOL := [4(FALSE)];
+	a_tyBffrStat : ARRAY[1..4] OF tyBffrStat := [4((0))];
+	a_sortedMagPriority : ARRAY[1..4] OF USINT;
+	a_udiMagAllwMagPresentTm : ARRAY[1..4] OF UDINT;
+	ii : INT;
+	jj : INT;
+	kk : INT;
+	usiMag : USINT;
+	bCheckNeedMtyMag : BOOL;
+	bTravLifWidthDiffBlk : BOOL;
+	a_bMagChangOverBlk : ARRAY[1..4] OF BOOL;
+	a_bAllwChangeWidth : ARRAY[1..4] OF BOOL;
+	a_udiMagAllwGo : ARRAY[1..4] OF UDINT;
+	bForceExitMag : BOOL;
+	udiMagAllwGo : ARRAY[1..4] OF UDINT;
+	a_bCheckDifferent : ARRAY[1..4] OF BOOL;
+	udiModuleNum : UDINT := 7201;
+	usiPrevChg : USINT;
+	usiChg : USINT;
+END_VAR
+(*local variable*)
+VAR
+	bTest : BOOL;
+	bTest2 : BOOL;
+	bMagWriteRetain : BOOL;
+	bInitializedFollower1Done : BOOL;
+	bOverWriteMagProperties : BOOL;
+	bOverWriteTravLifProperties : BOOL;
+	bZ1AccNewRcpCondition : BOOL;
+	bZ2AccNewRcpCondition : BOOL;
+	diRequestedMinSlt : DINT := 3;
+	bHermesBAAccpt : BOOL;
+	bHermesBFAccpt : BOOL;
+	tyHermesBAAccpt : tyHermesBoardAvailable;
+	tyHermesBFAccpt : tyHermesBoardForecast;
+END_VAR
+(*Local Variable for calculation*)
+VAR
+	rMinslt : REAL;
+	rMaxslt : REAL;
+	rPitch : REAL;
+	rNumInterval : REAL;
+	diCalcedPitch : DINT;
+	diCalcedMax : DINT;
+	diCalcedMin : DINT;
+	diModulus : DINT;
+	sProdtypeID : STRING[254];
+	diProdWidth : DINT;
+	diPullerTipHeight : DINT := 45;
+END_VAR
+(*Rcp Property*)
+VAR
+	tyCurrReqRcp : tyBoardProperty;
+	tyCurrZ1Rcp : tyBoardProperty; (*Mag*)
+	a_tyCurrZ2Rcp : ARRAY[1..4] OF tyBoardProperty; (*Mag*)
+	a_bRcpLoaded : ARRAY[1..4] OF BOOL;
+END_VAR
+(*Write Rcp*)
+VAR
+	a_tyZ2RcpWr : ARRAY[1..4] OF tyBoardProperty; (*Mag1*)
+END_VAR
+(*from Z2RcpWr to Conveted Mag Properties*)
+VAR
+	diTravLifPitch : DINT;
+	diTravLifWidth : DINT;
+	a_tyMagProps : ARRAY[1..4] OF tyMagProperties;
+	sWorkOrderId : STRING[80];
+END_VAR
+(*Save Magazine Rcp*)
+VAR
+	fbDirCreate1 : fbDirCreate;
+	fbDirCreate2 : fbDirCreate;
+	fbFileRead1 : fbFileFullRead;
+	fbFileRead2 : fbFileFullRead;
+	fbFileRead3 : fbFileFullRead;
+	fbFileWrite1 : fbFileFullWrite;
+	fbFileWrite2 : fbFileFullWrite;
+	fbFileWrite3 : fbFileFullWrite;
+END_VAR
+(*WeFab*)
+VAR
+	a_tyAutoRcpFollower1 : tyProdRcpParam := (diWidthInUM:=100000);
+	a_tyAutoRcpInternal : ARRAY[1..3] OF tyProdRcpParam;
+	tyCurrReqMagRcp : tyProdRcpParam;
+	a_tyAutoRcpInternalWr : ARRAY[1..3] OF tyProdRcpParam;
+	tyCurrZ1Rcp1_Int : tyProdRcpParam;
+END_VAR

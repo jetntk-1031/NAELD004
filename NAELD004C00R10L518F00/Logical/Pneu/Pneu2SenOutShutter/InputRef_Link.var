@@ -1,0 +1,13 @@
+(*2019-04-09*)
+(**)
+(*External*)
+VAR
+	p_bLinkOpsRun : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bLinkDISafetyRlySig : REFERENCE TO BOOL;
+	p_bLinkInitOpsTravLifDone : REFERENCE TO BOOL;
+	p_bLinkMcParamOutShutDis : REFERENCE TO BOOL;
+	p_bLinkDIConvClrSen : REFERENCE TO BOOL;
+END_VAR

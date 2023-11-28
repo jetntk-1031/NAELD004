@@ -1,0 +1,39 @@
+(*2018-12-11*)
+(**)
+(*Sequence*)
+
+TYPE
+	eMagConvLDStep : 
+		(
+		MagConvLDStepNA,
+		MagSetupULStepInitPneu,
+		MagConvLDStepInitMag,
+		MagConvLDStepInitMagEnt,
+		MagConvLDStepInitMagFixClp,
+		MagConvLDStepInitSetMagFull,
+		MagConvLDStepInitMagConv,
+		MagConvLDStepSafetyBarExtCtrl,
+		MagConvLDStepMagUSComm,
+		MagConvLDStepMagEnt,
+		MagConvLDStepMagEntMnl,
+		MagConvLDStepSelClampCtrl,
+		MagConvLDStepVerifyMag,
+		MagConvLDStepPreNxtUnlBffr,
+		MagConvLDStepBffrStatChk,
+		MagConvLDStepSafetyBarRetCtrl,
+		MagConvLDStepMagCmp,
+		MagConvLDStepNxtUnloadBffr,
+		MagConvLDStepBffrDSComm,
+		MagConvLDStepBffrExitBrd,
+		MagConvLDStepUnloadBffr,
+		MagConvLDStepMagExitClampCtrl,
+		MagConvLDStepMagMtyDSComm,
+		MagConvLDStepMagMtyExit,
+		MagConvLDStepMagExitMnl,
+		MagConvLDStepMagExitedWait,
+		MagConvLDStepMagExitedAGVWait,
+		MagConvLDStepMagEntMESStdByChk,
+		MagConvLDStepMagExtMESStdByChk,
+		MagConvLDStepAutoRcpSetMagFull
+		);
+END_TYPE

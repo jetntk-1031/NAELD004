@@ -1,0 +1,24 @@
+(*2019-04-24*)
+(**)
+VAR
+	sWidthInUMTemp : STRING[80];
+	p_bLinkStartupRun : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bLinkNtParamProjLaneBPrep : REFERENCE TO BOOL;
+	p_eLinkMcParamDSACommMod : REFERENCE TO eMcSetCommMod;
+	p_eLinkMcParamDSBCommMod : REFERENCE TO eMcSetCommMod;
+END_VAR
+(**)
+VAR
+	p_bLinkOpsRun : REFERENCE TO BOOL;
+	p_bLinkConvHvBrd : REFERENCE TO BOOL;
+	p_bLinkOpsMagConvLD1QueryWO : REFERENCE TO BOOL;
+	p_bLinkOpsMagConvLD2QueryWO : REFERENCE TO BOOL;
+	p_bLinkOpsMagConvLD3QueryWO : REFERENCE TO BOOL;
+	p_tyDTStructure : REFERENCE TO DTStructure;
+	p_tyResponseFromMES1 : REFERENCE TO tyStatPlatformFromMES;
+	p_tyResponseFromMES2 : REFERENCE TO tyStatPlatformFromMES;
+	p_tyResponseFromMES3 : REFERENCE TO tyStatPlatformFromMES;
+END_VAR

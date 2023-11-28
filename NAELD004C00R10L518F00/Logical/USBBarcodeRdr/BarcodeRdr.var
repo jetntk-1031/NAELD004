@@ -1,0 +1,22 @@
+(*2020-08-29 *)
+(**)
+(*Action & State & Status*)
+VAR
+	p_USBRdrStat : UDINT;
+	p_USBRdrStatus : UDINT;
+	p_USBRdrStatTxt : UDINT;
+	p_USBudiStatus : UDINT;
+END_VAR
+(**)
+(*Alarm*)
+VAR
+	p_USBRdrAlmData : UDINT;
+	p_USBRdrAlmData1 : UDINT;
+	p_USBRdrAlmData2 : UDINT;
+END_VAR
+(**)
+(*Output*)
+VAR
+	p_USBDisconnected : UDINT;
+	p_USBRdrBarcodeOut : UDINT;
+END_VAR

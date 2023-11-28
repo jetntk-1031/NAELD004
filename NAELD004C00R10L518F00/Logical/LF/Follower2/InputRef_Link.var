@@ -1,0 +1,24 @@
+(*2019-05-07*)
+(**)
+VAR
+	p_bLinkStartupRun : REFERENCE TO BOOL;
+	p_bNtParamAutoRcpPrep : REFERENCE TO BOOL;
+	p_eNtParamCustomerReq : REFERENCE TO eCustomer;
+END_VAR
+(**)
+VAR
+	p_bLinkOpsRun : REFERENCE TO BOOL;
+	p_bLinkPullConvHvBrd : REFERENCE TO BOOL;
+	p_bLinkOpsTravLifLDInitDone : REFERENCE TO BOOL;
+	p_bLinkProjCurtainSenPrep : REFERENCE TO BOOL;
+	p_bLinkBypCurtainWidthChg : REFERENCE TO BOOL;
+	p_bLinkBypCurtainSenCtrl : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eLinkUIProdRcpAct : REFERENCE TO eProdRcpAction;
+	p_eProdRcpStat : REFERENCE TO eProdRcpAction;
+	p_eProdRcpStatus : REFERENCE TO eFBStatus;
+	p_tyProdRcpCurrRcpWr : REFERENCE TO tyProdRcpParam;
+END_VAR
+(**)

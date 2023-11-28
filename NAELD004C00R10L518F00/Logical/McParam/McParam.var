@@ -1,0 +1,164 @@
+(*2019-04-17*)
+(**)
+(*Action & State & Status*)
+VAR
+	p_McParamStat : UDINT;
+	p_McParamStatus : UDINT;
+	p_McParamStatTxt : UDINT;
+END_VAR
+(**)
+(*Alarm*)
+VAR
+	p_McParamAlmData : UDINT;
+END_VAR
+(**)
+(*Output*)
+VAR
+	p_McParamFileNotFound : UDINT;
+END_VAR
+(**)
+VAR
+	p_McParamCurr : UDINT;
+END_VAR
+(**)
+VAR
+	p_McParamLFOnline : UDINT;
+	p_McParamLFIPAddr : UDINT;
+END_VAR
+(**)
+VAR
+	p_McParamMcNm : UDINT;
+	p_McParamSSaverTm : UDINT;
+	p_McParamSSaverEn : UDINT;
+	p_McParamDefaultMcMod : UDINT;
+	p_McParamDefaultFlippedBrd : UDINT;
+	p_McParamWidthAtHmPos : UDINT;
+	p_McParamConvInitTm : UDINT;
+	p_McParamTranOutErrDlyTm : UDINT;
+	p_McParamMag1ConvRunTmOut : UDINT;
+	p_McParamMag2ConvRunTmOut : UDINT;
+	p_McParamMag3ConvRunTmOut : UDINT;
+	p_McParamMag4ConvRunTmOut : UDINT;
+	p_McParamTravPosA : UDINT;
+	p_McParamTravPosB : UDINT;
+	p_McParamLifterPosA : UDINT;
+	p_McParamLifterPosB : UDINT;
+	p_McParamAWDis : UDINT;
+	p_McParamMnlAccDat : UDINT;
+	p_McParamAutoStepEn : UDINT;
+	p_McParamVSMEMAEn : UDINT;
+	p_McParamChgParamEn : UDINT;
+	p_McParamHermesRmtEn : UDINT;
+	p_McParamLongBrdEn : UDINT;
+	p_McParamOutShutterDis : UDINT;
+	p_McParamMagAutoDetTm : UDINT;
+	p_McParamAGVComEn : UDINT;
+END_VAR
+(**)
+VAR
+	p_McParamLFEn : UDINT;
+	p_McParamLCSLFEn : UDINT;
+	p_McParamLCSReqRcpEn : UDINT;
+	p_McParamLCSManageRcpEn : UDINT;
+	p_McParamLCSLiveDatEn : UDINT;
+	p_McParamLFLeaderMc : UDINT;
+	p_McParamSectionLeader : UDINT;
+	p_McParamDSWidthChkEn : UDINT;
+	p_McParamLFMcIdxBeforeOven : UDINT;
+	p_McParamLFMcIdxAfterOven : UDINT;
+	p_McParamLFMcIdxBeforeOven2 : UDINT;
+	p_McParamLFMcIdxAfterOven2 : UDINT;
+END_VAR
+(**)
+VAR
+	p_McParamLang : UDINT;
+END_VAR
+(**)
+VAR
+	p_McParamConvLftSenAntiGap : UDINT;
+	p_McParamConvLftSenOnTm : UDINT;
+	p_McParamConvLftSenOffTm : UDINT;
+	p_McParamConvRgtSenAntiGap : UDINT;
+	p_McParamConvRgtSenOnTm : UDINT;
+	p_McParamConvRgtSenOffTm : UDINT;
+	p_McParamMagConvEntrySenAntiGap : UDINT;
+	p_McParamMagConvEntrySenOnTm : UDINT;
+	p_McParamMagConvEntrySenOffTm : UDINT;
+	p_McParamMagConvPresentAntiGap : UDINT;
+	p_McParamMagConvPresentSenOnTm : UDINT;
+	p_McParamMagConvPresentSenOffTm : UDINT;
+END_VAR
+(**)
+VAR
+	p_McParamDSCommAMod : UDINT;
+	p_McParamDSSMEMAAParam : UDINT;
+	p_McParamDSSMEMAASelection : UDINT;
+	p_McParamDBAAStatSetGd : UDINT;
+END_VAR
+(**)
+VAR
+	p_McParamDSCommBMod : UDINT;
+	p_McParamDSSMEMABParam : UDINT;
+	p_McParamDSSMEMABSelection : UDINT;
+	p_McParamDBABStatSetGd : UDINT;
+END_VAR
+(**)
+VAR
+	p_McParamAIVComm : UDINT;
+	p_McParamAIVSvrPort : UDINT;
+	p_McParamAIVClientPort : UDINT;
+	p_McParamAIVClientAddr : UDINT;
+END_VAR
+(**)
+VAR
+	p_McParamWidthOffset : UDINT;
+	p_McParamNetworkMod : UDINT;
+END_VAR
+(**)
+VAR
+	p_McParamLFSeqStayActive : UDINT;
+	p_McParamLFBuzMute : UDINT;
+END_VAR
+(*USB Barcode Reader*)
+VAR
+	p_McParamVID : UDINT;
+	p_McParamPID : UDINT;
+	p_McParamScannerEn : UDINT;
+	p_McParamAGVComProtocol : UDINT;
+	p_McParamMagExMode : UDINT;
+END_VAR
+(**)
+VAR
+	p_McParamRS232StartCode1 : UDINT;
+	p_McParamRS232StartCode2 : UDINT;
+	p_McParamRS232EndCode1 : UDINT;
+	p_McParamRS232EndCode2 : UDINT;
+END_VAR
+(**)
+VAR
+	p_McParamAWPusherAtHmPos : UDINT;
+	p_McParamAWPusherDis : UDINT;
+END_VAR
+(**)
+(**)
+VAR
+	p_McParamTravOutletFixtoFixPos : UDINT;
+	p_McParamDisableFMWarning : UDINT;
+END_VAR
+(**)
+VAR
+	p_McParamDBAOnWOAlign : UDINT;
+	p_McParamMagWidthChkDis : UDINT;
+	p_McParamMag1WidthChkDetDist : UDINT;
+	p_McParamMag2WidthChkDetDist : UDINT;
+	p_McParamMag3WidthChkDetDist : UDINT;
+	p_McParamDBAOnRgtSen : UDINT;
+END_VAR
+(**)
+VAR
+	p_McParamHermesSvyEn : UDINT;
+	p_McParamHermesScannerEn : UDINT;
+	p_McParamMesRFIDEn : UDINT;
+	p_McParamMesRFIDTOInMS : UDINT;
+	p_McParamTravLaneBOffset : UDINT;
+END_VAR

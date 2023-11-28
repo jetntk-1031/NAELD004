@@ -1,0 +1,327 @@
+(*2019-04-16*)
+(**)
+(*Local Action, State & Status*)
+VAR
+	eStatus : eFBStatus := Idle;
+	udiStatus : UDINT := 0;
+END_VAR
+(**)
+(*Local Alarm*)
+VAR
+	tyAlmData : tyAlmDat;
+	a_tyAlmText : ARRAY[10000..10099] OF tyAlmTxt := [(sAlmText:='Magazine Not Present While Pulling Board Out From Magazine',sRcyText:='Insert Magazine To Continue Operation.'),(sAlmText:='Traverser And Lifter Pre-Enter Position Are Invalid',sRcyText:='Reset And Resume Operation. If The Problem Persists, Please Contact Nutek For A Possible Solution.'),(sAlmText:='Traverser And Lifter Enter Position Are Invalid',sRcyText:='Reset And Resume Operation. If The Problem Persists, Please Contact Nutek For A Possible Solution.'),(sAlmText:='Conveyor Outlet Sensor Timeout Alarm',sRcyText:='Check Conveyor Outlet Sensor'),(sAlmText:='Magazine Width Detection Failed',sRcyText:='Magazine Is Not Set In Correct Width'),(sAlmText:='Puller AntiJam Sensor On',sRcyText:='Board Jam During Puller Is Retracting'),(sAlmText:='Traverser And Lifter Moving Invalid.',sRcyText:='Please Check Retracted Puller.'),(sAlmText:='Clear Sensor Interrupt Outlet Shutter Close',sRcyText:='Please Remove The Board From Clear Sensor.'),(sAlmText:='Board Lost After Conveyor complete .',sRcyText:='Outlet Sensor False triggered or Brd Lost in the middle of transfer'),(sAlmText:='Inlet And Outlet Same Time Sensing Error',sRcyText:='Please Ensure No Blockage At Inlet Sensor.'),90((0))];
+END_VAR
+(**)
+(*Local Output*)
+VAR
+	sStepTxt : STRING[80];
+	bPaused : BOOL;
+END_VAR
+(**)
+VAR
+	eUSSMEMAAct1 : eSMEMAAction;
+	eUSSMEMAAct2 : eSMEMAAction;
+	eUSSMEMAAct3 : eSMEMAAction;
+	eUSSMEMAAct4 : eSMEMAAction;
+	eDSSMEMAAct1 : eSMEMAAction;
+	eDSSMEMAAct2 : eSMEMAAction;
+	eDSSMEMAAct3 : eSMEMAAction;
+	eConvAct : eConvAction;
+	eAWAct : eAWAction;
+	eAWPushOrPullerAct : eAWAction;
+	eTravAct : eTravAction;
+	eLifAct : eLifterAction;
+	eInletPneuAct : ePneuAction;
+	eInletPneuAct2 : ePneuAction;
+	eInletPneuAct3 : ePneuAction;
+	eOutletPneuAct : ePneuAction;
+	eOutletPneuAct2 : ePneuAction;
+	ePullerAct : ePneuAction;
+	eMtrPshrAct : eMtrPshrAction;
+	bInShutClo1 : BOOL;
+	bInShutClo2 : BOOL;
+	bInShutClo3 : BOOL;
+END_VAR
+(**)
+VAR
+	eTravLifPosGo : eTravLifLDPos;
+	a_bMagDis : ARRAY[1..4] OF BOOL;
+	diGoUnloadSlt1 : DINT;
+	diGoUnloadSlt2 : DINT;
+	diGoUnloadSlt3 : DINT;
+	diGoUnloadSlt4 : DINT;
+	bInitConv : BOOL;
+	bOpsInitDone : BOOL;
+	bUSComm : BOOL;
+	bEntBrd : BOOL;
+	bDSComm : BOOL;
+	bExitBrd : BOOL;
+	bStepAWPosDiff : BOOL;
+	bUpdatePullSlot : BOOL;
+	bUSMagWidthChk : BOOL;
+	bTraLifMoving : BOOL;
+	bStandby : BOOL;
+	fbWaitTimer : TON := (PT:=T#2s);
+	fbWidthChkSenOnTim : TON := (PT:=T#0ms);
+	fbWidthChkSenOffTim : TON := (PT:=T#5s);
+	bLifterBtmPosDiff : BOOL;
+	bLifterAPosDiff : BOOL;
+	bLifterBPosDiff : BOOL;
+	bBypCurtainSenPB : BOOL;
+	bBypCurtainSenCtrl : BOOL;
+	bBypCurtainSensorPBLED : BOOL;
+	fbBypCurtainPBLEDBlinkTm : TON := (IN:=FALSE,PT:=T#500ms,Q:=FALSE,ET:=0,StartTime:=0,M:=FALSE,Restart:=0);
+	bBypCurtainBtnOff : BOOL;
+	bMag1CheckDone : BOOL;
+	bMag2CheckDone : BOOL;
+	bMag3CheckDone : BOOL;
+	bBypCurtainWidthChg : BOOL;
+	bTravGoToChkPt : BOOL;
+END_VAR
+(*Step Logger*)
+VAR
+	bClsLog : BOOL;
+	blog : BOOL;
+	logStep : ARRAY[0..999] OF eTravLifLDStep1;
+	logIndexStep : INT;
+	eGotoOpsStepDummy : eTravLifLDStep1;
+END_VAR
+(**)
+(*Local Input*)
+VAR
+	udiRstErr : UDINT := 0;
+	bEn : BOOL := TRUE;
+	bDis : BOOL := FALSE;
+	bRun : BOOL;
+	bStop : BOOL;
+	bStep : BOOL;
+	bGotoStandby : BOOL;
+	eLDMode : eLDMod;
+	eLDMagazine : eLDMag;
+	bNonBffrMod : BOOL;
+	bUSAllow : BOOL := TRUE;
+	bDSAllow : BOOL := TRUE;
+	bPullerRotCylPrep : BOOL;
+	diPullerExtMaxSlt : DINT;
+	diPullerExtMinSlt : DINT;
+	bProdRcpCurrRcpTopToBtm : BOOL;
+	diProdRcpCurrRcpPitch : DINT;
+	eUSCommMod1 : eMcSetCommMod;
+	eUSCommMod2 : eMcSetCommMod;
+	eUSCommMod3 : eMcSetCommMod;
+	eUSCommMod4 : eMcSetCommMod;
+	eDSCommMod1 : eMcSetCommMod;
+	eDSCommMod2 : eMcSetCommMod;
+	eDSCommMod3 : eMcSetCommMod;
+	eUSSMEMAStat1 : eSMEMAAction;
+	eUSSMEMAStatus1 : eFBStatus;
+	bUSSMEMAUSRdy1 : BOOL;
+	bUSSMEMATransporting1 : BOOL;
+	bUSSMEMAConvStart1 : BOOL;
+	bUSSMEMAConvStop1 : BOOL;
+	eUSSMEMAStat2 : eSMEMAAction;
+	eUSSMEMAStatus2 : eFBStatus;
+	bUSSMEMAUSRdy2 : BOOL;
+	bUSSMEMATransporting2 : BOOL;
+	bUSSMEMAConvStart2 : BOOL;
+	bUSSMEMAConvStop2 : BOOL;
+	eUSSMEMAStat3 : eSMEMAAction;
+	eUSSMEMAStatus3 : eFBStatus;
+	bUSSMEMAUSRdy3 : BOOL;
+	bUSSMEMATransporting3 : BOOL;
+	bUSSMEMAConvStart3 : BOOL;
+	bUSSMEMAConvStop3 : BOOL;
+	eUSSMEMAStat4 : eSMEMAAction;
+	eUSSMEMAStatus4 : eFBStatus;
+	bUSSMEMAUSRdy4 : BOOL;
+	bUSSMEMATransporting4 : BOOL;
+	bUSSMEMAConvStart4 : BOOL;
+	bUSSMEMAConvStop4 : BOOL;
+	eDSSMEMAStat1 : eSMEMAAction;
+	eDSSMEMAStatus1 : eFBStatus;
+	bDSSMEMADSRdy1 : BOOL;
+	bDSSMEMAConvStart1 : BOOL;
+	eDSSMEMAStat2 : eSMEMAAction;
+	eDSSMEMAStatus2 : eFBStatus;
+	bDSSMEMADSRdy2 : BOOL;
+	bDSSMEMAConvStart2 : BOOL;
+	eDSSMEMAStat3 : eSMEMAAction;
+	eDSSMEMAStatus3 : eFBStatus;
+	bDSSMEMADSRdy3 : BOOL;
+	bDSSMEMAConvStart3 : BOOL;
+	bUSHermesUSRdy1 : BOOL;
+	bUSHermesTransporting1 : BOOL;
+	bUSHermesStopTransport1 : BOOL;
+	bUSHermesUSRdy2 : BOOL;
+	bUSHermesTransporting2 : BOOL;
+	bUSHermesStopTransport2 : BOOL;
+	bUSHermesUSRdy3 : BOOL;
+	bUSHermesTransporting3 : BOOL;
+	bUSHermesStopTransport3 : BOOL;
+	bUSHermesUSRdy4 : BOOL;
+	bUSHermesTransporting4 : BOOL;
+	bUSHermesStopTransport4 : BOOL;
+	bDSHermesDSRdy1 : BOOL;
+	bDSHermesTransporting1 : BOOL;
+	bDSHermesStopTransport1 : BOOL;
+	bDSHermesDSRdy2 : BOOL;
+	bDSHermesTransporting2 : BOOL;
+	bDSHermesStopTransport2 : BOOL;
+	bDSHermesDSRdy3 : BOOL;
+	bDSHermesTransporting3 : BOOL;
+	bDSHermesStopTransport3 : BOOL;
+	eConvStat : eConvAction;
+	eConvStatus : eFBStatus;
+	eConvDirection : eConvDir;
+	bConvHvBrd : BOOL;
+	eAWStat : eAWAction;
+	eAWStatus : eFBStatus;
+	bAWWidthPosDiff : BOOL;
+	eTravStat : eTravAction;
+	eTravStatus : eFBStatus;
+	eLifStat : eLifterAction;
+	eLifStatus : eFBStatus;
+	eInletPneuStat : ePneuAction;
+	eInletPneuStatus : eFBStatus;
+	bInletPneuCls : BOOL;
+	eOutletPneuStat : ePneuAction;
+	eOutletPneuStatus : eFBStatus;
+	ePullerStat : ePneuAction;
+	ePullerStatus : eFBStatus;
+	bConvLftSen : BOOL;
+	bConvRgtSen : BOOL;
+	bConvClrSen : BOOL;
+	bPullerExtSen : BOOL;
+	bPullerRetSen : BOOL;
+	bMagTransferBrd1 : BOOL;
+	bMagTransferBrd2 : BOOL;
+	bMagTransferBrd3 : BOOL;
+	bMagTransferBrd4 : BOOL;
+	bBufferMagPresent1 : BOOL;
+	bBufferMagPresent2 : BOOL;
+	bBufferMagPresent3 : BOOL;
+	bBufferMagPresent4 : BOOL;
+	diBufferNxtUnloadSlt1 : DINT;
+	diBufferNxtUnloadSlt2 : DINT;
+	diBufferNxtUnloadSlt3 : DINT;
+	diBufferNxtUnloadSlt4 : DINT;
+	sProgNm : STRING[15] := 'Ops TravLifLD';
+	bNtSettingsLoadDone : BOOL := TRUE;
+	bOutShutDis : BOOL;
+	bMagWidthChkDis : BOOL;
+	tShutterWaitTmr : TIME := T#0S;
+	eLocalInletPneuAct : ePneuAction;
+	eLocalInletPneuStat : ePneuAction;
+	eLocalInletPneuStatus : eFBStatus;
+	bLocalInletPneuCls : BOOL;
+	bLocalInShutterExtended : BOOL;
+	bLocalnShutterRetracted : BOOL;
+	tyLocalBufferStat : tyBffrStat;
+END_VAR
+(**)
+(*Local*)
+VAR
+	bRstErr : BOOL;
+	udiRstErrOld : UDINT;
+	bInitDone : BOOL;
+	bInitialDone : BOOL;
+	eOpsStep : eTravLifLDStep := TravLifLDStepNA;
+	eGotoOpsStep : eTravLifLDStep := TravLifLDStepInitConv;
+	eOpsStep1 : eTravLifLDStep1 := TravLifLDStep1NA;
+	eGotoOpsStep1 : eTravLifLDStep1 := TravLifLDStep1InitConv;
+	eResumeStep : eTravLifLDStep1;
+	tyParamTravLif : tyParamTravLifLD;
+	udi : UDINT;
+	udiPosAllwGo : UDINT;
+	a_bPosAllwSigOn : ARRAY[1..4] OF BOOL;
+	a_udiPosAllwSum : ARRAY[1..4] OF UDINT;
+	bConvOutSenOn : BOOL;
+	bReachedEnd : BOOL;
+	bBrdOnSen : BOOL;
+	bPullerHadExtended : BOOL;
+END_VAR
+VAR RETAIN
+	bLocalUSRdy1Set : BOOL;
+	bLocalUSRdy2Set : BOOL;
+	bLocalUSRdy3Set : BOOL;
+	bLocalUSRdy4Set : BOOL;
+	bLocalDSRdy1Set : BOOL;
+	bLocalDSRdy2Set : BOOL;
+END_VAR
+VAR
+	bLocalUSRdy1 : BOOL;
+	bLocalUSRdy2 : BOOL;
+	bLocalUSRdy3 : BOOL;
+	bLocalUSRdy4 : BOOL;
+	bLocalDSRdy1 : BOOL;
+	bLocalDSRdy2 : BOOL;
+	bLocalDSRdy3 : BOOL;
+	bSkipCloseOutletShutter : BOOL;
+	bConvInSenOnSet : BOOL;
+	fbUSB1offDelay : TON := (PT:=T#2s);
+	fbUSB2offDelay : TON := (PT:=T#2s);
+	fbUSB3offDelay : TON := (PT:=T#2s);
+	fbUSB4offDelay : TON := (PT:=T#2s);
+	tExitBoardTimoutErr : TON := (PT:=T#10s);
+	tTravLiftInPos : TON := (PT:=T#150ms);
+	bTravLifInUSPos : BOOL;
+	bTravLifInDSPos : BOOL;
+	bDualLaneMode : BOOL;
+	bRearLaneMode : BOOL;
+	diPullingPitchPos : DINT;
+	diSltToSltDist : DINT;
+	bWaitForDSTxBrd : DINT;
+	bInShutterClo : BOOL;
+	bMagWidthChked : BOOL;
+	bMagWidthChk : BOOL; (*new width chk system*)
+	usiMagWidthChkStep : USINT; (*new width chk system*)
+	usiInitRetExtChk : USINT;
+	usiLocalAccMag : USINT;
+	bOutletSafeToClo : BOOL;
+	bWidthChkErrCmdUnclmp1 : BOOL;
+	bWidthChkErrCmdUnclmp2 : BOOL;
+	bWidthChkErrCmdUnclmp3 : BOOL;
+	bCmdUnclmpFlag : BOOL;
+	bPneuUnclmpFBDone : BOOL;
+	bShutter2Prep : BOOL;
+	bShutter3Prep : BOOL;
+	bOutShutter2Prep : BOOL;
+	udiModuleNum : UDINT := 6051;
+	a_bRlsMagBtn : ARRAY[1..3] OF BOOL;
+	siCntrPullLmt : SINT := -1;
+	fbCTDPullLmt : CTD;
+	fb2SenTm : TON;
+END_VAR
+(**)
+(*Reference*)
+VAR
+	p_eLocalUSCommMod : REFERENCE TO eMcSetCommMod;
+	p_eLocalDSCommMod : REFERENCE TO eMcSetCommMod;
+	p_bLocalUSRdy : REFERENCE TO BOOL;
+	p_bLocalDSRdy : REFERENCE TO BOOL;
+	p_eLocalUSSMEMAAct : REFERENCE TO eSMEMAAction;
+	p_eLocalUSSMEMAStat : REFERENCE TO eSMEMAAction;
+	p_eLocalUSSMEMAStatus : REFERENCE TO eFBStatus;
+	p_bLocalUSSMEMAUSRdy : REFERENCE TO BOOL;
+	p_bLocalUSSMEMATransporting : REFERENCE TO BOOL;
+	p_bLocalUSSMEMAConvStart : REFERENCE TO BOOL;
+	p_bLocalUSSMEMAConvStop : REFERENCE TO BOOL;
+	p_eLocalDSSMEMAAct : REFERENCE TO eSMEMAAction;
+	p_eLocalDSSMEMAStat : REFERENCE TO eSMEMAAction;
+	p_eLocalDSSMEMAStatus : REFERENCE TO eFBStatus;
+	p_bLocalDSSMEMADSRdy : REFERENCE TO BOOL;
+	p_bLocalDSSMEMAConvStart : REFERENCE TO BOOL;
+	p_bLocalUSHermesUSRdy : REFERENCE TO BOOL;
+	p_bLocalUSHermesTransporting : REFERENCE TO BOOL;
+	p_bLocalUSHermesStopTransport : REFERENCE TO BOOL;
+	p_bLocalDSHermesDSRdy : REFERENCE TO BOOL;
+	p_bLocalDSHermesTransporting : REFERENCE TO BOOL;
+	p_bLocalDSHermesStopTransport : REFERENCE TO BOOL;
+	p_eLocalInletPneuAct : REFERENCE TO ePneuAction;
+	p_eLocalInletPneuStat : REFERENCE TO ePneuAction;
+	p_eLocalInletPneuStatus : REFERENCE TO eFBStatus;
+	p_bLocalInletPneuCls : REFERENCE TO BOOL;
+	p_bLocalInShutterExtended : REFERENCE TO BOOL;
+	p_bLocalnShutterRetracted : REFERENCE TO BOOL;
+	p_tyLocalBufferStat : REFERENCE TO tyBffrStat;
+END_VAR

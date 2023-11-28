@@ -1,0 +1,7 @@
+(*2022-03-17*)
+(**)
+VAR
+	p_bLinkPullerRetRS : REFERENCE TO BOOL;
+	p_bLinkInShutterCloRS : REFERENCE TO BOOL;
+	p_bLinkInShutterExtended : REFERENCE TO BOOL;
+END_VAR

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.8.4.50 SP"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="StatusDisplay">
+  <Property Name="Description" Value="Bitmap Group for On/Off status"/>
+  <Property Name="Index" Value="23"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="2524" Value="Source[local].Bitmap[Icon_LED_Grey_15]"/>
+    <BitmapRef ID="2525" Value="Source[local].Bitmap[Icon_LED_Grey_20]"/>
+    <BitmapRef ID="2526" Value="Source[local].Bitmap[Icon_LED_Grey_25]"/>
+    <BitmapRef ID="2527" Value="Source[local].Bitmap[Icon_LED_Grey_30]"/>
+    <BitmapRef ID="2528" Value="Source[local].Bitmap[Icon_LED_Grey_40]"/>
+    <BitmapRef ID="2529" Value="Source[local].Bitmap[Icon_LED_Green_15]"/>
+    <BitmapRef ID="2530" Value="Source[local].Bitmap[Icon_LED_Green_20]"/>
+    <BitmapRef ID="2531" Value="Source[local].Bitmap[Icon_LED_Green_25]"/>
+    <BitmapRef ID="2532" Value="Source[local].Bitmap[Icon_LED_Green_30]"/>
+    <BitmapRef ID="2533" Value="Source[local].Bitmap[Icon_LED_Green_40]"/>
+    <BitmapRef ID="2858" Value="Source[local].Bitmap[Icon_LED_Grey_10]"/>
+    <BitmapRef ID="2859" Value="Source[local].Bitmap[Icon_LED_Green_10]"/>
+    <BitmapRef ID="7668" Value="Source[local].Bitmap[Icon_LED_Blue_10]"/>
+    <BitmapRef ID="7669" Value="Source[local].Bitmap[Icon_LED_Blue_15]"/>
+    <BitmapRef ID="7670" Value="Source[local].Bitmap[Icon_LED_Blue_20]"/>
+    <BitmapRef ID="7671" Value="Source[local].Bitmap[Icon_LED_Blue_25]"/>
+    <BitmapRef ID="7672" Value="Source[local].Bitmap[Icon_LED_Blue_30]"/>
+    <BitmapRef ID="7673" Value="Source[local].Bitmap[Icon_LED_Blue_40]"/>
+    <BitmapRef ID="12840" Value="None"/>
+    <BitmapRef ID="12841" Value="Source[local].Bitmap[Icon_Ops_Warning]"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="2524" Value="10"/>
+    <Index ID="2525" Value="20"/>
+    <Index ID="2526" Value="30"/>
+    <Index ID="2527" Value="40"/>
+    <Index ID="2528" Value="50"/>
+    <Index ID="2529" Value="11"/>
+    <Index ID="2530" Value="21"/>
+    <Index ID="2531" Value="31"/>
+    <Index ID="2532" Value="41"/>
+    <Index ID="2533" Value="51"/>
+    <Index ID="2858" Value="0"/>
+    <Index ID="2859" Value="1"/>
+    <Index ID="7668" Value="2"/>
+    <Index ID="7669" Value="12"/>
+    <Index ID="7670" Value="22"/>
+    <Index ID="7671" Value="32"/>
+    <Index ID="7672" Value="42"/>
+    <Index ID="7673" Value="52"/>
+    <Index ID="12840" Value="53"/>
+    <Index ID="12841" Value="54"/>
+  </IndexMap>
+</BitmapGroup>

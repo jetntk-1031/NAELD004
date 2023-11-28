@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.8.4.50 SP"?>
+<UnitGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="Percentage">
+  <Property Name="DefaultDisplayUnit" Value="Source[embedded].Unit[Percent]"/>
+  <Property Name="DefaultLimit" Value="None"/>
+  <Property Name="DefaultPLCUnit" Value="Source[embedded].Unit[PLCUnit]"/>
+  <Property Name="Description" Value="Unit group for torque"/>
+  <Property Name="InternalUnitTextIndex" Value="0"/>
+  <Property Name="RuntimeUnitChange" Value="None"/>
+  <Property Name="RuntimeUnitCurrentDatapoint" Value="None"/>
+  <TextGroup Name="TextGroup_1">
+    <Property Name="Description" Value=""/>
+    <Property Name="Index" Value="65536"/>
+    <TextSnippets/>
+    <TextLayer LanguageId="en">
+      <Text ID="751960" Value="percent"/>
+      <Text ID="751963" Value=" %"/>
+      <Text ID="751964" Value=" "/>
+      <Text ID="751965" Value="m/s"/>
+      <Text ID="751966" Value="meter/sec"/>
+      <Text ID="751967" Value="mm/s"/>
+      <Text ID="751968" Value="millimeter/sec"/>
+      <Text ID="751969" Value="%"/>
+      <Text ID="751970" Value="percent"/>
+      <Text ID="751971" Value="µm/s"/>
+      <Text ID="751972" Value="micrometer/sec"/>
+    </TextLayer>
+    <TextLayer LanguageId="de">
+      <Text ID="751960" Value="percent"/>
+      <Text ID="751963" Value="%"/>
+      <Text ID="751964" Value=" "/>
+      <Text ID="751965" Value="m/s"/>
+      <Text ID="751966" Value="Meter/Sec"/>
+      <Text ID="751967" Value="mm/s"/>
+      <Text ID="751968" Value="Millimeter/Sec"/>
+      <Text ID="751969" Value="%"/>
+      <Text ID="751970" Value="Percent"/>
+      <Text ID="751971" Value="µm/s"/>
+      <Text ID="751972" Value="Micrometer/Sec"/>
+    </TextLayer>
+    <TextLayer LanguageId="zh">
+      <Text ID="751960" Value="percent"/>
+      <Text ID="751963" Value=" %"/>
+      <Text ID="751964" Value=" "/>
+      <Text ID="751965" Value="m/s"/>
+      <Text ID="751966" Value="meter/sec"/>
+      <Text ID="751967" Value="mm/s"/>
+      <Text ID="751968" Value="millimeter/sec"/>
+      <Text ID="751969" Value="%"/>
+      <Text ID="751970" Value="percent"/>
+      <Text ID="751971" Value="µm/s"/>
+      <Text ID="751972" Value="micrometer/sec"/>
+    </TextLayer>
+    <TextLayer LanguageId="pt">
+      <Text ID="751960" Value=""/>
+      <Text ID="751963" Value=""/>
+      <Text ID="751964" Value=""/>
+      <Text ID="751965" Value=""/>
+      <Text ID="751966" Value=""/>
+      <Text ID="751967" Value=""/>
+      <Text ID="751968" Value=""/>
+      <Text ID="751969" Value=""/>
+      <Text ID="751970" Value=""/>
+      <Text ID="751971" Value=""/>
+      <Text ID="751972" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="751960" Value="0"/>
+      <Index ID="751963" Value="3"/>
+      <Index ID="751964" Value="4"/>
+      <Index ID="751965" Value="5"/>
+      <Index ID="751966" Value="6"/>
+      <Index ID="751967" Value="7"/>
+      <Index ID="751968" Value="8"/>
+      <Index ID="751969" Value="9"/>
+      <Index ID="751970" Value="10"/>
+      <Index ID="751971" Value="11"/>
+      <Index ID="751972" Value="12"/>
+    </IndexMap>
+  </TextGroup>
+  <Units>
+    <Unit ClassId="0x00000602" Name="PLCUnit">
+      <Property Name="DefaultPrecisionDatapoint" Value="None"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Factor" Value="1"/>
+      <Property Name="Index" Value="0"/>
+      <Property Name="Offset" Value="0"/>
+      <Property Name="Text_Abbreviation_TextGroup" Value="None"/>
+      <Property Name="Text_Abbreviation_TextIndex" Value="3"/>
+      <Property Name="Text_Description_TextGroup" Value="None"/>
+      <Property Name="Text_Description_TextIndex" Value="4"/>
+      <Property Name="UnitFraction" Value="False"/>
+      <Property Name="Unit_DefaultPrecision" Value="1"/>
+    </Unit>
+    <Unit ClassId="0x00000602" Name="MeterPerSec">
+      <Property Name="DefaultPrecisionDatapoint" Value="None"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Factor" Value="1"/>
+      <Property Name="Index" Value="1"/>
+      <Property Name="Offset" Value="0"/>
+      <Property Name="Text_Abbreviation_TextGroup" Value="None"/>
+      <Property Name="Text_Abbreviation_TextIndex" Value="5"/>
+      <Property Name="Text_Description_TextGroup" Value="None"/>
+      <Property Name="Text_Description_TextIndex" Value="6"/>
+      <Property Name="UnitFraction" Value="False"/>
+      <Property Name="Unit_DefaultPrecision" Value="2"/>
+    </Unit>
+    <Unit ClassId="0x00000602" Name="MillimeterPerSec">
+      <Property Name="DefaultPrecisionDatapoint" Value="None"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Factor" Value="1000"/>
+      <Property Name="Index" Value="2"/>
+      <Property Name="Offset" Value="0"/>
+      <Property Name="Text_Abbreviation_TextGroup" Value="None"/>
+      <Property Name="Text_Abbreviation_TextIndex" Value="7"/>
+      <Property Name="Text_Description_TextGroup" Value="None"/>
+      <Property Name="Text_Description_TextIndex" Value="8"/>
+      <Property Name="UnitFraction" Value="False"/>
+      <Property Name="Unit_DefaultPrecision" Value="1"/>
+    </Unit>
+    <Unit ClassId="0x00000603" Name="Percent">
+      <Property Name="DefaultPrecisionDatapoint" Value="None"/>
+      <Property Name="Description" Value="Unit group for torque"/>
+      <Property Name="Index" Value="3"/>
+      <Property Name="Text_Abbreviation_TextGroup" Value="None"/>
+      <Property Name="Text_Abbreviation_TextIndex" Value="9"/>
+      <Property Name="Text_Description_TextGroup" Value="None"/>
+      <Property Name="Text_Description_TextIndex" Value="10"/>
+      <Property Name="UnitFraction" Value="False"/>
+      <Property Name="Unit_DefaultPrecision" Value="0"/>
+      <Property Name="Value[0].Internal" Value="0"/>
+      <Property Name="Value[0].Scaled" Value="0"/>
+      <Property Name="Value[1].Internal" Value="1"/>
+      <Property Name="Value[1].Scaled" Value="1"/>
+    </Unit>
+    <Unit ClassId="0x00000602" Name="MicrometerPerSec">
+      <Property Name="DefaultPrecisionDatapoint" Value="None"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Factor" Value="1000000"/>
+      <Property Name="Index" Value="4"/>
+      <Property Name="Offset" Value="0"/>
+      <Property Name="Text_Abbreviation_TextGroup" Value="None"/>
+      <Property Name="Text_Abbreviation_TextIndex" Value="11"/>
+      <Property Name="Text_Description_TextGroup" Value="None"/>
+      <Property Name="Text_Description_TextIndex" Value="12"/>
+      <Property Name="UnitFraction" Value="False"/>
+      <Property Name="Unit_DefaultPrecision" Value="0"/>
+    </Unit>
+  </Units>
+  <Limits/>
+</UnitGroup>

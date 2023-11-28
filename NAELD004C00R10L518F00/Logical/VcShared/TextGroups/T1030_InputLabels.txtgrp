@@ -1,0 +1,1522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.8.4.50 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="T1030_InputLabels">
+  <Property Name="Description" Value="Input Labels"/>
+  <Property Name="Index" Value="3"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="189509" Value="Safety Relay"/>
+    <Text ID="189510" Value="E-Stop Signal"/>
+    <Text ID="189511" Value="Cover Switch Signal"/>
+    <Text ID="189512" Value="Line A Left Sensor"/>
+    <Text ID="189513" Value="Line B Left Sensor"/>
+    <Text ID="189514" Value="Magazine Present Sensor"/>
+    <Text ID="189515" Value="Magazine 2 Present Sensor"/>
+    <Text ID="189516" Value="Lifter Timing Belt Sensor"/>
+    <Text ID="189517" Value="Lifter Bottom Safety Limit SW"/>
+    <Text ID="189518" Value="In Shutter Retract Reed SW"/>
+    <Text ID="189519" Value="In Shutter Extend Reed SW"/>
+    <Text ID="189520" Value="Outlet Shutter Retract Reed SW"/>
+    <Text ID="189521" Value="Outlet Shutter Extend Reed SW"/>
+    <Text ID="189522" Value="Pusher Left Sensor"/>
+    <Text ID="189523" Value="Pusher Clear Middle Sensor"/>
+    <Text ID="189524" Value="Pusher Exit Sensor"/>
+    <Text ID="189525" Value="Pusher Exit Clear Sensor"/>
+    <Text ID="189526" Value="Pusher Home Reed Switch"/>
+    <Text ID="189527" Value="Pusher Remote Reed Switch"/>
+    <Text ID="189528" Value="DC Motor 1 Alarm"/>
+    <Text ID="189529" Value="DC Motor 2 Alarm"/>
+    <Text ID="189530" Value="Inlet Sensor"/>
+    <Text ID="189531" Value="Outlet Sensor"/>
+    <Text ID="189532" Value="Left Sensor"/>
+    <Text ID="189533" Value="Right Sensor"/>
+    <Text ID="189534" Value="Check Sensor"/>
+    <Text ID="189535" Value="Middle Sensor"/>
+    <Text ID="189536" Value="Middle Clear Sensor"/>
+    <Text ID="189537" Value="Exit Sensor"/>
+    <Text ID="189538" Value="Exit Clear Sensor"/>
+    <Text ID="189539" Value="Retract Reed Switch"/>
+    <Text ID="189540" Value="Extend Reed Switch"/>
+    <Text ID="189541" Value="Open Reed Switch"/>
+    <Text ID="189542" Value="Close Reed Switch"/>
+    <Text ID="189543" Value="Unlock Reed Switch"/>
+    <Text ID="189544" Value="Block Reed Switch"/>
+    <Text ID="189545" Value="Rotation Dir Input"/>
+    <Text ID="189546" Value="Alarm Reset Input"/>
+    <Text ID="189547" Value="Brake Input"/>
+    <Text ID="189548" Value="Home Reed Switch"/>
+    <Text ID="189549" Value="In/Ext Input"/>
+    <Text ID="189550" Value="Remote Reed Switch"/>
+    <Text ID="189551" Value="Block Sensor"/>
+    <Text ID="189552" Value="Unblock Sensor"/>
+    <Text ID="189553" Value="Extend Sensor"/>
+    <Text ID="189554" Value="Extend Slow Sensor"/>
+    <Text ID="189555" Value="Retract Sensor"/>
+    <Text ID="189556" Value="Retract Slow Sensor"/>
+    <Text ID="189557" Value="Safety Limit Switch"/>
+    <Text ID="189558" Value="Middle Safety Sensor"/>
+    <Text ID="189559" Value="Rear Safety Sensor"/>
+    <Text ID="189560" Value="Over Load Signal"/>
+    <Text ID="189561" Value="UBA"/>
+    <Text ID="189562" Value="DSB"/>
+    <Text ID="189563" Value="Conveyor Belt Zone 1 Inlet Sensor"/>
+    <Text ID="189564" Value="Conveyor Belt Zone 1 Check Sensor"/>
+    <Text ID="189565" Value="Conveyor Belt Zone 2 Outlet Sensor"/>
+    <Text ID="189566" Value="Release Button"/>
+    <Text ID="189567" Value="Left Release Button"/>
+    <Text ID="189568" Value="Right Release Button"/>
+    <Text ID="189569" Value="Front Engage Sensor"/>
+    <Text ID="189570" Value="Front Disengage Sensor"/>
+    <Text ID="189571" Value="Rear Engage Sensor"/>
+    <Text ID="189572" Value="Rear Disengage Sensor"/>
+    <Text ID="189573" Value="Lifter Limit Switch"/>
+    <Text ID="189574" Value="Lifter PCB In Jam Sensor"/>
+    <Text ID="189575" Value="Lifter PCB Out Jam Sensor"/>
+    <Text ID="189576" Value="PCB Out Clear Sensor"/>
+    <Text ID="189577" Value="Lifter Safety Sensor"/>
+    <Text ID="189578" Value="Up Reed Switch"/>
+    <Text ID="189579" Value="Down Reed Switch"/>
+    <Text ID="189580" Value="Clamp Reed Switch"/>
+    <Text ID="189581" Value="Unclamp Reed Switch"/>
+    <Text ID="189582" Value="Mid Sensor"/>
+    <Text ID="189583" Value="End Sensor"/>
+    <Text ID="189584" Value="Outlet Sensor"/>
+    <Text ID="189585" Value="Clear Sensor"/>
+    <Text ID="189586" Value="Magazine Present Sensor"/>
+    <Text ID="189587" Value="Attach Pusher Conveyor Cover Switch Signal"/>
+    <Text ID="189588" Value="CW Sensor"/>
+    <Text ID="189589" Value="CCW Sensor"/>
+    <Text ID="189590" Value="Front Sensor"/>
+    <Text ID="189591" Value="Rear Sensor"/>
+    <Text ID="189592" Value="Center Sensor"/>
+    <Text ID="189593" Value="Lifter Down Button"/>
+    <Text ID="189594" Value="Right Sensor"/>
+    <Text ID="189595" Value="Bottom Magazine Conveyor\nStopper Sensor"/>
+    <Text ID="189596" Value="Bottom Magazine Conveyor\nExit Sensor"/>
+    <Text ID="189597" Value="Top Magazine Conveyor\nEntry Sensor"/>
+    <Text ID="189598" Value="Anti Jam Sensor"/>
+    <Text ID="189599" Value="Magazine 1 Present Sensor"/>
+    <Text ID="189600" Value="Magazine 2 Present Sensor"/>
+    <Text ID="189601" Value="Magazine 3 Present Sensor"/>
+    <Text ID="189602" Value="Magazine 1 Orientation Check Sensor 1"/>
+    <Text ID="189603" Value="Magazine 2 Orientation Check Sensor 1"/>
+    <Text ID="189604" Value="Magazine 3 Orientation Check Sensor 1"/>
+    <Text ID="189605" Value="Magazine 1 Orientation Check Sensor 2"/>
+    <Text ID="189606" Value="Magazine 2 Orientation Check Sensor 2"/>
+    <Text ID="189607" Value="Magazine 3 Orientation Check Sensor 2"/>
+    <Text ID="189608" Value="Home Reed Switch"/>
+    <Text ID="189609" Value="Remote Reed Switch"/>
+    <Text ID="189610" Value="Magazine 1 Conv Entry Sensor"/>
+    <Text ID="189611" Value="Magazine 2 Conv Entry Sensor"/>
+    <Text ID="189612" Value="Magazine 3 Conv Entry Sensor"/>
+    <Text ID="189613" Value="Magazine 1 AIV Pos Sensor 1"/>
+    <Text ID="189614" Value="Magazine 1 AIV Pos Sensor 2"/>
+    <Text ID="189615" Value="Magazine 2 AIV Pos Sensor 1"/>
+    <Text ID="189616" Value="Magazine 2 AIV Pos Sensor 2"/>
+    <Text ID="189617" Value="Magazine 3 AIV Pos Sensor 1"/>
+    <Text ID="189618" Value="Magazine 3 AIV Pos Sensor 2"/>
+    <Text ID="189619" Value="Left Sensor"/>
+    <Text ID="189620" Value="Right Sensor"/>
+    <Text ID="189621" Value="Lifter Safety Limit Switch 1"/>
+    <Text ID="189622" Value="Lifter Safety Limit Switch 2"/>
+    <Text ID="189623" Value="Fixed Clamp Reed Switch"/>
+    <Text ID="189624" Value="Fixed Unclamp Reed Switch"/>
+    <Text ID="189625" Value="Remote Clamp Reed Switch"/>
+    <Text ID="189626" Value="Remote Unclamp Reed Switch"/>
+    <Text ID="189627" Value="Bottom Clamp Reed Switch"/>
+    <Text ID="189628" Value="Bottom Unclamp Reed Switch"/>
+    <Text ID="189629" Value="Top Clamp Reed Switch"/>
+    <Text ID="189630" Value="Top Unclamp Reed Switch"/>
+    <Text ID="189631" Value="Selection Clamp Reed Switch"/>
+    <Text ID="189632" Value="Selection Unclamp Reed Switch"/>
+    <Text ID="189633" Value="Mag Conv Entry Sensor On"/>
+    <Text ID="189634" Value="Mag Conv Entry Sensor Off"/>
+    <Text ID="189635" Value="Mag Conv Present Sensor On"/>
+    <Text ID="189636" Value="Mag Conv Present Sensor Off"/>
+    <Text ID="189637" Value="Curtain Safety Relay"/>
+    <Text ID="189638" Value=" "/>
+    <Text ID="189639" Value="Height Sensor"/>
+    <Text ID="189640" Value="CAB 717.2 Sensor"/>
+    <Text ID="189641" Value="Small Magazine Sensor"/>
+    <Text ID="189642" Value="Large Magazine Sensor"/>
+    <Text ID="189643" Value="Magazine 4 Present Sensor"/>
+    <Text ID="189644" Value="Magazine 4 Orientation Check Sensor 1"/>
+    <Text ID="189645" Value="Magazine 4 Orientation Check Sensor 2"/>
+    <Text ID="189646" Value="Magazine 4 AIV Pos Sensor 1"/>
+    <Text ID="189647" Value="Magazine 4 AIV Pos Sensor 2"/>
+    <Text ID="189648" Value="Magazine 4 Conv Entry Sensor"/>
+    <Text ID="189649" Value="Mag 1 Detect Sensor"/>
+    <Text ID="189650" Value="Mag 2 Detect Sensor"/>
+    <Text ID="189651" Value="Mag 3 Detect Sensor"/>
+    <Text ID="189652" Value="Magazine Width Check"/>
+    <Text ID="189655" Value="Mag 1 Slot Lock Sensor"/>
+    <Text ID="189656" Value="Mag 2 Slot Lock Sensor"/>
+    <Text ID="189657" Value=" "/>
+    <Text ID="189658" Value=" "/>
+    <Text ID="189659" Value="Mag 1 Trolley Present Sensor"/>
+    <Text ID="193830" Value="Mag 2 Trolley Present Sensor"/>
+    <Text ID="193831" Value=" "/>
+    <Text ID="193832" Value=" "/>
+    <Text ID="193833" Value=" "/>
+    <Text ID="193834" Value=" "/>
+    <Text ID="193835" Value=" "/>
+    <Text ID="193836" Value=" "/>
+    <Text ID="193837" Value=" "/>
+    <Text ID="193838" Value=" "/>
+    <Text ID="193839" Value=" "/>
+    <Text ID="193840" Value=" "/>
+    <Text ID="193841" Value=" "/>
+    <Text ID="193842" Value=" "/>
+    <Text ID="193843" Value=" "/>
+    <Text ID="193844" Value=" "/>
+    <Text ID="193845" Value=" "/>
+    <Text ID="193846" Value=" "/>
+    <Text ID="193847" Value=" "/>
+    <Text ID="193848" Value=" "/>
+    <Text ID="193849" Value=" "/>
+    <Text ID="193850" Value=" "/>
+    <Text ID="193851" Value=" "/>
+    <Text ID="193852" Value=" "/>
+    <Text ID="193853" Value=" "/>
+    <Text ID="193854" Value=" "/>
+    <Text ID="193855" Value=" "/>
+    <Text ID="193856" Value=" "/>
+    <Text ID="193857" Value=" "/>
+    <Text ID="193858" Value=" "/>
+    <Text ID="193859" Value=" "/>
+    <Text ID="193860" Value=" "/>
+    <Text ID="193861" Value=" "/>
+    <Text ID="193862" Value=" "/>
+    <Text ID="193863" Value=" "/>
+    <Text ID="193864" Value=" "/>
+    <Text ID="193865" Value=" "/>
+    <Text ID="193866" Value=" "/>
+    <Text ID="193867" Value=" "/>
+    <Text ID="193868" Value=" "/>
+    <Text ID="193869" Value=" "/>
+    <Text ID="193870" Value=" "/>
+    <Text ID="193871" Value=" "/>
+    <Text ID="193872" Value=" "/>
+    <Text ID="193873" Value=" "/>
+    <Text ID="193874" Value=" "/>
+    <Text ID="193875" Value=" "/>
+    <Text ID="193876" Value=" "/>
+    <Text ID="193877" Value=" "/>
+    <Text ID="193878" Value=" "/>
+    <Text ID="193879" Value=" "/>
+    <Text ID="193880" Value=" "/>
+    <Text ID="193881" Value=" "/>
+    <Text ID="193882" Value=" "/>
+    <Text ID="193883" Value=" "/>
+    <Text ID="193884" Value=" "/>
+    <Text ID="193885" Value=" "/>
+    <Text ID="193886" Value=" "/>
+    <Text ID="193887" Value=" "/>
+    <Text ID="193888" Value=" "/>
+    <Text ID="193889" Value=" "/>
+    <Text ID="193890" Value=" "/>
+    <Text ID="193891" Value=" "/>
+    <Text ID="193892" Value=" "/>
+    <Text ID="193893" Value=" "/>
+    <Text ID="193894" Value=" "/>
+    <Text ID="193895" Value=" "/>
+    <Text ID="193896" Value=" "/>
+    <Text ID="193897" Value=" "/>
+    <Text ID="193898" Value=" "/>
+    <Text ID="193899" Value=" "/>
+    <Text ID="193900" Value=" "/>
+    <Text ID="193901" Value=" "/>
+    <Text ID="193902" Value=" "/>
+    <Text ID="193903" Value=" "/>
+    <Text ID="193904" Value=" "/>
+    <Text ID="193905" Value=" "/>
+    <Text ID="193906" Value=" "/>
+    <Text ID="193907" Value=" "/>
+    <Text ID="193908" Value=" "/>
+    <Text ID="193909" Value=" "/>
+    <Text ID="193910" Value=" "/>
+    <Text ID="193911" Value=" "/>
+    <Text ID="193912" Value=" "/>
+    <Text ID="193913" Value=" "/>
+    <Text ID="193914" Value=" "/>
+    <Text ID="193915" Value=" "/>
+    <Text ID="193916" Value=" "/>
+    <Text ID="193917" Value=" "/>
+    <Text ID="193918" Value=" "/>
+    <Text ID="193919" Value=" "/>
+    <Text ID="193920" Value=" "/>
+    <Text ID="193921" Value=" "/>
+    <Text ID="193922" Value=" "/>
+    <Text ID="193923" Value=" "/>
+    <Text ID="193924" Value=" "/>
+    <Text ID="193925" Value=" "/>
+    <Text ID="193926" Value=" "/>
+    <Text ID="193927" Value=" "/>
+    <Text ID="193928" Value=" "/>
+    <Text ID="193929" Value=" "/>
+    <Text ID="193930" Value=" "/>
+    <Text ID="193931" Value=" "/>
+    <Text ID="193932" Value=" "/>
+    <Text ID="193933" Value=" "/>
+    <Text ID="193934" Value=" "/>
+    <Text ID="193935" Value=" "/>
+    <Text ID="193936" Value=" "/>
+    <Text ID="193937" Value=" "/>
+    <Text ID="193938" Value=" "/>
+    <Text ID="193939" Value=" "/>
+    <Text ID="193940" Value=" "/>
+    <Text ID="193941" Value=" "/>
+    <Text ID="193942" Value=" "/>
+    <Text ID="193943" Value=" "/>
+    <Text ID="193944" Value=" "/>
+    <Text ID="193945" Value=" "/>
+    <Text ID="193946" Value=" "/>
+    <Text ID="193947" Value=" "/>
+    <Text ID="193948" Value=" "/>
+    <Text ID="193949" Value=" "/>
+    <Text ID="193950" Value=" "/>
+    <Text ID="193951" Value=" "/>
+    <Text ID="193952" Value=" "/>
+    <Text ID="193953" Value=" "/>
+    <Text ID="193954" Value=" "/>
+    <Text ID="193955" Value=" "/>
+    <Text ID="193956" Value=" "/>
+    <Text ID="193957" Value=" "/>
+    <Text ID="193958" Value=" "/>
+    <Text ID="193959" Value=" "/>
+    <Text ID="193960" Value=" "/>
+    <Text ID="193961" Value=" "/>
+    <Text ID="193962" Value=" "/>
+    <Text ID="193963" Value=" "/>
+    <Text ID="193964" Value=" "/>
+    <Text ID="193965" Value=" "/>
+    <Text ID="193966" Value=" "/>
+    <Text ID="193967" Value=" "/>
+    <Text ID="193968" Value=" "/>
+    <Text ID="193969" Value=" "/>
+    <Text ID="193970" Value=" "/>
+    <Text ID="193971" Value=" "/>
+    <Text ID="193972" Value=" "/>
+    <Text ID="193973" Value=" "/>
+    <Text ID="193974" Value=" "/>
+    <Text ID="193975" Value=" "/>
+    <Text ID="193976" Value=" "/>
+    <Text ID="193977" Value=" "/>
+    <Text ID="193978" Value=" "/>
+    <Text ID="193979" Value=" "/>
+    <Text ID="1007699" Value="Mag 1 Lock Reed Switch"/>
+    <Text ID="1007700" Value="Mag 2 Lock Reed Switch"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="189509" Value="Sicherheitsrelais"/>
+    <Text ID="189510" Value="Not-Aus-Signal"/>
+    <Text ID="189511" Value="Signal Deckschalter"/>
+    <Text ID="189512" Value="Leitung A Linker Sensor"/>
+    <Text ID="189513" Value="Leitung B Linker Sensor"/>
+    <Text ID="189514" Value="Magazin Vorhandener Sensor"/>
+    <Text ID="189515" Value="Magazin 2 Vorhandener Sensor"/>
+    <Text ID="189516" Value="Heber Zahnriemensensor"/>
+    <Text ID="189517" Value="Heber Unterseite Sicherheitsgrenze Schalter"/>
+    <Text ID="189518" Value="Klappen Im Ausfahren Reedschalter"/>
+    <Text ID="189519" Value="Klappen Im Ausfahren Reedschalter"/>
+    <Text ID="189520" Value="Klappen Ein Ausfahren Reedschalter"/>
+    <Text ID="189521" Value="Klappen Aus Ausfahren Reedschalter"/>
+    <Text ID="189522" Value="Pusher Links Sensor"/>
+    <Text ID="189523" Value="Pusher Clear Mittlerer Sensor"/>
+    <Text ID="189524" Value="Pusher Austrittssensor"/>
+    <Text ID="189525" Value="Pusher Austrittssensor Clear"/>
+    <Text ID="189526" Value="Pusher Home Reeschalter"/>
+    <Text ID="189527" Value="Pusher Remote Reed Schalter"/>
+    <Text ID="189528" Value="Gleichstrom Motor 1 Alarm"/>
+    <Text ID="189529" Value="Gleichstrom Motor 2 Alarm"/>
+    <Text ID="189530" Value="Einlasssensor"/>
+    <Text ID="189531" Value="Ausgangssensor"/>
+    <Text ID="189532" Value="Linker Sensor"/>
+    <Text ID="189533" Value="Rechter Sensor"/>
+    <Text ID="189534" Value="Sensorüberprüfung"/>
+    <Text ID="189535" Value="Mittlerer Sensor"/>
+    <Text ID="189536" Value="Mittlerer Clear Sensor"/>
+    <Text ID="189537" Value="Austrittssensor"/>
+    <Text ID="189538" Value="Austrittssensor Clear"/>
+    <Text ID="189539" Value="Retract Reed Switch"/>
+    <Text ID="189540" Value="Extend Reed Switch"/>
+    <Text ID="189541" Value="Reedschalter Öffnen"/>
+    <Text ID="189542" Value="Reedschalter Schließen"/>
+    <Text ID="189543" Value="Reedschalter Entsperren"/>
+    <Text ID="189544" Value="Reedschalter Sperren"/>
+    <Text ID="189545" Value="Rotation Richt. Eingang"/>
+    <Text ID="189546" Value="Alarm Rückstellung Eingang"/>
+    <Text ID="189547" Value="Bremse Eingang"/>
+    <Text ID="189548" Value="Home Reedschalter"/>
+    <Text ID="189549" Value="Im/Aus Eingang"/>
+    <Text ID="189550" Value="Remote Reedscalter"/>
+    <Text ID="189551" Value="Sensor Sperren"/>
+    <Text ID="189552" Value="Sensor Entsperren"/>
+    <Text ID="189553" Value="Sensor Ausfahren"/>
+    <Text ID="189554" Value="Extend langsam Ausfahren"/>
+    <Text ID="189555" Value="Sensor Einfahren"/>
+    <Text ID="189556" Value="Sensor langsam Einfahren"/>
+    <Text ID="189557" Value="Sicherheit Endschalter"/>
+    <Text ID="189558" Value="Mittlerer Sicherheitssensor"/>
+    <Text ID="189559" Value="Hinterer Sicherheitssensor"/>
+    <Text ID="189560" Value="Überlastsignal"/>
+    <Text ID="189561" Value="UBA"/>
+    <Text ID="189562" Value="DSB"/>
+    <Text ID="189563" Value="Förderband Bereich 1 Einlasssensor"/>
+    <Text ID="189564" Value="Förderband Bereich 1 Sensorüberprüfung"/>
+    <Text ID="189565" Value="Sensorüberprüfung Bereich 2 Ausgangssensor"/>
+    <Text ID="189566" Value="Entriegelungsknopf"/>
+    <Text ID="189567" Value="Linker Entriegelungsknopf"/>
+    <Text ID="189568" Value="Rechter Entriegelungsknopf"/>
+    <Text ID="189569" Value="Vorderer Einkupplinhssensor"/>
+    <Text ID="189570" Value="Vorderer Auskupplungssensor"/>
+    <Text ID="189571" Value="Hinterer Engagierensensor"/>
+    <Text ID="189572" Value="Hinterer Auskupplungssensor"/>
+    <Text ID="189573" Value="Heber Endschalter"/>
+    <Text ID="189574" Value="Heber PCB Klemmsensor innen"/>
+    <Text ID="189575" Value="Heber PCB Klemmsensor außen"/>
+    <Text ID="189576" Value="PCB Out Clear Sensor"/>
+    <Text ID="189577" Value="Heber Sicherheitssensor"/>
+    <Text ID="189578" Value="Reedschalter Nach oben"/>
+    <Text ID="189579" Value="Reedschalter Nach unten"/>
+    <Text ID="189580" Value="Reedschalter Einspannen"/>
+    <Text ID="189581" Value="Reedschalter Lösen"/>
+    <Text ID="189582" Value="Mittlerer Sensor"/>
+    <Text ID="189583" Value="Endsensor"/>
+    <Text ID="189584" Value="Ausgangssensor"/>
+    <Text ID="189585" Value="Sensor Löschen"/>
+    <Text ID="189586" Value="Magazin vorhandener Sensor"/>
+    <Text ID="189587" Value="Angehängtes Schieber-Förderband-Abdeckungs-Schaltsignal"/>
+    <Text ID="189588" Value="Uhrzeigersinn Sensor"/>
+    <Text ID="189589" Value="Gegenuhrzeigersinn Sensor"/>
+    <Text ID="189590" Value="Vorderer Sensor"/>
+    <Text ID="189591" Value="Hinterer Sensor"/>
+    <Text ID="189592" Value="Zentralsensor"/>
+    <Text ID="189593" Value="Heber Nach Unten"/>
+    <Text ID="189594" Value="Rechter Sensor"/>
+    <Text ID="189595" Value="Boden Magazin Förderband\nStopper Sensor"/>
+    <Text ID="189596" Value="Unterer Magazinförderer\nAuslasssensor"/>
+    <Text ID="189597" Value="Oberer Magazinförderer\nEintrittssensor"/>
+    <Text ID="189598" Value="Anti-Stau-Sensor"/>
+    <Text ID="189599" Value="Magazine 1 Present Sensor"/>
+    <Text ID="189600" Value="Magazine 2 Present Sensor"/>
+    <Text ID="189601" Value="Magazine 3 Present Sensor"/>
+    <Text ID="189602" Value="Magazine 1 Orientation Check Sensor 1"/>
+    <Text ID="189603" Value="Magazine 2 Orientation Check Sensor 1"/>
+    <Text ID="189604" Value="Magazine 3 Orientation Check Sensor 1"/>
+    <Text ID="189605" Value="Magazine 1 Orientation Check Sensor 2"/>
+    <Text ID="189606" Value="Magazine 2 Orientation Check Sensor 2"/>
+    <Text ID="189607" Value="Magazine 3 Orientation Check Sensor 2"/>
+    <Text ID="189608" Value="Home Reed Switch"/>
+    <Text ID="189609" Value="Remote Reed Switch"/>
+    <Text ID="189610" Value="Magazine 1 Conv Entry Sensor"/>
+    <Text ID="189611" Value="Magazine 2 Conv Entry Sensor"/>
+    <Text ID="189612" Value="Magazine 3 Conv Entry Sensor"/>
+    <Text ID="189613" Value="Magazine 1 AIV Pos Sensor 1"/>
+    <Text ID="189614" Value="Magazine 1 AIV Pos Sensor 2"/>
+    <Text ID="189615" Value="Magazine 2 AIV Pos Sensor 1"/>
+    <Text ID="189616" Value="Magazine 2 AIV Pos Sensor 2"/>
+    <Text ID="189617" Value="Magazine 3 AIV Pos Sensor 1"/>
+    <Text ID="189618" Value="Magazine 3 AIV Pos Sensor 2"/>
+    <Text ID="189619" Value="Left Sensor"/>
+    <Text ID="189620" Value="Right Sensor"/>
+    <Text ID="189621" Value=" "/>
+    <Text ID="189622" Value=" "/>
+    <Text ID="189623" Value=" "/>
+    <Text ID="189624" Value=" "/>
+    <Text ID="189625" Value=" "/>
+    <Text ID="189626" Value=" "/>
+    <Text ID="189627" Value=" "/>
+    <Text ID="189628" Value=" "/>
+    <Text ID="189629" Value=" "/>
+    <Text ID="189630" Value=" "/>
+    <Text ID="189631" Value=" "/>
+    <Text ID="189632" Value=" "/>
+    <Text ID="189633" Value=" "/>
+    <Text ID="189634" Value=" "/>
+    <Text ID="189635" Value=" "/>
+    <Text ID="189636" Value=" "/>
+    <Text ID="189637" Value=" "/>
+    <Text ID="189638" Value=" "/>
+    <Text ID="189639" Value=" "/>
+    <Text ID="189640" Value=" "/>
+    <Text ID="189641" Value=" "/>
+    <Text ID="189642" Value=" "/>
+    <Text ID="189643" Value=" Magazine 4 Present Sensor"/>
+    <Text ID="189644" Value="Magazine 4 Orientation Check Sensor 1"/>
+    <Text ID="189645" Value="Magazine 4 Orientation Check Sensor 2"/>
+    <Text ID="189646" Value="Magazine 4 AIV Pos Sensor 1"/>
+    <Text ID="189647" Value="Magazine 4 AIV Pos Sensor 2"/>
+    <Text ID="189648" Value="Magazine 4 Conv Entry Sensor"/>
+    <Text ID="189649" Value=" "/>
+    <Text ID="189650" Value=" "/>
+    <Text ID="189651" Value=" "/>
+    <Text ID="189652" Value=" "/>
+    <Text ID="189655" Value=" "/>
+    <Text ID="189656" Value=" "/>
+    <Text ID="189657" Value=" "/>
+    <Text ID="189658" Value=" "/>
+    <Text ID="189659" Value=" "/>
+    <Text ID="193830" Value=" "/>
+    <Text ID="193831" Value=" "/>
+    <Text ID="193832" Value=" "/>
+    <Text ID="193833" Value=" "/>
+    <Text ID="193834" Value=" "/>
+    <Text ID="193835" Value=" "/>
+    <Text ID="193836" Value=" "/>
+    <Text ID="193837" Value=" "/>
+    <Text ID="193838" Value=" "/>
+    <Text ID="193839" Value=" "/>
+    <Text ID="193840" Value=" "/>
+    <Text ID="193841" Value=" "/>
+    <Text ID="193842" Value=" "/>
+    <Text ID="193843" Value=" "/>
+    <Text ID="193844" Value=" "/>
+    <Text ID="193845" Value=" "/>
+    <Text ID="193846" Value=" "/>
+    <Text ID="193847" Value=" "/>
+    <Text ID="193848" Value=" "/>
+    <Text ID="193849" Value=" "/>
+    <Text ID="193850" Value=" "/>
+    <Text ID="193851" Value=" "/>
+    <Text ID="193852" Value=" "/>
+    <Text ID="193853" Value=" "/>
+    <Text ID="193854" Value=" "/>
+    <Text ID="193855" Value=" "/>
+    <Text ID="193856" Value=" "/>
+    <Text ID="193857" Value=" "/>
+    <Text ID="193858" Value=" "/>
+    <Text ID="193859" Value=" "/>
+    <Text ID="193860" Value=" "/>
+    <Text ID="193861" Value=" "/>
+    <Text ID="193862" Value=" "/>
+    <Text ID="193863" Value=" "/>
+    <Text ID="193864" Value=" "/>
+    <Text ID="193865" Value=" "/>
+    <Text ID="193866" Value=" "/>
+    <Text ID="193867" Value=" "/>
+    <Text ID="193868" Value=" "/>
+    <Text ID="193869" Value=" "/>
+    <Text ID="193870" Value=" "/>
+    <Text ID="193871" Value=" "/>
+    <Text ID="193872" Value=" "/>
+    <Text ID="193873" Value=" "/>
+    <Text ID="193874" Value=" "/>
+    <Text ID="193875" Value=" "/>
+    <Text ID="193876" Value=" "/>
+    <Text ID="193877" Value=" "/>
+    <Text ID="193878" Value=" "/>
+    <Text ID="193879" Value=" "/>
+    <Text ID="193880" Value=" "/>
+    <Text ID="193881" Value=" "/>
+    <Text ID="193882" Value=" "/>
+    <Text ID="193883" Value=" "/>
+    <Text ID="193884" Value=" "/>
+    <Text ID="193885" Value=" "/>
+    <Text ID="193886" Value=" "/>
+    <Text ID="193887" Value=" "/>
+    <Text ID="193888" Value=" "/>
+    <Text ID="193889" Value=" "/>
+    <Text ID="193890" Value=" "/>
+    <Text ID="193891" Value=" "/>
+    <Text ID="193892" Value=" "/>
+    <Text ID="193893" Value=" "/>
+    <Text ID="193894" Value=" "/>
+    <Text ID="193895" Value=" "/>
+    <Text ID="193896" Value=" "/>
+    <Text ID="193897" Value=" "/>
+    <Text ID="193898" Value=" "/>
+    <Text ID="193899" Value=" "/>
+    <Text ID="193900" Value=" "/>
+    <Text ID="193901" Value=" "/>
+    <Text ID="193902" Value=" "/>
+    <Text ID="193903" Value=" "/>
+    <Text ID="193904" Value=" "/>
+    <Text ID="193905" Value=" "/>
+    <Text ID="193906" Value=" "/>
+    <Text ID="193907" Value=" "/>
+    <Text ID="193908" Value=" "/>
+    <Text ID="193909" Value=" "/>
+    <Text ID="193910" Value=" "/>
+    <Text ID="193911" Value=" "/>
+    <Text ID="193912" Value=" "/>
+    <Text ID="193913" Value=" "/>
+    <Text ID="193914" Value=" "/>
+    <Text ID="193915" Value=" "/>
+    <Text ID="193916" Value=" "/>
+    <Text ID="193917" Value=" "/>
+    <Text ID="193918" Value=" "/>
+    <Text ID="193919" Value=" "/>
+    <Text ID="193920" Value=" "/>
+    <Text ID="193921" Value=" "/>
+    <Text ID="193922" Value=" "/>
+    <Text ID="193923" Value=" "/>
+    <Text ID="193924" Value=" "/>
+    <Text ID="193925" Value=" "/>
+    <Text ID="193926" Value=" "/>
+    <Text ID="193927" Value=" "/>
+    <Text ID="193928" Value=" "/>
+    <Text ID="193929" Value=" "/>
+    <Text ID="193930" Value=" "/>
+    <Text ID="193931" Value=" "/>
+    <Text ID="193932" Value=" "/>
+    <Text ID="193933" Value=" "/>
+    <Text ID="193934" Value=" "/>
+    <Text ID="193935" Value=" "/>
+    <Text ID="193936" Value=" "/>
+    <Text ID="193937" Value=" "/>
+    <Text ID="193938" Value=" "/>
+    <Text ID="193939" Value=" "/>
+    <Text ID="193940" Value=" "/>
+    <Text ID="193941" Value=" "/>
+    <Text ID="193942" Value=" "/>
+    <Text ID="193943" Value=" "/>
+    <Text ID="193944" Value=" "/>
+    <Text ID="193945" Value=" "/>
+    <Text ID="193946" Value=" "/>
+    <Text ID="193947" Value=" "/>
+    <Text ID="193948" Value=" "/>
+    <Text ID="193949" Value=" "/>
+    <Text ID="193950" Value=" "/>
+    <Text ID="193951" Value=" "/>
+    <Text ID="193952" Value=" "/>
+    <Text ID="193953" Value=" "/>
+    <Text ID="193954" Value=" "/>
+    <Text ID="193955" Value=" "/>
+    <Text ID="193956" Value=" "/>
+    <Text ID="193957" Value=" "/>
+    <Text ID="193958" Value=" "/>
+    <Text ID="193959" Value=" "/>
+    <Text ID="193960" Value=" "/>
+    <Text ID="193961" Value=" "/>
+    <Text ID="193962" Value=" "/>
+    <Text ID="193963" Value=" "/>
+    <Text ID="193964" Value=" "/>
+    <Text ID="193965" Value=" "/>
+    <Text ID="193966" Value=" "/>
+    <Text ID="193967" Value=" "/>
+    <Text ID="193968" Value=" "/>
+    <Text ID="193969" Value=" "/>
+    <Text ID="193970" Value=" "/>
+    <Text ID="193971" Value=" "/>
+    <Text ID="193972" Value=" "/>
+    <Text ID="193973" Value=" "/>
+    <Text ID="193974" Value=" "/>
+    <Text ID="193975" Value=" "/>
+    <Text ID="193976" Value=" "/>
+    <Text ID="193977" Value=" "/>
+    <Text ID="193978" Value=" "/>
+    <Text ID="193979" Value=" "/>
+    <Text ID="1007699" Value=" "/>
+    <Text ID="1007700" Value=" "/>
+  </TextLayer>
+  <TextLayer LanguageId="zh">
+    <Text ID="189509" Value="安全继电器"/>
+    <Text ID="189510" Value="紧急停止信号"/>
+    <Text ID="189511" Value="盖子开关信号"/>
+    <Text ID="189512" Value="路线 A 入口传感器"/>
+    <Text ID="189513" Value="路线 B 入口传感器"/>
+    <Text ID="189514" Value="料架存在传感器"/>
+    <Text ID="189515" Value="料架 2  存在传感器"/>
+    <Text ID="189516" Value="升降机同步齿形带传感器"/>
+    <Text ID="189517" Value="升降机底部安全限位开关"/>
+    <Text ID="189518" Value="入口挡板回缩磁簧开关"/>
+    <Text ID="189519" Value="入口挡板延伸磁簧开关"/>
+    <Text ID="189520" Value="出口挡板回缩磁簧开关"/>
+    <Text ID="189521" Value="出口挡板延伸磁簧开关"/>
+    <Text ID="189522" Value="推进器左侧传感器"/>
+    <Text ID="189523" Value="推进器居中清除传感器"/>
+    <Text ID="189524" Value="推进器出口传感器"/>
+    <Text ID="189525" Value="推进器撤离传感器"/>
+    <Text ID="189526" Value="推进器归位磁簧开关"/>
+    <Text ID="189527" Value="推进器遥控簧开关"/>
+    <Text ID="189528" Value="直流马达1警报"/>
+    <Text ID="189529" Value="直流马达2警报"/>
+    <Text ID="189530" Value="入口传感器"/>
+    <Text ID="189531" Value="出口传感器"/>
+    <Text ID="189532" Value="左侧传感器"/>
+    <Text ID="189533" Value="右侧传感器"/>
+    <Text ID="189534" Value="检测传感器"/>
+    <Text ID="189535" Value="居中传感器"/>
+    <Text ID="189536" Value="居中清除传感器"/>
+    <Text ID="189537" Value="出口传感器"/>
+    <Text ID="189538" Value="撤离传感器"/>
+    <Text ID="189539" Value="Retract Reed Switch"/>
+    <Text ID="189540" Value="Extend Reed Switch"/>
+    <Text ID="189541" Value="开启磁簧开关"/>
+    <Text ID="189542" Value="关闭磁簧开关"/>
+    <Text ID="189543" Value="解锁磁簧开关"/>
+    <Text ID="189544" Value="锁定磁簧开关"/>
+    <Text ID="189545" Value="旋转方向输入"/>
+    <Text ID="189546" Value="警报重置"/>
+    <Text ID="189547" Value="制动输入"/>
+    <Text ID="189548" Value="归位磁簧开关"/>
+    <Text ID="189549" Value="入/出 输入"/>
+    <Text ID="189550" Value="遥控磁簧开关"/>
+    <Text ID="189551" Value="锁定传感器"/>
+    <Text ID="189552" Value="解锁传感器"/>
+    <Text ID="189553" Value="延伸传感器"/>
+    <Text ID="189554" Value="缓慢延伸传感器"/>
+    <Text ID="189555" Value="回缩传感器"/>
+    <Text ID="189556" Value="缓慢回缩传感器"/>
+    <Text ID="189557" Value="安全限位开关"/>
+    <Text ID="189558" Value="居中安全传感器"/>
+    <Text ID="189559" Value="后方安全传感器"/>
+    <Text ID="189560" Value="超载信号"/>
+    <Text ID="189561" Value="UBA"/>
+    <Text ID="189562" Value="DSB"/>
+    <Text ID="189563" Value="输送带1 区入口传感器"/>
+    <Text ID="189564" Value="输送带1 区检测传感器"/>
+    <Text ID="189565" Value="输送带 2 区出口传感器"/>
+    <Text ID="189566" Value="释放按钮"/>
+    <Text ID="189567" Value="左侧释放按钮"/>
+    <Text ID="189568" Value="右侧释放按钮"/>
+    <Text ID="189569" Value="前接合传感器"/>
+    <Text ID="189570" Value="前脱离传感器"/>
+    <Text ID="189571" Value="后接合传感器"/>
+    <Text ID="189572" Value="后方分离传感器"/>
+    <Text ID="189573" Value="升降机限位开关"/>
+    <Text ID="189574" Value="升降机入口干扰传感器"/>
+    <Text ID="189575" Value="升降机出口干扰传感器"/>
+    <Text ID="189576" Value="PCB输出清除传感器"/>
+    <Text ID="189577" Value="升降机安全传感器"/>
+    <Text ID="189578" Value="向上磁簧开关"/>
+    <Text ID="189579" Value="向下磁簧开关"/>
+    <Text ID="189580" Value="夹持磁簧开关"/>
+    <Text ID="189581" Value="松开磁簧开关"/>
+    <Text ID="189582" Value="居中传感器"/>
+    <Text ID="189583" Value="末端传感器"/>
+    <Text ID="189584" Value="出口传感器"/>
+    <Text ID="189585" Value="清除传感器"/>
+    <Text ID="189586" Value="料架存在传感器"/>
+    <Text ID="189587" Value="连接推进器输送机盖开关信号"/>
+    <Text ID="189588" Value="顺时针传感器"/>
+    <Text ID="189589" Value="逆时针传感器"/>
+    <Text ID="189590" Value="前方传感器"/>
+    <Text ID="189591" Value="后方传感器"/>
+    <Text ID="189592" Value="居中传感器"/>
+    <Text ID="189593" Value="升降机向下按钮"/>
+    <Text ID="189594" Value="右侧传感器"/>
+    <Text ID="189595" Value="底部杂志输送机\n制动传感器"/>
+    <Text ID="189596" Value="底部杂志输送机\n出口传感器"/>
+    <Text ID="189597" Value="顶部杂志传送带\n入口传感器"/>
+    <Text ID="189598" Value="防卡住传感器"/>
+    <Text ID="189599" Value="Magazine 1 Present Sensor"/>
+    <Text ID="189600" Value="Magazine 2 Present Sensor"/>
+    <Text ID="189601" Value="Magazine 3 Present Sensor"/>
+    <Text ID="189602" Value="Magazine 1 Orientation Check Sensor 1"/>
+    <Text ID="189603" Value="Magazine 2 Orientation Check Sensor 1"/>
+    <Text ID="189604" Value="Magazine 3 Orientation Check Sensor 1"/>
+    <Text ID="189605" Value="Magazine 1 Orientation Check Sensor 2"/>
+    <Text ID="189606" Value="Magazine 2 Orientation Check Sensor 2"/>
+    <Text ID="189607" Value="Magazine 3 Orientation Check Sensor 2"/>
+    <Text ID="189608" Value="Home Reed Switch"/>
+    <Text ID="189609" Value="Remote Reed Switch"/>
+    <Text ID="189610" Value="Magazine 1 Conv Entry Sensor"/>
+    <Text ID="189611" Value="Magazine 2 Conv Entry Sensor"/>
+    <Text ID="189612" Value="Magazine 3 Conv Entry Sensor"/>
+    <Text ID="189613" Value="Magazine 1 AIV Pos Sensor 1"/>
+    <Text ID="189614" Value="Magazine 1 AIV Pos Sensor 2"/>
+    <Text ID="189615" Value="Magazine 2 AIV Pos Sensor 1"/>
+    <Text ID="189616" Value="Magazine 2 AIV Pos Sensor 2"/>
+    <Text ID="189617" Value="Magazine 3 AIV Pos Sensor 1"/>
+    <Text ID="189618" Value="Magazine 3 AIV Pos Sensor 2"/>
+    <Text ID="189619" Value="Left Sensor"/>
+    <Text ID="189620" Value="Right Sensor"/>
+    <Text ID="189621" Value=" "/>
+    <Text ID="189622" Value=" "/>
+    <Text ID="189623" Value=" "/>
+    <Text ID="189624" Value=" "/>
+    <Text ID="189625" Value=" "/>
+    <Text ID="189626" Value=" "/>
+    <Text ID="189627" Value=" "/>
+    <Text ID="189628" Value=" "/>
+    <Text ID="189629" Value=" "/>
+    <Text ID="189630" Value=" "/>
+    <Text ID="189631" Value=" "/>
+    <Text ID="189632" Value=" "/>
+    <Text ID="189633" Value=" "/>
+    <Text ID="189634" Value=" "/>
+    <Text ID="189635" Value=" "/>
+    <Text ID="189636" Value=" "/>
+    <Text ID="189637" Value=" "/>
+    <Text ID="189638" Value=" "/>
+    <Text ID="189639" Value=" "/>
+    <Text ID="189640" Value=" "/>
+    <Text ID="189641" Value=" "/>
+    <Text ID="189642" Value=" "/>
+    <Text ID="189643" Value="Magazine 4 Present Sensor"/>
+    <Text ID="189644" Value="Magazine 4 Orientation Check Sensor 1"/>
+    <Text ID="189645" Value="Magazine 4 Orientation Check Sensor 2"/>
+    <Text ID="189646" Value="Magazine 4 AIV Pos Sensor 1"/>
+    <Text ID="189647" Value="Magazine 4 AIV Pos Sensor 2"/>
+    <Text ID="189648" Value="Magazine 4 Conv Entry Sensor"/>
+    <Text ID="189649" Value=" "/>
+    <Text ID="189650" Value=" "/>
+    <Text ID="189651" Value=" "/>
+    <Text ID="189652" Value=" "/>
+    <Text ID="189655" Value=" "/>
+    <Text ID="189656" Value=" "/>
+    <Text ID="189657" Value=" "/>
+    <Text ID="189658" Value=" "/>
+    <Text ID="189659" Value=" "/>
+    <Text ID="193830" Value=" "/>
+    <Text ID="193831" Value=" "/>
+    <Text ID="193832" Value=" "/>
+    <Text ID="193833" Value=" "/>
+    <Text ID="193834" Value=" "/>
+    <Text ID="193835" Value=" "/>
+    <Text ID="193836" Value=" "/>
+    <Text ID="193837" Value=" "/>
+    <Text ID="193838" Value=" "/>
+    <Text ID="193839" Value=" "/>
+    <Text ID="193840" Value=" "/>
+    <Text ID="193841" Value=" "/>
+    <Text ID="193842" Value=" "/>
+    <Text ID="193843" Value=" "/>
+    <Text ID="193844" Value=" "/>
+    <Text ID="193845" Value=" "/>
+    <Text ID="193846" Value=" "/>
+    <Text ID="193847" Value=" "/>
+    <Text ID="193848" Value=" "/>
+    <Text ID="193849" Value=" "/>
+    <Text ID="193850" Value=" "/>
+    <Text ID="193851" Value=" "/>
+    <Text ID="193852" Value=" "/>
+    <Text ID="193853" Value=" "/>
+    <Text ID="193854" Value=" "/>
+    <Text ID="193855" Value=" "/>
+    <Text ID="193856" Value=" "/>
+    <Text ID="193857" Value=" "/>
+    <Text ID="193858" Value=" "/>
+    <Text ID="193859" Value=" "/>
+    <Text ID="193860" Value=" "/>
+    <Text ID="193861" Value=" "/>
+    <Text ID="193862" Value=" "/>
+    <Text ID="193863" Value=" "/>
+    <Text ID="193864" Value=" "/>
+    <Text ID="193865" Value=" "/>
+    <Text ID="193866" Value=" "/>
+    <Text ID="193867" Value=" "/>
+    <Text ID="193868" Value=" "/>
+    <Text ID="193869" Value=" "/>
+    <Text ID="193870" Value=" "/>
+    <Text ID="193871" Value=" "/>
+    <Text ID="193872" Value=" "/>
+    <Text ID="193873" Value=" "/>
+    <Text ID="193874" Value=" "/>
+    <Text ID="193875" Value=" "/>
+    <Text ID="193876" Value=" "/>
+    <Text ID="193877" Value=" "/>
+    <Text ID="193878" Value=" "/>
+    <Text ID="193879" Value=" "/>
+    <Text ID="193880" Value=" "/>
+    <Text ID="193881" Value=" "/>
+    <Text ID="193882" Value=" "/>
+    <Text ID="193883" Value=" "/>
+    <Text ID="193884" Value=" "/>
+    <Text ID="193885" Value=" "/>
+    <Text ID="193886" Value=" "/>
+    <Text ID="193887" Value=" "/>
+    <Text ID="193888" Value=" "/>
+    <Text ID="193889" Value=" "/>
+    <Text ID="193890" Value=" "/>
+    <Text ID="193891" Value=" "/>
+    <Text ID="193892" Value=" "/>
+    <Text ID="193893" Value=" "/>
+    <Text ID="193894" Value=" "/>
+    <Text ID="193895" Value=" "/>
+    <Text ID="193896" Value=" "/>
+    <Text ID="193897" Value=" "/>
+    <Text ID="193898" Value=" "/>
+    <Text ID="193899" Value=" "/>
+    <Text ID="193900" Value=" "/>
+    <Text ID="193901" Value=" "/>
+    <Text ID="193902" Value=" "/>
+    <Text ID="193903" Value=" "/>
+    <Text ID="193904" Value=" "/>
+    <Text ID="193905" Value=" "/>
+    <Text ID="193906" Value=" "/>
+    <Text ID="193907" Value=" "/>
+    <Text ID="193908" Value=" "/>
+    <Text ID="193909" Value=" "/>
+    <Text ID="193910" Value=" "/>
+    <Text ID="193911" Value=" "/>
+    <Text ID="193912" Value=" "/>
+    <Text ID="193913" Value=" "/>
+    <Text ID="193914" Value=" "/>
+    <Text ID="193915" Value=" "/>
+    <Text ID="193916" Value=" "/>
+    <Text ID="193917" Value=" "/>
+    <Text ID="193918" Value=" "/>
+    <Text ID="193919" Value=" "/>
+    <Text ID="193920" Value=" "/>
+    <Text ID="193921" Value=" "/>
+    <Text ID="193922" Value=" "/>
+    <Text ID="193923" Value=" "/>
+    <Text ID="193924" Value=" "/>
+    <Text ID="193925" Value=" "/>
+    <Text ID="193926" Value=" "/>
+    <Text ID="193927" Value=" "/>
+    <Text ID="193928" Value=" "/>
+    <Text ID="193929" Value=" "/>
+    <Text ID="193930" Value=" "/>
+    <Text ID="193931" Value=" "/>
+    <Text ID="193932" Value=" "/>
+    <Text ID="193933" Value=" "/>
+    <Text ID="193934" Value=" "/>
+    <Text ID="193935" Value=" "/>
+    <Text ID="193936" Value=" "/>
+    <Text ID="193937" Value=" "/>
+    <Text ID="193938" Value=" "/>
+    <Text ID="193939" Value=" "/>
+    <Text ID="193940" Value=" "/>
+    <Text ID="193941" Value=" "/>
+    <Text ID="193942" Value=" "/>
+    <Text ID="193943" Value=" "/>
+    <Text ID="193944" Value=" "/>
+    <Text ID="193945" Value=" "/>
+    <Text ID="193946" Value=" "/>
+    <Text ID="193947" Value=" "/>
+    <Text ID="193948" Value=" "/>
+    <Text ID="193949" Value=" "/>
+    <Text ID="193950" Value=" "/>
+    <Text ID="193951" Value=" "/>
+    <Text ID="193952" Value=" "/>
+    <Text ID="193953" Value=" "/>
+    <Text ID="193954" Value=" "/>
+    <Text ID="193955" Value=" "/>
+    <Text ID="193956" Value=" "/>
+    <Text ID="193957" Value=" "/>
+    <Text ID="193958" Value=" "/>
+    <Text ID="193959" Value=" "/>
+    <Text ID="193960" Value=" "/>
+    <Text ID="193961" Value=" "/>
+    <Text ID="193962" Value=" "/>
+    <Text ID="193963" Value=" "/>
+    <Text ID="193964" Value=" "/>
+    <Text ID="193965" Value=" "/>
+    <Text ID="193966" Value=" "/>
+    <Text ID="193967" Value=" "/>
+    <Text ID="193968" Value=" "/>
+    <Text ID="193969" Value=" "/>
+    <Text ID="193970" Value=" "/>
+    <Text ID="193971" Value=" "/>
+    <Text ID="193972" Value=" "/>
+    <Text ID="193973" Value=" "/>
+    <Text ID="193974" Value=" "/>
+    <Text ID="193975" Value=" "/>
+    <Text ID="193976" Value=" "/>
+    <Text ID="193977" Value=" "/>
+    <Text ID="193978" Value=" "/>
+    <Text ID="193979" Value=" "/>
+    <Text ID="1007699" Value=" "/>
+    <Text ID="1007700" Value=" "/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="189509" Value="Relé de segurança"/>
+    <Text ID="189510" Value="Sinal de parada eletrônica"/>
+    <Text ID="189511" Value="Sinal do interruptor de capa"/>
+    <Text ID="189512" Value="Alinhe um sensor esquerdo"/>
+    <Text ID="189513" Value="Linha B Sensor esquerdo"/>
+    <Text ID="189514" Value="Revista presente sensor"/>
+    <Text ID="189515" Value="Revista 2 Sensor atual"/>
+    <Text ID="189516" Value="Sensor de correia de tempo de elevação"/>
+    <Text ID="189517" Value="Limite de segurança do fundo do levantador SW"/>
+    <Text ID="189518" Value="No obturador retrair reed sw"/>
+    <Text ID="189519" Value="No obturador estende o Reed SW"/>
+    <Text ID="189520" Value="O Outlet Shutter retraem Reed SW"/>
+    <Text ID="189521" Value="Obturador de saída estende Reed SW"/>
+    <Text ID="189522" Value="Sensor esquerdo do empurrador"/>
+    <Text ID="189523" Value="Sensor médio claro empacotador"/>
+    <Text ID="189524" Value="Sensor de saída do empurrador"/>
+    <Text ID="189525" Value="Sensor claro de saída de empurradores"/>
+    <Text ID="189526" Value="Switch de push home home"/>
+    <Text ID="189527" Value="Switch de push Remote Remote"/>
+    <Text ID="189528" Value="DC MOTOR 1 Alarm"/>
+    <Text ID="189529" Value="Motor DC 2 Alarme"/>
+    <Text ID="189530" Value="Sensor de entrada"/>
+    <Text ID="189531" Value="Sensor de saída"/>
+    <Text ID="189532" Value="Sensor esquerdo"/>
+    <Text ID="189533" Value="Sensor direito"/>
+    <Text ID="189534" Value="Verifique o sensor"/>
+    <Text ID="189535" Value="Sensor médio"/>
+    <Text ID="189536" Value="Sensor médio claro"/>
+    <Text ID="189537" Value="Sensor de saída"/>
+    <Text ID="189538" Value="Saia do sensor claro"/>
+    <Text ID="189539" Value="RETRACT REED SWITCH"/>
+    <Text ID="189540" Value="Estender o interruptor de Reed"/>
+    <Text ID="189541" Value="Abra o interruptor de reed"/>
+    <Text ID="189542" Value="Feche o interruptor de palheta"/>
+    <Text ID="189543" Value="Desbloqueie o interruptor de Reed"/>
+    <Text ID="189544" Value="Bloqueie o interruptor de reed"/>
+    <Text ID="189545" Value="ROTAÇÃO DIR ENTRADA"/>
+    <Text ID="189546" Value="Redefinição de alarme Entrada"/>
+    <Text ID="189547" Value="Entrada do freio"/>
+    <Text ID="189548" Value="Switch de Reed Home"/>
+    <Text ID="189549" Value="Entrada in/ext"/>
+    <Text ID="189550" Value="Switch de Reed remoto"/>
+    <Text ID="189551" Value="Block Sensor"/>
+    <Text ID="189552" Value="Sensor de desbloqueio"/>
+    <Text ID="189553" Value="Estender o sensor"/>
+    <Text ID="189554" Value="Estender o sensor lento"/>
+    <Text ID="189555" Value="Sensor retraído"/>
+    <Text ID="189556" Value="Retrair sensor lento"/>
+    <Text ID="189557" Value="Interruptor de limite de segurança"/>
+    <Text ID="189558" Value="Sensor de segurança média"/>
+    <Text ID="189559" Value="Sensor de segurança traseira"/>
+    <Text ID="189560" Value="Sinal de carga sobre a carga"/>
+    <Text ID="189561" Value="Uba"/>
+    <Text ID="189562" Value="DSB"/>
+    <Text ID="189563" Value="Sensor de entrada da zona de correia transportadora 1"/>
+    <Text ID="189564" Value="Zona da correia transportadora 1 Sensor de verificação"/>
+    <Text ID="189565" Value="Sensor de saída da zona 2 da correia transportadora"/>
+    <Text ID="189566" Value="Botão de liberação"/>
+    <Text ID="189567" Value="Botão de liberação à esquerda"/>
+    <Text ID="189568" Value="Botão de liberação direita"/>
+    <Text ID="189569" Value="Sensor de engajamento frontal"/>
+    <Text ID="189570" Value="Sensor frontal de desengate"/>
+    <Text ID="189571" Value="Sensor de engajamento traseiro"/>
+    <Text ID="189572" Value="Sensor traseiro de desengate"/>
+    <Text ID="189573" Value="Switch de limite de levantador"/>
+    <Text ID="189574" Value="LIFTER PCB no sensor de jam"/>
+    <Text ID="189575" Value="LIFTER PCB SENSOR DE JAM"/>
+    <Text ID="189576" Value="PCB Out Clear Sensor"/>
+    <Text ID="189577" Value="Sensor de segurança do levantador"/>
+    <Text ID="189578" Value=""/>
+    <Text ID="189579" Value=""/>
+    <Text ID="189580" Value=""/>
+    <Text ID="189581" Value=""/>
+    <Text ID="189582" Value=""/>
+    <Text ID="189583" Value=""/>
+    <Text ID="189584" Value=""/>
+    <Text ID="189585" Value=""/>
+    <Text ID="189586" Value=""/>
+    <Text ID="189587" Value=""/>
+    <Text ID="189588" Value=""/>
+    <Text ID="189589" Value=""/>
+    <Text ID="189590" Value=""/>
+    <Text ID="189591" Value=""/>
+    <Text ID="189592" Value=""/>
+    <Text ID="189593" Value=""/>
+    <Text ID="189594" Value=""/>
+    <Text ID="189595" Value=""/>
+    <Text ID="189596" Value=""/>
+    <Text ID="189597" Value=""/>
+    <Text ID="189598" Value=""/>
+    <Text ID="189599" Value=""/>
+    <Text ID="189600" Value=""/>
+    <Text ID="189601" Value=""/>
+    <Text ID="189602" Value=""/>
+    <Text ID="189603" Value=""/>
+    <Text ID="189604" Value=""/>
+    <Text ID="189605" Value=""/>
+    <Text ID="189606" Value=""/>
+    <Text ID="189607" Value=""/>
+    <Text ID="189608" Value=""/>
+    <Text ID="189609" Value=""/>
+    <Text ID="189610" Value=""/>
+    <Text ID="189611" Value=""/>
+    <Text ID="189612" Value=""/>
+    <Text ID="189613" Value=""/>
+    <Text ID="189614" Value=""/>
+    <Text ID="189615" Value=""/>
+    <Text ID="189616" Value=""/>
+    <Text ID="189617" Value=""/>
+    <Text ID="189618" Value=""/>
+    <Text ID="189619" Value=""/>
+    <Text ID="189620" Value=""/>
+    <Text ID="189621" Value=""/>
+    <Text ID="189622" Value=""/>
+    <Text ID="189623" Value=""/>
+    <Text ID="189624" Value=""/>
+    <Text ID="189625" Value=""/>
+    <Text ID="189626" Value=""/>
+    <Text ID="189627" Value=""/>
+    <Text ID="189628" Value=""/>
+    <Text ID="189629" Value=""/>
+    <Text ID="189630" Value=""/>
+    <Text ID="189631" Value=""/>
+    <Text ID="189632" Value=""/>
+    <Text ID="189633" Value=""/>
+    <Text ID="189634" Value=""/>
+    <Text ID="189635" Value=""/>
+    <Text ID="189636" Value=""/>
+    <Text ID="189637" Value=""/>
+    <Text ID="189638" Value=""/>
+    <Text ID="189639" Value=""/>
+    <Text ID="189640" Value=""/>
+    <Text ID="189641" Value=""/>
+    <Text ID="189642" Value=""/>
+    <Text ID="189643" Value=""/>
+    <Text ID="189644" Value=""/>
+    <Text ID="189645" Value=""/>
+    <Text ID="189646" Value=""/>
+    <Text ID="189647" Value=""/>
+    <Text ID="189648" Value=""/>
+    <Text ID="189649" Value=""/>
+    <Text ID="189650" Value=""/>
+    <Text ID="189651" Value=""/>
+    <Text ID="189652" Value=""/>
+    <Text ID="189655" Value=""/>
+    <Text ID="189656" Value=""/>
+    <Text ID="189657" Value=""/>
+    <Text ID="189658" Value=""/>
+    <Text ID="189659" Value=""/>
+    <Text ID="193830" Value=""/>
+    <Text ID="193831" Value=""/>
+    <Text ID="193832" Value=""/>
+    <Text ID="193833" Value=""/>
+    <Text ID="193834" Value=""/>
+    <Text ID="193835" Value=""/>
+    <Text ID="193836" Value=""/>
+    <Text ID="193837" Value=""/>
+    <Text ID="193838" Value=""/>
+    <Text ID="193839" Value=""/>
+    <Text ID="193840" Value=""/>
+    <Text ID="193841" Value=""/>
+    <Text ID="193842" Value=""/>
+    <Text ID="193843" Value=""/>
+    <Text ID="193844" Value=""/>
+    <Text ID="193845" Value=""/>
+    <Text ID="193846" Value=""/>
+    <Text ID="193847" Value=""/>
+    <Text ID="193848" Value=""/>
+    <Text ID="193849" Value=""/>
+    <Text ID="193850" Value=""/>
+    <Text ID="193851" Value=""/>
+    <Text ID="193852" Value=""/>
+    <Text ID="193853" Value=""/>
+    <Text ID="193854" Value=""/>
+    <Text ID="193855" Value=""/>
+    <Text ID="193856" Value=""/>
+    <Text ID="193857" Value=""/>
+    <Text ID="193858" Value=""/>
+    <Text ID="193859" Value=""/>
+    <Text ID="193860" Value=""/>
+    <Text ID="193861" Value=""/>
+    <Text ID="193862" Value=""/>
+    <Text ID="193863" Value=""/>
+    <Text ID="193864" Value=""/>
+    <Text ID="193865" Value=""/>
+    <Text ID="193866" Value=""/>
+    <Text ID="193867" Value=""/>
+    <Text ID="193868" Value=""/>
+    <Text ID="193869" Value=""/>
+    <Text ID="193870" Value=""/>
+    <Text ID="193871" Value=""/>
+    <Text ID="193872" Value=""/>
+    <Text ID="193873" Value=""/>
+    <Text ID="193874" Value=""/>
+    <Text ID="193875" Value=""/>
+    <Text ID="193876" Value=""/>
+    <Text ID="193877" Value=""/>
+    <Text ID="193878" Value=""/>
+    <Text ID="193879" Value=""/>
+    <Text ID="193880" Value=""/>
+    <Text ID="193881" Value=""/>
+    <Text ID="193882" Value=""/>
+    <Text ID="193883" Value=""/>
+    <Text ID="193884" Value=""/>
+    <Text ID="193885" Value=""/>
+    <Text ID="193886" Value=""/>
+    <Text ID="193887" Value=""/>
+    <Text ID="193888" Value=""/>
+    <Text ID="193889" Value=""/>
+    <Text ID="193890" Value=""/>
+    <Text ID="193891" Value=""/>
+    <Text ID="193892" Value=""/>
+    <Text ID="193893" Value=""/>
+    <Text ID="193894" Value=""/>
+    <Text ID="193895" Value=""/>
+    <Text ID="193896" Value=""/>
+    <Text ID="193897" Value=""/>
+    <Text ID="193898" Value=""/>
+    <Text ID="193899" Value=""/>
+    <Text ID="193900" Value=""/>
+    <Text ID="193901" Value=""/>
+    <Text ID="193902" Value=""/>
+    <Text ID="193903" Value=""/>
+    <Text ID="193904" Value=""/>
+    <Text ID="193905" Value=""/>
+    <Text ID="193906" Value=""/>
+    <Text ID="193907" Value=""/>
+    <Text ID="193908" Value=""/>
+    <Text ID="193909" Value=""/>
+    <Text ID="193910" Value=""/>
+    <Text ID="193911" Value=""/>
+    <Text ID="193912" Value=""/>
+    <Text ID="193913" Value=""/>
+    <Text ID="193914" Value=""/>
+    <Text ID="193915" Value=""/>
+    <Text ID="193916" Value=""/>
+    <Text ID="193917" Value=""/>
+    <Text ID="193918" Value=""/>
+    <Text ID="193919" Value=""/>
+    <Text ID="193920" Value=""/>
+    <Text ID="193921" Value=""/>
+    <Text ID="193922" Value=""/>
+    <Text ID="193923" Value=""/>
+    <Text ID="193924" Value=""/>
+    <Text ID="193925" Value=""/>
+    <Text ID="193926" Value=""/>
+    <Text ID="193927" Value=""/>
+    <Text ID="193928" Value=""/>
+    <Text ID="193929" Value=""/>
+    <Text ID="193930" Value=""/>
+    <Text ID="193931" Value=""/>
+    <Text ID="193932" Value=""/>
+    <Text ID="193933" Value=""/>
+    <Text ID="193934" Value=""/>
+    <Text ID="193935" Value=""/>
+    <Text ID="193936" Value=""/>
+    <Text ID="193937" Value=""/>
+    <Text ID="193938" Value=""/>
+    <Text ID="193939" Value=""/>
+    <Text ID="193940" Value=""/>
+    <Text ID="193941" Value=""/>
+    <Text ID="193942" Value=""/>
+    <Text ID="193943" Value=""/>
+    <Text ID="193944" Value=""/>
+    <Text ID="193945" Value=""/>
+    <Text ID="193946" Value=""/>
+    <Text ID="193947" Value=""/>
+    <Text ID="193948" Value=""/>
+    <Text ID="193949" Value=""/>
+    <Text ID="193950" Value=""/>
+    <Text ID="193951" Value=""/>
+    <Text ID="193952" Value=""/>
+    <Text ID="193953" Value=""/>
+    <Text ID="193954" Value=""/>
+    <Text ID="193955" Value=""/>
+    <Text ID="193956" Value=""/>
+    <Text ID="193957" Value=""/>
+    <Text ID="193958" Value=""/>
+    <Text ID="193959" Value=""/>
+    <Text ID="193960" Value=""/>
+    <Text ID="193961" Value=""/>
+    <Text ID="193962" Value=""/>
+    <Text ID="193963" Value=""/>
+    <Text ID="193964" Value=""/>
+    <Text ID="193965" Value=""/>
+    <Text ID="193966" Value=""/>
+    <Text ID="193967" Value=""/>
+    <Text ID="193968" Value=""/>
+    <Text ID="193969" Value=""/>
+    <Text ID="193970" Value=""/>
+    <Text ID="193971" Value=""/>
+    <Text ID="193972" Value=""/>
+    <Text ID="193973" Value=""/>
+    <Text ID="193974" Value=""/>
+    <Text ID="193975" Value=""/>
+    <Text ID="193976" Value=""/>
+    <Text ID="193977" Value=""/>
+    <Text ID="193978" Value=""/>
+    <Text ID="193979" Value=""/>
+    <Text ID="1007699" Value=""/>
+    <Text ID="1007700" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="189509" Value="0"/>
+    <Index ID="189510" Value="1"/>
+    <Index ID="189511" Value="2"/>
+    <Index ID="189512" Value="3"/>
+    <Index ID="189513" Value="4"/>
+    <Index ID="189514" Value="5"/>
+    <Index ID="189515" Value="6"/>
+    <Index ID="189516" Value="7"/>
+    <Index ID="189517" Value="8"/>
+    <Index ID="189518" Value="9"/>
+    <Index ID="189519" Value="10"/>
+    <Index ID="189520" Value="11"/>
+    <Index ID="189521" Value="12"/>
+    <Index ID="189522" Value="13"/>
+    <Index ID="189523" Value="14"/>
+    <Index ID="189524" Value="15"/>
+    <Index ID="189525" Value="16"/>
+    <Index ID="189526" Value="17"/>
+    <Index ID="189527" Value="18"/>
+    <Index ID="189528" Value="19"/>
+    <Index ID="189529" Value="20"/>
+    <Index ID="189530" Value="21"/>
+    <Index ID="189531" Value="22"/>
+    <Index ID="189532" Value="23"/>
+    <Index ID="189533" Value="24"/>
+    <Index ID="189534" Value="25"/>
+    <Index ID="189535" Value="26"/>
+    <Index ID="189536" Value="27"/>
+    <Index ID="189537" Value="28"/>
+    <Index ID="189538" Value="29"/>
+    <Index ID="189539" Value="30"/>
+    <Index ID="189540" Value="31"/>
+    <Index ID="189541" Value="32"/>
+    <Index ID="189542" Value="33"/>
+    <Index ID="189543" Value="34"/>
+    <Index ID="189544" Value="35"/>
+    <Index ID="189545" Value="36"/>
+    <Index ID="189546" Value="37"/>
+    <Index ID="189547" Value="38"/>
+    <Index ID="189548" Value="39"/>
+    <Index ID="189549" Value="40"/>
+    <Index ID="189550" Value="41"/>
+    <Index ID="189551" Value="42"/>
+    <Index ID="189552" Value="43"/>
+    <Index ID="189553" Value="44"/>
+    <Index ID="189554" Value="45"/>
+    <Index ID="189555" Value="46"/>
+    <Index ID="189556" Value="47"/>
+    <Index ID="189557" Value="48"/>
+    <Index ID="189558" Value="49"/>
+    <Index ID="189559" Value="50"/>
+    <Index ID="189560" Value="51"/>
+    <Index ID="189561" Value="52"/>
+    <Index ID="189562" Value="53"/>
+    <Index ID="189563" Value="54"/>
+    <Index ID="189564" Value="55"/>
+    <Index ID="189565" Value="56"/>
+    <Index ID="189566" Value="57"/>
+    <Index ID="189567" Value="58"/>
+    <Index ID="189568" Value="59"/>
+    <Index ID="189569" Value="60"/>
+    <Index ID="189570" Value="61"/>
+    <Index ID="189571" Value="62"/>
+    <Index ID="189572" Value="63"/>
+    <Index ID="189573" Value="64"/>
+    <Index ID="189574" Value="65"/>
+    <Index ID="189575" Value="66"/>
+    <Index ID="189576" Value="67"/>
+    <Index ID="189577" Value="68"/>
+    <Index ID="189578" Value="69"/>
+    <Index ID="189579" Value="70"/>
+    <Index ID="189580" Value="71"/>
+    <Index ID="189581" Value="72"/>
+    <Index ID="189582" Value="73"/>
+    <Index ID="189583" Value="74"/>
+    <Index ID="189584" Value="75"/>
+    <Index ID="189585" Value="76"/>
+    <Index ID="189586" Value="77"/>
+    <Index ID="189587" Value="78"/>
+    <Index ID="189588" Value="79"/>
+    <Index ID="189589" Value="80"/>
+    <Index ID="189590" Value="81"/>
+    <Index ID="189591" Value="82"/>
+    <Index ID="189592" Value="83"/>
+    <Index ID="189593" Value="84"/>
+    <Index ID="189594" Value="85"/>
+    <Index ID="189595" Value="86"/>
+    <Index ID="189596" Value="87"/>
+    <Index ID="189597" Value="88"/>
+    <Index ID="189598" Value="89"/>
+    <Index ID="189599" Value="90"/>
+    <Index ID="189600" Value="91"/>
+    <Index ID="189601" Value="92"/>
+    <Index ID="189602" Value="93"/>
+    <Index ID="189603" Value="94"/>
+    <Index ID="189604" Value="95"/>
+    <Index ID="189605" Value="96"/>
+    <Index ID="189606" Value="97"/>
+    <Index ID="189607" Value="98"/>
+    <Index ID="189608" Value="99"/>
+    <Index ID="189609" Value="100"/>
+    <Index ID="189610" Value="101"/>
+    <Index ID="189611" Value="102"/>
+    <Index ID="189612" Value="103"/>
+    <Index ID="189613" Value="104"/>
+    <Index ID="189614" Value="105"/>
+    <Index ID="189615" Value="106"/>
+    <Index ID="189616" Value="107"/>
+    <Index ID="189617" Value="108"/>
+    <Index ID="189618" Value="109"/>
+    <Index ID="189619" Value="110"/>
+    <Index ID="189620" Value="111"/>
+    <Index ID="189621" Value="112"/>
+    <Index ID="189622" Value="113"/>
+    <Index ID="189623" Value="114"/>
+    <Index ID="189624" Value="115"/>
+    <Index ID="189625" Value="116"/>
+    <Index ID="189626" Value="117"/>
+    <Index ID="189627" Value="118"/>
+    <Index ID="189628" Value="119"/>
+    <Index ID="189629" Value="120"/>
+    <Index ID="189630" Value="121"/>
+    <Index ID="189631" Value="122"/>
+    <Index ID="189632" Value="123"/>
+    <Index ID="189633" Value="124"/>
+    <Index ID="189634" Value="125"/>
+    <Index ID="189635" Value="126"/>
+    <Index ID="189636" Value="127"/>
+    <Index ID="189637" Value="128"/>
+    <Index ID="189638" Value="129"/>
+    <Index ID="189639" Value="130"/>
+    <Index ID="189640" Value="131"/>
+    <Index ID="189641" Value="132"/>
+    <Index ID="189642" Value="133"/>
+    <Index ID="189643" Value="134"/>
+    <Index ID="189644" Value="136"/>
+    <Index ID="189645" Value="137"/>
+    <Index ID="189646" Value="138"/>
+    <Index ID="189647" Value="139"/>
+    <Index ID="189648" Value="135"/>
+    <Index ID="189649" Value="141"/>
+    <Index ID="189650" Value="142"/>
+    <Index ID="189651" Value="143"/>
+    <Index ID="189652" Value="140"/>
+    <Index ID="189655" Value="147"/>
+    <Index ID="189656" Value="148"/>
+    <Index ID="189657" Value="146"/>
+    <Index ID="189658" Value="149"/>
+    <Index ID="189659" Value="150"/>
+    <Index ID="193830" Value="151"/>
+    <Index ID="193831" Value="152"/>
+    <Index ID="193832" Value="153"/>
+    <Index ID="193833" Value="154"/>
+    <Index ID="193834" Value="155"/>
+    <Index ID="193835" Value="156"/>
+    <Index ID="193836" Value="157"/>
+    <Index ID="193837" Value="158"/>
+    <Index ID="193838" Value="159"/>
+    <Index ID="193839" Value="160"/>
+    <Index ID="193840" Value="161"/>
+    <Index ID="193841" Value="162"/>
+    <Index ID="193842" Value="163"/>
+    <Index ID="193843" Value="164"/>
+    <Index ID="193844" Value="165"/>
+    <Index ID="193845" Value="166"/>
+    <Index ID="193846" Value="167"/>
+    <Index ID="193847" Value="168"/>
+    <Index ID="193848" Value="169"/>
+    <Index ID="193849" Value="170"/>
+    <Index ID="193850" Value="171"/>
+    <Index ID="193851" Value="172"/>
+    <Index ID="193852" Value="173"/>
+    <Index ID="193853" Value="174"/>
+    <Index ID="193854" Value="175"/>
+    <Index ID="193855" Value="176"/>
+    <Index ID="193856" Value="177"/>
+    <Index ID="193857" Value="178"/>
+    <Index ID="193858" Value="179"/>
+    <Index ID="193859" Value="180"/>
+    <Index ID="193860" Value="181"/>
+    <Index ID="193861" Value="182"/>
+    <Index ID="193862" Value="183"/>
+    <Index ID="193863" Value="184"/>
+    <Index ID="193864" Value="185"/>
+    <Index ID="193865" Value="186"/>
+    <Index ID="193866" Value="187"/>
+    <Index ID="193867" Value="188"/>
+    <Index ID="193868" Value="189"/>
+    <Index ID="193869" Value="190"/>
+    <Index ID="193870" Value="191"/>
+    <Index ID="193871" Value="192"/>
+    <Index ID="193872" Value="193"/>
+    <Index ID="193873" Value="194"/>
+    <Index ID="193874" Value="195"/>
+    <Index ID="193875" Value="196"/>
+    <Index ID="193876" Value="197"/>
+    <Index ID="193877" Value="198"/>
+    <Index ID="193878" Value="199"/>
+    <Index ID="193879" Value="200"/>
+    <Index ID="193880" Value="201"/>
+    <Index ID="193881" Value="202"/>
+    <Index ID="193882" Value="203"/>
+    <Index ID="193883" Value="204"/>
+    <Index ID="193884" Value="205"/>
+    <Index ID="193885" Value="206"/>
+    <Index ID="193886" Value="207"/>
+    <Index ID="193887" Value="208"/>
+    <Index ID="193888" Value="209"/>
+    <Index ID="193889" Value="210"/>
+    <Index ID="193890" Value="211"/>
+    <Index ID="193891" Value="212"/>
+    <Index ID="193892" Value="213"/>
+    <Index ID="193893" Value="214"/>
+    <Index ID="193894" Value="215"/>
+    <Index ID="193895" Value="216"/>
+    <Index ID="193896" Value="217"/>
+    <Index ID="193897" Value="218"/>
+    <Index ID="193898" Value="219"/>
+    <Index ID="193899" Value="220"/>
+    <Index ID="193900" Value="221"/>
+    <Index ID="193901" Value="222"/>
+    <Index ID="193902" Value="223"/>
+    <Index ID="193903" Value="224"/>
+    <Index ID="193904" Value="225"/>
+    <Index ID="193905" Value="226"/>
+    <Index ID="193906" Value="227"/>
+    <Index ID="193907" Value="228"/>
+    <Index ID="193908" Value="229"/>
+    <Index ID="193909" Value="230"/>
+    <Index ID="193910" Value="231"/>
+    <Index ID="193911" Value="232"/>
+    <Index ID="193912" Value="233"/>
+    <Index ID="193913" Value="234"/>
+    <Index ID="193914" Value="235"/>
+    <Index ID="193915" Value="236"/>
+    <Index ID="193916" Value="237"/>
+    <Index ID="193917" Value="238"/>
+    <Index ID="193918" Value="239"/>
+    <Index ID="193919" Value="240"/>
+    <Index ID="193920" Value="241"/>
+    <Index ID="193921" Value="242"/>
+    <Index ID="193922" Value="243"/>
+    <Index ID="193923" Value="244"/>
+    <Index ID="193924" Value="245"/>
+    <Index ID="193925" Value="246"/>
+    <Index ID="193926" Value="247"/>
+    <Index ID="193927" Value="248"/>
+    <Index ID="193928" Value="249"/>
+    <Index ID="193929" Value="250"/>
+    <Index ID="193930" Value="251"/>
+    <Index ID="193931" Value="252"/>
+    <Index ID="193932" Value="253"/>
+    <Index ID="193933" Value="254"/>
+    <Index ID="193934" Value="255"/>
+    <Index ID="193935" Value="256"/>
+    <Index ID="193936" Value="257"/>
+    <Index ID="193937" Value="258"/>
+    <Index ID="193938" Value="259"/>
+    <Index ID="193939" Value="260"/>
+    <Index ID="193940" Value="261"/>
+    <Index ID="193941" Value="262"/>
+    <Index ID="193942" Value="263"/>
+    <Index ID="193943" Value="264"/>
+    <Index ID="193944" Value="265"/>
+    <Index ID="193945" Value="266"/>
+    <Index ID="193946" Value="267"/>
+    <Index ID="193947" Value="268"/>
+    <Index ID="193948" Value="269"/>
+    <Index ID="193949" Value="270"/>
+    <Index ID="193950" Value="271"/>
+    <Index ID="193951" Value="272"/>
+    <Index ID="193952" Value="273"/>
+    <Index ID="193953" Value="274"/>
+    <Index ID="193954" Value="275"/>
+    <Index ID="193955" Value="276"/>
+    <Index ID="193956" Value="277"/>
+    <Index ID="193957" Value="278"/>
+    <Index ID="193958" Value="279"/>
+    <Index ID="193959" Value="280"/>
+    <Index ID="193960" Value="281"/>
+    <Index ID="193961" Value="282"/>
+    <Index ID="193962" Value="283"/>
+    <Index ID="193963" Value="284"/>
+    <Index ID="193964" Value="285"/>
+    <Index ID="193965" Value="286"/>
+    <Index ID="193966" Value="287"/>
+    <Index ID="193967" Value="288"/>
+    <Index ID="193968" Value="289"/>
+    <Index ID="193969" Value="290"/>
+    <Index ID="193970" Value="291"/>
+    <Index ID="193971" Value="292"/>
+    <Index ID="193972" Value="293"/>
+    <Index ID="193973" Value="294"/>
+    <Index ID="193974" Value="295"/>
+    <Index ID="193975" Value="296"/>
+    <Index ID="193976" Value="297"/>
+    <Index ID="193977" Value="298"/>
+    <Index ID="193978" Value="299"/>
+    <Index ID="193979" Value="300"/>
+    <Index ID="1007699" Value="144"/>
+    <Index ID="1007700" Value="145"/>
+  </IndexMap>
+</TextGroup>

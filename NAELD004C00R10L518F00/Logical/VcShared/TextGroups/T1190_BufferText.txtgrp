@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.8.4.50 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="T1190_BufferText">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="19"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="191110" Value=" "/>
+    <Text ID="191111" Value="Magazine Status Here:"/>
+    <Text ID="191112" Value="Magazine Not Present"/>
+    <Text ID="191113" Value="Magazine Empty"/>
+    <Text ID="191114" Value="Magazine Full"/>
+    <Text ID="191115" Value="Magazine Available"/>
+    <Text ID="191116" Value=" "/>
+    <Text ID="191117" Value="Buffer Status Here:"/>
+    <Text ID="191118" Value="Buffer Available"/>
+    <Text ID="191119" Value="Buffer Empty"/>
+    <Text ID="191120" Value="Buffer Full"/>
+    <Text ID="191121" Value=" "/>
+    <Text ID="191122" Value="Buffer Titles Here:"/>
+    <Text ID="191123" Value="Magazine 1"/>
+    <Text ID="191124" Value="Magazine 2"/>
+    <Text ID="191125" Value="Magazine 3"/>
+    <Text ID="191126" Value="/"/>
+    <Text ID="191127" Value="Magazine 4"/>
+    <Text ID="191128" Value=" "/>
+    <Text ID="191129" Value=" "/>
+    <Text ID="191130" Value=" "/>
+    <Text ID="191131" Value="Set Mag1 Full"/>
+    <Text ID="191132" Value="Set Mag1 Empty"/>
+    <Text ID="191133" Value=" "/>
+    <Text ID="191134" Value=" "/>
+    <Text ID="191135" Value=" "/>
+    <Text ID="191136" Value=""/>
+    <Text ID="191137" Value="Set Mag2 Full"/>
+    <Text ID="191138" Value="Set Mag3 Full"/>
+    <Text ID="191139" Value=" "/>
+    <Text ID="191140" Value=" "/>
+    <Text ID="191141" Value=" "/>
+    <Text ID="191142" Value=" "/>
+    <Text ID="191143" Value=" "/>
+    <Text ID="191144" Value=" "/>
+    <Text ID="191145" Value=" "/>
+    <Text ID="191146" Value=" "/>
+    <Text ID="191147" Value="Set Mag2 Empty"/>
+    <Text ID="191148" Value="Set Mag3 Empty"/>
+    <Text ID="191149" Value="Set Mag4 Empty"/>
+    <Text ID="191150" Value=" "/>
+    <Text ID="191151" Value=" "/>
+    <Text ID="191152" Value=" "/>
+    <Text ID="191153" Value=" "/>
+    <Text ID="191154" Value=" "/>
+    <Text ID="191155" Value=" "/>
+    <Text ID="191156" Value=" "/>
+    <Text ID="191157" Value=" "/>
+    <Text ID="191158" Value=" "/>
+    <Text ID="191159" Value=" "/>
+    <Text ID="191160" Value=" "/>
+    <Text ID="191161" Value=" "/>
+    <Text ID="191162" Value=" "/>
+    <Text ID="191163" Value=" "/>
+    <Text ID="191164" Value=" "/>
+    <Text ID="191165" Value=" "/>
+    <Text ID="191166" Value=" "/>
+    <Text ID="191167" Value=" "/>
+    <Text ID="191168" Value=" "/>
+    <Text ID="191169" Value=" "/>
+    <Text ID="191170" Value=" "/>
+    <Text ID="191171" Value=" "/>
+    <Text ID="191172" Value=" "/>
+    <Text ID="191173" Value=" "/>
+    <Text ID="191174" Value=" "/>
+    <Text ID="191175" Value=" "/>
+    <Text ID="191176" Value=" "/>
+    <Text ID="191177" Value=" "/>
+    <Text ID="191178" Value=" "/>
+    <Text ID="191179" Value=" "/>
+    <Text ID="191180" Value=" "/>
+    <Text ID="191181" Value=" "/>
+    <Text ID="191182" Value=" "/>
+    <Text ID="191183" Value=" "/>
+    <Text ID="191184" Value=" "/>
+    <Text ID="191185" Value=" "/>
+    <Text ID="191186" Value=" "/>
+    <Text ID="191187" Value=" "/>
+    <Text ID="191188" Value=" "/>
+    <Text ID="191189" Value=" "/>
+    <Text ID="191190" Value=" "/>
+    <Text ID="191191" Value=" "/>
+    <Text ID="191192" Value=" "/>
+    <Text ID="191193" Value=" "/>
+    <Text ID="191194" Value=" "/>
+    <Text ID="191195" Value=" "/>
+    <Text ID="191196" Value="Idle"/>
+    <Text ID="193275" Value="Ready"/>
+    <Text ID="193276" Value="Done"/>
+    <Text ID="193277" Value="Error"/>
+    <Text ID="193278" Value="Set Full"/>
+    <Text ID="193279" Value="Set Empty"/>
+    <Text ID="193280" Value="Load"/>
+    <Text ID="193281" Value="Unload"/>
+    <Text ID="193282" Value="Refresh"/>
+    <Text ID="193283" Value="Next Load"/>
+    <Text ID="193284" Value="Next Unload"/>
+    <Text ID="193285" Value=" "/>
+    <Text ID="193286" Value=" "/>
+    <Text ID="193287" Value=" "/>
+    <Text ID="193288" Value=" "/>
+    <Text ID="193289" Value=" "/>
+    <Text ID="193290" Value=" "/>
+    <Text ID="193291" Value=" "/>
+    <Text ID="193292" Value=" "/>
+    <Text ID="193293" Value=" "/>
+    <Text ID="193294" Value=" "/>
+    <Text ID="193295" Value=" "/>
+    <Text ID="193296" Value=" "/>
+    <Text ID="193297" Value=" "/>
+    <Text ID="193298" Value=" "/>
+    <Text ID="193299" Value=" "/>
+    <Text ID="193300" Value=" "/>
+    <Text ID="193301" Value=" "/>
+    <Text ID="193302" Value=" "/>
+    <Text ID="193303" Value=" "/>
+    <Text ID="193304" Value=" "/>
+    <Text ID="193305" Value=" "/>
+    <Text ID="193306" Value=" "/>
+    <Text ID="193307" Value=" "/>
+    <Text ID="193308" Value=" "/>
+    <Text ID="193309" Value=" "/>
+    <Text ID="193310" Value=" "/>
+    <Text ID="193311" Value=" "/>
+    <Text ID="193312" Value=" "/>
+    <Text ID="193313" Value=" "/>
+    <Text ID="193314" Value=" "/>
+    <Text ID="193315" Value=" "/>
+    <Text ID="193316" Value=" "/>
+    <Text ID="193317" Value=" "/>
+    <Text ID="193318" Value=" "/>
+    <Text ID="193319" Value=" "/>
+    <Text ID="193320" Value=" "/>
+    <Text ID="193321" Value=" "/>
+    <Text ID="193322" Value=" "/>
+    <Text ID="193323" Value=" "/>
+    <Text ID="193324" Value=" "/>
+    <Text ID="193325" Value=" "/>
+    <Text ID="193326" Value=" "/>
+    <Text ID="193327" Value=" "/>
+    <Text ID="193328" Value=" "/>
+    <Text ID="193329" Value=" "/>
+    <Text ID="193330" Value=" "/>
+    <Text ID="193331" Value=" "/>
+    <Text ID="193332" Value=" "/>
+    <Text ID="193333" Value=" "/>
+    <Text ID="193334" Value=" "/>
+    <Text ID="193335" Value=" "/>
+    <Text ID="193336" Value=" "/>
+    <Text ID="193337" Value=" "/>
+    <Text ID="193338" Value=" "/>
+    <Text ID="193339" Value=" "/>
+    <Text ID="193340" Value=" "/>
+    <Text ID="193341" Value=" "/>
+    <Text ID="193342" Value=" "/>
+    <Text ID="193343" Value=" "/>
+    <Text ID="193344" Value=" "/>
+    <Text ID="193345" Value=" "/>
+    <Text ID="193346" Value=" "/>
+    <Text ID="193347" Value=" "/>
+    <Text ID="193348" Value=" "/>
+    <Text ID="193349" Value=" "/>
+    <Text ID="193350" Value=" "/>
+    <Text ID="193351" Value=" "/>
+    <Text ID="193352" Value=" "/>
+    <Text ID="193353" Value=" "/>
+    <Text ID="193354" Value=" "/>
+    <Text ID="193355" Value=" "/>
+    <Text ID="193356" Value=" "/>
+    <Text ID="193357" Value=" "/>
+    <Text ID="193358" Value=" "/>
+    <Text ID="193359" Value=" "/>
+    <Text ID="193360" Value=" "/>
+    <Text ID="193361" Value=" "/>
+    <Text ID="193362" Value=" "/>
+    <Text ID="193363" Value=" "/>
+    <Text ID="193364" Value=" "/>
+    <Text ID="193365" Value=" "/>
+    <Text ID="193366" Value=" "/>
+    <Text ID="193367" Value=" "/>
+    <Text ID="193368" Value=" "/>
+    <Text ID="193369" Value=" "/>
+    <Text ID="193370" Value=" "/>
+    <Text ID="193371" Value=" "/>
+    <Text ID="193372" Value=" "/>
+    <Text ID="193373" Value=" "/>
+    <Text ID="193374" Value=" "/>
+    <Text ID="243656" Value=""/>
+    <Text ID="243657" Value=""/>
+    <Text ID="243658" Value=""/>
+    <Text ID="243659" Value=""/>
+    <Text ID="243660" Value=""/>
+    <Text ID="243661" Value=""/>
+    <Text ID="243662" Value=""/>
+    <Text ID="243663" Value=""/>
+    <Text ID="243664" Value=""/>
+    <Text ID="243665" Value=""/>
+    <Text ID="243666" Value=""/>
+    <Text ID="243667" Value=""/>
+    <Text ID="243668" Value=""/>
+    <Text ID="243669" Value=""/>
+    <Text ID="243670" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="191110" Value=" "/>
+    <Text ID="191111" Value="Magazin Status:"/>
+    <Text ID="191112" Value="Magazin nicht Vorhanden"/>
+    <Text ID="191113" Value="Magazin Leer"/>
+    <Text ID="191114" Value="Magazin Voll"/>
+    <Text ID="191115" Value="Magazin Verfügbar"/>
+    <Text ID="191116" Value=" "/>
+    <Text ID="191117" Value="Puffer Status:"/>
+    <Text ID="191118" Value="Puffer Verfügbar"/>
+    <Text ID="191119" Value="Puffer Leer"/>
+    <Text ID="191120" Value="Puffer Voll"/>
+    <Text ID="191121" Value=" "/>
+    <Text ID="191122" Value="Puffer Bezeichnung:"/>
+    <Text ID="191123" Value="Magazine 1"/>
+    <Text ID="191124" Value="Magazine 2"/>
+    <Text ID="191125" Value="Magazine 3"/>
+    <Text ID="191126" Value="/"/>
+    <Text ID="191127" Value="Magazine 4"/>
+    <Text ID="191128" Value=" "/>
+    <Text ID="191129" Value=" "/>
+    <Text ID="191130" Value=" "/>
+    <Text ID="191131" Value="Magazin1 Voll Einstellen"/>
+    <Text ID="191132" Value="Magazin1 Leer Setzen"/>
+    <Text ID="191133" Value=" "/>
+    <Text ID="191134" Value=" "/>
+    <Text ID="191135" Value=" "/>
+    <Text ID="191136" Value=" "/>
+    <Text ID="191137" Value="Magazin2 Voll Einstellen"/>
+    <Text ID="191138" Value="Magazin3 Voll Einstellen"/>
+    <Text ID="191139" Value=" "/>
+    <Text ID="191140" Value=" "/>
+    <Text ID="191141" Value=" "/>
+    <Text ID="191142" Value=" "/>
+    <Text ID="191143" Value=" "/>
+    <Text ID="191144" Value=" "/>
+    <Text ID="191145" Value=" "/>
+    <Text ID="191146" Value=" "/>
+    <Text ID="191147" Value="Magazin2 Leer Setzen"/>
+    <Text ID="191148" Value="Magazin3 Leer Setzen"/>
+    <Text ID="191149" Value="Magazin4 Leer Setzen"/>
+    <Text ID="191150" Value=" "/>
+    <Text ID="191151" Value=" "/>
+    <Text ID="191152" Value=" "/>
+    <Text ID="191153" Value=" "/>
+    <Text ID="191154" Value=" "/>
+    <Text ID="191155" Value=" "/>
+    <Text ID="191156" Value=" "/>
+    <Text ID="191157" Value=" "/>
+    <Text ID="191158" Value=" "/>
+    <Text ID="191159" Value=" "/>
+    <Text ID="191160" Value=" "/>
+    <Text ID="191161" Value=" "/>
+    <Text ID="191162" Value=" "/>
+    <Text ID="191163" Value=" "/>
+    <Text ID="191164" Value=" "/>
+    <Text ID="191165" Value=" "/>
+    <Text ID="191166" Value=" "/>
+    <Text ID="191167" Value=" "/>
+    <Text ID="191168" Value=" "/>
+    <Text ID="191169" Value=" "/>
+    <Text ID="191170" Value=" "/>
+    <Text ID="191171" Value=" "/>
+    <Text ID="191172" Value=" "/>
+    <Text ID="191173" Value=" "/>
+    <Text ID="191174" Value=" "/>
+    <Text ID="191175" Value=" "/>
+    <Text ID="191176" Value=" "/>
+    <Text ID="191177" Value=" "/>
+    <Text ID="191178" Value=" "/>
+    <Text ID="191179" Value=" "/>
+    <Text ID="191180" Value=" "/>
+    <Text ID="191181" Value=" "/>
+    <Text ID="191182" Value=" "/>
+    <Text ID="191183" Value=" "/>
+    <Text ID="191184" Value=" "/>
+    <Text ID="191185" Value=" "/>
+    <Text ID="191186" Value=" "/>
+    <Text ID="191187" Value=" "/>
+    <Text ID="191188" Value=" "/>
+    <Text ID="191189" Value=" "/>
+    <Text ID="191190" Value=" "/>
+    <Text ID="191191" Value=" "/>
+    <Text ID="191192" Value=" "/>
+    <Text ID="191193" Value=" "/>
+    <Text ID="191194" Value=" "/>
+    <Text ID="191195" Value=" "/>
+    <Text ID="191196" Value="Leerlauf"/>
+    <Text ID="193275" Value="Bereit"/>
+    <Text ID="193276" Value="Erledigt"/>
+    <Text ID="193277" Value="Fehler"/>
+    <Text ID="193278" Value="Voll Einstellen"/>
+    <Text ID="193279" Value="Leer Einstellen"/>
+    <Text ID="193280" Value="Belastung"/>
+    <Text ID="193281" Value="Entladen"/>
+    <Text ID="193282" Value="Aktualisierung"/>
+    <Text ID="193283" Value="Nächstes Laden"/>
+    <Text ID="193284" Value="Nächste Entladen"/>
+    <Text ID="193285" Value=" "/>
+    <Text ID="193286" Value=" "/>
+    <Text ID="193287" Value=" "/>
+    <Text ID="193288" Value=" "/>
+    <Text ID="193289" Value=" "/>
+    <Text ID="193290" Value=" "/>
+    <Text ID="193291" Value=" "/>
+    <Text ID="193292" Value=" "/>
+    <Text ID="193293" Value=" "/>
+    <Text ID="193294" Value=" "/>
+    <Text ID="193295" Value=" "/>
+    <Text ID="193296" Value=" "/>
+    <Text ID="193297" Value=" "/>
+    <Text ID="193298" Value=" "/>
+    <Text ID="193299" Value=" "/>
+    <Text ID="193300" Value=" "/>
+    <Text ID="193301" Value=" "/>
+    <Text ID="193302" Value=" "/>
+    <Text ID="193303" Value=" "/>
+    <Text ID="193304" Value=" "/>
+    <Text ID="193305" Value=" "/>
+    <Text ID="193306" Value=" "/>
+    <Text ID="193307" Value=" "/>
+    <Text ID="193308" Value=" "/>
+    <Text ID="193309" Value=" "/>
+    <Text ID="193310" Value=" "/>
+    <Text ID="193311" Value=" "/>
+    <Text ID="193312" Value=" "/>
+    <Text ID="193313" Value=" "/>
+    <Text ID="193314" Value=" "/>
+    <Text ID="193315" Value=" "/>
+    <Text ID="193316" Value=" "/>
+    <Text ID="193317" Value=" "/>
+    <Text ID="193318" Value=" "/>
+    <Text ID="193319" Value=" "/>
+    <Text ID="193320" Value=" "/>
+    <Text ID="193321" Value=" "/>
+    <Text ID="193322" Value=" "/>
+    <Text ID="193323" Value=" "/>
+    <Text ID="193324" Value=" "/>
+    <Text ID="193325" Value=" "/>
+    <Text ID="193326" Value=" "/>
+    <Text ID="193327" Value=" "/>
+    <Text ID="193328" Value=" "/>
+    <Text ID="193329" Value=" "/>
+    <Text ID="193330" Value=" "/>
+    <Text ID="193331" Value=" "/>
+    <Text ID="193332" Value=" "/>
+    <Text ID="193333" Value=" "/>
+    <Text ID="193334" Value=" "/>
+    <Text ID="193335" Value=" "/>
+    <Text ID="193336" Value=" "/>
+    <Text ID="193337" Value=" "/>
+    <Text ID="193338" Value=" "/>
+    <Text ID="193339" Value=" "/>
+    <Text ID="193340" Value=" "/>
+    <Text ID="193341" Value=" "/>
+    <Text ID="193342" Value=" "/>
+    <Text ID="193343" Value=" "/>
+    <Text ID="193344" Value=" "/>
+    <Text ID="193345" Value=" "/>
+    <Text ID="193346" Value=" "/>
+    <Text ID="193347" Value=" "/>
+    <Text ID="193348" Value=" "/>
+    <Text ID="193349" Value=" "/>
+    <Text ID="193350" Value=" "/>
+    <Text ID="193351" Value=" "/>
+    <Text ID="193352" Value=" "/>
+    <Text ID="193353" Value=" "/>
+    <Text ID="193354" Value=" "/>
+    <Text ID="193355" Value=" "/>
+    <Text ID="193356" Value=" "/>
+    <Text ID="193357" Value=" "/>
+    <Text ID="193358" Value=" "/>
+    <Text ID="193359" Value=" "/>
+    <Text ID="193360" Value=" "/>
+    <Text ID="193361" Value=" "/>
+    <Text ID="193362" Value=" "/>
+    <Text ID="193363" Value=" "/>
+    <Text ID="193364" Value=" "/>
+    <Text ID="193365" Value=" "/>
+    <Text ID="193366" Value=" "/>
+    <Text ID="193367" Value=" "/>
+    <Text ID="193368" Value=" "/>
+    <Text ID="193369" Value=" "/>
+    <Text ID="193370" Value=" "/>
+    <Text ID="193371" Value=" "/>
+    <Text ID="193372" Value=" "/>
+    <Text ID="193373" Value=" "/>
+    <Text ID="193374" Value=" "/>
+    <Text ID="243656" Value=""/>
+    <Text ID="243657" Value=""/>
+    <Text ID="243658" Value=""/>
+    <Text ID="243659" Value=""/>
+    <Text ID="243660" Value=""/>
+    <Text ID="243661" Value=""/>
+    <Text ID="243662" Value=""/>
+    <Text ID="243663" Value=""/>
+    <Text ID="243664" Value=""/>
+    <Text ID="243665" Value=""/>
+    <Text ID="243666" Value=""/>
+    <Text ID="243667" Value=""/>
+    <Text ID="243668" Value=""/>
+    <Text ID="243669" Value=""/>
+    <Text ID="243670" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="zh">
+    <Text ID="191110" Value=" "/>
+    <Text ID="191111" Value="料架状态:"/>
+    <Text ID="191112" Value="料架不存在"/>
+    <Text ID="191113" Value="料架为空"/>
+    <Text ID="191114" Value="料架已满"/>
+    <Text ID="191115" Value="有效料架"/>
+    <Text ID="191116" Value=" "/>
+    <Text ID="191117" Value="缓存机状态:"/>
+    <Text ID="191118" Value="可用缓存"/>
+    <Text ID="191119" Value="缓存为空"/>
+    <Text ID="191120" Value="缓存已满"/>
+    <Text ID="191121" Value=" "/>
+    <Text ID="191122" Value="缓存机标题:"/>
+    <Text ID="191123" Value="Magazine 1"/>
+    <Text ID="191124" Value="Magazine 2"/>
+    <Text ID="191125" Value="Magazine 3"/>
+    <Text ID="191126" Value="/"/>
+    <Text ID="191127" Value="Magazine 4"/>
+    <Text ID="191128" Value=" "/>
+    <Text ID="191129" Value=" "/>
+    <Text ID="191130" Value=" "/>
+    <Text ID="191131" Value="设置料架1为满"/>
+    <Text ID="191132" Value="设置料架1为空"/>
+    <Text ID="191133" Value=" "/>
+    <Text ID="191134" Value=" "/>
+    <Text ID="191135" Value=" "/>
+    <Text ID="191136" Value=" "/>
+    <Text ID="191137" Value="设置料架2为满"/>
+    <Text ID="191138" Value="设置料架3为满"/>
+    <Text ID="191139" Value=" "/>
+    <Text ID="191140" Value=" "/>
+    <Text ID="191141" Value=" "/>
+    <Text ID="191142" Value=" "/>
+    <Text ID="191143" Value=" "/>
+    <Text ID="191144" Value=" "/>
+    <Text ID="191145" Value=" "/>
+    <Text ID="191146" Value=" "/>
+    <Text ID="191147" Value="设置料架2为空"/>
+    <Text ID="191148" Value="设置料架3为空"/>
+    <Text ID="191149" Value="设置料架4为空"/>
+    <Text ID="191150" Value=" "/>
+    <Text ID="191151" Value=" "/>
+    <Text ID="191152" Value=" "/>
+    <Text ID="191153" Value=" "/>
+    <Text ID="191154" Value=" "/>
+    <Text ID="191155" Value=" "/>
+    <Text ID="191156" Value=" "/>
+    <Text ID="191157" Value=" "/>
+    <Text ID="191158" Value=" "/>
+    <Text ID="191159" Value=" "/>
+    <Text ID="191160" Value=" "/>
+    <Text ID="191161" Value=" "/>
+    <Text ID="191162" Value=" "/>
+    <Text ID="191163" Value=" "/>
+    <Text ID="191164" Value=" "/>
+    <Text ID="191165" Value=" "/>
+    <Text ID="191166" Value=" "/>
+    <Text ID="191167" Value=" "/>
+    <Text ID="191168" Value=" "/>
+    <Text ID="191169" Value=" "/>
+    <Text ID="191170" Value=" "/>
+    <Text ID="191171" Value=" "/>
+    <Text ID="191172" Value=" "/>
+    <Text ID="191173" Value=" "/>
+    <Text ID="191174" Value=" "/>
+    <Text ID="191175" Value=" "/>
+    <Text ID="191176" Value=" "/>
+    <Text ID="191177" Value=" "/>
+    <Text ID="191178" Value=" "/>
+    <Text ID="191179" Value=" "/>
+    <Text ID="191180" Value=" "/>
+    <Text ID="191181" Value=" "/>
+    <Text ID="191182" Value=" "/>
+    <Text ID="191183" Value=" "/>
+    <Text ID="191184" Value=" "/>
+    <Text ID="191185" Value=" "/>
+    <Text ID="191186" Value=" "/>
+    <Text ID="191187" Value=" "/>
+    <Text ID="191188" Value=" "/>
+    <Text ID="191189" Value=" "/>
+    <Text ID="191190" Value=" "/>
+    <Text ID="191191" Value=" "/>
+    <Text ID="191192" Value=" "/>
+    <Text ID="191193" Value=" "/>
+    <Text ID="191194" Value=" "/>
+    <Text ID="191195" Value=" "/>
+    <Text ID="191196" Value="闲置"/>
+    <Text ID="193275" Value="准备"/>
+    <Text ID="193276" Value="完成"/>
+    <Text ID="193277" Value="警报"/>
+    <Text ID="193278" Value="设置为满"/>
+    <Text ID="193279" Value="设置为空"/>
+    <Text ID="193280" Value="加载"/>
+    <Text ID="193281" Value="卸载"/>
+    <Text ID="193282" Value="刷新"/>
+    <Text ID="193283" Value="下一个加载"/>
+    <Text ID="193284" Value="下一次卸载"/>
+    <Text ID="193285" Value=" "/>
+    <Text ID="193286" Value=" "/>
+    <Text ID="193287" Value=" "/>
+    <Text ID="193288" Value=" "/>
+    <Text ID="193289" Value=" "/>
+    <Text ID="193290" Value=" "/>
+    <Text ID="193291" Value=" "/>
+    <Text ID="193292" Value=" "/>
+    <Text ID="193293" Value=" "/>
+    <Text ID="193294" Value=" "/>
+    <Text ID="193295" Value=" "/>
+    <Text ID="193296" Value=" "/>
+    <Text ID="193297" Value=" "/>
+    <Text ID="193298" Value=" "/>
+    <Text ID="193299" Value=" "/>
+    <Text ID="193300" Value=" "/>
+    <Text ID="193301" Value=" "/>
+    <Text ID="193302" Value=" "/>
+    <Text ID="193303" Value=" "/>
+    <Text ID="193304" Value=" "/>
+    <Text ID="193305" Value=" "/>
+    <Text ID="193306" Value=" "/>
+    <Text ID="193307" Value=" "/>
+    <Text ID="193308" Value=" "/>
+    <Text ID="193309" Value=" "/>
+    <Text ID="193310" Value=" "/>
+    <Text ID="193311" Value=" "/>
+    <Text ID="193312" Value=" "/>
+    <Text ID="193313" Value=" "/>
+    <Text ID="193314" Value=" "/>
+    <Text ID="193315" Value=" "/>
+    <Text ID="193316" Value=" "/>
+    <Text ID="193317" Value=" "/>
+    <Text ID="193318" Value=" "/>
+    <Text ID="193319" Value=" "/>
+    <Text ID="193320" Value=" "/>
+    <Text ID="193321" Value=" "/>
+    <Text ID="193322" Value=" "/>
+    <Text ID="193323" Value=" "/>
+    <Text ID="193324" Value=" "/>
+    <Text ID="193325" Value=" "/>
+    <Text ID="193326" Value=" "/>
+    <Text ID="193327" Value=" "/>
+    <Text ID="193328" Value=" "/>
+    <Text ID="193329" Value=" "/>
+    <Text ID="193330" Value=" "/>
+    <Text ID="193331" Value=" "/>
+    <Text ID="193332" Value=" "/>
+    <Text ID="193333" Value=" "/>
+    <Text ID="193334" Value=" "/>
+    <Text ID="193335" Value=" "/>
+    <Text ID="193336" Value=" "/>
+    <Text ID="193337" Value=" "/>
+    <Text ID="193338" Value=" "/>
+    <Text ID="193339" Value=" "/>
+    <Text ID="193340" Value=" "/>
+    <Text ID="193341" Value=" "/>
+    <Text ID="193342" Value=" "/>
+    <Text ID="193343" Value=" "/>
+    <Text ID="193344" Value=" "/>
+    <Text ID="193345" Value=" "/>
+    <Text ID="193346" Value=" "/>
+    <Text ID="193347" Value=" "/>
+    <Text ID="193348" Value=" "/>
+    <Text ID="193349" Value=" "/>
+    <Text ID="193350" Value=" "/>
+    <Text ID="193351" Value=" "/>
+    <Text ID="193352" Value=" "/>
+    <Text ID="193353" Value=" "/>
+    <Text ID="193354" Value=" "/>
+    <Text ID="193355" Value=" "/>
+    <Text ID="193356" Value=" "/>
+    <Text ID="193357" Value=" "/>
+    <Text ID="193358" Value=" "/>
+    <Text ID="193359" Value=" "/>
+    <Text ID="193360" Value=" "/>
+    <Text ID="193361" Value=" "/>
+    <Text ID="193362" Value=" "/>
+    <Text ID="193363" Value=" "/>
+    <Text ID="193364" Value=" "/>
+    <Text ID="193365" Value=" "/>
+    <Text ID="193366" Value=" "/>
+    <Text ID="193367" Value=" "/>
+    <Text ID="193368" Value=" "/>
+    <Text ID="193369" Value=" "/>
+    <Text ID="193370" Value=" "/>
+    <Text ID="193371" Value=" "/>
+    <Text ID="193372" Value=" "/>
+    <Text ID="193373" Value=" "/>
+    <Text ID="193374" Value=" "/>
+    <Text ID="243656" Value=""/>
+    <Text ID="243657" Value=""/>
+    <Text ID="243658" Value=""/>
+    <Text ID="243659" Value=""/>
+    <Text ID="243660" Value=""/>
+    <Text ID="243661" Value=""/>
+    <Text ID="243662" Value=""/>
+    <Text ID="243663" Value=""/>
+    <Text ID="243664" Value=""/>
+    <Text ID="243665" Value=""/>
+    <Text ID="243666" Value=""/>
+    <Text ID="243667" Value=""/>
+    <Text ID="243668" Value=""/>
+    <Text ID="243669" Value=""/>
+    <Text ID="243670" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="191110" Value=""/>
+    <Text ID="191111" Value=""/>
+    <Text ID="191112" Value=""/>
+    <Text ID="191113" Value=""/>
+    <Text ID="191114" Value=""/>
+    <Text ID="191115" Value=""/>
+    <Text ID="191116" Value=""/>
+    <Text ID="191117" Value=""/>
+    <Text ID="191118" Value=""/>
+    <Text ID="191119" Value=""/>
+    <Text ID="191120" Value=""/>
+    <Text ID="191121" Value=""/>
+    <Text ID="191122" Value=""/>
+    <Text ID="191123" Value=""/>
+    <Text ID="191124" Value=""/>
+    <Text ID="191125" Value=""/>
+    <Text ID="191126" Value=""/>
+    <Text ID="191127" Value=""/>
+    <Text ID="191128" Value=""/>
+    <Text ID="191129" Value=""/>
+    <Text ID="191130" Value=""/>
+    <Text ID="191131" Value=""/>
+    <Text ID="191132" Value=""/>
+    <Text ID="191133" Value=""/>
+    <Text ID="191134" Value=""/>
+    <Text ID="191135" Value=""/>
+    <Text ID="191136" Value=""/>
+    <Text ID="191137" Value=""/>
+    <Text ID="191138" Value=""/>
+    <Text ID="191139" Value=""/>
+    <Text ID="191140" Value=""/>
+    <Text ID="191141" Value=""/>
+    <Text ID="191142" Value=""/>
+    <Text ID="191143" Value=""/>
+    <Text ID="191144" Value=""/>
+    <Text ID="191145" Value=""/>
+    <Text ID="191146" Value=""/>
+    <Text ID="191147" Value=""/>
+    <Text ID="191148" Value=""/>
+    <Text ID="191149" Value=""/>
+    <Text ID="191150" Value=""/>
+    <Text ID="191151" Value=""/>
+    <Text ID="191152" Value=""/>
+    <Text ID="191153" Value=""/>
+    <Text ID="191154" Value=""/>
+    <Text ID="191155" Value=""/>
+    <Text ID="191156" Value=""/>
+    <Text ID="191157" Value=""/>
+    <Text ID="191158" Value=""/>
+    <Text ID="191159" Value=""/>
+    <Text ID="191160" Value=""/>
+    <Text ID="191161" Value=""/>
+    <Text ID="191162" Value=""/>
+    <Text ID="191163" Value=""/>
+    <Text ID="191164" Value=""/>
+    <Text ID="191165" Value=""/>
+    <Text ID="191166" Value=""/>
+    <Text ID="191167" Value=""/>
+    <Text ID="191168" Value=""/>
+    <Text ID="191169" Value=""/>
+    <Text ID="191170" Value=""/>
+    <Text ID="191171" Value=""/>
+    <Text ID="191172" Value=""/>
+    <Text ID="191173" Value=""/>
+    <Text ID="191174" Value=""/>
+    <Text ID="191175" Value=""/>
+    <Text ID="191176" Value=""/>
+    <Text ID="191177" Value=""/>
+    <Text ID="191178" Value=""/>
+    <Text ID="191179" Value=""/>
+    <Text ID="191180" Value=""/>
+    <Text ID="191181" Value=""/>
+    <Text ID="191182" Value=""/>
+    <Text ID="191183" Value=""/>
+    <Text ID="191184" Value=""/>
+    <Text ID="191185" Value=""/>
+    <Text ID="191186" Value=""/>
+    <Text ID="191187" Value=""/>
+    <Text ID="191188" Value=""/>
+    <Text ID="191189" Value=""/>
+    <Text ID="191190" Value=""/>
+    <Text ID="191191" Value=""/>
+    <Text ID="191192" Value=""/>
+    <Text ID="191193" Value=""/>
+    <Text ID="191194" Value=""/>
+    <Text ID="191195" Value=""/>
+    <Text ID="191196" Value=""/>
+    <Text ID="193275" Value=""/>
+    <Text ID="193276" Value=""/>
+    <Text ID="193277" Value=""/>
+    <Text ID="193278" Value=""/>
+    <Text ID="193279" Value=""/>
+    <Text ID="193280" Value=""/>
+    <Text ID="193281" Value=""/>
+    <Text ID="193282" Value=""/>
+    <Text ID="193283" Value=""/>
+    <Text ID="193284" Value=""/>
+    <Text ID="193285" Value=""/>
+    <Text ID="193286" Value=""/>
+    <Text ID="193287" Value=""/>
+    <Text ID="193288" Value=""/>
+    <Text ID="193289" Value=""/>
+    <Text ID="193290" Value=""/>
+    <Text ID="193291" Value=""/>
+    <Text ID="193292" Value=""/>
+    <Text ID="193293" Value=""/>
+    <Text ID="193294" Value=""/>
+    <Text ID="193295" Value=""/>
+    <Text ID="193296" Value=""/>
+    <Text ID="193297" Value=""/>
+    <Text ID="193298" Value=""/>
+    <Text ID="193299" Value=""/>
+    <Text ID="193300" Value=""/>
+    <Text ID="193301" Value=""/>
+    <Text ID="193302" Value=""/>
+    <Text ID="193303" Value=""/>
+    <Text ID="193304" Value=""/>
+    <Text ID="193305" Value=""/>
+    <Text ID="193306" Value=""/>
+    <Text ID="193307" Value=""/>
+    <Text ID="193308" Value=""/>
+    <Text ID="193309" Value=""/>
+    <Text ID="193310" Value=""/>
+    <Text ID="193311" Value=""/>
+    <Text ID="193312" Value=""/>
+    <Text ID="193313" Value=""/>
+    <Text ID="193314" Value=""/>
+    <Text ID="193315" Value=""/>
+    <Text ID="193316" Value=""/>
+    <Text ID="193317" Value=""/>
+    <Text ID="193318" Value=""/>
+    <Text ID="193319" Value=""/>
+    <Text ID="193320" Value=""/>
+    <Text ID="193321" Value=""/>
+    <Text ID="193322" Value=""/>
+    <Text ID="193323" Value=""/>
+    <Text ID="193324" Value=""/>
+    <Text ID="193325" Value=""/>
+    <Text ID="193326" Value=""/>
+    <Text ID="193327" Value=""/>
+    <Text ID="193328" Value=""/>
+    <Text ID="193329" Value=""/>
+    <Text ID="193330" Value=""/>
+    <Text ID="193331" Value=""/>
+    <Text ID="193332" Value=""/>
+    <Text ID="193333" Value=""/>
+    <Text ID="193334" Value=""/>
+    <Text ID="193335" Value=""/>
+    <Text ID="193336" Value=""/>
+    <Text ID="193337" Value=""/>
+    <Text ID="193338" Value=""/>
+    <Text ID="193339" Value=""/>
+    <Text ID="193340" Value=""/>
+    <Text ID="193341" Value=""/>
+    <Text ID="193342" Value=""/>
+    <Text ID="193343" Value=""/>
+    <Text ID="193344" Value=""/>
+    <Text ID="193345" Value=""/>
+    <Text ID="193346" Value=""/>
+    <Text ID="193347" Value=""/>
+    <Text ID="193348" Value=""/>
+    <Text ID="193349" Value=""/>
+    <Text ID="193350" Value=""/>
+    <Text ID="193351" Value=""/>
+    <Text ID="193352" Value=""/>
+    <Text ID="193353" Value=""/>
+    <Text ID="193354" Value=""/>
+    <Text ID="193355" Value=""/>
+    <Text ID="193356" Value=""/>
+    <Text ID="193357" Value=""/>
+    <Text ID="193358" Value=""/>
+    <Text ID="193359" Value=""/>
+    <Text ID="193360" Value=""/>
+    <Text ID="193361" Value=""/>
+    <Text ID="193362" Value=""/>
+    <Text ID="193363" Value=""/>
+    <Text ID="193364" Value=""/>
+    <Text ID="193365" Value=""/>
+    <Text ID="193366" Value=""/>
+    <Text ID="193367" Value=""/>
+    <Text ID="193368" Value=""/>
+    <Text ID="193369" Value=""/>
+    <Text ID="193370" Value=""/>
+    <Text ID="193371" Value=""/>
+    <Text ID="193372" Value=""/>
+    <Text ID="193373" Value=""/>
+    <Text ID="193374" Value=""/>
+    <Text ID="243656" Value=""/>
+    <Text ID="243657" Value=""/>
+    <Text ID="243658" Value=""/>
+    <Text ID="243659" Value=""/>
+    <Text ID="243660" Value=""/>
+    <Text ID="243661" Value=""/>
+    <Text ID="243662" Value=""/>
+    <Text ID="243663" Value=""/>
+    <Text ID="243664" Value=""/>
+    <Text ID="243665" Value=""/>
+    <Text ID="243666" Value=""/>
+    <Text ID="243667" Value=""/>
+    <Text ID="243668" Value=""/>
+    <Text ID="243669" Value=""/>
+    <Text ID="243670" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="191110" Value="0"/>
+    <Index ID="191111" Value="15"/>
+    <Index ID="191112" Value="16"/>
+    <Index ID="191113" Value="17"/>
+    <Index ID="191114" Value="18"/>
+    <Index ID="191115" Value="19"/>
+    <Index ID="191116" Value="20"/>
+    <Index ID="191117" Value="21"/>
+    <Index ID="191118" Value="22"/>
+    <Index ID="191119" Value="23"/>
+    <Index ID="191120" Value="24"/>
+    <Index ID="191121" Value="25"/>
+    <Index ID="191122" Value="26"/>
+    <Index ID="191123" Value="27"/>
+    <Index ID="191124" Value="28"/>
+    <Index ID="191125" Value="29"/>
+    <Index ID="191126" Value="30"/>
+    <Index ID="191127" Value="31"/>
+    <Index ID="191128" Value="32"/>
+    <Index ID="191129" Value="33"/>
+    <Index ID="191130" Value="34"/>
+    <Index ID="191131" Value="40"/>
+    <Index ID="191132" Value="50"/>
+    <Index ID="191133" Value="37"/>
+    <Index ID="191134" Value="38"/>
+    <Index ID="191135" Value="39"/>
+    <Index ID="191136" Value="35"/>
+    <Index ID="191137" Value="41"/>
+    <Index ID="191138" Value="42"/>
+    <Index ID="191139" Value="43"/>
+    <Index ID="191140" Value="44"/>
+    <Index ID="191141" Value="45"/>
+    <Index ID="191142" Value="46"/>
+    <Index ID="191143" Value="47"/>
+    <Index ID="191144" Value="48"/>
+    <Index ID="191145" Value="49"/>
+    <Index ID="191146" Value="36"/>
+    <Index ID="191147" Value="51"/>
+    <Index ID="191148" Value="52"/>
+    <Index ID="191149" Value="53"/>
+    <Index ID="191150" Value="54"/>
+    <Index ID="191151" Value="55"/>
+    <Index ID="191152" Value="56"/>
+    <Index ID="191153" Value="57"/>
+    <Index ID="191154" Value="58"/>
+    <Index ID="191155" Value="59"/>
+    <Index ID="191156" Value="60"/>
+    <Index ID="191157" Value="61"/>
+    <Index ID="191158" Value="62"/>
+    <Index ID="191159" Value="63"/>
+    <Index ID="191160" Value="64"/>
+    <Index ID="191161" Value="65"/>
+    <Index ID="191162" Value="66"/>
+    <Index ID="191163" Value="67"/>
+    <Index ID="191164" Value="68"/>
+    <Index ID="191165" Value="69"/>
+    <Index ID="191166" Value="70"/>
+    <Index ID="191167" Value="71"/>
+    <Index ID="191168" Value="72"/>
+    <Index ID="191169" Value="73"/>
+    <Index ID="191170" Value="74"/>
+    <Index ID="191171" Value="75"/>
+    <Index ID="191172" Value="76"/>
+    <Index ID="191173" Value="77"/>
+    <Index ID="191174" Value="78"/>
+    <Index ID="191175" Value="79"/>
+    <Index ID="191176" Value="80"/>
+    <Index ID="191177" Value="81"/>
+    <Index ID="191178" Value="82"/>
+    <Index ID="191179" Value="83"/>
+    <Index ID="191180" Value="84"/>
+    <Index ID="191181" Value="85"/>
+    <Index ID="191182" Value="86"/>
+    <Index ID="191183" Value="87"/>
+    <Index ID="191184" Value="88"/>
+    <Index ID="191185" Value="89"/>
+    <Index ID="191186" Value="90"/>
+    <Index ID="191187" Value="91"/>
+    <Index ID="191188" Value="92"/>
+    <Index ID="191189" Value="93"/>
+    <Index ID="191190" Value="94"/>
+    <Index ID="191191" Value="95"/>
+    <Index ID="191192" Value="96"/>
+    <Index ID="191193" Value="97"/>
+    <Index ID="191194" Value="98"/>
+    <Index ID="191195" Value="99"/>
+    <Index ID="191196" Value="100"/>
+    <Index ID="193275" Value="101"/>
+    <Index ID="193276" Value="102"/>
+    <Index ID="193277" Value="103"/>
+    <Index ID="193278" Value="104"/>
+    <Index ID="193279" Value="105"/>
+    <Index ID="193280" Value="106"/>
+    <Index ID="193281" Value="107"/>
+    <Index ID="193282" Value="108"/>
+    <Index ID="193283" Value="109"/>
+    <Index ID="193284" Value="110"/>
+    <Index ID="193285" Value="111"/>
+    <Index ID="193286" Value="112"/>
+    <Index ID="193287" Value="113"/>
+    <Index ID="193288" Value="114"/>
+    <Index ID="193289" Value="115"/>
+    <Index ID="193290" Value="116"/>
+    <Index ID="193291" Value="117"/>
+    <Index ID="193292" Value="118"/>
+    <Index ID="193293" Value="119"/>
+    <Index ID="193294" Value="120"/>
+    <Index ID="193295" Value="121"/>
+    <Index ID="193296" Value="122"/>
+    <Index ID="193297" Value="123"/>
+    <Index ID="193298" Value="124"/>
+    <Index ID="193299" Value="125"/>
+    <Index ID="193300" Value="126"/>
+    <Index ID="193301" Value="127"/>
+    <Index ID="193302" Value="128"/>
+    <Index ID="193303" Value="129"/>
+    <Index ID="193304" Value="130"/>
+    <Index ID="193305" Value="131"/>
+    <Index ID="193306" Value="132"/>
+    <Index ID="193307" Value="133"/>
+    <Index ID="193308" Value="134"/>
+    <Index ID="193309" Value="135"/>
+    <Index ID="193310" Value="136"/>
+    <Index ID="193311" Value="137"/>
+    <Index ID="193312" Value="138"/>
+    <Index ID="193313" Value="139"/>
+    <Index ID="193314" Value="140"/>
+    <Index ID="193315" Value="141"/>
+    <Index ID="193316" Value="142"/>
+    <Index ID="193317" Value="143"/>
+    <Index ID="193318" Value="144"/>
+    <Index ID="193319" Value="145"/>
+    <Index ID="193320" Value="146"/>
+    <Index ID="193321" Value="147"/>
+    <Index ID="193322" Value="148"/>
+    <Index ID="193323" Value="149"/>
+    <Index ID="193324" Value="150"/>
+    <Index ID="193325" Value="151"/>
+    <Index ID="193326" Value="152"/>
+    <Index ID="193327" Value="153"/>
+    <Index ID="193328" Value="154"/>
+    <Index ID="193329" Value="155"/>
+    <Index ID="193330" Value="156"/>
+    <Index ID="193331" Value="157"/>
+    <Index ID="193332" Value="158"/>
+    <Index ID="193333" Value="159"/>
+    <Index ID="193334" Value="160"/>
+    <Index ID="193335" Value="161"/>
+    <Index ID="193336" Value="162"/>
+    <Index ID="193337" Value="163"/>
+    <Index ID="193338" Value="164"/>
+    <Index ID="193339" Value="165"/>
+    <Index ID="193340" Value="166"/>
+    <Index ID="193341" Value="167"/>
+    <Index ID="193342" Value="168"/>
+    <Index ID="193343" Value="169"/>
+    <Index ID="193344" Value="170"/>
+    <Index ID="193345" Value="171"/>
+    <Index ID="193346" Value="172"/>
+    <Index ID="193347" Value="173"/>
+    <Index ID="193348" Value="174"/>
+    <Index ID="193349" Value="175"/>
+    <Index ID="193350" Value="176"/>
+    <Index ID="193351" Value="177"/>
+    <Index ID="193352" Value="178"/>
+    <Index ID="193353" Value="179"/>
+    <Index ID="193354" Value="180"/>
+    <Index ID="193355" Value="181"/>
+    <Index ID="193356" Value="182"/>
+    <Index ID="193357" Value="183"/>
+    <Index ID="193358" Value="184"/>
+    <Index ID="193359" Value="185"/>
+    <Index ID="193360" Value="186"/>
+    <Index ID="193361" Value="187"/>
+    <Index ID="193362" Value="188"/>
+    <Index ID="193363" Value="189"/>
+    <Index ID="193364" Value="190"/>
+    <Index ID="193365" Value="191"/>
+    <Index ID="193366" Value="192"/>
+    <Index ID="193367" Value="193"/>
+    <Index ID="193368" Value="194"/>
+    <Index ID="193369" Value="195"/>
+    <Index ID="193370" Value="196"/>
+    <Index ID="193371" Value="197"/>
+    <Index ID="193372" Value="198"/>
+    <Index ID="193373" Value="199"/>
+    <Index ID="193374" Value="200"/>
+    <Index ID="243656" Value="1"/>
+    <Index ID="243657" Value="2"/>
+    <Index ID="243658" Value="3"/>
+    <Index ID="243659" Value="4"/>
+    <Index ID="243660" Value="5"/>
+    <Index ID="243661" Value="6"/>
+    <Index ID="243662" Value="7"/>
+    <Index ID="243663" Value="8"/>
+    <Index ID="243664" Value="9"/>
+    <Index ID="243665" Value="10"/>
+    <Index ID="243666" Value="11"/>
+    <Index ID="243667" Value="12"/>
+    <Index ID="243668" Value="13"/>
+    <Index ID="243669" Value="14"/>
+    <Index ID="243670" Value="201"/>
+  </IndexMap>
+</TextGroup>

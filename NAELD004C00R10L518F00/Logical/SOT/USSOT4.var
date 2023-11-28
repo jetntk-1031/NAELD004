@@ -1,0 +1,25 @@
+(*2021-04-19*)
+(**)
+(*Action & State & Status*)
+VAR
+	p_USSOT4Stat : UDINT;
+	p_USSOT4Status : UDINT;
+	p_USSOT4StatTxt : UDINT;
+END_VAR
+(**)
+(*Alarm*)
+VAR
+	p_USSOT4AlmData : UDINT;
+END_VAR
+(**)
+(*Output*)
+VAR
+	p_USSOT4USRdy : UDINT;
+	p_USSOT4USLargeMagRdy : UDINT;
+	p_USSOT4DSRdy : UDINT;
+	p_USSOT4Transporting : UDINT;
+	p_USSOT4ConvStart : UDINT;
+	p_USSOT4ConvStop : UDINT;
+	p_USSOT4USB : UDINT;
+	p_USSOT4Virtual : UDINT;
+END_VAR

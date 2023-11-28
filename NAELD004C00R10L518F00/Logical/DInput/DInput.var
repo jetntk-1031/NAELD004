@@ -1,0 +1,166 @@
+(*2018-12-10*)
+(**)
+(*Constant*)
+VAR CONSTANT
+	c_udiDInputMax : UDINT := 300; (*Constant Digital Input Quantity (+1 For Damaged) (+1 For Spare)*)
+END_VAR
+(**)
+(*Action & State & Status*)
+(**)
+(*Alarm*)
+VAR
+	p_DIAlmData1 : UDINT;
+	p_DIAlmData2 : UDINT;
+	p_DIAlmData3 : UDINT;
+	p_DIAlmData4 : UDINT;
+	p_DIAlmData5 : UDINT;
+	p_DIAlmData6 : UDINT;
+END_VAR
+(**)
+(*Output*)
+VAR
+	p_DI : UDINT;
+	p_DISafetyRlySig : UDINT;
+	p_DIEStopSig : UDINT;
+	p_DICoverSWSig : UDINT;
+	p_DIDSBA : UDINT;
+	p_DIDSBB : UDINT;
+	p_DIPullerExtRS : UDINT;
+	p_DIPullerRetRS : UDINT;
+	p_DIPullerRotHmRS : UDINT;
+	p_DIPullerRotRmRS : UDINT;
+	p_DIConvLftSen : UDINT;
+	p_DIConvRgtSen : UDINT;
+	p_DILifterTimingBeltSen : UDINT;
+	p_DILifterSafetyLmtSW1 : UDINT;
+	p_DILifterSafetyLmtSW2 : UDINT;
+	p_DIMag1FixedClampRS : UDINT;
+	p_DIMag1FixedUnclampRS : UDINT;
+	p_DIMag1RemoteClampRS : UDINT;
+	p_DIMag1RemoteUnclampRS : UDINT;
+	p_DIMag2FixedClampRS : UDINT;
+	p_DIMag2FixedUnclampRS : UDINT;
+	p_DIMag2RemoteClampRS : UDINT;
+	p_DIMag2RemoteUnclampRS : UDINT;
+	p_DIMag3FixedClampRS : UDINT;
+	p_DIMag3FixedUnclampRS : UDINT;
+	p_DIMag3RemoteClampRS : UDINT;
+	p_DIMag3RemoteUnclampRS : UDINT;
+	p_DIMag4FixedClampRS : UDINT;
+	p_DIMag4FixedUnclampRS : UDINT;
+	p_DIMag4RemoteClampRS : UDINT;
+	p_DIMag4RemoteUnclampRS : UDINT;
+	p_DIInShutterOpenRS : UDINT;
+	p_DIInShutterCloseRS : UDINT;
+	p_DIInShutterOpenRS2 : UDINT;
+	p_DIInShutterCloseRS2 : UDINT;
+	p_DIInShutterOpenRS3 : UDINT;
+	p_DIInShutterCloseRS3 : UDINT;
+	p_DIOutShutterOpenRS : UDINT;
+	p_DIOutShutterCloseRS : UDINT;
+	p_DIOutShutterOpenRS2 : UDINT;
+	p_DIOutShutterCloseRS2 : UDINT;
+	p_DIMagPresentSen1 : UDINT;
+	p_DIMagPresentSen2 : UDINT;
+	p_DIMagPresentSen3 : UDINT;
+	p_DIMagPresentSen4 : UDINT;
+	p_DIMagConvEntSen1 : UDINT;
+	p_DIMagConvEntSen2 : UDINT;
+	p_DIMagConvEntSen3 : UDINT;
+	p_DIMagConvEntSen4 : UDINT;
+	p_DIMag1AGVInPosSen1 : UDINT;
+	p_DIMag1AGVInPosSen2 : UDINT;
+	p_DIMag2AGVInPosSen1 : UDINT;
+	p_DIMag2AGVInPosSen2 : UDINT;
+	p_DIMag3AGVInPosSen1 : UDINT;
+	p_DIMag3AGVInPosSen2 : UDINT;
+	p_DIMag4AGVInPosSen1 : UDINT;
+	p_DIMag4AGVInPosSen2 : UDINT;
+	p_DIMag1OrientChkSen1 : UDINT;
+	p_DIMag1OrientChkSen2 : UDINT;
+	p_DIMag2OrientChkSen1 : UDINT;
+	p_DIMag2OrientChkSen2 : UDINT;
+	p_DIMag3OrientChkSen1 : UDINT;
+	p_DIMag3OrientChkSen2 : UDINT;
+	p_DIMag4OrientChkSen1 : UDINT;
+	p_DIMag4OrientChkSen2 : UDINT;
+	p_DIDSWidthChkSen : UDINT;
+	p_DIMagConvHeightSen1 : UDINT;
+	p_DIMagConvHeightSen2 : UDINT;
+	p_DIMagConvHeightSen3 : UDINT;
+	p_DIMagConvHeightSen4 : UDINT;
+	p_DIMagConvSmallMagSen1 : UDINT;
+	p_DIMagConvSmallMagSen2 : UDINT;
+	p_DIMagConvSmallMagSen3 : UDINT;
+	p_DIMagConvSmallMagSen4 : UDINT;
+	p_DIMagConvLargeMagSen1 : UDINT;
+	p_DIMagConvLargeMagSen2 : UDINT;
+	p_DIMagConvLargeMagSen3 : UDINT;
+	p_DIMagConvLargeMagSen4 : UDINT;
+	p_DIMagConvCAB717MagSen1 : UDINT;
+	p_DIMagConvCAB717MagSen2 : UDINT;
+	p_DIMagConvCAB717MagSen3 : UDINT;
+	p_DIMagConvCAB717MagSen4 : UDINT;
+	p_DIMag1SelUnclampRS : UDINT;
+	p_DIMag2SelUnclampRS : UDINT;
+	p_DIMag3SelUnclampRS : UDINT;
+	p_DIMag4SelUnclampRS : UDINT;
+	p_DISOT1Receive : UDINT;
+	p_DISOT1Error : UDINT;
+	p_DISOT1SizeLarge : UDINT;
+	p_DISOT1Ready : UDINT;
+	p_DISOT1Available : UDINT;
+	p_DISOT2Receive : UDINT;
+	p_DISOT2Error : UDINT;
+	p_DISOT2SizeLarge : UDINT;
+	p_DISOT2Ready : UDINT;
+	p_DISOT2Available : UDINT;
+	p_DISOT3Receive : UDINT;
+	p_DISOT3Error : UDINT;
+	p_DISOT3SizeLarge : UDINT;
+	p_DISOT3Ready : UDINT;
+	p_DISOT3Available : UDINT;
+	p_DISOT4Receive : UDINT;
+	p_DISOT4Error : UDINT;
+	p_DISOT4SizeLarge : UDINT;
+	p_DISOT4Ready : UDINT;
+	p_DISOT4Available : UDINT;
+	p_DIFleetManagerActive : UDINT;
+	p_DIPullerExtSlwSen : UDINT;
+	p_DIPullerRetSlwSen : UDINT;
+	p_DIMtrPullerTorqueSig : UDINT;
+	p_DIMtrPullerAlmSig : UDINT;
+	p_DIMag1SafetyBarExtRS : UDINT;
+	p_DIMag1SafetyBarRetRS : UDINT;
+	p_DIMag2SafetyBarExtRS : UDINT;
+	p_DIMag2SafetyBarRetRS : UDINT;
+	p_DIMag3SafetyBarExtRS : UDINT;
+	p_DIMag3SafetyBarRetRS : UDINT;
+	p_DIMag4SafetyBarExtRS : UDINT;
+	p_DIMag4SafetyBarRetRS : UDINT;
+	p_DIMagWidthChkSen : UDINT;
+	p_DIMcSelfTest : UDINT;
+	p_DISimServoEn : UDINT;
+	p_DIPullerAntiJamSen : UDINT;
+	p_DICurtainSen : UDINT;
+	p_DIBypCurtainSensorPB : UDINT;
+	p_DICurtainSafetySig2 : UDINT;
+	p_DIMag1FixedSideDetect : UDINT;
+	p_DIMag1RemoteSideDetect : UDINT;
+	p_DIMag2FixedSideDetect : UDINT;
+	p_DIMag2RemoteSideDetect : UDINT;
+	p_DIMag3FixedSideDetect : UDINT;
+	p_DIMag3RemoteSideDetect : UDINT;
+	p_DIHighMagDetSen1 : UDINT;
+	p_DIHighMagDetSen2 : UDINT;
+	p_DIHighMagDetSen3 : UDINT;
+	p_DIConvClrSen : UDINT;
+	p_DIDSSafetySig : UDINT;
+	p_DIDSUnlockSafetySig : UDINT;
+	p_DITrolleyExtRS1 : UDINT;
+	p_DITrolleyExtRS2 : UDINT;
+	p_DITrolleyPreSen1 : UDINT;
+	p_DITrolleyPreSen2 : UDINT;
+	p_DISlotLckSenMag1 : UDINT;
+	p_DISlotLckSenMag2 : UDINT;
+END_VAR

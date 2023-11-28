@@ -1,0 +1,3 @@
+VAR CONSTANT
+	sSWVersion : STRING[30] := 'NAELD004C00R10L518F00'; (*LifterPlatform and TraverseLifting*)
+END_VAR

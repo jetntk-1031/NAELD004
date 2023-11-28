@@ -1,0 +1,78 @@
+(*2019-06-17*)
+(**)
+(*Action*)
+
+TYPE
+	eConvAction : 
+		(
+		ConvActIdle,
+		ConvActInit,
+		ConvActInitRev,
+		ConvActInitPshr,
+		ConvActInitPuller,
+		ConvActInitPuller1,
+		ConvActInitRej,
+		ConvActInitInsp,
+		ConvActEnt,
+		ConvActEntToInOff,
+		ConvActEntRev,
+		ConvActRev,
+		ConvActRevImmedStart,
+		ConvActEntPuller,
+		ConvActEntRej,
+		ConvActEntInsp,
+		ConvActPreExit,
+		ConvActRejResume,
+		ConvActExit,
+		ConvActExit1,
+		ConvActExitPshr,
+		ConvActExit1Pshr,
+		ConvActPshrSetAll,
+		ConvActPshrRstAll,
+		ConvActPshrSetExt,
+		ConvActPshrSetRet,
+		ConvActPshrExt,
+		ConvActPshrRet,
+		ConvActPullerSetAll,
+		ConvActPullerRstAll,
+		ConvActPullerSetExt,
+		ConvActPullerSetRet,
+		ConvActPullerExt,
+		ConvActPullerRet,
+		ConvActRotSetAll,
+		ConvActRotRstAll,
+		ConvActRotSetHome,
+		ConvActRotSetRmt,
+		ConvActRotHome,
+		ConvActRotRemote,
+		ConvActRejSetAll,
+		ConvActRejRstAll,
+		ConvActRejSetUp,
+		ConvActRejSetDown,
+		ConvActRejUp,
+		ConvActRejDown,
+		ConvActStop,
+		ConvActStopPshr,
+		ConvActStopPuller,
+		ConvActStopRej,
+		ConvActSetMtrSigOnOrLToR,
+		ConvActSetMtrDirOrRToL,
+		ConvActRstMtrSigOnOrLToR,
+		ConvActRstMtrDirOrRToL,
+		ConvActSetMtrAll,
+		ConvActRstMtrAll,
+		ConvActEntPullerServo
+		);
+END_TYPE
+
+(**)
+
+TYPE
+	eConvDir : 
+		(
+		ConvDirLToR,
+		ConvDirRToL,
+		ConvDirLToL,
+		ConvDirRToR
+		);
+END_TYPE

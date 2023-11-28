@@ -1,0 +1,67 @@
+(*2018-12-11*)
+(**)
+(*External Data*)
+VAR
+	p_bLinkDIMagPresentSen1 : REFERENCE TO BOOL;
+	p_bLinkMagConv2Clp1MtrIn : REFERENCE TO BOOL;
+	p_bLinkMagConv2Clp1MtrOut : REFERENCE TO BOOL;
+	p_bLinkDIMagPresentSen2 : REFERENCE TO BOOL;
+	p_bLinkMagConv2Clp2MtrIn : REFERENCE TO BOOL;
+	p_bLinkMagConv2Clp2MtrOut : REFERENCE TO BOOL;
+	p_bLinkDIMagPresentSen3 : REFERENCE TO BOOL;
+	p_bLinkMagConv2Clp3MtrIn : REFERENCE TO BOOL;
+	p_bLinkMagConv2Clp3MtrOut : REFERENCE TO BOOL;
+	p_bLinkDIMagPresentSen4 : REFERENCE TO BOOL;
+	p_bLinkMagConv2Clp4MtrIn : REFERENCE TO BOOL;
+	p_bLinkMagConv2Clp4MtrOut : REFERENCE TO BOOL;
+	p_bLinkFixedMagClampRS1 : REFERENCE TO BOOL;
+	p_bLinkRmtMagClampRS1 : REFERENCE TO BOOL;
+	p_bLinkFixedMagClampRS2 : REFERENCE TO BOOL;
+	p_bLinkRmtMagClampRS2 : REFERENCE TO BOOL;
+	p_bLinkFixedMagClampRS3 : REFERENCE TO BOOL;
+	p_bLinkRmtMagClampRS3 : REFERENCE TO BOOL;
+	p_bLinkFixedMagClampRS4 : REFERENCE TO BOOL;
+	p_bLinkRmtMagClampRS4 : REFERENCE TO BOOL;
+	p_bLinkMcParamMagAutoDetTm : REFERENCE TO DINT;
+	p_bLinkDIMagEntrySen : REFERENCE TO BOOL;
+	p_bLinkNtParamMagModelAutoVerify : REFERENCE TO BOOL;
+	p_bLinkMagRcpCurrRcpMagModel : REFERENCE TO USINT;
+	p_bLinkNewMagVerified1 : REFERENCE TO BOOL;
+	p_bLinkNewMagVerified3 : REFERENCE TO BOOL;
+	p_bLinkNewMagVerified4 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eLinkMag : REFERENCE TO eLDMag;
+	p_usiLinkMod : REFERENCE TO USINT;
+	p_bLinkMagRcpCurrRcpMagModel1 : REFERENCE TO USINT;
+	p_bLinkProjCurtainSenPrep : REFERENCE TO BOOL;
+	p_eLinkMcParamMagExMode : REFERENCE TO eMcMagExchangeMode;
+	p_bMag2OrientationChkSen1 : REFERENCE TO BOOL;
+	p_bMagOrientChkSenPrep : REFERENCE TO BOOL;
+	p_bMagHeightDetSen2 : REFERENCE TO BOOL;
+	p_bMagHeightDetEn : REFERENCE TO BOOL;
+	p_bMagHeightDetPrep : REFERENCE TO BOOL;
+	p_bFixedSideDetect : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eNtParamCustomerReq : REFERENCE TO eCustomer;
+	p_bHermesSvyPrep : REFERENCE TO BOOL;
+	p_bMcParamHermesSvyEn : REFERENCE TO BOOL;
+	p_bMcParamMesRFIDEn : REFERENCE TO BOOL;
+	p_diRFIDTO : REFERENCE TO DINT;
+	p_bMagPropDiffBlk : REFERENCE TO BOOL;
+	p_bNtParamAutoRcpPrep : REFERENCE TO BOOL;
+	p_bAutoRcpbMag2RcpLoaded : REFERENCE TO BOOL;
+	p_ausiSvyMagAccOrder : REFERENCE TO ARRAY[1..3] OF USINT;
+END_VAR
+(*Siemen MES*)
+VAR
+	p_tyResponseFromMES : REFERENCE TO tyStatPlatformFromMES;
+	p_bHCommModChg : REFERENCE TO BOOL;
+END_VAR
+(*We_Fabricate*)
+VAR
+	p_ausiLCSLFMagAccOrder : REFERENCE TO ARRAY[1..3] OF USINT;
+END_VAR

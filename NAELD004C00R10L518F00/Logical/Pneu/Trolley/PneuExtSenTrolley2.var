@@ -1,0 +1,22 @@
+(*2019-03-25*)
+(**)
+(*Action & State & Status*)
+VAR
+	p_PneuExtSenTrlly2Stat : UDINT;
+	p_PneuExtSenTrlly2Status : UDINT;
+	p_PneuExtSenTrlly2StatTxt : UDINT;
+END_VAR
+(**)
+(*Alarm*)
+VAR
+	p_PneuExtSenTrlly2AlmData : UDINT;
+END_VAR
+(**)
+(*Output*)
+VAR
+	p_PneuExtSenTrlly2ExtCtrl : UDINT;
+	p_PneuExtSenTrlly2RetCtrl : UDINT;
+	p_PneuExtSenTrlly2TwoCtrlOut : UDINT;
+	p_PneuExtSenTrlly2Extended : UDINT;
+	p_PneuExtSenTrlly2Retracted : UDINT;
+END_VAR

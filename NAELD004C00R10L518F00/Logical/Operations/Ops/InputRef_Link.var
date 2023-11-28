@@ -1,0 +1,19 @@
+(*2019-01-20*)
+(**)
+(*External*)
+VAR
+	p_bLinkOpsTravLifLDPaused : REFERENCE TO BOOL;
+	p_bLinkOpsMagLD1Paused : REFERENCE TO BOOL;
+	p_bLinkOpsMagLD2Paused : REFERENCE TO BOOL;
+	p_bLinkOpsMagLD3Paused : REFERENCE TO BOOL;
+	p_bLinkOpsMagLD4Paused : REFERENCE TO BOOL;
+	p_bLinkOpsMagConvLD1Paused : REFERENCE TO BOOL;
+	p_bLinkOpsMagConvLD2Paused : REFERENCE TO BOOL;
+	p_bLinkOpsMagConvLD3Paused : REFERENCE TO BOOL;
+	p_bLinkOpsMagConvLD4Paused : REFERENCE TO BOOL;
+	p_bLinkUIOpsAct : REFERENCE TO eOperationsAction;
+	p_bLinkSimuRun : REFERENCE TO BOOL;
+	p_bLinkSimuStop : REFERENCE TO BOOL;
+	p_bLinkOpsLifMagLDPaused : REFERENCE TO BOOL;
+	p_bLinkProjLifterMagPlatform : REFERENCE TO BOOL;
+END_VAR

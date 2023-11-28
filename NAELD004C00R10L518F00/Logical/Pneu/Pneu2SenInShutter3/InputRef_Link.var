@@ -1,0 +1,15 @@
+(*2019-04-09*)
+(**)
+(*External*)
+VAR
+	p_bLinkOpsRun : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bLinkDISafetyRlySig : REFERENCE TO BOOL;
+	p_bLinkDIPullerRetRS : REFERENCE TO BOOL;
+	p_bLinkDIConvLftSen : REFERENCE TO BOOL;
+	p_bLinkProjShutter3Prep : REFERENCE TO BOOL;
+	p_bLinkShutter1Extended : REFERENCE TO BOOL;
+	p_bLinkShutter1Retracted : REFERENCE TO BOOL;
+END_VAR

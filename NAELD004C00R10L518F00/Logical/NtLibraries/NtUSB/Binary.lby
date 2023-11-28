@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<Library Version="5.00.5" SubType="Binary" Description="5.00.5 - Add bEn := false for each fb when they are idling. (20210825)&#xD;&#xA;5.00.4 - Improve fbDecodeStdKey, Changed ReadIdx Size, Check Array limit. (20210707) &#xD;&#xA;5.00.3 - Improve fbDecodeStdKey .(20210408)&#xD;&#xA;5.00.2 -Debug fbDecodeStdKey. (20210329)&#xD;&#xA;5.00.1 - Improve fbReadUSBDev. (20201220)&#xD;&#xA;5.00.0 - New Library Design" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="Exported data types">Types.typ</File>
+    <File Description="Exported constants">Constants.var</File>
+    <File Description="Exported functions and function blocks">NtUSB.fun</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="dvframe" />
+    <Dependency ObjectName="AsUSB" />
+    <Dependency ObjectName="asieccon" FromVersion="0.00.0" />
+    <Dependency ObjectName="runtime" FromVersion="0.00.0" />
+    <Dependency ObjectName="standard" FromVersion="0.00.0" />
+    <Dependency ObjectName="asstring" FromVersion="0.00.0" />
+  </Dependencies>
+</Library>

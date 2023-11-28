@@ -1,0 +1,44 @@
+(*2018-12-11*)
+(**)
+(*External Data*)
+VAR
+	p_sLinkProdRcpCurrRcp0Nm : REFERENCE TO STRING[254];
+	p_sLinkProdRcpCurrRcp2Nm : REFERENCE TO STRING[254];
+	p_usiLinkProdRcpCurrRcpMcMod : REFERENCE TO USINT;
+	p_bLinkNtParamMagConv1Prep : REFERENCE TO USINT;
+	p_bLinkNtParamMagConv2Prep : REFERENCE TO USINT;
+	p_bLinkNtParamMagConv3Prep : REFERENCE TO USINT;
+	p_bLinkNtParamMagConv4Prep : REFERENCE TO USINT;
+	p_tyBufferStat1 : REFERENCE TO tyBffrStat;
+	p_tyBufferStat2 : REFERENCE TO tyBffrStat;
+	p_tyBufferStat3 : REFERENCE TO tyBffrStat;
+	p_tyBufferStat4 : REFERENCE TO tyBffrStat;
+	p_bLinkNtParamProjRotCylPrep : REFERENCE TO USINT;
+	p_bLinkProjLifterMagPlatform : REFERENCE TO BOOL;
+	p_bLinkDIPullerAntiJamSen : REFERENCE TO BOOL;
+	p_bLinkProjWorkOrderOPCUA : REFERENCE TO BOOL;
+	p_uiLinkUIBrdOutCntr : REFERENCE TO UINT;
+	p_bLinkUIBlkTravLif : REFERENCE TO BOOL;
+	p_bCurtainSenPrep : REFERENCE TO BOOL;
+	p_tyDISettings : REFERENCE TO tyDigitalInputSettings;
+	p_bOpsMagConvLD1UnclmpDone : REFERENCE TO BOOL;
+	p_bOpsMagConvLD2UnclmpDone : REFERENCE TO BOOL;
+	p_bOpsMagConvLD3UnclmpDone : REFERENCE TO BOOL;
+	p_bRlsMag1 : REFERENCE TO BOOL;
+	p_bRlsMag2 : REFERENCE TO BOOL;
+	p_bRlsMag3 : REFERENCE TO BOOL;
+	p_bEjectMag1 : REFERENCE TO BOOL;
+	p_bEjectMag2 : REFERENCE TO BOOL;
+	p_bEjectMag3 : REFERENCE TO BOOL;
+	p_bLinkDIUnlockSafetySig : REFERENCE TO BOOL;
+	p_eNtParamCustomerReq : REFERENCE TO eCustomer;
+	p_diAutoRcpTravLifPitch : REFERENCE TO DINT;
+	p_bLinkFollower1USAllow : REFERENCE TO BOOL;
+	p_bAutoRcpTravWidthDiffBlk : REFERENCE TO BOOL;
+	p_bNtParamAutoRcpPrep : REFERENCE TO BOOL;
+	p_ausiSvyMagAccOrder : REFERENCE TO ARRAY[1..3] OF USINT;
+	p_bHermesSvyPrep : REFERENCE TO BOOL;
+	p_bMcParamHermesSvyEn : REFERENCE TO BOOL;
+	p_tyAutoRcpMagRcp : REFERENCE TO ARRAY[1..4] OF tyBoardProperty;
+	p_bMcParamMesRFIDEn : REFERENCE TO BOOL;
+END_VAR

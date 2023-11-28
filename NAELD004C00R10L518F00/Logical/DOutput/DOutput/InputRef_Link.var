@@ -1,0 +1,21 @@
+(*2019-04-09*)
+(**)
+(*External Data*)
+VAR
+	p_bLinkPullerExtCtrl : REFERENCE TO BOOL;
+	p_bLinkPullerRetCtrl : REFERENCE TO BOOL;
+	p_bLinkPullConvExtCtrl : REFERENCE TO BOOL;
+	p_bLinkPullConvRetCtrl : REFERENCE TO BOOL;
+	p_eLinkAGVComProtocol : REFERENCE TO eMcAGVCommProtocol;
+	p_bLinkNtParamProjSOTSenPrep : REFERENCE TO BOOL;
+	p_bLinkOpsRun : REFERENCE TO BOOL;
+END_VAR
+(*For curtain seq*)
+VAR
+	p_bLinkAGVCommRdy1 : REFERENCE TO BOOL;
+	p_bLinkAGVCommRdy2 : REFERENCE TO BOOL;
+	p_bLinkAGVCommRdy3 : REFERENCE TO BOOL;
+	p_bLinkOpsBypCurtainSen : REFERENCE TO BOOL;
+	p_bLinkOpsBypCurtainLED : REFERENCE TO BOOL;
+	p_eNtParamCustomerReq : REFERENCE TO eCustomer;
+END_VAR

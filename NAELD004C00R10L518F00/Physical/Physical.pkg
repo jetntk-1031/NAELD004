@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<Physical xmlns="http://br-automation.co.at/AS/Physical">
+  <Objects>
+    <Object Type="Configuration" Description="Reference Job: 2023-0258A01">2Mag_MtrPuller</Object>
+    <Object Type="Configuration" Description="Reference Job: 2023-0197A01">3Mag_LD1</Object>
+    <Object Type="Configuration" Description="Reference Job: 2021-0346H01">3Mag_LD_SOT</Object>
+    <Object Type="Configuration" Description="Reference Job: 2021-0346A01">4Mag_LD</Object>
+    <Object Type="Configuration" Description="Reference Job: 2021-0137A01">3Mag_LD</Object>
+    <Object Type="Configuration" Description="Reference Job: 2020-0333A01">2Mag_LD</Object>
+    <Object Type="Configuration" Description="Reference Job: 2023-0276A01">2Mag_AIV_IOComm</Object>
+    <Object Type="Configuration" Description="Reference Job: 2021-0534A01">3Mag_RotMtrPuller_Estun</Object>
+    <Object Type="Configuration" Description="Reference Job: 2023-0230A01">3Mag_RotMtrPuller_Delta</Object>
+    <Object Type="Configuration" Description="Reference Job: 2021-0534A01">3Mag_RotMtrPuller_Del_NoRoller</Object>
+    <Object Type="Configuration" Description="Reference Job: 2021-0137A01">3Mag_LD_pneuRot_roller</Object>
+  </Objects>
+</Physical>

@@ -1,0 +1,35 @@
+(*2019-06-10*)
+(**)
+(*General*)
+VAR
+	p_eAct : REFERENCE TO eWOLogAction;
+	p_udiRstErr : REFERENCE TO UDINT;
+	p_bPrep : REFERENCE TO BOOL;
+	p_bEn : REFERENCE TO BOOL;
+	p_bDis : REFERENCE TO BOOL;
+END_VAR
+(**)
+(*Configuration*)
+VAR
+	p_tyDTStructure : REFERENCE TO DTStructure;
+	p_dtCurrDT : REFERENCE TO DATE_AND_TIME;
+END_VAR
+(**)
+(*Input*)
+VAR
+	p_udiSndBffrSize : REFERENCE TO UDINT;
+	p_udiRcvBffrSize : REFERENCE TO UDINT;
+	p_bOpsRun : REFERENCE TO BOOL;
+	p_udiFileKeepDay : REFERENCE TO UDINT;
+	p_udiRetainDataAddr : REFERENCE TO UDINT;
+	p_udiRetainDataLen : REFERENCE TO UDINT;
+	p_sRetainFileName : REFERENCE TO STRING[80];
+	p_usiAliveReqCntr : REFERENCE TO USINT;
+	p_udiAliveIdleTimeInSec : REFERENCE TO UDINT;
+	p_tAliveRcvTimeOut : REFERENCE TO TIME;
+	p_tSendLaneInfoResTm : REFERENCE TO TIME;
+	p_diTransferInTO : REFERENCE TO DINT;
+	p_sProgNm : REFERENCE TO STRING[15];
+	p_sSourceString : REFERENCE TO STRING[80];
+	p_bNtSettingsLoadDone : REFERENCE TO BOOL;
+END_VAR

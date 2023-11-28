@@ -1,0 +1,41 @@
+(*2019-03-22*)
+(**)
+(*General*)
+VAR
+	p_udiMax : REFERENCE TO UDINT;
+	p_udiRstErr : REFERENCE TO UDINT;
+END_VAR
+(**)
+(*Configuration*)
+VAR
+	p_tyDISettings : REFERENCE TO tyDigitalInputSettings;
+	p_sProgNm : REFERENCE TO STRING[15];
+END_VAR
+(**)
+VAR
+	p_diConvLftSenOnTm : REFERENCE TO DINT;
+	p_diConvLftSenOffTm : REFERENCE TO DINT;
+	p_diConvRgtSenOnTm : REFERENCE TO DINT;
+	p_diConvRgtSenOffTm : REFERENCE TO DINT;
+	p_diMagConvEntSenOnTm : REFERENCE TO DINT;
+	p_diMagConvEntSenOffTm : REFERENCE TO DINT;
+	p_diMagConvPresentSenOnTm : REFERENCE TO DINT;
+	p_diMagConvPresentSenOffTm : REFERENCE TO DINT;
+	p_diConvClrSenOnTm : REFERENCE TO DINT;
+	p_diConvClrSenOffTm : REFERENCE TO DINT;
+	p_diTrolleySenOnTm : REFERENCE TO DINT;
+	p_diTrolleySenOffTm : REFERENCE TO DINT;
+	p_tySOTSimulate1 : REFERENCE TO tySOTSigmulateSig;
+	p_tySOTSimulate2 : REFERENCE TO tySOTSigmulateSig;
+	p_tySOTSimulate3 : REFERENCE TO tySOTSigmulateSig;
+	p_tySOTSimulate4 : REFERENCE TO tySOTSigmulateSig;
+	p_bUIAGVSimulationOn : REFERENCE TO BOOL;
+	p_eAGVComProtocol : REFERENCE TO eMcAGVCommProtocol;
+	p_tyTagFromMes : REFERENCE TO tyStatFromMES;
+	p_tyDO : REFERENCE TO tyDigitalOutput;
+	p_eLDMag : REFERENCE TO eLDMag;
+	p_bPullConvHvBrd : REFERENCE TO BOOL;
+	p_bRstErrSafetyRlyRst : REFERENCE TO BOOL;
+	p_bRstCurtainSenCtrl : REFERENCE TO BOOL;
+	p_bLinkStartupRun : REFERENCE TO BOOL;
+END_VAR

@@ -1,0 +1,42 @@
+(*2019-03-25*)
+(**)
+(*Action & State & Status*)
+VAR
+	p_PullConvStat : UDINT;
+	p_PullConvStatus : UDINT;
+	p_PullConvStatTxt : UDINT;
+END_VAR
+(**)
+(*Alarm*)
+VAR
+	p_PullConvAlmData : UDINT;
+END_VAR
+(**)
+(*Output*)
+VAR
+	p_PullConvHvBrd : UDINT;
+	p_PullConvRejHvBrd : UDINT;
+	p_PullConvInspHvBrd : UDINT;
+	p_PullConvGdBrd : UDINT;
+	p_PullConvLmtSenActivated : UDINT;
+	p_PullConvMtrSigOnOrLToR : UDINT;
+	p_PullConvMtrDirOrRToL : UDINT;
+	p_PullConvPshrExtCtrl : UDINT;
+	p_PullConvPshrTwoOutputControl : UDINT;
+	p_PullConvPshrExtended : UDINT;
+	p_PullConvPshrRetracted : UDINT;
+	p_PullConvPullerExtCtrl : UDINT;
+	p_PullConvPullerRetCtrl : UDINT;
+	p_PullConvPullerTwoOutputControl : UDINT;
+	p_PullConvPullerExtended : UDINT;
+	p_PullConvPullerRetracted : UDINT;
+	p_PullConvRotRemoteCtrl : UDINT;
+	p_PullConvRotTwoOutputControl : UDINT;
+	p_PullConvRotAtRemote : UDINT;
+	p_PullConvRotAtHome : UDINT;
+	p_PullConvRejectUpCtrl : UDINT;
+	p_PullConvRejectDownCtrl : UDINT;
+	p_PullConvRejectTwoOutputControl : UDINT;
+	p_PullConvRejectAtUp : UDINT;
+	p_PullConvRejectAtDown : UDINT;
+END_VAR

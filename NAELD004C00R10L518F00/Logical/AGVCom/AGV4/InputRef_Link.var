@@ -1,0 +1,12 @@
+(*2018-12-08*)
+(**)
+(*External Data*)
+VAR
+	p_bLinkOpsRun : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_tyLinkBufferStat : REFERENCE TO tyBffrStat;
+	p_bLinkAGVOnline : REFERENCE TO BOOL;
+	p_tyLinkAGVtoDTMag : REFERENCE TO tyTagAGVToDTMag;
+END_VAR

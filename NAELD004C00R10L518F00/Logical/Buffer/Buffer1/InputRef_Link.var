@@ -1,0 +1,50 @@
+(*2019-04-09*)
+(**)
+(*External*)
+VAR
+	p_bLinkStartupRun : REFERENCE TO BOOL;
+	p_bLinkNtParamProjMagConvPrep : REFERENCE TO BOOL;
+	p_eLinkOpsMagLDBufferAct : REFERENCE TO eBufferAction;
+	p_eLinkOpsMagConvLDBufferAct : REFERENCE TO eBufferAction;
+END_VAR
+(**)
+VAR
+	p_diLinkSltToSltDist : REFERENCE TO DINT;
+	p_bLinkMcParamProdSelTopToBtm : REFERENCE TO BOOL;
+	p_bLinkPresentSen1 : REFERENCE TO BOOL;
+	p_bLinkPresentSen2 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eLinkMag : REFERENCE TO eLDMag;
+	p_usiLinkMod : REFERENCE TO USINT;
+END_VAR
+(**)
+VAR
+	p_diLinkMinSlt : REFERENCE TO DINT;
+	p_diLinkMaxSlt : REFERENCE TO DINT;
+	p_diLinkPitch : REFERENCE TO DINT;
+	p_diLinkBffrTtlSlt : REFERENCE TO DINT;
+	p_diLinkLifterBtmPosInUM : REFERENCE TO DINT;
+END_VAR
+(**)
+VAR
+	p_diLinkSltToSltDist1 : REFERENCE TO DINT;
+	p_diLinkMinSlt1 : REFERENCE TO DINT;
+	p_diLinkMaxSlt1 : REFERENCE TO DINT;
+	p_diLinkPitch1 : REFERENCE TO DINT;
+	p_diLinkBffrTtlSlt1 : REFERENCE TO DINT;
+	p_diLinkLifterBtmPosInUM1 : REFERENCE TO DINT;
+	p_bLinkNtParamProjRotCylPrep : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bLinkProjLifterMagPlatform : REFERENCE TO BOOL;
+	p_diNtParamProjMagMaxSlt : REFERENCE TO DINT;
+	p_eLinkOpsLifMagLDBufferAct : REFERENCE TO eBufferAction;
+	p_bNtParamAutoRcpPrep : REFERENCE TO BOOL;
+	p_bMcParamHermesSvyEn : REFERENCE TO BOOL;
+	p_bHermesSvyPrep : REFERENCE TO BOOL;
+	p_eNtParamCustomerReq : REFERENCE TO eCustomer;
+	p_bMcParamMesRFIDEn : REFERENCE TO BOOL;
+END_VAR

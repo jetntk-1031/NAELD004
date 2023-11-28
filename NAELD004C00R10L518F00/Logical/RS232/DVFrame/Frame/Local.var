@@ -1,0 +1,88 @@
+(*2019-05-29*)
+(**)
+(*Local Action, State & Status*)
+VAR
+	eAct : eFrmAction := FrmActIdle;
+	eStat : eFrmAction := FrmActIdle;
+	eMainStatus : eFBStatus := Idle;
+	eStatus : eFBStatus := Idle;
+	eStatus1 : eFBStatus := Idle;
+	udiStatus : UDINT := 0;
+	udiStatus1 : UDINT := 0;
+	sStatTxt : STRING[200] := '';
+	a_sStatText : ARRAY[0..50] OF STRING[200] := ['Idling','Writing RS232','Reading RS232','Reading RS232 Until Data Valid','Creating Directory','Deleting Old Alarm Log File','Appending Alarm Log File','Background Start Alarm Log','Background Stop Alarm Log',42('')];
+END_VAR
+(**)
+(*Local Alarm*)
+VAR
+	tyAlmData : tyAlmDat;
+	tyAlmData1 : tyAlmDat;
+	a_tyAlmText : ARRAY[10000..10099] OF tyAlmTxt := [(sAlmText:='Open Port Error While Reading Message',sRcyText:='Check Hardware Condition. Contact Nutek For Possible Solution.'),(sAlmText:='Read Buffer Error While Reading Message',sRcyText:='Check Hardware Condition. Contact Nutek For Possible Solution.'),(sAlmText:='Release Receive Buffer Error While Reading Message',sRcyText:='Check Hardware Condition. Contact Nutek For Possible Solution.'),(sAlmText:='Close Port Error While Reading Message',sRcyText:='Check Hardware Condition. Contact Nutek For Possible Solution.'),(sAlmText:='Open Port Error While Writing Message',sRcyText:='Check Hardware Condition. Contact Nutek For Possible Solution.'),(sAlmText:='Write Buffer Error While Writing Message',sRcyText:='Check Hardware Condition. Contact Nutek For Possible Solution.'),(sAlmText:='Close Port Error While Writing Message',sRcyText:='Check Hardware Condition. Contact Nutek For Possible Solution.'),(sAlmText:='Open Port Error While Reading Message',sRcyText:='Check Hardware Condition. Contact Nutek For Possible Solution.'),(sAlmText:='Read Buffer Error While Reading Message',sRcyText:='Check Hardware Condition. Contact Nutek For Possible Solution.'),(sAlmText:='Release Receive Buffer Error While Reading Message',sRcyText:='Check Hardware Condition. Contact Nutek For Possible Solution.'),(sAlmText:='Close Port Error While Reading Message',sRcyText:='Check Hardware Condition. Contact Nutek For Possible Solution.'),(sAlmText:='Create User Directory Error',sRcyText:='An Error Occurred While Attempting To Create User Directory. Please Contact Nutek For A Possible Solution'),(sAlmText:='Create Serial Directory Error',sRcyText:='An Error Occurred While Attempting To Create Serial Directory. Please Contact Nutek For A Possible Solution'),(sAlmText:='Create RS232 Directory Error',sRcyText:='An Error Occurred While Attempting To Create RS232 Directory. Please Contact Nutek For A Possible Solution.'),(sAlmText:='Get Directory Info Error While Deleting Old Log',sRcyText:='An Error Was Encountered While Getting Directory Info. Please Contact Nutek For A Possible Solution.'),(sAlmText:='Directory Read Error While Deleting Old Log',sRcyText:='An Error Was Encountered While Reading Directory. Please Contact Nutek For A Possible Solution.'),(sAlmText:='File Delete Error While Deleting Old Log',sRcyText:='An Error Was Encountered While Trying To Delete File. Please Contact Nutek For A Possible Solution.'),(sAlmText:='File Open Error While Writing Serial Log',sRcyText:='An Error Was Encountered While Trying To Open File. Please Contact Nutek For A Possible Solution.'),(sAlmText:='File Create Error While Writing Serial Log',sRcyText:='An Error Was Encountered While Trying To Create File. Please Contact Nutek For A Possible Solution.'),(sAlmText:='Get File Info Error While Writing Serial Log',sRcyText:='An Error Was Encountered While Getting File Info. Please Contact Nutek For A Possible Solution.'),(sAlmText:='File Write Error While Writing Serial Log',sRcyText:='An Error Was Encountered While Trying To Write File. Please Contact Nutek For A Possible Solution.'),(sAlmText:='File Close Error While Writing Serial Log',sRcyText:='An Error Was Encountered While Trying To Close File. Please Contact Nutek For A Possible Solution.'),(sAlmText:='Directory Does Not Exist While Writing Serial Log',sRcyText:='The Directory Does Not Exist. Please Contact Nutek For A Possible Solution.'),77((0))];
+END_VAR
+(**)
+(*Local Output*)
+VAR
+	sFullMsgRd : STRING[80];
+	sMsgRd : STRING[80];
+	bMsgRdValid : BOOL;
+	uiMsgRdLen : UINT;
+END_VAR
+(**)
+(*Local Input*)
+VAR
+	udiRstErr : UDINT := 0;
+	bPrep : BOOL := TRUE;
+	bEn : BOOL := TRUE;
+	bDis : BOOL := FALSE;
+	sMsgWr : STRING[80];
+	tyParam : tyFrmParam;
+	tyXOpenConfig : XOPENCONFIG := (idle:=10,tx_cnt:=2,rx_cnt:=2,tx_len:=256,rx_len:=256);
+	diStartCode1 : DINT;
+	diStartCode2 : DINT;
+	diEndCode1 : DINT;
+	diEndCode2 : DINT;
+	dtCurrDT : DATE_AND_TIME;
+	udiFileKeepDay : UDINT := 30;
+	dtCurrDTTemp : DATE_AND_TIME;
+	sProgNm : STRING[15] := 'RS232';
+	bNtSettingsLoadDone : BOOL := TRUE;
+END_VAR
+(**)
+(*Local*)
+VAR
+	ErrorCode : UINT;
+	DevLink_0 : DevLink;
+	bFileDataRead : BOOL;
+	bBuildIn : BOOL;
+	bFolderValid : BOOL;
+	bShareFolderEn : BOOL;
+	bRstErr : BOOL;
+	udiRstErrOld : UDINT;
+	bInitDone : BOOL;
+	bInitialDone : BOOL;
+	fbFullWrite : fbFrmFullWrite;
+	fbFullRead : fbFrmFullRead;
+	fbFullReadUntilValid : fbFrmFullReadUntilValid;
+	iStartCodeLen : INT;
+	siStartCode1 : SINT;
+	siStartCode2 : SINT;
+	sStartCode : STRING[2];
+	iStartCodePos : INT;
+	usiStep : USINT;
+	sDT : STRING[80];
+	bFrmLog : BOOL;
+	iWriteLogStep : INT := 0;
+	udiLogCntr : UDINT;
+	udiWriteLogCntr : UDINT;
+	a_sLogList : ARRAY[0..c_udiFrmHistoryMax] OF STRING[200];
+	fbFileAppend1 : fbFileFullAppend;
+	fbFileAppend2 : fbFileFullAppend;
+	fbDirCreate1 : fbDirCreate;
+	fbDirCreate2 : fbDirCreate;
+	fbDirCreate3 : fbDirCreate;
+	fbFileRead1 : fbFileFullRead;
+	sFileLocation : STRING[254] := '123';
+	sFileData : STRING[254];
+	fbFileOldDel1 : fbFileOldDel;
+	udiModuleNum : UDINT := 6211;
+END_VAR

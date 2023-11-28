@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="7" ArVersion="B4.82">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <Task Name="LFFollower">
+        <Variable Name="tyFollowerToLeaderTag">
+          <Variable Name="sCurrProdRcp" />
+          <Variable Name="diCurrProdWidthUS" />
+          <Variable Name="diCurrProdWidthDS" />
+          <Variable Name="sCurrMagRcp" />
+          <Variable Name="sIPAddr" />
+          <Variable Name="sMcNm" />
+          <Variable Name="bSectionLeader" />
+          <Variable Name="usiRunTm" />
+          <Variable Name="bProdRcpErr" />
+          <Variable Name="bProdWidthErr" />
+          <Variable Name="bMagRcpErr" />
+          <Variable Name="bSyncTmErr" />
+          <Variable Name="eCurrMachineStat" />
+          <Variable Name="bProdChgOverActive" />
+        </Variable>
+        <Variable Name="tyLeaderToFollowerTag">
+          <Variable Name="sReqProdRcpNm" />
+          <Variable Name="diReqProdRcpWidth" />
+          <Variable Name="sReqMagRcpNm" />
+          <Variable Name="bMnlAccData" />
+          <Variable Name="bBypassMnlAccData" />
+          <Variable Name="bBlkDS" />
+          <Variable Name="bBlkUS" />
+          <Variable Name="bBypassWidthChk" />
+          <Variable Name="bSetTm" />
+          <Variable Name="dtTm" />
+          <Variable Name="uiTmZone" />
+          <Variable Name="usiRunTm" />
+          <Variable Name="bProdNameUSWarn" />
+          <Variable Name="bProdNameDSWarn" />
+          <Variable Name="bProdWidthUSWarn" />
+          <Variable Name="bProdWidthDSWarn" />
+          <Variable Name="bLeaderSeqCtrlInActive" />
+        </Variable>
+      </Task>
+      <Task Name="LCS">
+        <Variable Name="tyTagNm">
+          <Variable Name="eAct" />
+          <Variable Name="eStat" />
+          <Variable Name="udiStatus" />
+          <Variable Name="sErrMsg" />
+          <Variable Name="iIdxAct" />
+          <Variable Name="iIdxStat" />
+          <Variable Name="tyProdRcpInfo">
+            <Variable Name="sRcpNm" />
+            <Variable Name="diWidthInUM" />
+            <Variable Name="diMinSltValue" />
+            <Variable Name="diMaxSltValue" />
+            <Variable Name="diPitch" />
+            <Variable Name="usiMcMod" />
+            <Variable Name="usiFlippedBrd" />
+            <Variable Name="bTopToBtm" />
+            <Variable Name="bLongBrd" />
+            <Variable Name="sDisplayInfo" />
+            <Variable Name="dtLastModified" />
+          </Variable>
+          <Variable Name="tyCurrProdRcpParam">
+            <Variable Name="sRcpNm" />
+            <Variable Name="diWidthInUM" />
+            <Variable Name="diMinSltValue" />
+            <Variable Name="diMaxSltValue" />
+            <Variable Name="diPitch" />
+            <Variable Name="usiMcMod" />
+            <Variable Name="usiFlippedBrd" />
+            <Variable Name="bTopToBtm" />
+            <Variable Name="bLongBrd" />
+            <Variable Name="sDisplayInfo" />
+            <Variable Name="dtLastModified" />
+          </Variable>
+          <Variable Name="sCurrRcpNm" />
+          <Variable Name="rCurrWidth" />
+          <Variable Name="eCurrOpsStatus" />
+          <Variable Name="usiBrdStatus" />
+          <Variable Name="usiMode" />
+          <Variable Name="iTopToBtm" />
+          <Variable Name="sLastModified" />
+          <Variable Name="bMngRcpEn" />
+          <Variable Name="bLiveData" />
+          <Variable Name="bLFEn" />
+        </Variable>
+      </Task>
+      <Task Name="AGV">
+        <Variable Name="tyAGVToDTMag">
+          <Variable Name="bVEHInPos1" />
+          <Variable Name="bVEHInPos2" />
+          <Variable Name="bVEHInPos3" />
+          <Variable Name="bVEHAuto" />
+          <Variable Name="bVEH1Occupied" />
+          <Variable Name="bVEH2Occupied" />
+          <Variable Name="bVEH3Occupied" />
+          <Variable Name="bVEHRunning" />
+        </Variable>
+        <Variable Name="tyDTMagToAGV">
+          <Variable Name="bEStopErr" />
+          <Variable Name="bCI1MagazineEmpty" />
+          <Variable Name="bCI1Rdy" />
+          <Variable Name="bCI1Auto" />
+          <Variable Name="bCI1Occupied" />
+          <Variable Name="bCI1Running" />
+          <Variable Name="bCI1IncorrectMagazineModel" />
+          <Variable Name="bCI2MagazineEmpty" />
+          <Variable Name="bCI2Rdy" />
+          <Variable Name="bCI2Auto" />
+          <Variable Name="bCI2Occupied" />
+          <Variable Name="bCI2Running" />
+          <Variable Name="bCI2IncorrectMagazineModel" />
+          <Variable Name="bCI3MagazineEmpty" />
+          <Variable Name="bCI3Rdy" />
+          <Variable Name="bCI3Auto" />
+          <Variable Name="bCI3Occupied" />
+          <Variable Name="bCI3Running" />
+          <Variable Name="bCI3IncorrectMagazineModel" />
+        </Variable>
+        <Variable Name="tyTagFromMes">
+          <Variable Name="tyTagStatOfPlatforms" EnableArrayElements="True" />
+        </Variable>
+        <Variable Name="tyTagToMes">
+          <Variable Name="tyTagStatOfPlatforms" EnableArrayElements="True" />
+        </Variable>
+      </Task>
+      <Task Name="ProdRcp">
+        <Variable Name="a_tyCurrList" />
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

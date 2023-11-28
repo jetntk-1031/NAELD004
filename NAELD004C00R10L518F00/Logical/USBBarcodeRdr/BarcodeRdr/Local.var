@@ -1,0 +1,76 @@
+(* 2020-08-29 *)
+(**)
+(*Local Action, State & Status*)
+VAR
+	eAct : eUSBRdrAction := USBRdrActIdle;
+	eStat : eUSBRdrAction := USBRdrActIdle;
+	eMainStatus : eFBStatus := Idle;
+	eStatus : eFBStatus := Idle;
+	eStatus1 : eFBStatus := Idle;
+	udiStatus : UDINT := 0;
+	udiStatus1 : UDINT := 0;
+	udiStatus2 : UDINT := 0;
+	sStatTxt : STRING[200] := '';
+	a_sStatText : ARRAY[0..60] OF STRING[200] := ['Idling','Initializing','Initializing With Reverse','Initializing With Pusher','Initializing With Puller','Initializing With Reject','Initializing With Inspection','Entering Board','Entering Board Until Inlet Signal Off','Entering Board With Reverse','Reversing Board','Reversing Board With Immediate Start Conv','Entering Board With Puller','Entering Board With Reject','Entering Board With Inspection','Pre Exiting Board','Resuming Reject Board',2('Exiting Board'),2('Exiting Board With Pusher'),'Pusher Setting All Control','Pusher Resetting All Control','Pusher Setting Extend','Pusher Setting Retract','Pusher Extending','Pusher Retracting','Puller Setting All Control','Puller Resetting All Control','Puller Setting Extend','Puller Setting Retract','Puller Extending','Puller Retracting','Rotating Setting All Control','Rotating Resetting All Control','Rotating Setting Home','Rotating Setting Remote','Rotating Turning Home','Rotating Turning Remote','Reject Setting All Control','Reject Resetting All Control','Reject Setting Up','Reject Setting Down','Reject Going Up','Reject Going Down','Stopping','Stopping With Pusher','Stopping With Puller','Stopping With Reject','Turning On Motor Signal','Turning On Motor Direction','Turning Off Motor Signal','Turning Off Motor Direction','Turning On All Motor Output','Turning Off All Motor Output',6('')];
+END_VAR
+(**)
+(*Local Alarm*)
+VAR
+	tyAlmData : tyAlmDat;
+	tyAlmData1 : tyAlmDat;
+	tyAlmData2 : tyAlmDat;
+	a_tyAlmText : ARRAY[10000..10199] OF tyAlmTxt := [(sAlmText:='Device Lost Connection',sRcyText:='Reset And Resume Operation.'),(sAlmText:='Device Removed Without Safety Remove. Please Restart PLC.',sRcyText:='Power Cycle Is Needed For USB Connectivity.'),(sAlmText:='Device Not Found.',sRcyText:='USB Without Safety Removed. Power Cycle Is Needed For USB Connectivity.'),(sAlmText:='Device Not Open.',sRcyText:='Frame Close Failed. Reset And Resume Operation.'),(sAlmText:='Device Not Connected. VID and PID Is Invalid',sRcyText:='Please Check The Vendor ID & Product ID.'),6((0)),(sAlmText:='Create User Directory Error',sRcyText:='An Error Occurred While Attempting To Create User Directory.Please Contact Nutek For A Possible Solution.'),(sAlmText:='Create Serial Directory Error',sRcyText:='An Error Occurred While Attempting To Create Serial Directory.Please Contact Nutek For A Possible Solution.'),(sAlmText:='Create USB Directory Error',sRcyText:='An Error Occurred While Attempting To Create USB Directory.Please Contact Nutek For A Possible Solution.'),(sAlmText:='Get Directory Info Error While Deleting Old Log',sRcyText:='An Error Was Encountered While Getting Directory Info. Please Contact Nutek For A Possible Solution.'),(sAlmText:='Directory Read Error While Deleting Old Log',sRcyText:='An Error Was Encountered While Reading Directory. Please Contact Nutek For A Possible Solution.'),(sAlmText:='File Delete Error While Deleting Old Log',sRcyText:='An Error Was Encountered While Trying To Delete File. Please Contact Nutek For A Possible Solution.'),(sAlmText:='File Open Error While Writing Serial Log',sRcyText:='An Error Was Encountered While Trying To Open File. Please Contact Nutek For A Possible Solution.'),(sAlmText:='File Create Error While Writing Serial Log',sRcyText:='An Error Was Encountered While Trying To Create File. Please Contact Nutek For A Possible Solution.'),(sAlmText:='Get File Info Error While Writing Serial Log',sRcyText:='An Error Was Encountered While Getting File Info. Please Contact Nutek For A Possible Solution.'),(sAlmText:='File Write Error While Writing Serial Log',sRcyText:='An Error Was Encountered While Trying To Write File. Please Contact Nutek For A Possible Solution.'),(sAlmText:='File Close Error While Writing Serial Log',sRcyText:='An Error Was Encountered While Trying To Close File. Please Contact Nutek For A Possible Solution.'),(sAlmText:='Directory Does Not Exist While Writing Serial Log',sRcyText:='The Directory Does Not Exist. Please Contact Nutek For A Possible Solution.'),177((0))];
+END_VAR
+(**)
+(*Local Output*)
+VAR
+	sBarcodeOut : STRING[255];
+END_VAR
+(**)
+(*Local Input*)
+VAR
+	udiRstErr : UDINT := 0;
+	bPrep : BOOL := TRUE;
+	bEn : BOOL := FALSE;
+	bDis : BOOL := FALSE;
+	bManual : BOOL := FALSE;
+	sProgNm : STRING[15] := 'USBRdr';
+	bNtSettingsLoadDone : BOOL := TRUE;
+	uiVendorID : DINT := 16#05F9; (*1529*)
+	uiProductID : DINT := 16#220C; (*8716*)
+	bUSBRun : BOOL := FALSE;
+	bScannerEn : BOOL := FALSE;
+	dtCurrDT : DATE_AND_TIME := DT#1970-01-01-00:00:00;
+	udiFileKeepDay : UDINT := 30;
+END_VAR
+(**)
+(*Local*)
+VAR
+	bRstErr : BOOL;
+	udiRstErrOld : UDINT;
+	bInitDone : BOOL;
+	bInitialDone : BOOL;
+	fbGetUSBDevice : fbGetUSBDev;
+	fbReadUSBDevice : fbReadUSBDev;
+	fbRmvUSBDevice : fbSafetyRmvUSB;
+	fbUSBTimer : TON := (PT:=T#5s);
+	bUSBRmv : BOOL;
+	bUSBDisconnected : BOOL;
+	bNodeExist : BOOL;
+END_VAR
+(*Local Log file param*)
+VAR
+	usiStep : USINT;
+	sDT : STRING[80];
+	udiLogCntr : UDINT;
+	udiWriteLogCntr : UDINT;
+	iWriteLogStep : INT;
+	dtCurrDTTemp : DATE_AND_TIME;
+	a_sLogList : ARRAY[0..9] OF STRING[200];
+	fbFileAppend1 : fbFileFullAppend;
+	fbDirCreate1 : fbDirCreate;
+	fbDirCreate2 : fbDirCreate;
+	fbDirCreate3 : fbDirCreate;
+	fbFileOldDel1 : fbFileOldDel;
+	udiModuleNum : UDINT := 4601;
+END_VAR

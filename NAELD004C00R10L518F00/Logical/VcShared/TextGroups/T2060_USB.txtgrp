@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.8.4.50 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="T2060_USB">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="32"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="713464" Value="Decimal"/>
+    <Text ID="713465" Value="Vendor ID"/>
+    <Text ID="713466" Value="Product ID"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="713464" Value=""/>
+    <Text ID="713465" Value=""/>
+    <Text ID="713466" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="zh">
+    <Text ID="713464" Value=""/>
+    <Text ID="713465" Value=""/>
+    <Text ID="713466" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="713464" Value=""/>
+    <Text ID="713465" Value=""/>
+    <Text ID="713466" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="713464" Value="0"/>
+    <Index ID="713465" Value="1"/>
+    <Index ID="713466" Value="2"/>
+  </IndexMap>
+</TextGroup>

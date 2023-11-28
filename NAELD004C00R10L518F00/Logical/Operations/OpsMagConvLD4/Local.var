@@ -1,0 +1,162 @@
+(*2019-04-16*)
+(**)
+(*Local Action, State & Status*)
+VAR
+	eStatus : eFBStatus := Idle;
+	udiStatus : UDINT := 0;
+	udiStatus1 : UDINT := 0;
+END_VAR
+(**)
+(*Local Alarm*)
+VAR
+	tyAlmData : tyAlmDat;
+	tyAlmData1 : tyAlmDat;
+	a_tyAlmText : ARRAY[10000..10099] OF tyAlmTxt := [(sAlmText:='Magazine Not Present'),(sAlmText:='Magazine 1 Is Empty'),(sAlmText:='Magazine 2 Is Empty'),(sAlmText:='Magazine 3 Is Empty'),(sAlmText:='Wrong Magazine Width On Position 4'),(sAlmText:='Wrong Magazine Height On Position 4'),(sAlmText:='Waiting for Unload Magazine 4'),2(0),91((0))];
+END_VAR
+(**)
+(*Local Output*)
+VAR
+	sStepTxt : STRING[80];
+	bPaused : BOOL;
+END_VAR
+(**)
+VAR
+	eBufferAct : eBufferAction;
+	eSelClampCtrl : ePneuAction;
+	eMagConv2ClpAct : eMagConv2ClpAction;
+	eDSSMEMAAct : eSMEMAAction;
+	eAGVMagAct : eAGVMagAction;
+	eSafetyBarAct : ePneuAction;
+	eUSSOTAct : eSOTAction;
+	eDSSOTAct : eSOTAction;
+END_VAR
+(**)
+VAR
+	bOpsInitDone : BOOL;
+	bMagBffrAvl : BOOL;
+	bNewMagAllw : BOOL;
+	bRlsMagAllw : BOOL;
+	bStepMagExitedWait : BOOL;
+	bStepMagVerification : BOOL;
+	bStepMagMtyExit : BOOL;
+	bStepMagUSCom : BOOL;
+END_VAR
+(**)
+(*Local Input*)
+VAR
+	udiRstErr : UDINT := 0;
+	bEn : BOOL := TRUE;
+	bDis : BOOL := FALSE;
+	bRun : BOOL;
+	bStop : BOOL;
+	bStep : BOOL;
+	usiMagConv : USINT;
+	bInfoEn : BOOL;
+	bInfoMag1Mty : BOOL;
+	bInfoMag2Mty : BOOL;
+	bInfoMag3Mty : BOOL;
+	a_bMagDis : ARRAY[1..4] OF BOOL;
+	bNewMag : BOOL;
+	bRlsMag : BOOL;
+	tyBufferStat1 : tyBffrStat;
+	tyBufferStat2 : tyBffrStat;
+	tyBufferStat3 : tyBffrStat;
+	tyBufferStat4 : tyBffrStat;
+	bMagClampRS1 : BOOL;
+	bMagClampRS2 : BOOL;
+	bMagClampRS3 : BOOL;
+	bMagClampRS4 : BOOL;
+	bMagEntrySen1 : BOOL;
+	bMagEntrySen2 : BOOL;
+	bMagEntrySen3 : BOOL;
+	bMagEntrySen4 : BOOL;
+	bMagPresentSen1 : BOOL;
+	bMagPresentSen2 : BOOL;
+	bMagPresentSen3 : BOOL;
+	bMagPresentSen4 : BOOL;
+	bBufferMagPresent1 : BOOL;
+	bBufferMagPresent2 : BOOL;
+	bBufferMagPresent3 : BOOL;
+	bBufferMagPresent4 : BOOL;
+	dtBufferMagPresentTm1 : DATE_AND_TIME;
+	dtBufferMagPresentTm2 : DATE_AND_TIME;
+	dtBufferMagPresentTm3 : DATE_AND_TIME;
+	dtBufferMagPresentTm4 : DATE_AND_TIME;
+	eBufferStat : eBufferAction;
+	eBufferStatus : eFBStatus;
+	eMagConv2ClpStat : eMagConv2ClpAction;
+	eMagConv2ClpStatus : eFBStatus;
+	bMagConv2ClpHvMag : BOOL;
+	eDSSMEMAStat : eSMEMAAction;
+	eDSSMEMAStatus : eFBStatus;
+	bDSSMEMAConvStart : BOOL;
+	eAGVMagStat : eAGVMagAction;
+	eAGVMagStatus : eFBStatus;
+	bAGVMagMcRunRdy : BOOL;
+	tyAGVToDTMag : tyTagAGVToDTMag;
+	sProgNm : STRING[15] := 'Ops MagConvUL';
+	bNtSettingsLoadDone : BOOL := TRUE;
+END_VAR
+(**)
+(*Local*)
+VAR
+	bRstErr : BOOL;
+	udiRstErrOld : UDINT;
+	bInitDone : BOOL;
+	bInitialDone : BOOL;
+	eOpsStep : eMagConvLDStep := MagConvLDStepNA;
+	eGotoOpsStep : eMagConvLDStep := MagSetupULStepInitPneu;
+	bMagMtyExitedWait : BOOL;
+	udi : UDINT;
+	udi1 : UDINT;
+	udiCount : UDINT;
+	udiCmpTm : UDINT;
+	udiMagAllwGo : UDINT;
+	a_tyMagAllwBffrStat : ARRAY[1..4] OF tyBffrStat;
+	a_bMagAllwMagClamped : ARRAY[1..4] OF BOOL;
+	a_bMagAllwMagPresent : ARRAY[1..4] OF BOOL;
+	a_udiMagAllwMagPresentTm : ARRAY[1..4] OF UDINT;
+	a_udiMagAllwPriority : ARRAY[1..4] OF UDINT;
+	a_udiMagAllwSum : ARRAY[1..4] OF UDINT;
+	p_tyLocalBufferStat : REFERENCE TO tyBffrStat;
+	p_bLocalMagEntrySen : REFERENCE TO BOOL;
+	p_bLocalBufferMagPresent : REFERENCE TO BOOL;
+	p_dtLocalBufferMagPresentTm : REFERENCE TO DATE_AND_TIME;
+END_VAR
+(**)
+VAR
+	fbWrongMagTm : TON := (PT:=T#5000ms);
+	fbMagAutoDetTm : TON := (PT:=T#2000ms);
+	fbMagRemovedTm : TON := (PT:=T#2000ms);
+	fbEntSenOff : TON := (PT:=T#1000ms);
+	fbVerifyWarningDelay : TON := (PT:=T#1000ms);
+	bNewMagAutoDetected : BOOL;
+	bNewMagVerified : BOOL;
+	bNewMagVerifyStarted : BOOL;
+	bIncorrectMagazineModel : BOOL;
+	bSetMagFull : BOOL;
+	bMagToAGVAvailable : BOOL;
+	bWrongHeight : BOOL;
+	bWrongWidth : BOOL;
+	bMagSizeLarge : BOOL;
+	bLimitSenActivated : BOOL;
+END_VAR
+VAR RETAIN
+	bManualUnloadMag : BOOL;
+END_VAR
+VAR
+	bAIVInPos : BOOL;
+END_VAR
+VAR RETAIN
+	bMagExitedWait : BOOL;
+END_VAR
+VAR
+	usiMagModel : USINT;
+	bMagManEx : BOOL;
+	bMagAutoEx : BOOL;
+	bStepDSCom : BOOL;
+	bOpsTravLifULUpdatePullSlot : BOOL;
+	udiModuleNum : {REDUND_UNREPLICABLE} UDINT := 6071;
+END_VAR
+(**)
+(**)

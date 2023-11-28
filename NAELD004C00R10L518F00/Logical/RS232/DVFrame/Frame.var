@@ -1,0 +1,27 @@
+(*2019-05-29*)
+(**)
+(*Constant*)
+VAR CONSTANT
+	c_udiFrmHistoryMax : UDINT := 9;
+END_VAR
+(**)
+(*Action & State & Status*)
+VAR
+	p_FrmStat : UDINT;
+	p_FrmStatus : UDINT;
+	p_FrmStatTxt : UDINT;
+END_VAR
+(**)
+(*Alarm*)
+VAR
+	p_FrmAlmData : UDINT;
+	p_FrmAlmData1 : UDINT;
+END_VAR
+(**)
+(*Output*)
+VAR
+	p_FrmFullMsgRd : UDINT;
+	p_FrmMsgRd : UDINT;
+	p_FrmMsgRdValid : UDINT;
+	p_FrmMsgRdLen : UDINT;
+END_VAR

@@ -1,0 +1,132 @@
+(*2019-04-16*)
+(**)
+(*Local Action, State & Status*)
+VAR
+	eStatus : eFBStatus := Idle;
+	udiStatus : UDINT := 0;
+	udiStatus1 : UDINT := 0;
+END_VAR
+(**)
+(*Local Alarm*)
+VAR
+	tyAlmData : tyAlmDat;
+	tyAlmData1 : tyAlmDat;
+	a_tyAlmText : ARRAY[10000..10099] OF tyAlmTxt := [(sAlmText:='Magazine Not Present'),(sAlmText:='Magazine 1 Is Empty'),(sAlmText:='Magazine 2 Is Empty'),(sAlmText:='Magazine 3 Is Empty'),(sAlmText:='Lifter Pre-Exit Position Are Invalid',sRcyText:='Reset And Resume Operation. If The Problem Persists, Please Contact Nutek For A Possible Solution.'),(sAlmText:='Lifter Exit Position Are Invalid',sRcyText:='Reset And Resume Operation. If The Problem Persists, Please Contact Nutek For A Possible Solution.'),94(0)];
+END_VAR
+(**)
+(*Local Output*)
+VAR
+	sStepTxt : STRING[80];
+	bPaused : BOOL;
+END_VAR
+(**)
+VAR
+	eLifterAct : eLifterAction;
+	eBufferAct1 : eBufferAction;
+	eBufferAct2 : eBufferAction;
+	eBufferAct3 : eBufferAction;
+	eDSSMEMAAct1 : eSMEMAAction;
+	eDSSMEMAAct2 : eSMEMAAction;
+	eDSSMEMAAct3 : eSMEMAAction;
+END_VAR
+(**)
+VAR
+	diGoUnloadSlt1 : DINT;
+	diGoUnloadSlt2 : DINT;
+	diGoUnloadSlt3 : DINT;
+	eMagNxtUnload : eLifMagLDMagNxtUnload;
+	bBffrExitBrd : BOOL;
+	bUnloadingMov : BOOL;
+	bUnloading : BOOL;
+END_VAR
+(**)
+(*Local Input*)
+VAR
+	udiRstErr : UDINT := 0;
+	bEn : BOOL := TRUE;
+	bDis : BOOL := TRUE;
+	bRun : BOOL;
+	bStop : BOOL;
+	bStep : BOOL;
+	a_bMagDis : ARRAY[1..3] OF BOOL;
+	bUnloadMag : BOOL;
+	bDSAllow : BOOL := TRUE;
+	bPullerRotCylPrep : BOOL;
+	bPullerNoRotCylExitStartLif : BOOL;
+	diPullerExtMaxSlt : DINT;
+	diPullerExtMinSlt : DINT;
+	bLifterSafeInitialize : BOOL := TRUE;
+	bProdRcpCurrRcpTopToBtm : BOOL;
+	diProdRcpCurrRcpPitch : DINT;
+	bMagSetupDone1 : BOOL := TRUE;
+	bMagSetupDone2 : BOOL := TRUE;
+	bMagSetupDone3 : BOOL := TRUE;
+	tyBufferStat1 : tyBffrStat;
+	tyBufferStat2 : tyBffrStat;
+	tyBufferStat3 : tyBffrStat;
+	bMagPresentSen1 : BOOL;
+	bMagPresentSen2 : BOOL;
+	bMagPresentSen3 : BOOL;
+	bBufferMagPresent1 : BOOL;
+	bBufferMagPresent2 : BOOL;
+	bBufferMagPresent3 : BOOL;
+	dtBufferMagPresentTm1 : DATE_AND_TIME;
+	dtBufferMagPresentTm2 : DATE_AND_TIME;
+	dtBufferMagPresentTm3 : DATE_AND_TIME;
+	eLifterStat : eLifterAction;
+	eLifterStatus : eFBStatus;
+	eBufferStat1 : eBufferAction;
+	eBufferStatus1 : eFBStatus;
+	eBufferStat2 : eBufferAction;
+	eBufferStatus2 : eFBStatus;
+	eBufferStat3 : eBufferAction;
+	eBufferStatus3 : eFBStatus;
+	eDSSMEMAStat1 : eSMEMAAction;
+	eDSSMEMAStatus1 : eFBStatus;
+	bDSSMEMAConvStart1 : BOOL;
+	eDSSMEMAStat2 : eSMEMAAction;
+	eDSSMEMAStatus2 : eFBStatus;
+	bDSSMEMAConvStart2 : BOOL;
+	eDSSMEMAStat3 : eSMEMAAction;
+	eDSSMEMAStatus3 : eFBStatus;
+	bDSSMEMAConvStart3 : BOOL;
+	diBufferNxtUnloadSlt1 : DINT;
+	diBufferNxtUnloadSlt2 : DINT;
+	diBufferNxtUnloadSlt3 : DINT;
+	sProgNm : STRING[15] := 'Ops LifMagUL';
+	bNtSettingsLoadDone : BOOL := TRUE;
+END_VAR
+(**)
+(*Local*)
+VAR
+	bRstErr : BOOL;
+	udiRstErrOld : UDINT;
+	bInitDone : BOOL;
+	bInitialDone : BOOL;
+	eOpsStep : eLifMagLDStep := LifMagLDStepNA;
+	eGotoOpsStep : eLifMagLDStep := LifMagLDStepInitLif;
+	eOpsStep1 : eLifMagLDStep1 := LifMagLDStep1NA;
+	eGotoOpsStep1 : eLifMagLDStep1 := LifMagLDStep1InitLif;
+	udi : UDINT;
+	udi1 : UDINT;
+	udiCount : UDINT;
+	udiCmpTm : UDINT;
+	udiMagAllwGo : UDINT;
+	a_bMagAllwMagSetupDone : ARRAY[1..3] OF BOOL;
+	a_tyMagAllwBffrStat : ARRAY[1..3] OF tyBffrStat;
+	a_bMagAllwMagPresent : ARRAY[1..3] OF BOOL;
+	a_udiMagAllwMagPresentTm : ARRAY[1..3] OF UDINT;
+	a_udiMagAllwPriority : ARRAY[1..3] OF UDINT;
+	a_udiMagAllwSum : ARRAY[1..3] OF UDINT;
+	udiModuleNum : {REDUND_UNREPLICABLE} UDINT := 6091;
+	p_tyLocalBufferStat : REFERENCE TO tyBffrStat;
+	p_bLocalBufferMagPresent : REFERENCE TO BOOL;
+	p_dtLocalBufferMagPresentTm : REFERENCE TO DATE_AND_TIME;
+	p_eLocalBufferAct : REFERENCE TO eBufferAction;
+	p_eLocalBufferStat : REFERENCE TO eBufferAction;
+	p_eLocalBufferStatus : REFERENCE TO eFBStatus;
+	p_eLocalDSSMEMAAct : REFERENCE TO eSMEMAAction;
+	p_eLocalDSSMEMAStat : REFERENCE TO eSMEMAAction;
+	p_eLocalDSSMEMAStatus : REFERENCE TO eFBStatus;
+	p_bLocalDSSMEMAConvStart : REFERENCE TO BOOL;
+END_VAR

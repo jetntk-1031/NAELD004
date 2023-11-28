@@ -1,0 +1,20 @@
+(*2019-04-09*)
+(**)
+(*External Data*)
+VAR
+	p_bLinkOpsRun : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bLinkNtParamProjPullerRotPrep : REFERENCE TO BOOL;
+	p_bLinkConvHvBrd : REFERENCE TO BOOL;
+	p_eLinkConvDir : REFERENCE TO eConvDir;
+	p_eLinkOpsTravLifPosGo : REFERENCE TO eTravLifLDPos;
+	p_bLinkDIPullExtRS : REFERENCE TO BOOL;
+	p_bLinkDIPullRetRS : REFERENCE TO BOOL;
+	p_diLinkProdRcpCurrRcpPitch : REFERENCE TO DINT;
+END_VAR
+(**)
+VAR
+	bPulled : BOOL;
+END_VAR

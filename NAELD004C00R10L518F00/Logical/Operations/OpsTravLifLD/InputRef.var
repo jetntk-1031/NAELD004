@@ -1,0 +1,305 @@
+(*2019-04-16*)
+(**)
+(*General*)
+VAR
+	p_udiRstErr : REFERENCE TO UDINT;
+	p_bEn : REFERENCE TO BOOL;
+	p_bDis : REFERENCE TO BOOL;
+	p_bRun : REFERENCE TO BOOL;
+	p_bStop : REFERENCE TO BOOL;
+	p_bStep : REFERENCE TO BOOL;
+	p_bGotoStandby : REFERENCE TO BOOL;
+	p_bUnlockCover : REFERENCE TO BOOL;
+END_VAR
+(**)
+(*Configuration*)
+VAR
+	p_sProgNm : REFERENCE TO STRING[15];
+	p_bNtSettingsLoadDone : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eLDMod : REFERENCE TO eLDMod;
+	p_eLDMag : REFERENCE TO eLDMag;
+	p_bNonBffrMod : REFERENCE TO BOOL;
+	p_bUSAllow : REFERENCE TO BOOL;
+	p_bDSAllow : REFERENCE TO BOOL;
+	p_bPullerRotCylPrep : REFERENCE TO BOOL;
+	p_diPullerExtMaxSlt : REFERENCE TO DINT;
+	p_diPullerExtMinSlt : REFERENCE TO DINT;
+END_VAR
+(**)
+VAR
+	p_bProdRcpCurrRcpTopToBtm : REFERENCE TO BOOL;
+	p_diProdRcpCurrRcpPitch : REFERENCE TO DINT;
+	p_diProdRcpCurrRcpPitchRear : REFERENCE TO DINT;
+	p_diMinSlt : REFERENCE TO DINT;
+	p_diMaxSlt : REFERENCE TO DINT;
+END_VAR
+(**)
+VAR
+	p_eUSCommMod1 : REFERENCE TO eMcSetCommMod;
+	p_eUSCommMod2 : REFERENCE TO eMcSetCommMod;
+	p_eUSCommMod3 : REFERENCE TO eMcSetCommMod;
+	p_eUSCommMod4 : REFERENCE TO eMcSetCommMod;
+	p_eDSCommMod1 : REFERENCE TO eMcSetCommMod;
+	p_eDSCommMod2 : REFERENCE TO eMcSetCommMod;
+	p_eDSCommMod3 : REFERENCE TO eMcSetCommMod;
+END_VAR
+(**)
+VAR
+	p_eUSSMEMAStat1 : REFERENCE TO eSMEMAAction;
+	p_eUSSMEMAStatus1 : REFERENCE TO eFBStatus;
+	p_bUSSMEMAUSRdy1 : REFERENCE TO BOOL;
+	p_bUSSMEMATransporting1 : REFERENCE TO BOOL;
+	p_bUSSMEMAConvStart1 : REFERENCE TO BOOL;
+	p_bUSSMEMAConvStop1 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eUSSMEMAStat2 : REFERENCE TO eSMEMAAction;
+	p_eUSSMEMAStatus2 : REFERENCE TO eFBStatus;
+	p_bUSSMEMAUSRdy2 : REFERENCE TO BOOL;
+	p_bUSSMEMATransporting2 : REFERENCE TO BOOL;
+	p_bUSSMEMAConvStart2 : REFERENCE TO BOOL;
+	p_bUSSMEMAConvStop2 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eUSSMEMAStat3 : REFERENCE TO eSMEMAAction;
+	p_eUSSMEMAStatus3 : REFERENCE TO eFBStatus;
+	p_bUSSMEMAUSRdy3 : REFERENCE TO BOOL;
+	p_bUSSMEMATransporting3 : REFERENCE TO BOOL;
+	p_bUSSMEMAConvStart3 : REFERENCE TO BOOL;
+	p_bUSSMEMAConvStop3 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eUSSMEMAStat4 : REFERENCE TO eSMEMAAction;
+	p_eUSSMEMAStatus4 : REFERENCE TO eFBStatus;
+	p_bUSSMEMAUSRdy4 : REFERENCE TO BOOL;
+	p_bUSSMEMATransporting4 : REFERENCE TO BOOL;
+	p_bUSSMEMAConvStart4 : REFERENCE TO BOOL;
+	p_bUSSMEMAConvStop4 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eDSSMEMAStat1 : REFERENCE TO eSMEMAAction;
+	p_eDSSMEMAStatus1 : REFERENCE TO eFBStatus;
+	p_bDSSMEMADSRdy1 : REFERENCE TO BOOL;
+	p_bDSSMEMAConvStart1 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eDSSMEMAStat2 : REFERENCE TO eSMEMAAction;
+	p_eDSSMEMAStatus2 : REFERENCE TO eFBStatus;
+	p_bDSSMEMADSRdy2 : REFERENCE TO BOOL;
+	p_bDSSMEMAConvStart2 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eDSSMEMAStat3 : REFERENCE TO eSMEMAAction;
+	p_eDSSMEMAStatus3 : REFERENCE TO eFBStatus;
+	p_bDSSMEMADSRdy3 : REFERENCE TO BOOL;
+	p_bDSSMEMAConvStart3 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eDSSMEMAStat4 : REFERENCE TO eSMEMAAction;
+	p_eDSSMEMAStatus4 : REFERENCE TO eFBStatus;
+	p_bDSSMEMADSRdy4 : REFERENCE TO BOOL;
+	p_bDSSMEMAConvStart4 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bUSHermesUSRdy1 : REFERENCE TO BOOL;
+	p_bUSHermesTransporting1 : REFERENCE TO BOOL;
+	p_bUSHermesStopTransport1 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bUSHermesUSRdy2 : REFERENCE TO BOOL;
+	p_bUSHermesTransporting2 : REFERENCE TO BOOL;
+	p_bUSHermesStopTransport2 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bUSHermesUSRdy3 : REFERENCE TO BOOL;
+	p_bUSHermesTransporting3 : REFERENCE TO BOOL;
+	p_bUSHermesStopTransport3 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bUSHermesUSRdy4 : REFERENCE TO BOOL;
+	p_bUSHermesTransporting4 : REFERENCE TO BOOL;
+	p_bUSHermesStopTransport4 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bDSHermesDSRdy1 : REFERENCE TO BOOL;
+	p_bDSHermesTransporting1 : REFERENCE TO BOOL;
+	p_bDSHermesStopTransport1 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bDSHermesDSRdy2 : REFERENCE TO BOOL;
+	p_bDSHermesTransporting2 : REFERENCE TO BOOL;
+	p_bDSHermesStopTransport2 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bDSHermesDSRdy3 : REFERENCE TO BOOL;
+	p_bDSHermesTransporting3 : REFERENCE TO BOOL;
+	p_bDSHermesStopTransport3 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eConvStat : REFERENCE TO eConvAction;
+	p_eConvStatus : REFERENCE TO eFBStatus;
+	p_eConvDir : REFERENCE TO eConvDir;
+	p_bConvHvBrd : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eMtrPshrStat : REFERENCE TO eMtrPshrAction;
+	p_eMtrPshrStatus : REFERENCE TO eFBStatus;
+END_VAR
+(**)
+VAR
+	p_eAWStat : REFERENCE TO eAWAction;
+	p_eAWStatus : REFERENCE TO eFBStatus;
+	p_bAWWidthPosDiff : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eAWPushOrPullerStat : REFERENCE TO eAWAction;
+	p_eAWPushOrPullerStatus : REFERENCE TO eFBStatus;
+	p_bAWPushOrPullerWidthPosDiff : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eTravStat : REFERENCE TO eTravAction;
+	p_eTravStatus : REFERENCE TO eFBStatus;
+	p_bTravAPosDiff : REFERENCE TO BOOL;
+	p_bTravBPosDiff : REFERENCE TO BOOL;
+	p_bTravCPosDiff : REFERENCE TO BOOL;
+	p_bTravDPosDiff : REFERENCE TO BOOL;
+	p_bTravEPosDiff : REFERENCE TO BOOL;
+	p_bTravPosDiff : REFERENCE TO BOOL;
+	p_bLifterBtmPosDiff : REFERENCE TO BOOL;
+	p_bLifterAPosDiff : REFERENCE TO BOOL;
+	p_bLifterBPosDiff : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eLifStat : REFERENCE TO eLifterAction;
+	p_eLifStatus : REFERENCE TO eFBStatus;
+	p_tShutterWaitTmr : REFERENCE TO TIME;
+	p_bOutShutDis : REFERENCE TO BOOL;
+	p_bMagWidthChkDis : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eInletPneuStat : REFERENCE TO ePneuAction;
+	p_eInletPneuStatus : REFERENCE TO eFBStatus;
+	p_bInletPneuCls : REFERENCE TO BOOL;
+	p_bInShutterExtended : REFERENCE TO BOOL;
+	p_bInShutterRetracted : REFERENCE TO BOOL;
+	p_bInShutterOpenRS : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eInletPneuStat2 : REFERENCE TO ePneuAction;
+	p_eInletPneuStatus2 : REFERENCE TO eFBStatus;
+	p_bInletPneuCls2 : REFERENCE TO BOOL;
+	p_bInShutterExtended2 : REFERENCE TO BOOL;
+	p_bInShutterRetracted2 : REFERENCE TO BOOL;
+	p_bInShutterOpenRS2 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eInletPneuStat3 : REFERENCE TO ePneuAction;
+	p_eInletPneuStatus3 : REFERENCE TO eFBStatus;
+	p_bInletPneuCls3 : REFERENCE TO BOOL;
+	p_bInShutterExtended3 : REFERENCE TO BOOL;
+	p_bInShutterRetracted3 : REFERENCE TO BOOL;
+	p_bInShutterOpenRS3 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eOutletPneuStat : REFERENCE TO ePneuAction;
+	p_eOutletPneuStatus : REFERENCE TO eFBStatus;
+	p_eOutletPneuStat2 : REFERENCE TO ePneuAction;
+	p_eOutletPneuStatus2 : REFERENCE TO eFBStatus;
+	p_bOutShutterOpenRS2 : REFERENCE TO BOOL;
+	p_bOutShutterOpenRS : REFERENCE TO BOOL;
+	p_bOutletShutPrep : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_ePullerStat : REFERENCE TO ePneuAction;
+	p_ePullerStatus : REFERENCE TO eFBStatus;
+END_VAR
+(**)
+(*Input*)
+VAR
+	p_bConvLftSen : REFERENCE TO BOOL;
+	p_bConvRgtSen : REFERENCE TO BOOL;
+	p_bConvClrSen : REFERENCE TO BOOL;
+	p_bPullerExtSen : REFERENCE TO BOOL;
+	p_bPullerRetSen : REFERENCE TO BOOL;
+END_VAR
+(**)
+(*Magazine*)
+VAR
+	p_bMagTransferBrd1 : REFERENCE TO BOOL;
+	p_bMagTransferBrd2 : REFERENCE TO BOOL;
+	p_bMagTransferBrd3 : REFERENCE TO BOOL;
+	p_bMagTransferBrd4 : REFERENCE TO BOOL;
+	p_bBufferMagPresent1 : REFERENCE TO BOOL;
+	p_bBufferMagPresent2 : REFERENCE TO BOOL;
+	p_bBufferMagPresent3 : REFERENCE TO BOOL;
+	p_bBufferMagPresent4 : REFERENCE TO BOOL;
+	p_diBufferNxtUnloadSlt1 : REFERENCE TO DINT;
+	p_diBufferNxtUnloadSlt2 : REFERENCE TO DINT;
+	p_diBufferNxtUnloadSlt3 : REFERENCE TO DINT;
+	p_diBufferNxtUnloadSlt4 : REFERENCE TO DINT;
+END_VAR
+(**)
+VAR
+	p_bDBAOnRgtSen : REFERENCE TO BOOL;
+	p_eConvDirection : REFERENCE TO eConvDir;
+	p_bLeftSen : REFERENCE TO BOOL;
+	p_bRightSen : REFERENCE TO BOOL;
+	p_bTravIsHomed : REFERENCE TO BOOL;
+	p_bLifterBtmIsHomed : REFERENCE TO BOOL;
+	p_diSltToSltDist : REFERENCE TO DINT;
+	p_bMagWidthChkSenOn : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bStepMagConvLD1DSCom : REFERENCE TO BOOL;
+	p_bStepMagConvLD2DSCom : REFERENCE TO BOOL;
+	p_bStepMagConvLD3DSCom : REFERENCE TO BOOL;
+	p_bStepMagConvLD4DSCom : REFERENCE TO BOOL;
+	p_bMCLD1AGVCommRdy : REFERENCE TO BOOL;
+	p_bMCLD2AGVCommRdy : REFERENCE TO BOOL;
+	p_bMCLD3AGVCommRdy : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_diNtParamPullerHeightInMM : REFERENCE TO DINT;
+END_VAR
+(**)
+VAR
+	p_bMCSelfTest : REFERENCE TO BOOL;
+	p_bPullerNoRotCylStartPull : REFERENCE TO BOOL;
+	p_bPullerRotHmRS : REFERENCE TO BOOL;
+	p_bCurtainSenPB : REFERENCE TO BOOL;
+	p_bPneuUnclmpFBDone : REFERENCE TO BOOL;
+	p_siCntrPullLmt : REFERENCE TO SINT;
+	p_bShutter2Prep : REFERENCE TO BOOL;
+	p_bShutter3Prep : REFERENCE TO BOOL;
+	p_bOutShutter2Prep : REFERENCE TO BOOL;
+END_VAR
+(**)

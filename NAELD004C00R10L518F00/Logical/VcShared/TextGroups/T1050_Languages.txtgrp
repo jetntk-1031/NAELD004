@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.8.4.50 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="T1050_Languages">
+  <Property Name="Description" Value="Languages"/>
+  <Property Name="Index" Value="5"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="189764" Value=" "/>
+    <Text ID="189765" Value=" "/>
+    <Text ID="189766" Value=" "/>
+    <Text ID="189767" Value=" "/>
+    <Text ID="189768" Value=" "/>
+    <Text ID="189769" Value=" "/>
+    <Text ID="189770" Value=" "/>
+    <Text ID="189771" Value=" "/>
+    <Text ID="189772" Value=" "/>
+    <Text ID="189773" Value=" "/>
+    <Text ID="189774" Value=" "/>
+    <Text ID="189775" Value=" "/>
+    <Text ID="189776" Value=" "/>
+    <Text ID="189777" Value=" "/>
+    <Text ID="189778" Value=" "/>
+    <Text ID="189779" Value=" "/>
+    <Text ID="189780" Value=" "/>
+    <Text ID="189781" Value=" "/>
+    <Text ID="279683" Value="English"/>
+    <Text ID="279684" Value="Deutsch"/>
+    <Text ID="279685" Value="中文"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="189764" Value=" "/>
+    <Text ID="189765" Value=" "/>
+    <Text ID="189766" Value=" "/>
+    <Text ID="189767" Value=" "/>
+    <Text ID="189768" Value=" "/>
+    <Text ID="189769" Value=" "/>
+    <Text ID="189770" Value=" "/>
+    <Text ID="189771" Value=" "/>
+    <Text ID="189772" Value=" "/>
+    <Text ID="189773" Value=" "/>
+    <Text ID="189774" Value=" "/>
+    <Text ID="189775" Value=" "/>
+    <Text ID="189776" Value=" "/>
+    <Text ID="189777" Value=" "/>
+    <Text ID="189778" Value=" "/>
+    <Text ID="189779" Value=" "/>
+    <Text ID="189780" Value=" "/>
+    <Text ID="189781" Value=" "/>
+    <Text ID="279683" Value="English"/>
+    <Text ID="279684" Value="Deutsch"/>
+    <Text ID="279685" Value="中文"/>
+  </TextLayer>
+  <TextLayer LanguageId="zh">
+    <Text ID="189764" Value=" "/>
+    <Text ID="189765" Value=" "/>
+    <Text ID="189766" Value=" "/>
+    <Text ID="189767" Value=" "/>
+    <Text ID="189768" Value=" "/>
+    <Text ID="189769" Value=" "/>
+    <Text ID="189770" Value=" "/>
+    <Text ID="189771" Value=" "/>
+    <Text ID="189772" Value=" "/>
+    <Text ID="189773" Value=" "/>
+    <Text ID="189774" Value=" "/>
+    <Text ID="189775" Value=" "/>
+    <Text ID="189776" Value=" "/>
+    <Text ID="189777" Value=" "/>
+    <Text ID="189778" Value=" "/>
+    <Text ID="189779" Value=" "/>
+    <Text ID="189780" Value=" "/>
+    <Text ID="189781" Value=" "/>
+    <Text ID="279683" Value="English"/>
+    <Text ID="279684" Value="Deutsch"/>
+    <Text ID="279685" Value="中文"/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="189764" Value=""/>
+    <Text ID="189765" Value=""/>
+    <Text ID="189766" Value=""/>
+    <Text ID="189767" Value=""/>
+    <Text ID="189768" Value=""/>
+    <Text ID="189769" Value=""/>
+    <Text ID="189770" Value=""/>
+    <Text ID="189771" Value=""/>
+    <Text ID="189772" Value=""/>
+    <Text ID="189773" Value=""/>
+    <Text ID="189774" Value=""/>
+    <Text ID="189775" Value=""/>
+    <Text ID="189776" Value=""/>
+    <Text ID="189777" Value=""/>
+    <Text ID="189778" Value=""/>
+    <Text ID="189779" Value=""/>
+    <Text ID="189780" Value=""/>
+    <Text ID="189781" Value=""/>
+    <Text ID="279683" Value=""/>
+    <Text ID="279684" Value=""/>
+    <Text ID="279685" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="189764" Value="3"/>
+    <Index ID="189765" Value="4"/>
+    <Index ID="189766" Value="5"/>
+    <Index ID="189767" Value="6"/>
+    <Index ID="189768" Value="7"/>
+    <Index ID="189769" Value="8"/>
+    <Index ID="189770" Value="9"/>
+    <Index ID="189771" Value="10"/>
+    <Index ID="189772" Value="11"/>
+    <Index ID="189773" Value="12"/>
+    <Index ID="189774" Value="13"/>
+    <Index ID="189775" Value="14"/>
+    <Index ID="189776" Value="15"/>
+    <Index ID="189777" Value="16"/>
+    <Index ID="189778" Value="17"/>
+    <Index ID="189779" Value="18"/>
+    <Index ID="189780" Value="19"/>
+    <Index ID="189781" Value="20"/>
+    <Index ID="279683" Value="0"/>
+    <Index ID="279684" Value="1"/>
+    <Index ID="279685" Value="2"/>
+  </IndexMap>
+</TextGroup>

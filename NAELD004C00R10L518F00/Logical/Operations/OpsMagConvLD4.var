@@ -1,0 +1,47 @@
+(*2019-03-25*)
+(**)
+(*Action & State & Status*)
+(**)
+(*Alarm*)
+VAR
+	p_OpsMagConvLD4AlmData : UDINT;
+	p_OpsMagConvLD4AlmData1 : UDINT;
+END_VAR
+(**)
+(*Output*)
+VAR
+	p_OpsMagConvLD4StepTxt : UDINT;
+	p_OpsMagConvLD4Paused : UDINT;
+END_VAR
+(**)
+VAR
+	p_OpsMagConvLD4BufferAct : UDINT;
+	p_OpsMagConvLD4MagConv2ClpAct : UDINT;
+	p_OpsMagConvLD4DSSMEMAAct : UDINT;
+	p_OpsMagConvLD4AGVMagAct : UDINT;
+	p_OpsMagConvLD4SafetyBarAct : UDINT;
+END_VAR
+(**)
+VAR
+	p_OpsMagConvLD4NewMagVerified : UDINT;
+	p_OpsMagConvLD4MagMtyExit : UDINT;
+	p_OpsMagConvLD4IncorrectMagModel : UDINT;
+	p_OpsMagConvLD4MagSizeL : UDINT;
+END_VAR
+(**)
+VAR
+	p_OpsMagConvLD4InitDone : UDINT;
+	p_OpsMagConvLD4MagBffrAvl : UDINT;
+	p_OpsMagConvLD4NewMagAllw : UDINT;
+	p_OpsMagConvLD4RlsMagAllw : UDINT;
+	p_OpsMagConvLD4StepMagExitedWait : UDINT;
+	p_OpsMagConvLD4StepUSCom : UDINT;
+	p_OpsMagConvLD4StepSelClampCtrl : UDINT;
+END_VAR
+(**)
+VAR
+	p_OpsMagConvLD4USSOTAct : UDINT;
+	p_OpsMagConvLD4DSSOTAct : UDINT;
+	p_OpsMagConvLD4ExitedWait : UDINT;
+	p_OpsMagConvLD4DSCom : UDINT;
+END_VAR

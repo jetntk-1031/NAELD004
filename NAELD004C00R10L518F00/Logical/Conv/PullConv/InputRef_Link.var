@@ -1,0 +1,21 @@
+(*2019-04-09*)
+(**)
+(*External Data*)
+VAR
+	p_bLinkOpsRun : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bLinkUIBypsInitConv : REFERENCE TO BOOL;
+	p_bLinkDISafetyRlySig : REFERENCE TO BOOL;
+	p_bLinkRotHomeSen : REFERENCE TO BOOL;
+	p_bLinkRotRemoteSen : REFERENCE TO BOOL;
+	p_bLinkPullerExtSen : REFERENCE TO BOOL;
+	p_bLinkPullerRetSen : REFERENCE TO BOOL;
+	p_bLinkNtParamPullerRotPrep : REFERENCE TO BOOL;
+	p_bSelfTest : REFERENCE TO BOOL;
+	p_bLinkDIRgtSen : REFERENCE TO BOOL;
+	p_bLinkOpsTravLifLDExitBrd : REFERENCE TO BOOL;
+	p_bLinkDIPullerAntiJamSen : REFERENCE TO BOOL;
+	p_bLinkPPTurnToHm : REFERENCE TO BOOL;
+END_VAR

@@ -1,0 +1,35 @@
+(*2019-03-25*)
+(**)
+(*Action & State & Status*)
+(**)
+(*Alarm*)
+VAR
+	p_OpsLifMagLDAlmData : UDINT;
+	p_OpsLifMagLDAlmData1 : UDINT;
+END_VAR
+(**)
+(*Output*)
+VAR
+	p_OpsLifMagLDStepTxt : UDINT;
+	p_OpsLifMagLDPaused : UDINT;
+END_VAR
+(**)
+VAR
+	p_OpsLifMagLDLifterAct : UDINT;
+	p_OpsLifMagLDBufferAct1 : UDINT;
+	p_OpsLifMagLDBufferAct2 : UDINT;
+	p_OpsLifMagLDBufferAct3 : UDINT;
+	p_OpsLifMagLDDSSMEMAAct1 : UDINT;
+	p_OpsLifMagLDDSSMEMAAct2 : UDINT;
+	p_OpsLifMagLDDSSMEMAAct3 : UDINT;
+END_VAR
+(**)
+VAR
+	p_OpsLifMagLDGoUnloadSlt1 : UDINT;
+	p_OpsLifMagLDGoUnloadSlt2 : UDINT;
+	p_OpsLifMagLDGoUnloadSlt3 : UDINT;
+	p_OpsLifMagLDMagNxtUnload : UDINT;
+	p_OpsLifMagLDBffrExitBrd : UDINT;
+	p_OpsLifMagLDUnloadingMov : UDINT;
+	p_OpsLifMagLDUnloading : UDINT;
+END_VAR

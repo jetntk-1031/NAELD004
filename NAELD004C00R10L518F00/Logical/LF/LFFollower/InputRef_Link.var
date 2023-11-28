@@ -1,0 +1,35 @@
+(*2023-02-22*)
+(**)
+VAR
+	p_bLinkOpsRun : REFERENCE TO BOOL;
+	p_bLinkStartupRun : REFERENCE TO BOOL;
+	p_bLinkAWWidthPosDiff : REFERENCE TO BOOL;
+	p_bLinkConvBffrLastProduct : REFERENCE TO BOOL;
+	p_bLinkBufferLastProductUnload : REFERENCE TO BOOL;
+	p_tyLinkBufferBffrStat : REFERENCE TO tyBffrStat;
+	p_bLinkNtParamProjLaneBPrep : REFERENCE TO BOOL;
+	p_eLinkMcParamDSACommMod : REFERENCE TO eMcSetCommMod;
+	p_eLinkMcParamDSBCommMod : REFERENCE TO eMcSetCommMod;
+END_VAR
+(**)
+VAR
+	pa_tyMagRcpList : REFERENCE TO ARRAY[1..c_udiMagRcpMax] OF tyMagRcpParam;
+	p_tyCurrMagRcp : REFERENCE TO tyMagRcpParam;
+END_VAR
+(**)
+VAR
+	sWidthInUMTemp : STRING[80];
+	p_eLinkNtParamProjMag : REFERENCE TO eLDMag;
+	p_bLinkConvHvBrd : REFERENCE TO BOOL;
+	p_bLinkBffr1MagRemoved : REFERENCE TO BOOL;
+	p_bLinkBffr2MagRemoved : REFERENCE TO BOOL;
+	p_bLinkBffr3MagRemoved : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eLinkUIProdRcpAct : REFERENCE TO eProdRcpAction;
+	p_eProdRcpStat : REFERENCE TO eProdRcpAction;
+	p_eProdRcpStatus : REFERENCE TO eFBStatus;
+	p_tyProdRcpCurrRcpWr : REFERENCE TO tyProdRcpParam;
+END_VAR
+(**)

@@ -1,0 +1,35 @@
+(*2019-04-09*)
+(**)
+(*External Data*)
+VAR
+	p_bLinkOpsRun : REFERENCE TO BOOL;
+	p_bLinkStartupRun : REFERENCE TO BOOL;
+	p_bSimu : REFERENCE TO BOOL;
+	p_diLinkAPos : REFERENCE TO DINT;
+	p_diLinkBPos : REFERENCE TO DINT;
+	p_diLinkCPos : REFERENCE TO DINT;
+	p_diLinkGPos : REFERENCE TO DINT;
+	p_diLinkAPos1 : REFERENCE TO DINT;
+	p_diLinkBPos1 : REFERENCE TO DINT;
+	p_diLinkCPos1 : REFERENCE TO DINT;
+	p_diLinkGPos1 : REFERENCE TO DINT;
+	p_bLinkNtParamProjRotCylPrep : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eLinkMag : REFERENCE TO eLDMag;
+	p_usiLinkMod : REFERENCE TO USINT;
+	p_bLinkOpsTravLifULInDSPos : REFERENCE TO BOOL;
+	p_bLinkOpsTravLifUSMagWidthChk : REFERENCE TO BOOL;
+	p_bLinkNtParamProjDsFixToFixRail : REFERENCE TO BOOL;
+	p_diLinkFixtoFixPosIn : REFERENCE TO DINT;
+	p_diLinkMcParamTravPosB : REFERENCE TO DINT;
+	p_tyProdRcpCurrRcp : REFERENCE TO tyProdRcpParam;
+	p_bLinkSafetyRelay : REFERENCE TO BOOL;
+	p_bLinkProjLifterMagPlatform : REFERENCE TO BOOL;
+	p_bLinkTravGotoChkPt : REFERENCE TO BOOL;
+	p_diLinkTravGotoChkPtDist1 : REFERENCE TO DINT;
+	p_diLinkTravGotoChkPtDist2 : REFERENCE TO DINT;
+	p_diLinkTravGotoChkPtDist3 : REFERENCE TO DINT;
+	p_diLaneBOffset : REFERENCE TO DINT;
+END_VAR

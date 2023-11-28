@@ -1,0 +1,214 @@
+(*2018-12-13*)
+(**)
+(*Action*)
+
+TYPE
+	eDOAction : 
+		(
+		DOActIdle,
+		DOActRstAll,
+		DOActSetBypassCoverSwitch,
+		DOActRstBypassCoverSwitch
+		);
+END_TYPE
+
+(**)
+(*Data*)
+
+TYPE
+	tyDigitalOutput : 	STRUCT 
+		bSafetyRlyRst : BOOL;
+		bTLRed : BOOL;
+		bTLAmber : BOOL;
+		bTLGreen : BOOL;
+		bBuzzer : BOOL;
+		bDBAA : BOOL;
+		bDBAB : BOOL;
+		bPullerExtCtrl : BOOL;
+		bPullerRetCtrl : BOOL;
+		bRotPullerCtrl : BOOL;
+		bMag1FixedClampCtrl : BOOL;
+		bMag1RemoteClampCtrl : BOOL;
+		bMag2FixedClampCtrl : BOOL;
+		bMag2RemoteClampCtrl : BOOL;
+		bMag3FixedClampCtrl : BOOL;
+		bMag3RemoteClampCtrl : BOOL;
+		bMag4FixedClampCtrl : BOOL;
+		bMag4RemoteClampCtrl : BOOL;
+		bInShutterOpenCtrl : BOOL;
+		bInShutterCloseCtrl : BOOL;
+		bOutShutterOpenCtrl : BOOL;
+		bOutShutterCloseCtrl : BOOL;
+		bMag1ConvMtrIn : BOOL;
+		bMag1ConvMtrOut : BOOL;
+		bMag2ConvMtrIn : BOOL;
+		bMag2ConvMtrOut : BOOL;
+		bMag3ConvMtrIn : BOOL;
+		bMag3ConvMtrOut : BOOL;
+		bMag4ConvMtrIn : BOOL;
+		bMag4ConvMtrOut : BOOL;
+		bPullConvMtrOn : BOOL;
+		bMag1SelClampCtrl : BOOL;
+		bMag2SelClampCtrl : BOOL;
+		bMag3SelClampCtrl : BOOL;
+		bMag4SelClampCtrl : BOOL;
+		bSOT1MagError : BOOL;
+		bSOT1MagSizeLarge : BOOL;
+		bSOT1MagReady : BOOL;
+		bSOT1MagAvailable : BOOL;
+		bSOT2MagError : BOOL;
+		bSOT2MagSizeLarge : BOOL;
+		bSOT2MagReady : BOOL;
+		bSOT2MagAvailable : BOOL;
+		bSOT3MagError : BOOL;
+		bSOT3MagSizeLarge : BOOL;
+		bSOT3MagReady : BOOL;
+		bSOT3MagAvailable : BOOL;
+		bSOT4MagError : BOOL;
+		bSOT4MagSizeLarge : BOOL;
+		bSOT4MagReady : BOOL;
+		bSOT4MagAvailable : BOOL;
+		bMag1ReqToBring : BOOL;
+		bMag1ReqToGet : BOOL;
+		bMag2ReqToBring : BOOL;
+		bMag2ReqToGet : BOOL;
+		bMag3ReqToBring : BOOL;
+		bMag3ReqToGet : BOOL;
+		bMag4ReqToBring : BOOL;
+		bMag4ReqToGet : BOOL;
+		bUSBRun : BOOL;
+		bMtrPshrExt : BOOL;
+		bMtrPshrRet : BOOL;
+		bMtrPshrOn : BOOL;
+		bMtrPshrBrakeRls : BOOL;
+		bMtrPshrSpdBinBit0 : BOOL;
+		bMtrPshrSpdBinBit1 : BOOL;
+		bMtrPshrSpdBinBit2 : BOOL;
+		bMtrPshrAlmRst : BOOL;
+		bMag1SafetyBarRetCtrl : BOOL;
+		bMag2SafetyBarRetCtrl : BOOL;
+		bMag3SafetyBarRetCtrl : BOOL;
+		bBypCurtainSen : BOOL;
+		bRstCurtainSen : BOOL;
+		bInShutterOpenCtrl2 : BOOL;
+		bInShutterCloseCtrl2 : BOOL;
+		bInShutterOpenCtrl3 : BOOL;
+		bInShutterCloseCtrl3 : BOOL;
+		bMag1FixedClampOpenCtrl : BOOL;
+		bMag1RemoteClampOpenCtrl : BOOL;
+		bMag2FixedClampOpenCtrl : BOOL;
+		bMag2RemoteClampOpenCtrl : BOOL;
+		bMag3FixedClampOpenCtrl : BOOL;
+		bMag3RemoteClampOpenCtrl : BOOL;
+		bMcSafetySigToDS : BOOL;
+		bOutShutterOpenCtrl2 : BOOL;
+		bOutShutterCloseCtrl2 : BOOL;
+		bTrolleyLckCtrl1 : BOOL;
+		bTrolleyLckCtrl2 : BOOL;
+		bSPARE15 : BOOL;
+		bSPARE16 : BOOL;
+		bSPARE17 : BOOL;
+		bSPARE18 : BOOL;
+		bSPARE19 : BOOL;
+		bSPARE20 : BOOL;
+	END_STRUCT;
+	tyDigitalOutputSettings : 	STRUCT 
+		diSafetyRlyRst : DINT;
+		diTLRed : DINT;
+		diTLAmber : DINT;
+		diTLGreen : DINT;
+		diBuzzer : DINT;
+		diDBAA : DINT;
+		diDBAB : DINT;
+		diPullerExtCtrl : DINT;
+		diPullerRetCtrl : DINT;
+		diRotPullerCtrl : DINT;
+		diMag1FixedClampCtrl : DINT;
+		diMag1RemoteClampCtrl : DINT;
+		diMag2FixedClampCtrl : DINT;
+		diMag2RemoteClampCtrl : DINT;
+		diMag3FixedClampCtrl : DINT;
+		diMag3RemoteClampCtrl : DINT;
+		diMag4FixedClampCtrl : DINT;
+		diMag4RemoteClampCtrl : DINT;
+		diInShutterOpenCtrl : DINT;
+		diInShutterCloseCtrl : DINT;
+		diOutShutterOpenCtrl : DINT;
+		diOutShutterCloseCtrl : DINT;
+		diMag1ConvMtrIn : DINT;
+		diMag1ConvMtrOut : DINT;
+		diMag2ConvMtrIn : DINT;
+		diMag2ConvMtrOut : DINT;
+		diMag3ConvMtrIn : DINT;
+		diMag3ConvMtrOut : DINT;
+		diMag4ConvMtrIn : DINT;
+		diMag4ConvMtrOut : DINT;
+		diPullConvMtrOn : DINT;
+		diMag1SelClampCtrl : DINT;
+		diMag2SelClampCtrl : DINT;
+		diMag3SelClampCtrl : DINT;
+		diMag4SelClampCtrl : DINT;
+		diSOT1MagError : DINT;
+		diSOT1MagSizeLarge : DINT;
+		diSOT1MagReady : DINT;
+		diSOT1MagAvailable : DINT;
+		diSOT2MagError : DINT;
+		diSOT2MagSizeLarge : DINT;
+		diSOT2MagReady : DINT;
+		diSOT2MagAvailable : DINT;
+		diSOT3MagError : DINT;
+		diSOT3MagSizeLarge : DINT;
+		diSOT3MagReady : DINT;
+		diSOT3MagAvailable : DINT;
+		diSOT4MagError : DINT;
+		diSOT4MagSizeLarge : DINT;
+		diSOT4MagReady : DINT;
+		diSOT4MagAvailable : DINT;
+		diMag1ReqToBring : DINT;
+		diMag1ReqToGet : DINT;
+		diMag2ReqToBring : DINT;
+		diMag2ReqToGet : DINT;
+		diMag3ReqToBring : DINT;
+		diMag3ReqToGet : DINT;
+		diMag4ReqToBring : DINT;
+		diMag4ReqToGet : DINT;
+		diUSBRun : DINT;
+		diMtrPshrExt : DINT;
+		diMtrPshrRet : DINT;
+		diMtrPshrOn : DINT;
+		diMtrPshrBrakeRls : DINT;
+		diMtrPshrSpdBinBit0 : DINT;
+		diMtrPshrSpdBinBit1 : DINT;
+		diMtrPshrSpdBinBit2 : DINT;
+		diMtrPshrAlmRst : DINT;
+		diMag1SafetyBarRetCtrl : DINT;
+		diMag2SafetyBarRetCtrl : DINT;
+		diMag3SafetyBarRetCtrl : DINT;
+		diBypCurtainSen : DINT;
+		diBypCurtainSensorPBLED : DINT;
+		diRstCurtainSen : DINT;
+		diInShutterOpenCtrl2 : DINT;
+		diInShutterCloseCtrl2 : DINT;
+		diInShutterOpenCtrl3 : DINT;
+		diInShutterCloseCtrl3 : DINT;
+		diMag1FixedClampOpenCtrl : DINT;
+		diMag1RemoteClampOpenCtrl : DINT;
+		diMag2FixedClampOpenCtrl : DINT;
+		diMag2RemoteClampOpenCtrl : DINT;
+		diMag3FixedClampOpenCtrl : DINT;
+		diMag3RemoteClampOpenCtrl : DINT;
+		diMag4FixedClampOpenCtrl : DINT;
+		diMag4RemoteClampOpenCtrl : DINT;
+		diMcSafetySigToDS : DINT;
+		diOutShutterOpenCtrl2 : DINT;
+		diOutShutterCloseCtrl2 : DINT;
+		diTrolleyLckCtrl1 : DINT;
+		diTrolleyLckCtrl2 : DINT;
+		diSPARE15 : DINT;
+		diSPARE16 : DINT;
+		diSPARE17 : DINT;
+		diSPARE18 : DINT;
+		diSPARE19 : DINT;
+		diSPARE20 : DINT;
+	END_STRUCT;
+END_TYPE

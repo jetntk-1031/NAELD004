@@ -1,0 +1,35 @@
+(*2021-08-01*)
+(**)
+(*Action & State & Status*)
+VAR
+	p_DSHermesBStat : UDINT;
+	p_DSHermesBStatus : UDINT;
+	p_DSHermesBStatTxt : UDINT;
+END_VAR
+(**)
+(*Alarm*)
+VAR
+	p_DSHermesBAlmData : UDINT;
+	p_DSHermesBAlmData1 : UDINT;
+	p_DSHermesBAlmData2 : UDINT;
+	p_DSHermesBAlmData3 : UDINT;
+	p_DSHermesBAlmData4 : UDINT;
+END_VAR
+(**)
+(*Output*)
+VAR
+	p_DSHermesBFileNotFound : UDINT;
+	p_DSHermesBConnected : UDINT;
+	p_DSHermesBHandshakeDone : UDINT;
+	p_DSHermesBUSRdy : UDINT;
+	p_DSHermesBDSRdy : UDINT;
+	p_DSHermesBUSGdRdy : UDINT;
+	p_DSHermesBDSGdRdy : UDINT;
+	p_DSHermesBTransporting : UDINT;
+	p_DSHermesBStopTransport : UDINT;
+	p_DSHermesBInternalSnd : UDINT;
+	p_DSHermesBTransportFinishedSnd : UDINT;
+	p_DSHermesBBoardDepartedData : UDINT;
+	p_DSHermesBAllZonesEmpty : UDINT;
+	p_SendBFIdB : UDINT;
+END_VAR

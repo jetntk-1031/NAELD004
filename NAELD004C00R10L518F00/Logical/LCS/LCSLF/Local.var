@@ -1,0 +1,77 @@
+(*2019-06-28*)
+(**)
+(*Local Action, State & Status*)
+VAR
+	eAct : eLCSAction := LCSActIdle;
+	eStat : eLCSAction := LCSActIdle;
+	eStatus : eFBStatus := Idle;
+	udiStatus : UDINT := 0;
+	sStatTxt : STRING[200] := '';
+	a_sStatText : ARRAY[0..50] OF STRING[200] := ['Idling','Adding Product','Adding Multiple Products','Editing Product','Editing Multiple Products','OverWrite Product','OverWrite Multiple Products','Deleting Product','Deleting Multiple Products','Running LCS Product','Uploading Product','Uploading Multiple Products',39('')];
+END_VAR
+(**)
+(*Local Alarm*)
+VAR
+	tyAlmData : tyAlmDat;
+	tyInfoData : tyAlmDat;
+	a_tyAlmText : ARRAY[10000..10099] OF tyAlmTxt;
+END_VAR
+(**)
+(*Local Output*)
+VAR
+	udiPLCStatus : UDINT;
+	bChkLmt : BOOL;
+	bAccDataMnl : BOOL;
+	bUpdtDataMnl : BOOL;
+	sUpdtProdRcpNm : STRING[30];
+	diUpdtProdWidth : DINT;
+END_VAR
+(**)
+(*Local Input*)
+VAR
+	udiRstErr : UDINT := 0;
+	bPrep : BOOL := TRUE;
+	bEn : BOOL := TRUE;
+	bDis : BOOL := FALSE;
+	tyCurrProdParam : tyProdRcpParam;
+	bMnlAccData : BOOL;
+	bAccData : BOOL;
+	tyLCSProdRcpInfo : tyProdRcpParam;
+	bChkLmtOK : BOOL;
+	bChkLmtNG : BOOL;
+	bAccNewRcpCond : BOOL;
+	bUpdtNewRcpCond : BOOL;
+	bAutoUpdtData : BOOL;
+	bUIUpdtData : BOOL;
+	sInfoMsg : STRING[200];
+	sProgNm : STRING[15] := 'LCSLF';
+	bNtSettingsLoadDone : BOOL := TRUE;
+END_VAR
+(**)
+(*Local*)
+VAR
+	bRstErr : BOOL;
+	udiRstErrOld : UDINT;
+	bInitDone : BOOL;
+	bInitialDone : BOOL;
+	usiStep : USINT;
+	usiProdUpdtDatStep : USINT;
+	udiModuleNum : UDINT := 4101;
+END_VAR
+(*Local priority param*)
+VAR
+	bGUIDInserted : ARRAY[1..3] OF BOOL;
+	a_MagGUID : ARRAY[1..3] OF STRING[80];
+END_VAR
+VAR RETAIN
+	a_MagAccOrder : ARRAY[1..3] OF USINT; (*priority (output)*)
+END_VAR
+VAR
+	usiMagPrior : ARRAY[1..3] OF USINT := [1,2,3];
+	usiMagRun : ARRAY[1..3] OF USINT;
+	usiSum : ARRAY[1..3] OF USINT;
+	usiMagOrderPos : USINT;
+	i : USINT;
+	i1 : USINT;
+	uiMilliSecOld : UINT;
+END_VAR

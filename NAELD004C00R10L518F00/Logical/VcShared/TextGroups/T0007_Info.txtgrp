@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.8.4.50 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="T0007_Info">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="33"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="858442" Value=""/>
+    <Text ID="858443" Value="Magazine Not Present."/>
+    <Text ID="858444" Value="Magazine 1 Is Empty."/>
+    <Text ID="858445" Value="Magazine 2 Is Empty."/>
+    <Text ID="858446" Value="Magazine 3 Is Empty."/>
+    <Text ID="858447" Value="Wrong Magazine Width On Position 1."/>
+    <Text ID="858448" Value="Wrong Magazine Width On Position 2."/>
+    <Text ID="858449" Value="Wrong Magazine Width On Position 3."/>
+    <Text ID="858450" Value="Magazine 4 Is Empty."/>
+    <Text ID="858451" Value="Wrong Magazine Width On Position 4."/>
+    <Text ID="858452" Value="Wrong Magazine Height On Position 1."/>
+    <Text ID="858453" Value="Wrong Magazine Height On Position 2."/>
+    <Text ID="858454" Value="Wrong Magazine Height On Position 3."/>
+    <Text ID="858455" Value="Wrong Magazine Height On Position 4."/>
+    <Text ID="858456" Value="Waiting For Unload Magazine 1."/>
+    <Text ID="858457" Value="Waiting For Unload Magazine 2."/>
+    <Text ID="858458" Value="Waiting For Unload Magazine 3."/>
+    <Text ID="858459" Value="Waiting For Unload Magazine 4."/>
+    <Text ID="858460" Value="Product Recipe Width Does Not Match\nCheck Product Width And\nLeader Request Width"/>
+    <Text ID="858461" Value="New Product Not Found\nIn Product Recipe List\nCreate New Product\nIn Product Setting"/>
+    <Text ID="858462" Value="Leader Request New Recipe\nOld Recipe Name: \nOld Recipe Width: \nNew Recipe Name: \nNew Recipe Width:"/>
+    <Text ID="858463" Value="US Machine Request New Recipe\nOld Recipe Name: \nOld Recipe Width: \nNew Recipe Name: \nNew Recipe Width:"/>
+    <Text ID="858464" Value="Different Recipe \nFrom DS Machine\nCurrent Recipe Name: \nCurrent Recipe Width:"/>
+    <Text ID="858465" Value="Product Recipe Width Does Not Match\nCheck Product Width And\nLeader Request Width"/>
+    <Text ID="858466" Value="Same Recipe\nBut Different Width\nWith DS Machine\nMachine Outgoing Width: "/>
+    <Text ID="858467" Value="New Recipe Loaded\n\nPlease Remove All Magazines."/>
+    <Text ID="858468" Value=""/>
+    <Text ID="858469" Value=""/>
+    <Text ID="858470" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="858442" Value=""/>
+    <Text ID="858443" Value=""/>
+    <Text ID="858444" Value=""/>
+    <Text ID="858445" Value=""/>
+    <Text ID="858446" Value=""/>
+    <Text ID="858447" Value=""/>
+    <Text ID="858448" Value=""/>
+    <Text ID="858449" Value=""/>
+    <Text ID="858450" Value=""/>
+    <Text ID="858451" Value=""/>
+    <Text ID="858452" Value=""/>
+    <Text ID="858453" Value=""/>
+    <Text ID="858454" Value=""/>
+    <Text ID="858455" Value=""/>
+    <Text ID="858456" Value=""/>
+    <Text ID="858457" Value=""/>
+    <Text ID="858458" Value=""/>
+    <Text ID="858459" Value=""/>
+    <Text ID="858460" Value=""/>
+    <Text ID="858461" Value=""/>
+    <Text ID="858462" Value=""/>
+    <Text ID="858463" Value=""/>
+    <Text ID="858464" Value=""/>
+    <Text ID="858465" Value=""/>
+    <Text ID="858466" Value=""/>
+    <Text ID="858467" Value=""/>
+    <Text ID="858468" Value=""/>
+    <Text ID="858469" Value=""/>
+    <Text ID="858470" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="zh">
+    <Text ID="858442" Value=""/>
+    <Text ID="858443" Value=""/>
+    <Text ID="858444" Value=""/>
+    <Text ID="858445" Value=""/>
+    <Text ID="858446" Value=""/>
+    <Text ID="858447" Value=""/>
+    <Text ID="858448" Value=""/>
+    <Text ID="858449" Value=""/>
+    <Text ID="858450" Value=""/>
+    <Text ID="858451" Value=""/>
+    <Text ID="858452" Value=""/>
+    <Text ID="858453" Value=""/>
+    <Text ID="858454" Value=""/>
+    <Text ID="858455" Value=""/>
+    <Text ID="858456" Value=""/>
+    <Text ID="858457" Value=""/>
+    <Text ID="858458" Value=""/>
+    <Text ID="858459" Value=""/>
+    <Text ID="858460" Value=""/>
+    <Text ID="858461" Value=""/>
+    <Text ID="858462" Value=""/>
+    <Text ID="858463" Value=""/>
+    <Text ID="858464" Value=""/>
+    <Text ID="858465" Value=""/>
+    <Text ID="858466" Value=""/>
+    <Text ID="858467" Value=""/>
+    <Text ID="858468" Value=""/>
+    <Text ID="858469" Value=""/>
+    <Text ID="858470" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="858442" Value=""/>
+    <Text ID="858443" Value=""/>
+    <Text ID="858444" Value=""/>
+    <Text ID="858445" Value=""/>
+    <Text ID="858446" Value=""/>
+    <Text ID="858447" Value=""/>
+    <Text ID="858448" Value=""/>
+    <Text ID="858449" Value=""/>
+    <Text ID="858450" Value=""/>
+    <Text ID="858451" Value=""/>
+    <Text ID="858452" Value=""/>
+    <Text ID="858453" Value=""/>
+    <Text ID="858454" Value=""/>
+    <Text ID="858455" Value=""/>
+    <Text ID="858456" Value=""/>
+    <Text ID="858457" Value=""/>
+    <Text ID="858458" Value=""/>
+    <Text ID="858459" Value=""/>
+    <Text ID="858460" Value=""/>
+    <Text ID="858461" Value=""/>
+    <Text ID="858462" Value=""/>
+    <Text ID="858463" Value=""/>
+    <Text ID="858464" Value=""/>
+    <Text ID="858465" Value=""/>
+    <Text ID="858466" Value=""/>
+    <Text ID="858467" Value=""/>
+    <Text ID="858468" Value=""/>
+    <Text ID="858469" Value=""/>
+    <Text ID="858470" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="858442" Value="0"/>
+    <Index ID="858443" Value="1"/>
+    <Index ID="858444" Value="2"/>
+    <Index ID="858445" Value="3"/>
+    <Index ID="858446" Value="4"/>
+    <Index ID="858447" Value="6"/>
+    <Index ID="858448" Value="7"/>
+    <Index ID="858449" Value="8"/>
+    <Index ID="858450" Value="5"/>
+    <Index ID="858451" Value="9"/>
+    <Index ID="858452" Value="10"/>
+    <Index ID="858453" Value="11"/>
+    <Index ID="858454" Value="12"/>
+    <Index ID="858455" Value="13"/>
+    <Index ID="858456" Value="14"/>
+    <Index ID="858457" Value="15"/>
+    <Index ID="858458" Value="16"/>
+    <Index ID="858459" Value="17"/>
+    <Index ID="858460" Value="18"/>
+    <Index ID="858461" Value="19"/>
+    <Index ID="858462" Value="20"/>
+    <Index ID="858463" Value="21"/>
+    <Index ID="858464" Value="22"/>
+    <Index ID="858465" Value="23"/>
+    <Index ID="858466" Value="24"/>
+    <Index ID="858467" Value="25"/>
+    <Index ID="858468" Value="26"/>
+    <Index ID="858469" Value="27"/>
+    <Index ID="858470" Value="28"/>
+  </IndexMap>
+</TextGroup>

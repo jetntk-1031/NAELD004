@@ -1,0 +1,43 @@
+(*2021-08-01*)
+(**)
+VAR
+	p_bLinkStartupRun : REFERENCE TO BOOL;
+	p_bLinkOpsMagConvLD1QueryWO : REFERENCE TO BOOL;
+	p_bLinkOpsMagConvLD2QueryWO : REFERENCE TO BOOL;
+	p_bLinkOpsMagConvLD3QueryWO : REFERENCE TO BOOL;
+	p_eLinkCustomerReq : REFERENCE TO eCustomer;
+	p_bUIDeleteWorkOrder : REFERENCE TO BOOL;
+	p_bAutoRcpCurrDeleteSendWO : REFERENCE TO BOOL;
+	bHermesRun : BOOL;
+	bHermesStop : BOOL;
+END_VAR
+(**)
+VAR
+	bLifterEmpty : BOOL;
+	tySendWorkOrderInfoAccPublish : BOOL;
+	bReplyWorkOrderInfo : BOOL;
+	bReplyBypassWorkOrderInfo : BOOL;
+	bRcvBoardInfoOk : BOOL;
+	bRetainNewAcc : BOOL;
+	bSendBoardForecast : BOOL;
+	bClearWorkOrder : BOOL;
+	pa_tyLinkXMLTableDataBrdAvl1 : REFERENCE TO ARRAY[0..200] OF tyXMLTableDat;
+	p_iLinkXMLTableDataBrdAvlTtlIdx1 : REFERENCE TO INT;
+	bNewIncomingBoard : BOOL;
+	sUSBarcode : STRING[254];
+	bQueryloaderWorkOrder : BOOL;
+	bQueryBypassWorkOrder : BOOL;
+	bRcvWorkBypassOrderInfo : BOOL;
+	bManualQueryWO : BOOL;
+	p_sHermesBrdId : REFERENCE TO STRING[36];
+END_VAR
+(*Loader Prop.*)
+VAR
+	p_diBuffer1Slt : REFERENCE TO DINT;
+	p_diBuffer2Slt : REFERENCE TO DINT;
+	p_diBuffer3Slt : REFERENCE TO DINT;
+	p_bConvHvBrd : REFERENCE TO BOOL;
+	p_bPullerRetRS : REFERENCE TO BOOL;
+	p_eOpsTravLifLDPosGo : REFERENCE TO eTravLifLDPos;
+	p_tyAutoRcpTravLif : REFERENCE TO tyBoardProperty;
+END_VAR

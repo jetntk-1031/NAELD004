@@ -1,0 +1,63 @@
+(*2019-03-25*)
+(**)
+(*Action & State & Status*)
+(**)
+(*Alarm*)
+VAR
+	p_OpsTravLifLDAlmData : UDINT;
+END_VAR
+(**)
+(*Output*)
+VAR
+	p_OpsTravLifLDStepTxt : UDINT;
+	p_OpsTravLifLDPaused : UDINT;
+END_VAR
+(**)
+VAR
+	p_OpsTravLifLDUSSMEMAAct1 : UDINT;
+	p_OpsTravLifLDUSSMEMAAct2 : UDINT;
+	p_OpsTravLifLDUSSMEMAAct3 : UDINT;
+	p_OpsTravLifLDUSSMEMAAct4 : UDINT;
+	p_OpsTravLifLDDSSMEMAAct1 : UDINT;
+	p_OpsTravLifLDDSSMEMAAct2 : UDINT;
+	p_OpsTravLifLDDSSMEMAAct3 : UDINT;
+	p_OpsTravLifLDConvAct : UDINT;
+	p_OpsTravLifLDAWAct : UDINT;
+	p_OpsTravLifLDAWPushPullAct : UDINT;
+	p_OpsTravLifLDTravAct : UDINT;
+	p_OpsTravLifLDLifAct : UDINT;
+	p_OpsTravLifLDInletPneuAct : UDINT;
+	p_OpsTravLifLDInletPneuAct2 : UDINT;
+	p_OpsTravLifLDInletPneuAct3 : UDINT;
+	p_OpsTravLifLDOutletPneuAct : UDINT;
+	p_OpsTravLifLDOutletPneuAct2 : UDINT;
+	p_OpsTravLifLDPullerAct : UDINT;
+END_VAR
+(**)
+VAR
+	p_OpsTravLifLDPosGo : UDINT;
+	p_OpsTravLifLDMagDis : UDINT;
+	p_OpsTravLifLDGoUnloadSlt1 : UDINT;
+	p_OpsTravLifLDGoUnloadSlt2 : UDINT;
+	p_OpsTravLifLDGoUnloadSlt3 : UDINT;
+	p_OpsTravLifLDGoUnloadSlt4 : UDINT;
+	p_OpsTravLifLDInitConv : UDINT;
+	p_OpsTravLifLDInitDone : UDINT;
+	p_OpsTravLifLDUSComm : UDINT;
+	p_OpsTravLifLDEntBrd : UDINT;
+	p_OpsTravLifLDDSComm : UDINT;
+	p_OpsTravLifLDExitBrd : UDINT;
+	p_OpsTravLifLDAWPosDiff : UDINT;
+	p_OpsTravLifULInDSPos : UDINT;
+	p_OpsTravLifULUpdatePullSlot : UDINT;
+	p_OpsTravLifLDBypCurtainSenCtrl : UDINT;
+	p_OpsTravLifLBypCurtainWidthChg : UDINT;
+	p_OpsTravLifLDBypCurtainLED : UDINT;
+	p_OpsTravLifLDUSMagWidthChk : UDINT;
+	p_OpsTravLifULTravGotoChkPt : UDINT;
+	p_OpsTravLifWChkErrCmdUnclmp1 : UDINT;
+	p_OpsTravLifWChkErrCmdUnclmp2 : UDINT;
+	p_OpsTravLifWChkErrCmdUnclmp3 : UDINT;
+	p_OpsTravLifMove : UDINT;
+	p_OpsTravLifStandby : UDINT;
+END_VAR

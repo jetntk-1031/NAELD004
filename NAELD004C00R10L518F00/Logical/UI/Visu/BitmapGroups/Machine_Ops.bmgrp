@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.8.4.50 SP"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="Machine_Ops">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="2"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="9277" Value="Source[local].Bitmap[Mc_Ldr_FrontView280]"/>
+    <BitmapRef ID="9972" Value="Source[local].Bitmap[Mc_Ldr_FrontView300]"/>
+    <BitmapRef ID="9973" Value="Source[local].Bitmap[Mc_Ldr_FrontView150]"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="9277" Value="0"/>
+    <Index ID="9972" Value="1"/>
+    <Index ID="9973" Value="2"/>
+  </IndexMap>
+</BitmapGroup>

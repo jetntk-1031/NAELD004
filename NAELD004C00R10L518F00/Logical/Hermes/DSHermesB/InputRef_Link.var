@@ -1,0 +1,23 @@
+(*2021-08-01*)
+(**)
+VAR
+	p_bLinkAWWidthPosDiff : REFERENCE TO BOOL;
+	p_bLinkOpsAWStepMove : REFERENCE TO BOOL;
+	p_bLinkProdRcpCurrAll : REFERENCE TO ARRAY[0..5] OF tyProdRcpParam;
+END_VAR
+(**)
+VAR
+	p_bLinkStartupRun : REFERENCE TO BOOL;
+	p_eLinkMcParamDSCommMod : REFERENCE TO eMcSetCommMod;
+	p_bLinkNtParamProjLaneBPrep : REFERENCE TO BOOL;
+	bHermesRun : BOOL;
+	bHermesStop : BOOL;
+END_VAR
+(**)
+VAR
+	p_usiLinkProdRcpCurrRcpFlipBrd : REFERENCE TO USINT;
+	p_bLinkConvHvBrd : REFERENCE TO BOOL;
+	p_bLinkOpsTravLifLDDSComm : REFERENCE TO BOOL;
+	p_eLinkTravLifLDPosGo : REFERENCE TO eTravLifLDPos;
+	p_eLinkCustomerReq : REFERENCE TO eCustomer;
+END_VAR

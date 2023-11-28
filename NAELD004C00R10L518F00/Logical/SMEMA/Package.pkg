@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Do Not Change!!!">SMEMA.typ</Object>
+    <Object Type="File" Description="Change By Project">USSMEMA1.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - NtSMEMA v5.00.0">USSMEMA1</Object>
+    <Object Type="File" Description="Change By Project">USSMEMA2.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - NtSMEMA v5.00.0">USSMEMA2</Object>
+    <Object Type="File" Description="Change By Project">USSMEMA3.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - NtSMEMA v5.00.0">USSMEMA3</Object>
+    <Object Type="File" Description="Change By Project">USSMEMA4.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - NtSMEMA v5.00.0">USSMEMA4</Object>
+    <Object Type="File" Description="Change By Project">DSSMEMA1.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - NtSMEMA v5.00.0">DSSMEMA1</Object>
+    <Object Type="File" Description="Change By Project">DSSMEMA2.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - NtSMEMA v5.00.0">DSSMEMA2</Object>
+    <Object Type="File" Description="Change By Project">DSSMEMA3.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - NtSMEMA v5.00.0">DSSMEMA3</Object>
+    <Object Type="File" Description="Change By Project">DSSMEMA4.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - NtSMEMA v5.00.0">DSSMEMA4</Object>
+    <Object Type="File" Description="Change By Project">DSSMEMAA.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - NtSMEMA v5.00.0">DSSMEMAA</Object>
+    <Object Type="File" Description="Change By Project">DSSMEMAB.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - NtSMEMA v5.00.0">DSSMEMAB</Object>
+  </Objects>
+</Package>

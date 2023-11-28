@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Do Not Change!!!">Operations.typ</Object>
+    <Object Type="File" Description="Change By Project">Ops.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - ">Ops</Object>
+    <Object Type="File" Description="Do Not Change!!!">OpsTravLifLD.typ</Object>
+    <Object Type="File" Description="Change By Project">OpsTravLifLD.var</Object>
+    <Object Type="Program" Language="IEC" Description="pne">OpsTravLifLD</Object>
+    <Object Type="File" Description="Do Not Change!!!">OpsMagConvLD.typ</Object>
+    <Object Type="File" Description="Change By Project">OpsMagConvLD1.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - ">OpsMagConvLD1</Object>
+    <Object Type="File" Description="Change By Project">OpsMagConvLD2.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - ">OpsMagConvLD2</Object>
+    <Object Type="File" Description="Change By Project">OpsMagConvLD3.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - ">OpsMagConvLD3</Object>
+    <Object Type="File" Description="Change By Project">OpsMagConvLD4.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - ">OpsMagConvLD4</Object>
+    <Object Type="File" Description="Do Not Change!!!">OpsLifMagLD.typ</Object>
+    <Object Type="File" Description="Change By Project">OpsLifMagLD.var</Object>
+    <Object Type="Program" Language="IEC" Description="1.00.0 - ">OpsLifMagLD</Object>
+  </Objects>
+</Package>

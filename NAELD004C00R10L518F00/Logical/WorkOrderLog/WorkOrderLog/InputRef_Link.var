@@ -1,0 +1,6 @@
+(*2021-06-20*)
+(**)
+(**)
+VAR
+	p_bLinkStartupRun : REFERENCE TO BOOL;
+END_VAR

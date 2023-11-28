@@ -1,0 +1,31 @@
+(*2021-08-01*)
+(**)
+VAR
+	p_bLinkAWWidthPosDiff : REFERENCE TO BOOL;
+	p_bLinkOpsAWStepMove : REFERENCE TO BOOL;
+	p_bLinkProdRcpCurrAll : REFERENCE TO ARRAY[0..5] OF tyProdRcpParam;
+END_VAR
+(**)
+VAR
+	p_bLinkStartupRun : REFERENCE TO BOOL;
+	p_eLinkMcParamDSCommMod : REFERENCE TO eMcSetCommMod;
+	p_bLinkNtParamProjLaneBPrep : REFERENCE TO BOOL;
+	bHermesRun : BOOL;
+	bHermesStop : BOOL;
+END_VAR
+(**)
+VAR
+	p_usiLinkProdRcpCurrRcpFlipBrd : REFERENCE TO USINT;
+	p_bLinkConvHvBrd : REFERENCE TO BOOL;
+	p_bLinkOpsTravLifLDDSComm : REFERENCE TO BOOL;
+	p_eLinkTravLifLDPosGo : REFERENCE TO eTravLifLDPos;
+	p_tyAutoRcpTravLif : REFERENCE TO tyBoardProperty;
+	p_diLinkAutoRcpTravLifWidth : REFERENCE TO DINT;
+	p_diLinkAutoRcpMag1Width : REFERENCE TO DINT;
+	p_diLinkAutoRcpMag2Width : REFERENCE TO DINT;
+	p_diLinkAutoRcpMag3Width : REFERENCE TO DINT;
+	p_tyAutoRcpMagRcp : REFERENCE TO ARRAY[1..4] OF tyBoardProperty;
+	p_ausiSvyMagAccOrder : REFERENCE TO ARRAY[1..3] OF USINT;
+	p_sHermesBrdId : REFERENCE TO STRING[36];
+	p_bDIPullerRetRS : REFERENCE TO BOOL;
+END_VAR

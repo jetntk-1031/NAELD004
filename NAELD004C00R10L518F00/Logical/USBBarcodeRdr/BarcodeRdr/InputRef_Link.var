@@ -1,0 +1,7 @@
+(*2020-08-29*)
+(**)
+VAR
+	p_bLinkOpsRun : REFERENCE TO BOOL;
+	p_tyLinkNtParam : REFERENCE TO tyNtParam;
+	p_bLinkStartupRun : REFERENCE TO BOOL;
+END_VAR

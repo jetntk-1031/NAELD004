@@ -1,0 +1,108 @@
+(*2019-04-16*)
+(**)
+(*General*)
+VAR
+	p_udiRstErr : REFERENCE TO UDINT;
+	p_bEn : REFERENCE TO BOOL;
+	p_bDis : REFERENCE TO BOOL;
+	p_bRun : REFERENCE TO BOOL;
+	p_bStop : REFERENCE TO BOOL;
+	p_bStep : REFERENCE TO BOOL;
+END_VAR
+(**)
+(*Configuration*)
+VAR
+	p_sProgNm : REFERENCE TO STRING[15];
+	p_bNtSettingsLoadDone : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	pa_bMagDis : REFERENCE TO ARRAY[1..3] OF BOOL;
+	p_bUnloadMag : REFERENCE TO BOOL;
+	p_bDSAllow : REFERENCE TO BOOL;
+	p_bPullerRotCylPrep : REFERENCE TO BOOL;
+	p_bPullerNoRotCylExitStartLif : REFERENCE TO BOOL;
+	p_diPullerExtMaxSlt : REFERENCE TO DINT;
+	p_diPullerExtMinSlt : REFERENCE TO DINT;
+	p_bLifterSafeInitialize : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bProdRcpCurrRcpTopToBtm : REFERENCE TO BOOL;
+	p_diProdRcpCurrRcpPitch : REFERENCE TO DINT;
+END_VAR
+(**)
+VAR
+	p_bMagSetupDone1 : REFERENCE TO BOOL;
+	p_bMagSetupDone2 : REFERENCE TO BOOL;
+	p_bMagSetupDone3 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_tyBufferStat1 : REFERENCE TO tyBffrStat;
+	p_tyBufferStat2 : REFERENCE TO tyBffrStat;
+	p_tyBufferStat3 : REFERENCE TO tyBffrStat;
+END_VAR
+(**)
+VAR
+	p_bMagPresentSen1 : REFERENCE TO BOOL;
+	p_bMagPresentSen2 : REFERENCE TO BOOL;
+	p_bMagPresentSen3 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bBufferMagPresent1 : REFERENCE TO BOOL;
+	p_bBufferMagPresent2 : REFERENCE TO BOOL;
+	p_bBufferMagPresent3 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_dtBufferMagPresentTm1 : REFERENCE TO DATE_AND_TIME;
+	p_dtBufferMagPresentTm2 : REFERENCE TO DATE_AND_TIME;
+	p_dtBufferMagPresentTm3 : REFERENCE TO DATE_AND_TIME;
+END_VAR
+(**)
+VAR
+	p_eLifterStat : REFERENCE TO eLifterAction;
+	p_eLifterStatus : REFERENCE TO eFBStatus;
+END_VAR
+(**)
+VAR
+	p_eBufferStat1 : REFERENCE TO eBufferAction;
+	p_eBufferStatus1 : REFERENCE TO eFBStatus;
+END_VAR
+(**)
+VAR
+	p_eBufferStat2 : REFERENCE TO eBufferAction;
+	p_eBufferStatus2 : REFERENCE TO eFBStatus;
+END_VAR
+(**)
+VAR
+	p_eBufferStat3 : REFERENCE TO eBufferAction;
+	p_eBufferStatus3 : REFERENCE TO eFBStatus;
+END_VAR
+(**)
+VAR
+	p_eDSSMEMAStat1 : REFERENCE TO eSMEMAAction;
+	p_eDSSMEMAStatus1 : REFERENCE TO eFBStatus;
+	p_bDSSMEMAConvStart1 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eDSSMEMAStat2 : REFERENCE TO eSMEMAAction;
+	p_eDSSMEMAStatus2 : REFERENCE TO eFBStatus;
+	p_bDSSMEMAConvStart2 : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_eDSSMEMAStat3 : REFERENCE TO eSMEMAAction;
+	p_eDSSMEMAStatus3 : REFERENCE TO eFBStatus;
+	p_bDSSMEMAConvStart3 : REFERENCE TO BOOL;
+END_VAR
+(**)
+(*Magazine*)
+VAR
+	p_diBufferNxtUnloadSlt1 : REFERENCE TO DINT;
+	p_diBufferNxtUnloadSlt2 : REFERENCE TO DINT;
+	p_diBufferNxtUnloadSlt3 : REFERENCE TO DINT;
+END_VAR

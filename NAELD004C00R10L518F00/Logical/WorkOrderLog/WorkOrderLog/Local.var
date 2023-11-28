@@ -1,0 +1,88 @@
+(*2019-06-10*)
+(**)
+(*Local Action, State & Status*)
+VAR
+	eAct : eWOLogAction := WOLogActIdle;
+	eStat : eWOLogAction := WOLogActIdle;
+	eMainStatus : eFBStatus := Idle;
+	eStatus : eFBStatus := Idle;
+	eStatus1 : eFBStatus := Idle;
+	udiStatus : UDINT := 0;
+	udiStatus1 : UDINT := 0;
+	sStatTxt : STRING[200] := '';
+	a_sStatText : ARRAY[0..50] OF STRING[200] := ['Idling','Background Starting Operations','Background Stopping Operations','Deleting Old Log File','Creating Directory','Writing Retain File','Reading Retain File','Saving Configuration',43('')];
+END_VAR
+(**)
+(*Local Alarm*)
+VAR
+	tyAlmData : tyAlmDat;
+	tyAlmData1 : tyAlmDat;
+	a_tyAlmText : {REDUND_UNREPLICABLE} ARRAY[10000..10199] OF tyAlmTxt := [(sAlmText:='File Open Error While Writing Log',sRcyText:='An Error Was Encountered While Trying To Open File. Please Contact Nutek For A Possible Solution.'),(sAlmText:='File Create Error While Writing Log',sRcyText:='An Error Was Encountered While Trying To Create File. Please Contact Nutek For A Possible Solution.'),(sAlmText:='Get File Info Error While Writing Log',sRcyText:='An Error Was Encountered While Getting File Info. Please Contact Nutek For A Possible Solution.'),(sAlmText:='File Write Error While Writing Log',sRcyText:='An Error Was Encountered While Trying To Write File. Please Contact Nutek For A Possible Solution.'),(sAlmText:='File Close Error While Writing Log',sRcyText:='An Error Was Encountered While Trying To Close File. Please Contact Nutek For A Possible Solution.'),(sAlmText:='Directory Does Not Exist While Writing Log',sRcyText:='The Directory Does Not Exist.Please Contact Nutek For A Possible Solution.'),(sAlmText:='Invalid Ident While Closing TCP',sRcyText:='Invalid Ident Value.'),(sAlmText:='Closing TCP Error',sRcyText:='Problem Occurred In The TCP/IP Connection. Check The Connection And Try To Reconnect.'),0,(sAlmText:='Board Jam At Sensor After Transfer Interrupted',sRcyText:='Pull Back Board From Downstream Machine'),0,(sAlmText:='Send Board Info Request To Send From Upstream Hermes',sRcyText:='Sending Illegal Message.'),(sAlmText:='Query Work Order Info Request To Send From Upstream Hermes',sRcyText:='Sending Illegal Message.'),(sAlmText:='Send Work Order Info Request To Send From Upstream Hermes',sRcyText:='Sending Illegal Message.'),(sAlmText:='Board Arrived Request To Send From Upstream Hermes',sRcyText:='Sending Illegal Message.'),(sAlmText:='Board departed Request To Send From Upstream Hermes',sRcyText:='Sending Illegal Message.'),(sAlmText:='Forecast Id Mismatch While Checking BoardForecast & Machine Ready',sRcyText:='The ForecastId Value Does Not Match. Change The Value And Resend The Value.'),(sAlmText:='Product Type Id Mismatch While Checking BoardForecast & Machine Ready',sRcyText:='The ProductTypetId Value Does Not Match. Change The Value And Resend The Value.'),(sAlmText:='Width Mismatch While Checking BoardForecast & Machine Ready',sRcyText:='The Width Value Does Not Match. Change The Value And Resend The Value.'),(sAlmText:='Query Top Barcode and Bottom Barcode found from different Recipes',sRcyText:='Please Check or Scan Again the PCB Barcode'),32(0)];
+END_VAR
+(**)
+(*Local Output*)
+VAR
+	bConnected : BOOL;
+	bHandshakeDone : BOOL;
+END_VAR
+(**)
+(*Local Input*)
+VAR
+	udiRstErr : UDINT := 0;
+	bPrep : BOOL := TRUE;
+	bEn : BOOL := TRUE;
+	bDis : BOOL := FALSE;
+	usiStep : USINT;
+	uiSvrPort : UINT := 51111;
+	uiSvrPortOld : UINT;
+	sIPAddr : STRING[15] := '192.168.0.100';
+	tyDTStructure : DTStructure := (year:=2020,month:=11,day:=11,wday:=05,hour:=21,minute:=28,second:=30,millisec:=123,microsec:=456);
+	dtCurrDT : DATE_AND_TIME := DT#2019-02-23-12:30:50;
+	udiSndBffrSize : UDINT := 65536;
+	udiRcvBffrSize : UDINT := 65536;
+	udiAliveIdleTimeInSec : UDINT := 5;
+	tAliveRcvTimeOut : TIME := T#5S;
+	bOpsRun : BOOL := FALSE;
+	udiFileKeepDay : UDINT := 30;
+	sRetainFileName : STRING[80] := 'WorkOrderLog.dat';
+	sProgNm : STRING[15] := 'WorkOrderLog';
+	bNtSettingsLoadDone : BOOL := TRUE;
+END_VAR
+(**)
+(*Local*)
+VAR
+	sMsg : STRING[80];
+	bRstErr : BOOL;
+	udiRstErrOld : UDINT;
+	bInitDone : BOOL;
+	bInitialDone : BOOL;
+	bRun : BOOL;
+	bStop : BOOL;
+	bRstConnection : BOOL;
+	bRstState : BOOL;
+	fbCreateSvr : fbTCPCreateSvr;
+	fbDirCreate1 : fbDirCreate;
+	fbDirCreate2 : fbDirCreate;
+	fbDirCreate3 : fbDirCreate;
+	i : UDINT := 0;
+	j : UDINT := 0;
+	jj : UDINT := 0;
+	udiLogCntrSnd : UDINT := 1;
+	udiWriteLogCntrSnd : UDINT := 1;
+	a_sLogListSnd : ARRAY[1..10] OF STRING[65535];
+	udiLogCntrRcv : UDINT := 1;
+	udiWriteLogCntrRcv : UDINT := 1;
+	a_sLogListRcv : ARRAY[1..10] OF STRING[65535];
+	sDT : STRING[80];
+	dtCurrDTTemp : DATE_AND_TIME;
+	fbFileAppend1 : fbFileFullAppend;
+	fbFileOldDel1 : fbFileOldDel;
+	fbFileRead1 : fbFileFullRead;
+	fbFileWrite1 : fbFileFullWrite;
+	bFileNotFound : BOOL;
+	udiWriteLogCntr : UDINT;
+	udiLogCntr : UDINT;
+	a_sLogList : ARRAY[0..c_udiFrmHistoryMax] OF STRING[200];
+END_VAR
+(**)
+(**)

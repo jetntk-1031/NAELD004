@@ -1,0 +1,27 @@
+(*2019-04-09*)
+(**)
+(*External Data*)
+VAR
+	p_bLinkOpsRun : REFERENCE TO BOOL;
+	p_bLinkStartupRun : REFERENCE TO BOOL;
+	p_bLinkPullConvPullerExtCtrl : REFERENCE TO BOOL;
+	p_bLinkPullConvPullerRetCtrl : REFERENCE TO BOOL;
+	p_bLinkDIPullerExtRS : REFERENCE TO BOOL;
+	p_bLinkDIPullerRetRS : REFERENCE TO BOOL;
+	p_bLinkDIPullerExtSlwRS : REFERENCE TO BOOL;
+	p_bLinkDIPullerRetSlwRS : REFERENCE TO BOOL;
+	p_dintLinkPullerRetSpd : REFERENCE TO DINT;
+	p_dintLinkPullerRetTrq : REFERENCE TO DINT;
+	p_bLinkDIPullerRotHmRS : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_diLinkMag1TravPos : REFERENCE TO DINT;
+	p_diLinkMag2TravPos : REFERENCE TO DINT;
+	p_diLinkMag3TravPos : REFERENCE TO DINT;
+	p_diLinkTravActualPos : REFERENCE TO DINT;
+	p_bProjCurtainSenPrep : REFERENCE TO BOOL;
+	p_diRcp1MtrPshrExtTorq : REFERENCE TO DINT;
+	p_bMagWidthChkSen : REFERENCE TO BOOL;
+	p_tyLinkTorqParam : REFERENCE TO PPTorqParam;
+END_VAR

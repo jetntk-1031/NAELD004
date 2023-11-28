@@ -1,0 +1,17 @@
+(*2019-10-30*)
+(**)
+VAR
+	p_bLinkOpsRun : REFERENCE TO BOOL;
+END_VAR
+(**)
+VAR
+	p_bLinkDISafetyRlySig : REFERENCE TO BOOL;
+	p_bLinkMagSmallSen : REFERENCE TO BOOL;
+	p_bLinkMagLargeSen : REFERENCE TO BOOL;
+	p_bLinkFixClprUnClampSen : REFERENCE TO BOOL;
+	p_bLinkFixClprClampSen : REFERENCE TO BOOL;
+	p_bLinkMagOpsStepMagMtyExit : REFERENCE TO BOOL;
+	p_bLinkDIMagEntSen : REFERENCE TO BOOL;
+	p_bLinkDO : REFERENCE TO tyDigitalOutput;
+	p_bLinkNtParamMagModelAutoVerify : REFERENCE TO BOOL;
+END_VAR

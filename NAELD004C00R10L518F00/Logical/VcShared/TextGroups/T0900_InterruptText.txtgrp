@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.8.4.50 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="T0900_InterruptText">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="26"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="599323" Value="Emergency Stop Activated"/>
+    <Text ID="599324" Value="Cover Switch Signal On"/>
+    <Text ID="599325" Value="Safety Relay Signal Off"/>
+    <Text ID="599326" Value="Left Sensor Interrupting Auto Width"/>
+    <Text ID="599330" Value="Right Sensor Interrupting Auto Width"/>
+    <Text ID="612735" Value="Puller Extended Interrupting Traverser"/>
+    <Text ID="612736" Value="Puller Extended Interrupting Lifter"/>
+    <Text ID="612737" Value="Puller Extended Interrupting Inlet Shutter"/>
+    <Text ID="612738" Value="Inlet Shutter Closed Interrupting Puller"/>
+    <Text ID="612739" Value="Inlet Shutter Opened Interrupting Lifter"/>
+    <Text ID="612740" Value="Inlet Shutter Opened Interrupting Traverser"/>
+    <Text ID="623879" Value="Inlet Shutter Opened Interrupting Auto Width"/>
+    <Text ID="623880" Value="Lifter Is Moving Interrupting Shutter"/>
+    <Text ID="623881" Value="Traverser Is Moving Interrupting Shutter"/>
+    <Text ID="623882" Value="Auto Width Is Moving Interrupting Shutter"/>
+    <Text ID="623883" Value=""/>
+    <Text ID="623884" Value="Left Sensor Interrupting Traverser"/>
+    <Text ID="623885" Value="Right Sensor Interrupting Traverser"/>
+    <Text ID="625721" Value="Left Sensor Interrupting Lifter"/>
+    <Text ID="625722" Value="Right Sensor Interrupting Lifter"/>
+    <Text ID="625725" Value="Lifter Not In Position"/>
+    <Text ID="627564" Value="Traverser Not In Position"/>
+    <Text ID="627565" Value=""/>
+    <Text ID="627566" Value=""/>
+    <Text ID="627567" Value="Puller Not In Retract Position"/>
+    <Text ID="627568" Value="Conveyor Auto Width Position Interrupt Puller Moving"/>
+    <Text ID="627569" Value="Outlet Shutter Opened Interrupting Lifter"/>
+    <Text ID="627570" Value="Outlet Shutter Opened Interrupting Traverser"/>
+    <Text ID="627571" Value="Outlet Shutter Opened Interrupting Auto Width"/>
+    <Text ID="646449" Value="Lifter Safety Limit Switch Activated"/>
+    <Text ID="646450" Value="Lifter Timing Belt Broken"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="599323" Value=""/>
+    <Text ID="599324" Value=""/>
+    <Text ID="599325" Value="Sicherheitsrückstellung AUS"/>
+    <Text ID="599326" Value="Linker Sensor Unterbricht die Automatische Breite"/>
+    <Text ID="599330" Value="Rechter Sensor Unterbricht die Automatische Breite"/>
+    <Text ID="612735" Value=""/>
+    <Text ID="612736" Value=""/>
+    <Text ID="612737" Value=""/>
+    <Text ID="612738" Value=""/>
+    <Text ID="612739" Value=""/>
+    <Text ID="612740" Value=""/>
+    <Text ID="623879" Value=""/>
+    <Text ID="623880" Value=""/>
+    <Text ID="623881" Value=""/>
+    <Text ID="623882" Value=""/>
+    <Text ID="623883" Value=""/>
+    <Text ID="623884" Value=""/>
+    <Text ID="623885" Value=""/>
+    <Text ID="625721" Value=""/>
+    <Text ID="625722" Value=""/>
+    <Text ID="625725" Value=""/>
+    <Text ID="627564" Value=""/>
+    <Text ID="627565" Value=""/>
+    <Text ID="627566" Value=""/>
+    <Text ID="627567" Value=""/>
+    <Text ID="627568" Value=""/>
+    <Text ID="627569" Value=""/>
+    <Text ID="627570" Value=""/>
+    <Text ID="627571" Value=""/>
+    <Text ID="646449" Value=""/>
+    <Text ID="646450" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="zh">
+    <Text ID="599323" Value=""/>
+    <Text ID="599324" Value=""/>
+    <Text ID="599325" Value="安全重设 OFF"/>
+    <Text ID="599326" Value="左侧传感器干扰自动宽度"/>
+    <Text ID="599330" Value="右侧传感器干扰自动宽度"/>
+    <Text ID="612735" Value=""/>
+    <Text ID="612736" Value=""/>
+    <Text ID="612737" Value=""/>
+    <Text ID="612738" Value=""/>
+    <Text ID="612739" Value=""/>
+    <Text ID="612740" Value=""/>
+    <Text ID="623879" Value=""/>
+    <Text ID="623880" Value=""/>
+    <Text ID="623881" Value=""/>
+    <Text ID="623882" Value=""/>
+    <Text ID="623883" Value=""/>
+    <Text ID="623884" Value=""/>
+    <Text ID="623885" Value=""/>
+    <Text ID="625721" Value=""/>
+    <Text ID="625722" Value=""/>
+    <Text ID="625725" Value=""/>
+    <Text ID="627564" Value=""/>
+    <Text ID="627565" Value=""/>
+    <Text ID="627566" Value=""/>
+    <Text ID="627567" Value=""/>
+    <Text ID="627568" Value=""/>
+    <Text ID="627569" Value=""/>
+    <Text ID="627570" Value=""/>
+    <Text ID="627571" Value=""/>
+    <Text ID="646449" Value=""/>
+    <Text ID="646450" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="599323" Value="Parada de emergência ativada"/>
+    <Text ID="599324" Value="Sinal de interruptor de capa ligado"/>
+    <Text ID="599325" Value="Sinal de relé de segurança desligado"/>
+    <Text ID="599326" Value="Sensor esquerdo interrompendo a largura automática"/>
+    <Text ID="599330" Value="Sensor direito interrompendo a largura automática"/>
+    <Text ID="612735" Value="Exculler Extended Interromping Traverser"/>
+    <Text ID="612736" Value="LIBERTOR DE INTERRUPÇÃO DO RECURSO ESTANDENTE"/>
+    <Text ID="612737" Value="Puller estendido interromper o obturador de entrada"/>
+    <Text ID="612738" Value="Shutter de entrada de interrupção fechada de interrupção"/>
+    <Text ID="612739" Value="Obturador de entrada abriu o levantador de interrupção"/>
+    <Text ID="612740" Value="Obturador de entrada abriu o interruptor Traverser"/>
+    <Text ID="623879" Value="Obturador de entrada abriu a largura automática de interrupção"/>
+    <Text ID="623880" Value="O levantador está movendo o obturador interrompido"/>
+    <Text ID="623881" Value="Traverser está movendo a interrupção do obturador"/>
+    <Text ID="623882" Value="A largura automática está movendo o obturador interrompido"/>
+    <Text ID="623883" Value=""/>
+    <Text ID="623884" Value="Travedor de interrupção do sensor esquerdo"/>
+    <Text ID="623885" Value="Travedor de interrupção do sensor direito"/>
+    <Text ID="625721" Value="LIFTER DO SENSOR DE ESQUERDA"/>
+    <Text ID="625722" Value="Sensor direito interrompendo o levantamento"/>
+    <Text ID="625725" Value="Levantador não em posição"/>
+    <Text ID="627564" Value="Traverser não em posição"/>
+    <Text ID="627565" Value=""/>
+    <Text ID="627566" Value=""/>
+    <Text ID="627567" Value="Extrator não na posição de retração"/>
+    <Text ID="627568" Value="Posição de largura automática transportadora movimentação de interrupção de interrupção"/>
+    <Text ID="627569" Value="Obturador de saída abriu o levantador de interrupção"/>
+    <Text ID="627570" Value="Obturador de saída abriu o interruptor Traverser"/>
+    <Text ID="627571" Value="Obturador de saída abriu a largura automática de interrupção"/>
+    <Text ID="646449" Value="Interruptor de limite de segurança do levantamento ativado"/>
+    <Text ID="646450" Value="Cinturão de tempo do levantamento quebrado"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="599323" Value="1"/>
+    <Index ID="599324" Value="2"/>
+    <Index ID="599325" Value="3"/>
+    <Index ID="599326" Value="4"/>
+    <Index ID="599330" Value="5"/>
+    <Index ID="612735" Value="6"/>
+    <Index ID="612736" Value="7"/>
+    <Index ID="612737" Value="8"/>
+    <Index ID="612738" Value="9"/>
+    <Index ID="612739" Value="10"/>
+    <Index ID="612740" Value="11"/>
+    <Index ID="623879" Value="12"/>
+    <Index ID="623880" Value="13"/>
+    <Index ID="623881" Value="14"/>
+    <Index ID="623882" Value="15"/>
+    <Index ID="623883" Value="0"/>
+    <Index ID="623884" Value="16"/>
+    <Index ID="623885" Value="17"/>
+    <Index ID="625721" Value="21"/>
+    <Index ID="625722" Value="22"/>
+    <Index ID="625725" Value="25"/>
+    <Index ID="627564" Value="26"/>
+    <Index ID="627565" Value="27"/>
+    <Index ID="627566" Value="28"/>
+    <Index ID="627567" Value="29"/>
+    <Index ID="627568" Value="30"/>
+    <Index ID="627569" Value="18"/>
+    <Index ID="627570" Value="19"/>
+    <Index ID="627571" Value="20"/>
+    <Index ID="646449" Value="23"/>
+    <Index ID="646450" Value="24"/>
+  </IndexMap>
+</TextGroup>

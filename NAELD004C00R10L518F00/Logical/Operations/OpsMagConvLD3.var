@@ -1,0 +1,58 @@
+(*2019-03-25*)
+(**)
+(*Action & State & Status*)
+(**)
+(*Alarm*)
+VAR
+	p_OpsMagConvLD3AlmData : UDINT;
+	p_OpsMagConvLD3AlmData1 : UDINT;
+END_VAR
+(**)
+(*Output*)
+VAR
+	p_OpsMagConvLD3StepTxt : UDINT;
+	p_OpsMagConvLD3Paused : UDINT;
+END_VAR
+(**)
+VAR
+	p_OpsMagConvLD3BufferAct : UDINT;
+	p_OpsMagConvLD3MagConv2ClpAct : UDINT;
+	p_OpsMagConvLD3DSSMEMAAct : UDINT;
+	p_OpsMagConvLD3AGVMagAct : UDINT;
+	p_OpsMagConvLD3SafetyBarAct : UDINT;
+END_VAR
+(**)
+VAR
+	p_OpsMagConvLD3NewMagVerified : UDINT;
+	p_OpsMagConvLD3MagMtyExit : UDINT;
+	p_OpsMagConvLD3IncorrectMagModel : UDINT;
+	p_OpsMagConvLD3MagSizeL : UDINT;
+END_VAR
+(**)
+VAR
+	p_OpsMagConvLD3InitDone : UDINT;
+	p_OpsMagConvLD3MagBffrAvl : UDINT;
+	p_OpsMagConvLD3NewMagAllw : UDINT;
+	p_OpsMagConvLD3RlsMagAllw : UDINT;
+	p_OpsMagConvLD3StepMagExitedWait : UDINT;
+	p_OpsMagConvLD3StepUSCom : UDINT;
+	p_OpsMagConvLD3StepSelClampCtrl : UDINT;
+END_VAR
+(**)
+VAR
+	p_OpsMagConvLD3USSOTAct : UDINT;
+	p_OpsMagConvLD3DSSOTAct : UDINT;
+	p_OpsMagConvLD3ExitedWait : UDINT;
+	p_OpsMagConvLD3DSCom : UDINT;
+	p_OpsMagConvLD3AGVCommRdy : UDINT;
+	p_OpsMagConvLD3UnclmpDone : UDINT;
+	p_OpsMagConvLD3MagAllwGo : UDINT;
+	p_OpsMagConvLD3QueryWO : UDINT;
+	p_OpsMagConvLD3ReadRFID : UDINT;
+	p_OpsMagConvLD3WriteRFID : UDINT;
+	p_OpsMagConvLD3ExtDelAutoRcp : UDINT;
+	p_OpsMagConvLD3RlsMagUmask : UDINT;
+	p_OpsMagConvLD3ExtMes : UDINT;
+	p_OpsMagConvLD3HModChgDone : UDINT;
+END_VAR
+(**)
