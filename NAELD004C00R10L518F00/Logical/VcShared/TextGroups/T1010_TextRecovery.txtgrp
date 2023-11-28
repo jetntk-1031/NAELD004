@@ -1659,7 +1659,7 @@
     <Text ID="892126" Value="An Error Was Encountered While Trying To Open File. Please Contact Nutek For A Possible Solution."/>
     <Text ID="892127" Value="An Error Was Encountered While Trying To Read File. Please Contact Nutek For A Possible Solution."/>
     <Text ID="892128" Value="An Error Was Encountered While Trying To Close File. Please Contact Nutek For A Possible Solution."/>
-    <Text ID="892129" Value="The Directory Does Not Exist.Please Contact Nutek For A Possibe Solution."/>
+    <Text ID="892129" Value="An Error Was Encountered While Trying to Connect HMI OPCUA Server. Please Contact Nutek For A Possible Solution."/>
     <Text ID="892130" Value=""/>
     <Text ID="892131" Value="Unable To Create User Folder. Please Contact Nutek For A Possible Solution"/>
     <Text ID="892132" Value="Unable To Create Private Folder. Please Contact Nutek For A Possible Solution"/>
@@ -2175,6 +2175,7 @@
     <Text ID="963062" Value=""/>
     <Text ID="971979" Value="Please Ensure No Blockage At Inlet Sensor."/>
     <Text ID="1034744" Value="Please Ensure The Transport Lock Slot Unlock."/>
+    <Text ID="1043772" Value="The Directory Does Not Exist.Please Contact Nutek For A Possibe Solution."/>
   </TextLayer>
   <TextLayer LanguageId="de">
     <Text ID="890400" Value=""/>
@@ -4347,6 +4348,7 @@
     <Text ID="963062" Value=""/>
     <Text ID="971979" Value=""/>
     <Text ID="1034744" Value=""/>
+    <Text ID="1043772" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="zh">
     <Text ID="890400" Value=""/>
@@ -6519,6 +6521,7 @@
     <Text ID="963062" Value=""/>
     <Text ID="971979" Value=""/>
     <Text ID="1034744" Value=""/>
+    <Text ID="1043772" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="pt">
     <Text ID="890400" Value=""/>
@@ -8691,6 +8694,7 @@
     <Text ID="963062" Value=""/>
     <Text ID="971979" Value=""/>
     <Text ID="1034744" Value=""/>
+    <Text ID="1043772" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="890400" Value="0"/>
@@ -10347,7 +10351,7 @@
     <Index ID="892126" Value="5257"/>
     <Index ID="892127" Value="5258"/>
     <Index ID="892128" Value="5259"/>
-    <Index ID="892129" Value="5260"/>
+    <Index ID="892129" Value="5261"/>
     <Index ID="892130" Value="5350"/>
     <Index ID="892131" Value="5351"/>
     <Index ID="892132" Value="5352"/>
@@ -10863,5 +10867,6 @@
     <Index ID="963062" Value="7225"/>
     <Index ID="971979" Value="6060"/>
     <Index ID="1034744" Value="6081"/>
+    <Index ID="1043772" Value="5260"/>
   </IndexMap>
 </TextGroup>

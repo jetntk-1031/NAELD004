@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.8.4.50 SP"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MainMenu">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="3"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="18951" Value="Source[local].Bitmap[Auto_Main_7]"/>
+    <BitmapRef ID="18952" Value="Source[local].Bitmap[Buzzer_On_7]"/>
+    <BitmapRef ID="18953" Value="Source[local].Bitmap[Reset_Main_7]"/>
+    <BitmapRef ID="18954" Value="Source[local].Bitmap[Sliver_Base_100x82]"/>
+    <BitmapRef ID="18955" Value="Source[local].Bitmap[Stop_Main_7]"/>
+    <BitmapRef ID="18956" Value="Source[local].Bitmap[Buzzer_Off_7]"/>
+    <BitmapRef ID="18957" Value="Source[local].Bitmap[Buzzer_Standby_7]"/>
+    <BitmapRef ID="18958" Value="None"/>
+    <BitmapRef ID="18959" Value="Source[local].Bitmap[Green_Base_100x82]"/>
+    <BitmapRef ID="18960" Value="Source[local].Bitmap[Red_Base_100x82]"/>
+    <BitmapRef ID="18961" Value="Source[local].Bitmap[Amber_Base_100x82]"/>
+    <BitmapRef ID="18962" Value="Source[local].Bitmap[Yellow_Base_100x82]"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="18951" Value="0"/>
+    <Index ID="18952" Value="5"/>
+    <Index ID="18953" Value="2"/>
+    <Index ID="18954" Value="20"/>
+    <Index ID="18955" Value="1"/>
+    <Index ID="18956" Value="6"/>
+    <Index ID="18957" Value="4"/>
+    <Index ID="18958" Value="3"/>
+    <Index ID="18959" Value="21"/>
+    <Index ID="18960" Value="22"/>
+    <Index ID="18961" Value="23"/>
+    <Index ID="18962" Value="24"/>
+  </IndexMap>
+</BitmapGroup>

@@ -244,4 +244,8 @@ PROGRAM _INIT
 	p_UITrolleyUnlck1				:= ADR(tyP0200OpsGen.tyOps.tyBtnTrolleyUnlck1.bValue);
 	p_UITrolleyUnlck2				:= ADR(tyP0200OpsGen.tyOps.tyBtnTrolleyUnlck2.bValue);
 
+	
+	//Add
+	p_UISetHMIIPAddr				:= ADR(sSetHMIIPAddr);
+	p_UIUpdtHMIIPAddr				:= ADR(bUpdtHMIIPAddr);
 END_PROGRAM

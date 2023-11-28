@@ -8,7 +8,6 @@
     <Object Type="Library" Language="Binary" Description="5.00.1 - Increase fLogAlmFullMsg &amp; fLogAlmDispMsg STRING Size To 300. (20190325)&#xD;&#xA;5.00.0 - New Library Design. (20180925)">NtLogFile</Object>
     <Object Type="Library" Language="Binary" Description="5.00.0 - New Library Design. (20180925)">NtMem</Object>
     <Object Type="Library" Language="Binary" Description="5.00.1 - Debug When Attribute Value Is Empty String (20190517)&#xD;&#xA;5.00.0 - New Library Design. (20190103)">NtMessage</Object>
-    <Object Type="Library" Language="Binary" Description="5.00.0 - New Library Design. (20180926)">NtOPCUA</Object>
     <Object Type="Library" Language="Binary" Description="5.00.0 - New Library Design. (20180925)">NtOvenInfo</Object>
     <Object Type="Library" Language="Binary" Description="5.00.0 - New Library Design. (20180925)">NtPneu</Object>
     <Object Type="Library" Language="Binary" Description="5.00.2 - Add Flatstream Function (2019-05-29)&#xD;&#xA;5.00.1 - Add fbRS232FullReadUntilValid (20190521)&#xD;&#xA;5.00.0 - New Library Design. (20190518)">NtRS232</Object>
@@ -24,5 +23,6 @@
     <Object Type="Library" Language="IEC" Description="5.00.2 - Add tyUIBitmap &amp; tyUIBtn (uiValueIdx) to accomodate higher range of offset index (20210625)&#xD;&#xA;5.00.1 - Update fbTableCtrl, fbTableCtrl_v2 and tyUILString.(20200608)&#xD;&#xA;5.00.0 - New Library Design. (20181203)">NtUI</Object>
     <Object Type="Library" Language="Binary" Description="5.01.0 - Include Schneider Stepper Stepper Acc/Dec (20230225)&#xD;&#xA;5.00.9 - Uncheck servo on and homing operation if both have been done.(20211019) &#xD;&#xA;5.00.8 - Limit sensor intelock for Estun Servo Movement. (20210217)&#xD;&#xA;           - Homing timeout in 3 sec if home sensor broken.&#xD;&#xA;           - Set default value for servo parameter if the NtParam setting out of the limit. (20210220)&#xD;&#xA;5.00.7 - Torque limit setting at NtParam (20201110)&#xD;&#xA;5.00.6 - Homing action when remote side limit switch is on (20200630)&#xD;&#xA;5.00.5 - Homing timeout error when limit switch disconnected (20200615)&#xD;&#xA;5.00.4 - Auto move even at limit sensor position (20200526) &#xD;&#xA;5.00.3 - Add Estun and Schneider (2020311) ">NtMotion</Object>
     <Object Type="Library" Language="Binary" Description="5.00.4 - Hermes v1.3 &#xD;&#xA;            - Reply Work Order">NtHermes</Object>
+    <Object Type="Library" Language="IEC" Description="5.00.1 - Added OPCUAMethodGetHandle and OPCUAMethodCall. (20230906)&#xD;&#xA;5.00.0 - New Library Design. (20180926)">NtOPCUA</Object>
   </Objects>
 </Package>

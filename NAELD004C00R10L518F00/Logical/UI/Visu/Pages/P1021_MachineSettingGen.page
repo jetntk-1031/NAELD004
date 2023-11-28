@@ -497,7 +497,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="30"/>
           <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="400"/>
+          <Property Name="Left" Value="484"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyTxtWidthOffset.uiRtStat]"/>
@@ -505,8 +505,8 @@
           <Property Name="TextGroup" Value="Source[global].TextGroup[T1080_MachineSetting]"/>
           <Property Name="TextIndexOffset" Value="307"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="292"/>
-          <Property Name="Width" Value="134"/>
+          <Property Name="Top" Value="186"/>
+          <Property Name="Width" Value="97"/>
         </Control>
         <Control ClassId="0x00001007" Name="Input_WidthAtHomePos1">
           <Property Name="AddFractionDigits" Value="1"/>
@@ -514,7 +514,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="605"/>
+          <Property Name="Left" Value="604"/>
           <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumWidthOffset.diValueMax]"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumWidthOffset.diValueMin]"/>
@@ -523,7 +523,7 @@
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumWidthOffset.uiRtStat]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input_Unit2]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="290"/>
+          <Property Name="Top" Value="183"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumWidthOffset.diValue]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="140"/>
@@ -812,6 +812,48 @@
           <Property Name="Top" Value="186"/>
           <Property Name="Width" Value="220"/>
         </Control>
+        <Control ClassId="0x00001004" Name="lbl_SubNetIP1">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="400"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text_Label]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[T1080_MachineSetting]"/>
+          <Property Name="TextIndexOffset" Value="360"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="290"/>
+          <Property Name="Width" Value="140"/>
+        </Control>
+        <Control ClassId="0x0000100B" Name="Input_SubNetMask1">
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyStringHMIIPAddr.bRtCompl]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="605"/>
+          <Property Name="SimulationValue" Value="192.168.000.101"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyStringHMIIPAddr.uiRtStat]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[InputNumeric]"/>
+          <Property Name="Top" Value="290"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyStringHMIIPAddr.sValue]"/>
+          <Property Name="Width" Value="140"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Mask_Subnet1">
+          <Property Name="Bitmap" Value="None"/>
+          <Property Name="BitmapSource" Value="SingleBitmap"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="605"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyStringHMIIPAddr.uiMaskRtStat]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Mask]"/>
+          <Property Name="Top" Value="290"/>
+          <Property Name="Width" Value="140"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_534">
@@ -889,7 +931,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="258"/>
+          <Property Name="Top" Value="260"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_1089]"/>
           <Property Name="Width" Value="300"/>
         </Control>
@@ -995,6 +1037,146 @@
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="80"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMag2WidthChkDetDist.diValue]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="140"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="lbl_BtnPos1">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="56"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[1].uiRtStat]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text_Label]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[T1080_MachineSetting]"/>
+          <Property Name="TextIndexOffset" Value="407"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="300"/>
+          <Property Name="Width" Value="179"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="lbl_BtnPos2">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="56"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[2].uiRtStat]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text_Label]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[T1080_MachineSetting]"/>
+          <Property Name="TextIndexOffset" Value="408"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="340"/>
+          <Property Name="Width" Value="181"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="lbl_BtnPos3">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="31"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="56"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[3].uiRtStat]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text_Label]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[T1080_MachineSetting]"/>
+          <Property Name="TextIndexOffset" Value="409"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="380"/>
+          <Property Name="Width" Value="178"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="Input_Btn1Pos">
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[1].bRtCompl]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="230"/>
+          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[1].diValueMax]"/>
+          <Property Name="MaxValue" Value="None"/>
+          <Property Name="MinDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[1].diValueMin]"/>
+          <Property Name="MinValue" Value="None"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[1].uiRtStat]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input_Unit2]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="293"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[1].diValue]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="140"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="Input_Btn2Pos">
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[2].bRtCompl]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="230"/>
+          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[2].diValueMax]"/>
+          <Property Name="MaxValue" Value="None"/>
+          <Property Name="MinDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[2].diValueMin]"/>
+          <Property Name="MinValue" Value="None"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[2].uiRtStat]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input_Unit2]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="335"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[2].diValue]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="140"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="Input_Btn3Pos">
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[3].bRtCompl]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="230"/>
+          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[3].diValueMax]"/>
+          <Property Name="MaxValue" Value="None"/>
+          <Property Name="MinDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[3].diValueMin]"/>
+          <Property Name="MinValue" Value="None"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[3].uiRtStat]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input_Unit2]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="377"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[3].diValue]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="140"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="lbl_BtnPos4">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="31"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="58"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[4].uiRtStat]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text_Label]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[T1080_MachineSetting]"/>
+          <Property Name="TextIndexOffset" Value="410"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="420"/>
+          <Property Name="Width" Value="178"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="Input_Btn4Pos">
+          <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[3].bRtCompl]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="232"/>
+          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[4].diValueMax]"/>
+          <Property Name="MaxValue" Value="None"/>
+          <Property Name="MinDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[4].diValueMin]"/>
+          <Property Name="MinValue" Value="None"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[4].uiRtStat]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input_Unit2]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="418"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[4].diValue]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="140"/>
         </Control>
@@ -2504,10 +2686,10 @@
   </Layers>
   <MovementOrder>
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos]">
-      <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_ConvInitTm]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag1ConvRunTmOut]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn2Pos]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn2Pos]"/>
       <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag1ConvRunTmOut]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_SubNetMask]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn1Pos]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[Input_McNm]">
       <Property Name="Down" Value="Source[embedded].Layer[A2_General3].Control[Input_magwidthchkdet3]"/>
@@ -2516,16 +2698,16 @@
       <Property Name="Up" Value="Source[embedded].Layer[A2_General2].Control[Input_TravPosLaneA]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[Input_TranOutErrDlyTm]">
-      <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_MagazineInletSenTim]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag3ConvRunTmOut]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn4Pos]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn4Pos]"/>
       <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag3ConvRunTmOut]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_ConvInitTm]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn3Pos]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[Input_ConvInitTm]">
-      <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_TranOutErrDlyTm]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag2ConvRunTmOut]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn3Pos]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn2Pos]"/>
       <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag2ConvRunTmOut]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn2Pos]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[NumInput_ScreenSaverTm]">
       <Property Name="Down" Value="Source[embedded].Layer[A2_General2].Control[Input_TravPosInletFixToFix]"/>
@@ -2540,9 +2722,9 @@
       <Property Name="Up" Value="Source[embedded].Layer[A2_General2].Control[Input_TravPosInletFixToFix]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[Input_SubNetMask]">
-      <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos1]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos1]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn1Pos]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn1Pos]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_SubNetMask1]"/>
       <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_IPAdd]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[DrpDw_McMod]">
@@ -2554,20 +2736,20 @@
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[Input_Mag3ConvRunTmOut]">
       <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag4ConvRunTmOut]"/>
       <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_TranOutErrDlyTm]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_TranOutErrDlyTm]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn3Pos]"/>
       <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag2ConvRunTmOut]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[Input_Mag2ConvRunTmOut]">
       <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag3ConvRunTmOut]"/>
       <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_ConvInitTm]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_ConvInitTm]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn2Pos]"/>
       <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag1ConvRunTmOut]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[Input_Mag1ConvRunTmOut]">
       <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag2ConvRunTmOut]"/>
       <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos1]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn2Pos]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_SubNetMask1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[DrpDw_DefaultFlippedBrd]">
       <Property Name="Down" Value="Source[embedded].Layer[A2_General2].Control[Input_LMCfbTm]"/>
@@ -2576,16 +2758,16 @@
       <Property Name="Up" Value="Source[embedded].Layer[A2_General2].Control[Input_AWPusherAtHomePos]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos1]">
-      <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag1ConvRunTmOut]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_SubNetMask]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_SubNetMask]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[DrpDw_NetworkMod]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[A2_General2].Control[Input_MESRFIDWrTO]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[E0_NetworkParam].Control[Input_SubNetMask]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[A2_General2].Control[Input_MESRFIDWrTO]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[A2_General2].Control[Input_LMCfbTm]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[Input_MagazineInletSenTim]">
       <Property Name="Down" Value="Source[embedded].Layer[A2_General3].Control[Input_magwidthchkdet1]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag4ConvRunTmOut]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn4Pos]"/>
       <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag4ConvRunTmOut]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_TranOutErrDlyTm]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn4Pos]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[Numeric_AutoLogoutTm]">
       <Property Name="Down" Value="Source[embedded].Layer[A2_General2].Control[Input_LaneBOffset]"/>
@@ -2594,7 +2776,7 @@
       <Property Name="Up" Value="Source[embedded].Layer[A2_General2].Control[Input_MESRFIDWrTO]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[DrpDw_NetworkMod]">
-      <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos1]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_SubNetMask1]"/>
       <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_IPAdd]"/>
       <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_IPAdd]"/>
       <Property Name="Up" Value="Source[embedded].Layer[A2_General2].Control[Input_LaneBOffset]"/>
@@ -2602,7 +2784,7 @@
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[Input_Mag4ConvRunTmOut]">
       <Property Name="Down" Value="Source[embedded].Layer[A2_General3].Control[Input_magwidthchkDet2]"/>
       <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_MagazineInletSenTim]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_MagazineInletSenTim]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn4Pos]"/>
       <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag3ConvRunTmOut]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[DrpDw_DefaultFlippedBrd1]">
@@ -2616,6 +2798,12 @@
       <Property Name="Left" Value="Source[embedded].Layer[A2_General2].Control[Input_TravPosLaneB1]"/>
       <Property Name="Right" Value="Source[embedded].Layer[E0_NetworkParam].Control[Input_IPAdd]"/>
       <Property Name="Up" Value="Source[embedded].Layer[E0_NetworkParam].Control[Input_IPAdd]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[A1_General1].Control[Input_SubNetMask1]">
+      <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag1ConvRunTmOut]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_SubNetMask]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn1Pos]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[DrpDw_NetworkMod]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A2_General3].Control[Input_magwidthchkdet1]">
       <Property Name="Down" Value="Source[embedded].Layer[A2_General2].Control[Input_TravPosLaneA]"/>
@@ -2634,6 +2822,30 @@
       <Property Name="Left" Value="Source[embedded].Layer[A2_General2].Control[Input_AWPusherAtHomePos]"/>
       <Property Name="Right" Value="Source[embedded].Layer[A2_General2].Control[Input_TravPosLaneA]"/>
       <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag4ConvRunTmOut]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[A2_General3].Control[Input_Btn1Pos]">
+      <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_SubNetMask1]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_SubNetMask]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_SubNetMask]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[A2_General3].Control[Input_Btn2Pos]">
+      <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_ConvInitTm]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag1ConvRunTmOut]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[A2_General3].Control[Input_Btn3Pos]">
+      <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_TranOutErrDlyTm]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag2ConvRunTmOut]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_ConvInitTm]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_ConvInitTm]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[A2_General3].Control[Input_Btn4Pos]">
+      <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_MagazineInletSenTim]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_Mag4ConvRunTmOut]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_TranOutErrDlyTm]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_TranOutErrDlyTm]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A2_General2].Control[Input_TravPosLaneA]">
       <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_McNm]"/>
@@ -2666,16 +2878,16 @@
       <Property Name="Up" Value="Source[embedded].Layer[A2_General3].Control[Input_magwidthchkDet2]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A2_General2].Control[Input_LMCfbTm]">
-      <Property Name="Down" Value="Source[embedded].Layer[A2_General2].Control[Input_MESRFIDWrTO]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos1]"/>
       <Property Name="Left" Value="Source[embedded].Layer[E0_NetworkParam].Control[Input_IPAdd]"/>
       <Property Name="Right" Value="Source[embedded].Layer[A2_General2].Control[Input_TravPosLaneB]"/>
       <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[DrpDw_DefaultFlippedBrd]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A2_General2].Control[Input_MESRFIDWrTO]">
       <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Numeric_AutoLogoutTm]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[E0_NetworkParam].Control[Input_SubNetMask]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos1]"/>
       <Property Name="Right" Value="Source[embedded].Layer[A2_General2].Control[Input_TravPosLaneB1]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[A2_General2].Control[Input_LMCfbTm]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[A2_General2].Control[Input_TravPosInletFixToFix]">
       <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[Input_IPAdd]"/>
@@ -2692,13 +2904,13 @@
     <MovementEntry Control="Source[embedded].Layer[E0_NetworkParam].Control[Input_IPAdd]">
       <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[DrpDw_DefaultFlippedBrd2]"/>
       <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[DrpDw_DefaultFlippedBrd1]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[A2_General2].Control[Input_LMCfbTm]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos1]"/>
       <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[DrpDw_DefaultFlippedBrd1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[E0_NetworkParam].Control[Input_SubNetMask]">
       <Property Name="Down" Value="Source[embedded].Layer[A1_General1].Control[DrpDw_NetworkMod]"/>
       <Property Name="Left" Value="Source[embedded].Layer[A1_General1].Control[DrpDw_DefaultFlippedBrd2]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Numeric_AutoLogoutTm]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[A1_General1].Control[Input_WidthAtHomePos1]"/>
       <Property Name="Up" Value="Source[embedded].Layer[A1_General1].Control[DrpDw_DefaultFlippedBrd2]"/>
     </MovementEntry>
   </MovementOrder>
@@ -2737,5 +2949,10 @@
     <TabSeqItem Index="31" Value="Source[embedded].Layer[A2_General2].Control[Input_MESRFIDWrTO]"/>
     <TabSeqItem Index="32" Value="Source[embedded].Layer[A2_General2].Control[Input_TravPosInletFixToFix]"/>
     <TabSeqItem Index="33" Value="Source[embedded].Layer[A2_General2].Control[Input_LaneBOffset]"/>
+    <TabSeqItem Index="34" Value="Source[embedded].Layer[A1_General1].Control[Input_SubNetMask1]"/>
+    <TabSeqItem Index="35" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn1Pos]"/>
+    <TabSeqItem Index="36" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn2Pos]"/>
+    <TabSeqItem Index="37" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn3Pos]"/>
+    <TabSeqItem Index="38" Value="Source[embedded].Layer[A2_General3].Control[Input_Btn4Pos]"/>
   </TabSequence>
 </Page>

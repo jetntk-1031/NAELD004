@@ -64,6 +64,9 @@ ACTION Act_ChgPage:
 			UIP0001Startup:
 				Act_EntP0001Disp;
 				
+			UIP0003MMenu:
+				Act_EntP0003Disp;
+			
 			UIP0002Menu:
 				Act_EntP0002Disp;
 				

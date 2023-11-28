@@ -35,4 +35,44 @@ ACTION Act_Initial:
 	fbFileWrite2.udiOption		:= 0;
 	fbFileWrite2(bEn := FALSE);
 	
+	
+	//ADDED
+	sVNCAddrNodeID := '54267'; // HMI VNC's IP Address Node ID
+	sHMIAddrNodeID := '54248'; // HMI Network's IP Address Node ID
+	sObjIDNodeID := '54159'; // HMI MethodSet's Node ID
+	sSaveCfgNodeID := '54322'; // HMI Save Method's Node ID
+	sLoadCfgNodeID := '54321'; // HMI Load Method's Node ID
+
+	uiNSIdx := 4;
+	fbConnectOPCUA.tyOPCUAParam.sPort := '4841';
+	fbConnectOPCUA(bEn := FALSE);
+	fbReadGetNodeHdlList.usiNSIdx := uiNSIdx;
+	fbReadGetNodeHdlList.uiTagNmCnt := 2;
+	fbReadGetNodeHdlList.a_sServerTagNm[0] := sVNCAddrNodeID;
+	fbReadGetNodeHdlList.a_sServerTagNm[1] := sHMIAddrNodeID;
+	fbReadGetNodeHdlList(bEn := FALSE);
+	fbReadList.uiTagNmCnt := 2;
+	fbReadList(bEn := FALSE);
+
+	fbWriteGetNodeHdlList.usiNSIdx := uiNSIdx;
+	fbWriteGetNodeHdlList.uiTagNmCnt := 2;
+	fbWriteGetNodeHdlList.a_sServerTagNm[0] := sVNCAddrNodeID;
+	fbWriteGetNodeHdlList.a_sServerTagNm[1] := sHMIAddrNodeID;
+	fbWriteGetNodeHdlList(bEn := FALSE);
+	fbWriteList.uiTagNmCnt := 2;
+	fbWriteList(bEn := FALSE);
+
+	fbSaveCfgMethodGetHdl.uiNSIdx := uiNSIdx;
+	fbSaveCfgMethodGetHdl.sObjectIdentifier := sObjIDNodeID;
+	fbSaveCfgMethodGetHdl.sMethodIdentifier := sSaveCfgNodeID;
+	fbSaveCfgMethodGetHdl(bEn := FALSE);
+	fbSaveCfgMethodCall(bEn := FALSE);
+
+	fbLoadCfgMethodGetHdl.uiNSIdx := uiNSIdx;
+	fbLoadCfgMethodGetHdl.sObjectIdentifier := sObjIDNodeID;
+	fbLoadCfgMethodGetHdl.sMethodIdentifier := sLoadCfgNodeID;
+	fbLoadCfgMethodGetHdl(bEn := FALSE);
+	fbLoadCfgMethodCall(bEn := FALSE);
+	
+	fbDisconnectOPCUA(bEn := FALSE);
 END_ACTION

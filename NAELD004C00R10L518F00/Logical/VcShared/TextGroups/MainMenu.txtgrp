@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.8.4.50 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MainMenu">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="35"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="1043774" Value="Auto"/>
+    <Text ID="1043775" Value="Stop"/>
+    <Text ID="1043776" Value="Buzzer"/>
+    <Text ID="1043777" Value="Accept\nData"/>
+    <Text ID="1043778" Value="Reset"/>
+    <Text ID="1043779" Value="Manual\nUnload"/>
+    <Text ID="1043780" Value="New\nMagazine 1"/>
+    <Text ID="1043781" Value="Release\nMagazine 1"/>
+    <Text ID="1043782" Value="New\nMagazine 2"/>
+    <Text ID="1043783" Value="Release\nMagazine 2"/>
+    <Text ID="1043784" Value="New\nMagazine 3"/>
+    <Text ID="1043785" Value="Auto Runnig"/>
+    <Text ID="1043786" Value="Standy By"/>
+    <Text ID="1043787" Value="Cycle Stopping"/>
+    <Text ID="1043788" Value="Error"/>
+    <Text ID="1043789" Value="Resume\nOperation"/>
+    <Text ID="1071138" Value="Release\nMagazine 3"/>
+    <Text ID="1071139" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="1043774" Value=""/>
+    <Text ID="1043775" Value=""/>
+    <Text ID="1043776" Value=""/>
+    <Text ID="1043777" Value=""/>
+    <Text ID="1043778" Value=""/>
+    <Text ID="1043779" Value=""/>
+    <Text ID="1043780" Value=""/>
+    <Text ID="1043781" Value=""/>
+    <Text ID="1043782" Value=""/>
+    <Text ID="1043783" Value=""/>
+    <Text ID="1043784" Value=""/>
+    <Text ID="1043785" Value=""/>
+    <Text ID="1043786" Value=""/>
+    <Text ID="1043787" Value=""/>
+    <Text ID="1043788" Value=""/>
+    <Text ID="1043789" Value=""/>
+    <Text ID="1071138" Value=""/>
+    <Text ID="1071139" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="zh">
+    <Text ID="1043774" Value=""/>
+    <Text ID="1043775" Value=""/>
+    <Text ID="1043776" Value=""/>
+    <Text ID="1043777" Value=""/>
+    <Text ID="1043778" Value=""/>
+    <Text ID="1043779" Value=""/>
+    <Text ID="1043780" Value=""/>
+    <Text ID="1043781" Value=""/>
+    <Text ID="1043782" Value=""/>
+    <Text ID="1043783" Value=""/>
+    <Text ID="1043784" Value=""/>
+    <Text ID="1043785" Value=""/>
+    <Text ID="1043786" Value=""/>
+    <Text ID="1043787" Value=""/>
+    <Text ID="1043788" Value=""/>
+    <Text ID="1043789" Value=""/>
+    <Text ID="1071138" Value=""/>
+    <Text ID="1071139" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="pt">
+    <Text ID="1043774" Value=""/>
+    <Text ID="1043775" Value=""/>
+    <Text ID="1043776" Value=""/>
+    <Text ID="1043777" Value=""/>
+    <Text ID="1043778" Value=""/>
+    <Text ID="1043779" Value=""/>
+    <Text ID="1043780" Value=""/>
+    <Text ID="1043781" Value=""/>
+    <Text ID="1043782" Value=""/>
+    <Text ID="1043783" Value=""/>
+    <Text ID="1043784" Value=""/>
+    <Text ID="1043785" Value=""/>
+    <Text ID="1043786" Value=""/>
+    <Text ID="1043787" Value=""/>
+    <Text ID="1043788" Value=""/>
+    <Text ID="1043789" Value=""/>
+    <Text ID="1071138" Value=""/>
+    <Text ID="1071139" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="1043774" Value="0"/>
+    <Index ID="1043775" Value="1"/>
+    <Index ID="1043776" Value="2"/>
+    <Index ID="1043777" Value="3"/>
+    <Index ID="1043778" Value="4"/>
+    <Index ID="1043779" Value="5"/>
+    <Index ID="1043780" Value="6"/>
+    <Index ID="1043781" Value="7"/>
+    <Index ID="1043782" Value="8"/>
+    <Index ID="1043783" Value="9"/>
+    <Index ID="1043784" Value="10"/>
+    <Index ID="1043785" Value="20"/>
+    <Index ID="1043786" Value="23"/>
+    <Index ID="1043787" Value="21"/>
+    <Index ID="1043788" Value="22"/>
+    <Index ID="1043789" Value="30"/>
+    <Index ID="1071138" Value="11"/>
+    <Index ID="1071139" Value="12"/>
+  </IndexMap>
+</TextGroup>

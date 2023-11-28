@@ -93,7 +93,6 @@ VAR
 	bInterruptSensor3 : BOOL;
 	bInterruptSensor4 : BOOL;
 	bInterruptSensor5 : BOOL;
-	bInterruptSensor6 : BOOL;
 	bDir : BOOL;
 	bNoIndexPulse : BOOL;
 	usiNode : USINT;

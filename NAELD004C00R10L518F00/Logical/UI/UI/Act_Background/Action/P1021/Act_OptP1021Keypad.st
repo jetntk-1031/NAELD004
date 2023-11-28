@@ -57,7 +57,9 @@ ACTION Act_OptP1021Keypad:
 		
 	ELSIF fUIOutRtStatTPIsOpen(ADR(tyP1021McSetGen.tyNetwork.tyStringSubnetMask.uiRtStat)) = TRUE THEN
 		tyProperty.tyKeypad.tyStringTitle.sKeypadTitle	:= tyP1021McSetGen.tyNetwork.tyStringSubnetMask.sKeypadTitle;
-	
+		//ADD
+	ELSIF fUIOutRtStatTPIsOpen(ADR(tyP1021McSetGen.tyGen.tyStringHMIIPAddr.uiRtStat)) = TRUE THEN
+		tyProperty.tyKeypad.tyStringTitle.sKeypadTitle		:= tyP1021McSetGen.tyGen.tyStringHMIIPAddr.sKeypadTitle;
 	ELSIF fUIOutRtStatTPIsOpen(ADR(tyP1021McSetGen.tyGen.tyNumAWPusherAtHm.uiRtStat)) = TRUE THEN
 		tyProperty.tyKeypad.tyStringTitle.sKeypadTitle	:= tyP1021McSetGen.tyGen.tyNumAWPusherAtHm.sKeypadTitle;
 		

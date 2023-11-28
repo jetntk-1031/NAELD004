@@ -13,6 +13,14 @@ ACTION Act_OptC0005AutoCtrl:
 		tyCommon.tyMain.tyBtnStop.bValue	:= FALSE;
 		tyCommon.tyMain.tyBtnStep.bValue	:= FALSE;
 		
+		//Additional HMI Control
+		
+		tyP0003MMenu.tyMMenuBtn.tyBtnAuto.bRtCompl  := FALSE;
+		tyP0003MMenu.tyMMenuBtn.tyBtnStop.bRtCompl  := FALSE; 
+		
+		tyP0003MMenu.tyMMenuBtn.tyBtnAuto.bValue 	:= FALSE;
+		tyP0003MMenu.tyMMenuBtn.tyBtnStop.bValue 	:= FALSE;
+		
 		eOpsAct	:= OperationsActError;
 		
 	ELSE
@@ -24,9 +32,9 @@ ACTION Act_OptC0005AutoCtrl:
 	END_IF
 		
 	//Start
-	IF tyCommon.tyMain.tyBtnStart.bRtCompl = TRUE THEN
+	IF tyCommon.tyMain.tyBtnStart.bRtCompl = TRUE OR tyP0003MMenu.tyMMenuBtn.tyBtnAuto.bRtCompl  THEN
 		
-		IF tyCommon.tyMain.tyBtnStart.bValue = TRUE THEN
+		IF tyCommon.tyMain.tyBtnStart.bValue = TRUE OR tyP0003MMenu.tyMMenuBtn.tyBtnAuto.bValue = TRUE  THEN
 			
 			IF eCurrPage <> UIP0200OpsGen AND eCurrPage <> UIP0201OpsTravLifter AND eCurrPage <> UIP0202OpsMag1 AND eCurrPage <> UIP0203OpsMag2 AND eCurrPage <> UIP0204OpsMag3 THEN
 				
@@ -52,6 +60,12 @@ ACTION Act_OptC0005AutoCtrl:
 			
 				tyCommon.tyMain.tyBtnStop.bValue	:= FALSE;
 				tyCommon.tyMain.tyBtnStep.bValue	:= FALSE;
+				
+				tyP0003MMenu.tyMMenuBtn.tyBtnAuto.bValue := FALSE;
+				
+				tyP0003MMenu.tyMMenuBtn.tyBtnStop.bRtCompl := FALSE;
+				tyP0003MMenu.tyMMenuBtn.tyBtnStop.bValue   := FALSE;
+				
 			END_IF
 			
 		ELSE
@@ -61,7 +75,9 @@ ACTION Act_OptC0005AutoCtrl:
 			IF p_eOpsStat = OperationsActStart AND p_eOpsStatus = Done THEN
 				eOpsAct	:= OperationsActIdle;
 				
-				tyCommon.tyMain.tyBtnStart.bRtCompl	:= FALSE;
+				tyCommon.tyMain.tyBtnStart.bRtCompl		   := FALSE;
+				tyP0003MMenu.tyMMenuBtn.tyBtnAuto.bRtCompl := FALSE;
+				
 			END_IF
 			
 		END_IF
@@ -69,17 +85,22 @@ ACTION Act_OptC0005AutoCtrl:
 	END_IF
 	
 	//Stop
-	IF tyCommon.tyMain.tyBtnStop.bRtCompl = TRUE THEN
+	IF tyCommon.tyMain.tyBtnStop.bRtCompl = TRUE OR tyP0003MMenu.tyMMenuBtn.tyBtnStop.bRtCompl  THEN
 		
-		IF tyCommon.tyMain.tyBtnStop.bValue = TRUE THEN
+		IF tyCommon.tyMain.tyBtnStop.bValue = TRUE OR tyP0003MMenu.tyMMenuBtn.tyBtnStop.bValue THEN
 			
-			tyCommon.tyMain.tyBtnStop.bValue	:= FALSE;
+			tyCommon.tyMain.tyBtnStop.bValue			:= FALSE;
+			tyP0003MMenu.tyMMenuBtn.tyBtnStop.bValue	:= FALSE;
 			
 			tyCommon.tyMain.tyBtnStart.bRtCompl	:= FALSE;
 			tyCommon.tyMain.tyBtnStep.bRtCompl	:= FALSE;
 			
+			tyP0003MMenu.tyMMenuBtn.tyBtnAuto.bRtCompl	:= FALSE;
+			
 			tyCommon.tyMain.tyBtnStart.bValue	:= FALSE;
 			tyCommon.tyMain.tyBtnStep.bValue	:= FALSE;
+			
+			tyP0003MMenu.tyMMenuBtn.tyBtnAuto.bValue	:= FALSE;
 			
 		ELSE
 			
@@ -89,6 +110,8 @@ ACTION Act_OptC0005AutoCtrl:
 				eOpsAct	:= OperationsActIdle;
 				
 				tyCommon.tyMain.tyBtnStop.bRtCompl	:= FALSE;
+				
+				tyP0003MMenu.tyMMenuBtn.tyBtnStop.bRtCompl	:= FALSE;
 			END_IF
 			
 		END_IF
@@ -153,6 +176,9 @@ ACTION Act_OptC0005AutoCtrl:
 	IF (p_bAlarmErr = TRUE) OR (bUIManualMod = TRUE) OR (p_tyDI.bSafetyRlySig = FALSE) OR (tyCommon.tyMain.tyBtnHome.uiMaskRtStat.0 = FALSE) OR eCurrPage = UIP0950Simu THEN
 		fUIInRtStatOff(ADR(tyCommon.tyMain.tyBtnStart.uiMaskRtStat));
 		fUIInRtStatOff(ADR(tyCommon.tyMain.tyBtnStop.uiMaskRtStat));
+
+		
+		fUIInRtStatOff(ADR(tyP0003MMenu.tyMMenuBtn.tyBtnAuto.uiMaskRtStat));
 		
 		IF p_tyMcParamCurr.bAutoStepEn = TRUE THEN
 			fUIInRtStatOff(ADR(tyCommon.tyMain.tyBtnStep.uiMaskRtStat));
@@ -162,15 +188,24 @@ ACTION Act_OptC0005AutoCtrl:
 		
 		IF p_eOpsOpsStatus = OperationsStatusRun THEN
 			
+
 			fUIInRtStatOff(ADR(tyCommon.tyMain.tyBtnStart.uiMaskRtStat));
+			
 			fUIInRtStatHide(ADR(tyCommon.tyMain.tyBtnStop.uiMaskRtStat));
 			fUIInRtStatHide(ADR(tyCommon.tyMain.tyBtnStep.uiMaskRtStat));
+			
+			fUIInRtStatOff(ADR(tyP0003MMenu.tyMMenuBtn.tyBtnAuto.uiMaskRtStat));
+			fUIInRtStatHide(ADR(tyP0003MMenu.tyMMenuBtn.tyBtnStop.uiMaskRtStat));
 			
 		ELSIF p_eOpsOpsStatus = OperationsStatusCycleStopping THEN
 			
 			fUIInRtStatHide(ADR(tyCommon.tyMain.tyBtnStart.uiMaskRtStat));
 			fUIInRtStatOff(ADR(tyCommon.tyMain.tyBtnStop.uiMaskRtStat));
+
 			fUIInRtStatHide(ADR(tyCommon.tyMain.tyBtnStep.uiMaskRtStat));
+			
+			fUIInRtStatHide(ADR(tyP0003MMenu.tyMMenuBtn.tyBtnAuto.uiMaskRtStat));
+			fUIInRtStatOff(ADR(tyP0003MMenu.tyMMenuBtn.tyBtnStop.uiMaskRtStat));
 			
 		ELSIF p_eOpsOpsStatus = OperationsStatusStep THEN
 			
@@ -187,7 +222,11 @@ ACTION Act_OptC0005AutoCtrl:
 			
 			fUIInRtStatHide(ADR(tyCommon.tyMain.tyBtnStart.uiMaskRtStat));
 			fUIInRtStatOff(ADR(tyCommon.tyMain.tyBtnStop.uiMaskRtStat));
+
 			fUIInRtStatHide(ADR(tyCommon.tyMain.tyBtnStep.uiMaskRtStat));
+			
+			fUIInRtStatHide(ADR(tyP0003MMenu.tyMMenuBtn.tyBtnAuto.uiMaskRtStat));
+			fUIInRtStatOff(ADR(tyP0003MMenu.tyMMenuBtn.tyBtnStop.uiMaskRtStat));
 			
 		END_IF
 		

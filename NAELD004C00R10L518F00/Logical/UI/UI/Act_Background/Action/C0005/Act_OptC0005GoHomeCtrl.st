@@ -2,10 +2,18 @@
 ACTION Act_OptC0005GoHomeCtrl:
 
 	//Control
-	IF tyCommon.tyMain.tyBtnHome.bRtCompl = TRUE THEN
+	IF tyCommon.tyMain.tyBtnHome.bRtCompl = TRUE OR tyCommon.tyMain1.tyBtnHome.bRtCompl = TRUE THEN
 		tyCommon.tyMain.tyBtnHome.bRtCompl	:= FALSE;
+		tyCommon.tyMain1.tyBtnHome.bRtCompl := FALSE;
 		eChgPage							:= UIP0002Menu;
 	END_IF
+	
+	//Go Main 
+	IF tyCommon.tyMain.tyBtnGoMain.bRtCompl = TRUE THEN
+		tyCommon.tyMain.tyBtnGoMain.bRtCompl := FALSE;
+		eChgPage		:= UIP0003MMenu;
+	END_IF
+	
 	
 	//Mask
 	IF tyP0100Login.tyLogin.tyBtnLogin.bRtCompl						OR tyP0100Login.tyLogout.tyBtnLogout.bRtCompl 
@@ -30,13 +38,20 @@ ACTION Act_OptC0005GoHomeCtrl:
 		THEN
 		
 		fUIInRtStatOff(ADR(tyCommon.tyMain.tyBtnHome.uiMaskRtStat));
+		fUIInRtStatOff(ADR(tyCommon.tyMain1.tyBtnHome.uiMaskRtStat));
+		
+		fUIInRtStatOff(ADR(tyCommon.tyMain.tyBtnGoMain.uiMaskRtStat));
 		
 	ELSIF bUIManualMod THEN
 		fUIInRtStatHide(ADR(tyCommon.tyMain.tyBtnHome.uiMaskRtStat));
+		fUIInRtStatHide(ADR(tyCommon.tyMain1.tyBtnHome.uiMaskRtStat));
 		
+		fUIInRtStatHide(ADR(tyCommon.tyMain.tyBtnGoMain.uiMaskRtStat));
 	ELSE
 		fUIInRtStatHide(ADR(tyCommon.tyMain.tyBtnHome.uiMaskRtStat));
+		fUIInRtStatHide(ADR(tyCommon.tyMain1.tyBtnHome.uiMaskRtStat));
 		
+		fUIInRtStatHide(ADR(tyCommon.tyMain.tyBtnGoMain.uiMaskRtStat));
 	END_IF
 	
 END_ACTION

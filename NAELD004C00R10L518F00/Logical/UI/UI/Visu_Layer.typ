@@ -124,6 +124,7 @@ TYPE
 		tyBitmapStatBar : tyUIBitmap;
 		tyHotspotNaviStart : tyUIHotspot;
 		tyBtnAlarm : tyUIBtn;
+		tyBtnGoMain : tyUIBtn;
 	END_STRUCT;
 	tyLyrC0006Set : 	STRUCT 
 		tyBtnSave : tyUIBtn;
@@ -218,6 +219,27 @@ TYPE
 		tyBitmapGen : tyUIBitmap;
 		tyBitmapSet : tyUIBitmap;
 		tyBtnHotspotActSimu : tyUIBtn;
+	END_STRUCT;
+END_TYPE
+
+(* *)
+
+TYPE
+	tyLyrP0003MMenuGen : 	STRUCT 
+		tyBitmapDSIn : tyUIBitmap;
+		tyBitmapDSOut : tyUIBitmap;
+		tyBitmapDSBIn : tyUIBitmap;
+		tyBitmapDSBOut : tyUIBitmap;
+		tyBitmapDSAComm : tyUIBitmap;
+		tyBitmapDSBComm : tyUIBitmap;
+		tyBitmapDSIn1 : tyUIBitmap;
+		tyBitmapDSOut1 : tyUIBitmap;
+		tyBitmapDSBIn1 : tyUIBitmap;
+		tyBitmapDSBOut1 : tyUIBitmap;
+		tyBitmapDSAComm1 : tyUIBitmap;
+		tyBitmapDSBComm1 : tyUIBitmap;
+		tyStatusTxt : tyUITxt;
+		tyStringProdNm : tyUIString;
 	END_STRUCT;
 END_TYPE
 
@@ -2003,6 +2025,7 @@ TYPE
 		tyTxtLblSSaver : tyUITxt;
 		tyStringIPAddr : tyUIString;
 		tyStringSubnetMask : tyUIString;
+		tyStringHMIIPAddr : tyUIString;
 		tyTxtWidthAtHm : tyUITxt;
 		tyNumWidthAtHm : tyUINum;
 		tyTxtAWPusherAtHm : tyUITxt;
@@ -2064,10 +2087,12 @@ TYPE
 		tyBtnRFIDEn : tyUIBtn;
 		tyNumRFIDWrTO : tyUINum;
 		tyNumTravLaneBOffset : tyUINum;
+		tyNumMmenuButtonPos : ARRAY[1..7]OF tyUINum;
 	END_STRUCT;
 	tyLyrP1021McSetNetwork : 	STRUCT 
 		tyStringIPAddr : tyUIString;
 		tyStringSubnetMask : tyUIString;
+		tyStringHMIIPAddr : tyUIString;
 		tyBtnSave : tyUIBtn;
 		tyBtnCancel : tyUIBtn;
 		tyLyr : tyUILyr;

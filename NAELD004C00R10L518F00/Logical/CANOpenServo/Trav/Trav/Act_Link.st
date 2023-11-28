@@ -88,8 +88,7 @@ ACTION Act_Link:
 		END_IF
 	END_IF
 		
-	p_bInterruptSensor3 := p_bDIConvClrSen OR p_bDIConvLftSen;//p_bLinkSafetyRelay = FALSE;
-	
+//	p_bInterruptSensor3 := p_bLinkSafetyRelay = FALSE;
 	p_bInterruptSensor4 := p_bPullerRetSen = FALSE OR p_bPullerExtSen OR p_bPullerRotHmRS = FALSE;
 	
 	IF p_bLinkNtParamProjDsFixToFixRail THEN

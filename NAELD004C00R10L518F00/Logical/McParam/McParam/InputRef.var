@@ -18,3 +18,10 @@ VAR
 	p_bNtParamProjLaneBPrep : REFERENCE TO BOOL;
 	p_eNtParamCustomerReq : REFERENCE TO eCustomer;
 END_VAR
+(*//ADD*)
+VAR
+	p_sHWInfoIPAddr : REFERENCE TO STRING[15];
+	p_sUISetHMIIPAddr : REFERENCE TO STRING[15];
+	p_bAlarmWarning : REFERENCE TO BOOL;
+	p_bUIUpdtHMIIPAddr : REFERENCE TO BOOL;
+END_VAR

@@ -14,7 +14,7 @@ ACTION Act_OptP0001Startup:
 			IF p_bAlarmErr OR p_bAlarmWarning THEN
 				eChgPage	:= UIP0600Alm;
 			ELSE
-				eChgPage	:= UIP0002Menu;
+				eChgPage	:= UIP0003MMenu; //Previous UIP0002Menu;
 			END_IF
 			
 		END_IF

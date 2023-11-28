@@ -19,6 +19,7 @@ TYPE
 		UIInitialC0007,
 		UIInitialP0000,
 		UIInitialP0002,
+		UIInitialP0003,
 		UIInitialP0200,
 		UIInitialP0201,
 		UIInitialP0202,

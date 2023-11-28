@@ -1,4 +1,8 @@
 (*2019-04-17*)
+VAR
+	as_Idx : ARRAY[1..7] OF STRING[20] := ['Manual Load','Release Magazine 1','Release Magazine 2','Release Magazine 3',3('')];
+END_VAR
+(**)
 (**)
 (*Action & State & Status*)
 VAR

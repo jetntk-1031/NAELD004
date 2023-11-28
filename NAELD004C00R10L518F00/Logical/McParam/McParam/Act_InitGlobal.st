@@ -18,5 +18,9 @@ ACTION Act_InitGlobal:
 	p_bNtParamProjLaneBPrep ACCESS p_NtParamProjLaneBPrep;
 	p_eNtParamCustomerReq ACCESS p_NtParamCustomerReq;
 	(* Always Change If Project Change *)
-	
+	//ADD
+	p_sUISetHMIIPAddr ACCESS p_UISetHMIIPAddr;
+	p_sHWInfoIPAddr ACCESS p_HWInfoIPAddr;
+	p_bUIUpdtHMIIPAddr ACCESS p_UIUpdtHMIIPAddr;
+	p_bAlarmWarning ACCESS p_AlarmWarning;
 END_ACTION

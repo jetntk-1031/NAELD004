@@ -3,7 +3,64 @@
 <TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="T1080_MachineSetting">
   <Property Name="Description" Value=""/>
   <Property Name="Index" Value="8"/>
-  <TextSnippets/>
+  <TextSnippets>
+    <TextSnippet ClassId="0x00002002" Name="TextSnippet_1">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[1].sKeypadTitle]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="TextSnippet_2">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[2].sKeypadTitle]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="TextSnippet_3">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[3].sKeypadTitle]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="TextSnippet_4">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[4].sKeypadTitle]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="TextSnippet_5">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[5].sKeypadTitle]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="TextSnippet_6">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[6].sKeypadTitle]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="TextSnippet_7">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.UI.UI.p_tyP1021McSetGen.tyNumMmenuButtonPos[7].sKeypadTitle]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+  </TextSnippets>
   <TextLayer LanguageId="en">
     <Text ID="189884" Value="Machine Setting"/>
     <Text ID="189885" Value="Traverser Position Lane A"/>
@@ -271,7 +328,7 @@
     <Text ID="605671" Value=""/>
     <Text ID="605672" Value=""/>
     <Text ID="605673" Value=""/>
-    <Text ID="605674" Value=""/>
+    <Text ID="605674" Value="HMI IP Address"/>
     <Text ID="605675" Value="ASIA"/>
     <Text ID="605676" Value="CHINA"/>
     <Text ID="605677" Value="AMERICAS"/>
@@ -320,7 +377,7 @@
     <Text ID="642128" Value="DBA On\n(W/O Align)"/>
     <Text ID="642131" Value="Auto Logout Time"/>
     <Text ID="851660" Value="DBA On Right Sensor"/>
-    <Text ID="851662" Value=""/>
+    <Text ID="851662" Value="Optional Feature Pos 1 in HMI"/>
     <Text ID="851665" Value="MES Enable"/>
     <Text ID="851666" Value="MES RFID Write\nTime Out"/>
     <Text ID="851667" Value="Traverser Lane B Offset"/>
@@ -328,9 +385,9 @@
     <Text ID="851669" Value="Mag Height Sensor"/>
     <Text ID="851670" Value="Mag Width Check Disable"/>
     <Text ID="851671" Value=""/>
-    <Text ID="851672" Value=""/>
-    <Text ID="851673" Value=""/>
-    <Text ID="851674" Value=""/>
+    <Text ID="851672" Value="Magazine Unload"/>
+    <Text ID="851673" Value="Release Magazine"/>
+    <Text ID="851674" Value="New Magazine"/>
     <Text ID="851675" Value=""/>
     <Text ID="851676" Value=""/>
     <Text ID="851677" Value=""/>
@@ -356,6 +413,21 @@
     <Text ID="851697" Value=""/>
     <Text ID="851698" Value=""/>
     <Text ID="851699" Value=""/>
+    <Text ID="1043845" Value=""/>
+    <Text ID="1043847" Value="Optional Feature Pos 2 in HMI"/>
+    <Text ID="1043848" Value=""/>
+    <Text ID="1043850" Value="Optional Feature Pos 3 in HMI"/>
+    <Text ID="1043851" Value="Optional Feature Pos 4 in HMI"/>
+    <Text ID="1043852" Value="Optional Feature Pos 5 in HMI"/>
+    <Text ID="1043853" Value="Optional Feature Pos 6 in HMI"/>
+    <Text ID="1043854" Value="Optional Feature Pos 7 in HMI"/>
+    <Text ID="1062034" Value="{TextSnippet_1} Position \n in Main Menu"/>
+    <Text ID="1062035" Value="{TextSnippet_2} Position \n in Main Menu"/>
+    <Text ID="1062036" Value="{TextSnippet_3} Position \n in Main Menu"/>
+    <Text ID="1062037" Value="{TextSnippet_4} Position \n in Main Menu"/>
+    <Text ID="1062038" Value="{TextSnippet_5} Position \n in Main Menu"/>
+    <Text ID="1062039" Value="{TextSnippet_6} Position \n in Main Menu"/>
+    <Text ID="1062040" Value="{TextSnippet_7} Position \n in Main Menu"/>
   </TextLayer>
   <TextLayer LanguageId="de">
     <Text ID="189884" Value="Machine Einstellung"/>
@@ -709,6 +781,21 @@
     <Text ID="851697" Value=""/>
     <Text ID="851698" Value=""/>
     <Text ID="851699" Value=""/>
+    <Text ID="1043845" Value=""/>
+    <Text ID="1043847" Value=""/>
+    <Text ID="1043848" Value=""/>
+    <Text ID="1043850" Value=""/>
+    <Text ID="1043851" Value=""/>
+    <Text ID="1043852" Value=""/>
+    <Text ID="1043853" Value=""/>
+    <Text ID="1043854" Value=""/>
+    <Text ID="1062034" Value=""/>
+    <Text ID="1062035" Value=""/>
+    <Text ID="1062036" Value=""/>
+    <Text ID="1062037" Value=""/>
+    <Text ID="1062038" Value=""/>
+    <Text ID="1062039" Value=""/>
+    <Text ID="1062040" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="zh">
     <Text ID="189884" Value="机器设定"/>
@@ -1062,6 +1149,21 @@
     <Text ID="851697" Value=""/>
     <Text ID="851698" Value=""/>
     <Text ID="851699" Value=""/>
+    <Text ID="1043845" Value=""/>
+    <Text ID="1043847" Value=""/>
+    <Text ID="1043848" Value=""/>
+    <Text ID="1043850" Value=""/>
+    <Text ID="1043851" Value=""/>
+    <Text ID="1043852" Value=""/>
+    <Text ID="1043853" Value=""/>
+    <Text ID="1043854" Value=""/>
+    <Text ID="1062034" Value=""/>
+    <Text ID="1062035" Value=""/>
+    <Text ID="1062036" Value=""/>
+    <Text ID="1062037" Value=""/>
+    <Text ID="1062038" Value=""/>
+    <Text ID="1062039" Value=""/>
+    <Text ID="1062040" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="pt">
     <Text ID="189884" Value=""/>
@@ -1415,6 +1517,21 @@
     <Text ID="851697" Value=""/>
     <Text ID="851698" Value=""/>
     <Text ID="851699" Value=""/>
+    <Text ID="1043845" Value=""/>
+    <Text ID="1043847" Value=""/>
+    <Text ID="1043848" Value=""/>
+    <Text ID="1043850" Value=""/>
+    <Text ID="1043851" Value=""/>
+    <Text ID="1043852" Value=""/>
+    <Text ID="1043853" Value=""/>
+    <Text ID="1043854" Value=""/>
+    <Text ID="1062034" Value=""/>
+    <Text ID="1062035" Value=""/>
+    <Text ID="1062036" Value=""/>
+    <Text ID="1062037" Value=""/>
+    <Text ID="1062038" Value=""/>
+    <Text ID="1062039" Value=""/>
+    <Text ID="1062040" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="189884" Value="0"/>
@@ -1732,7 +1849,7 @@
     <Index ID="642128" Value="130"/>
     <Index ID="642131" Value="321"/>
     <Index ID="851660" Value="129"/>
-    <Index ID="851662" Value="389"/>
+    <Index ID="851662" Value="400"/>
     <Index ID="851665" Value="134"/>
     <Index ID="851666" Value="135"/>
     <Index ID="851667" Value="136"/>
@@ -1768,5 +1885,20 @@
     <Index ID="851697" Value="166"/>
     <Index ID="851698" Value="167"/>
     <Index ID="851699" Value="168"/>
+    <Index ID="1043845" Value="389"/>
+    <Index ID="1043847" Value="401"/>
+    <Index ID="1043848" Value="169"/>
+    <Index ID="1043850" Value="402"/>
+    <Index ID="1043851" Value="403"/>
+    <Index ID="1043852" Value="404"/>
+    <Index ID="1043853" Value="405"/>
+    <Index ID="1043854" Value="406"/>
+    <Index ID="1062034" Value="407"/>
+    <Index ID="1062035" Value="408"/>
+    <Index ID="1062036" Value="409"/>
+    <Index ID="1062037" Value="410"/>
+    <Index ID="1062038" Value="411"/>
+    <Index ID="1062039" Value="412"/>
+    <Index ID="1062040" Value="413"/>
   </IndexMap>
 </TextGroup>

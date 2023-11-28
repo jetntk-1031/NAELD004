@@ -8,6 +8,13 @@ TYPE
 		fbReadList : UA_ReadList; (*Read Data Through OPCUA*)
 		fbWriteList : UA_WriteList; (*Write Data Through OPCUA*)
 		fbGetConnectionStatus : UA_ConnectionGetStatus; (*Get OPCUA Connection Status*)
+		fbMethodGetHdl : UA_MethodGetHandle;
+		fbMethodCall : UA_MethodCall;
+		fbMethodRlsHdl : UA_MethodReleaseHandle;
+		fbSubCreate : UA_SubscriptionCreate;
+		fbMointerItemAddList : UA_MonitoredItemAddList;
+		fbMoniterItemRemoveList : UA_MonitoredItemRemoveList;
+		fbSubDelete : UA_SubscriptionDelete;
 		ui : UINT;
 	END_STRUCT;
 	tyOPCUAParam : 	STRUCT  (*OPCUA Parameter*)

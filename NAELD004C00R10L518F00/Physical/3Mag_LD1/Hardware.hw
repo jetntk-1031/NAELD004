@@ -49,7 +49,7 @@
   <Module Name="X20BM11g" Type="X20BM11" Version="1.0.0.1">
     <Connection Connector="X2X1" TargetModule="X20BM11f" TargetConnector="X2X2" />
   </Module>
-  <Module Name="X20CP0483" Type="X20CP0483" Version="1.2.1.0">
+  <Module Name="X20CP0483" Type="X20CP0483" Version="1.3.0.0">
     <Connection Connector="SL" TargetModule="X20BB57" TargetConnector="SL1" />
     <Connector Name="IF2">
       <Parameter ID="ActivateDevice" Value="1" />
@@ -155,7 +155,7 @@
     <Parameter ID="OpcUa_ConversationSecurityPolicy_EnableBasic256Rsa256" Value="0" />
     <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
   </Module>
-  <Module Name="X20DI6372" Type="X20DI6372" Version="1.1.0.0">
+  <Module Name="X20DI6372" Type="X20DI6372" Version="1.2.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12d" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11c" TargetConnector="SL1" />
     <Parameter ID="Supervision" Value="off" />

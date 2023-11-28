@@ -11,6 +11,6 @@
     <Object Type="File">Act_OptP1021IPAddr.st</Object>
     <Object Type="File">Act_OptP1021SubnetMask.st</Object>
     <Object Type="File">Act_OptP1021DHCPSetting.st</Object>
-    <Object Type="Package">P1024</Object>
+    <Object Type="File">Act_OptP1021HMIIPAddr.st</Object>
   </Objects>
 </Package>

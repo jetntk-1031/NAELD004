@@ -429,7 +429,7 @@
     <BitmapRef ID="16938" Value="Source[local].Bitmap[Mc2_Clar_AW_Opn]"/>
     <BitmapRef ID="16939" Value="Source[local].Bitmap[Mc2_Clar_AW_Clo]"/>
     <BitmapRef ID="16940" Value="Source[local].Bitmap[Mc2_Clar_InShutt_Opn]"/>
-    <BitmapRef ID="16943" Value="Source[local].Bitmap[MC5PULLERRETRACT]"/>
+    <BitmapRef ID="16943" Value="None"/>
     <BitmapRef ID="16944" Value="None"/>
     <BitmapRef ID="16945" Value="None"/>
     <BitmapRef ID="16946" Value="None"/>

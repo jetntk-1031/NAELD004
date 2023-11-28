@@ -20,6 +20,7 @@
     <BitmapRef ID="8185" Value="Source[local].Bitmap[QuickAccess_Rst_Yellow_7]"/>
     <BitmapRef ID="8323" Value="Source[local].Bitmap[Icon_QuickAccess_ShowInfo_7]"/>
     <BitmapRef ID="13274" Value="Source[local].Bitmap[Icon_Alarm_7]"/>
+    <BitmapRef ID="18963" Value="Source[local].Bitmap[Main_7]"/>
   </BitmapLayer>
   <IndexMap>
     <Index ID="4657" Value="0"/>
@@ -37,5 +38,6 @@
     <Index ID="8185" Value="12"/>
     <Index ID="8323" Value="13"/>
     <Index ID="13274" Value="14"/>
+    <Index ID="18963" Value="15"/>
   </IndexMap>
 </BitmapGroup>

@@ -80,8 +80,6 @@ ACTION Act_InitGlobal:
 	p_bPullerExtSen ACCESS p_DIPullerExtRS;
 	p_bPullerRotHmRS ACCESS p_DIPullerRotHmRS; //JOHN
 
-	p_bDIConvClrSen ACCESS p_DIConvClrSen;
-    p_bDIConvLftSen ACCESS p_DIConvLftSen;	
 	(* Always Change If Project Change *)
 	
 END_ACTION

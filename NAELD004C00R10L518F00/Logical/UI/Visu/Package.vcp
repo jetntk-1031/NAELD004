@@ -114,6 +114,7 @@
     <Source File="Fonts\Font_Button_Above150.fninfo"/>
     <Source File="Fonts\Font_SMEMA.fninfo"/>
     <Source File="Fonts\ScreenSaver.fninfo"/>
+    <Source File="Fonts\MainMenu.fninfo"/>
     <Source File="Bitmaps\CheckBox_Off.bminfo"/>
     <Source File="Bitmaps\CheckBox_On.bminfo"/>
     <Source File="Bitmaps\Group_Black.bminfo"/>
@@ -823,6 +824,18 @@
     <Source File="Bitmaps\Mc2_ATnS_PullConv_Ext.bminfo"/>
     <Source File="Bitmaps\Mc2_ATnS_PullConv_Ret.bminfo"/>
     <Source File="Bitmaps\Mc2_ATnS_Top.bminfo"/>
+    <Source File="Bitmaps\Amber_Base_100x82.bminfo"/>
+    <Source File="Bitmaps\Auto_Main_7.bminfo"/>
+    <Source File="Bitmaps\Buzzer_Off_7.bminfo"/>
+    <Source File="Bitmaps\Buzzer_On_7.bminfo"/>
+    <Source File="Bitmaps\Buzzer_Standby_7.bminfo"/>
+    <Source File="Bitmaps\Green_Base_100x82.bminfo"/>
+    <Source File="Bitmaps\Main_7.bminfo"/>
+    <Source File="Bitmaps\Red_Base_100x82.bminfo"/>
+    <Source File="Bitmaps\Reset_Main_7.bminfo"/>
+    <Source File="Bitmaps\Sliver_Base_100x82.bminfo"/>
+    <Source File="Bitmaps\Stop_Main_7.bminfo"/>
+    <Source File="Bitmaps\Yellow_Base_100x82.bminfo"/>
     <Source File="BitmapGroups\AlphaPad.bmgrp"/>
     <Source File="BitmapGroups\Numpad.bmgrp"/>
     <Source File="BitmapGroups\Alarm.bmgrp"/>
@@ -845,6 +858,7 @@
     <Source File="BitmapGroups\QuickAccess.bmgrp"/>
     <Source File="BitmapGroups\ScreenSaver.bmgrp"/>
     <Source File="BitmapGroups\Machine_Ops.bmgrp"/>
+    <Source File="BitmapGroups\MainMenu.bmgrp"/>
     <Source File="Pages\P0000_ScreenSaver.page"/>
     <Source File="Pages\P0002_Menu.page"/>
     <Source File="Pages\P0100_Login.page"/>
@@ -895,6 +909,7 @@
     <Source File="Pages\P0937_AWPushPul.page"/>
     <Source File="Pages\P0923_SafetyBar.page"/>
     <Source File="Pages\P0924_TrolleyLck.page"/>
+    <Source File="Pages\P0003_MMenu.page"/>
     <Source File="Layers\C0005_MainLayer.layer"/>
     <Source File="Layers\C0007_NotifLayer.layer"/>
     <Source File="Layers\C0008_MsgBoxLayer.layer"/>

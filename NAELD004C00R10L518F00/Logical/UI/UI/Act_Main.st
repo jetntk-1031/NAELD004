@@ -38,6 +38,10 @@ ACTION Act_Main:
 					
 					UIInitialP0002:
 						Act_Main_P0002;
+						eUIInit	:= UIInitialP0003;
+						
+					UIInitialP0003:	
+						Act_Main_P0003;
 						eUIInit	:= UIInitialP0200;
 						
 					UIInitialP0200:

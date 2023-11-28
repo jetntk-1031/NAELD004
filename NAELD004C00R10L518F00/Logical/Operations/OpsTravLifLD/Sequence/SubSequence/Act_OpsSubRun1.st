@@ -1089,7 +1089,7 @@ ACTION Act_OpsSubRun1:
 						bPaused	:= p_bStop OR p_bStep;
 					ELSE
 						eTravLifPosGo	:= TravLifLDPosInvalid;
-						//p_bLocalInShutterExtended ACCESS ADR(p_bInShutterExtended);
+						p_bLocalInShutterExtended ACCESS ADR(p_bInShutterExtended);
 						a_bRlsMagBtn[1]:=FALSE;
 						a_bRlsMagBtn[2]:=FALSE;
 						a_bRlsMagBtn[3]:=FALSE;
@@ -2060,13 +2060,13 @@ ACTION Act_OpsSubRun1:
 						p_eLocalInletPneuAct := PneuActIdle;
 					ELSIF (p_eLocalInletPneuStatus = Done AND p_eLocalInletPneuStat = PneuActExt) AND bBypCurtainSenCtrl THEN	//JOHN2
 						p_eLocalInletPneuAct := PneuActIdle;
-					ELSIF p_tyLocalBufferStat.bBffrMty THEN //the timing of calling empty buffer shutter close can be in this step or US signal Wait
+					ELSIF p_tyLocalBufferStat.bBffrMty THEN
 						bMagWidthChked := FALSE; 
 						p_eLocalInletPneuAct := PneuActExt;		//JOHN - Shorten Cycle Time 
 //						p_eLocalInletPneuAct := PneuActIdle;	//JOHN - Shorten Cycle Time									
 					END_IF
 					IF (p_eLocalInletPneuStat = PneuActExt AND p_eLocalInletPneuStatus = Done)
-						//OR p_bLocalInShutterExtended 
+						OR p_bLocalInShutterExtended 
 						OR (p_tyLocalBufferStat.bBffrMty = FALSE AND bBypCurtainSenCtrl= FALSE AND p_bCurtainSenPrep) THEN //extended == close, NO mty w/ no byp curtain
 																
 						p_eLocalInletPneuAct := PneuActIdle;

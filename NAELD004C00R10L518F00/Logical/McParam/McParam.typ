@@ -71,7 +71,7 @@ TYPE
 		bAGVComEn : BOOL := FALSE;
 		bAutoLogoutEn : BOOL := FALSE;
 		diAutoLogoutTmInSec : DINT := 60000;
-		sIPAddr : STRING[15] := '192.168.0.32';
+		sIPAddr : STRING[15] := '192.168.0.2';
 		sSubnetMask : STRING[15] := '255.255.255.0';
 		eNetworkMod : eNetworkConfigMod := SetIPManually;
 		bLFSeqStayActive : BOOL := FALSE;
@@ -100,6 +100,8 @@ TYPE
 		bMesRFIDEn : BOOL := FALSE;
 		diMesRFIDTOInMS : DINT := 5000;
 		diTravLaneBOffset : DINT := 0;
+		sHMIIPAddr : STRING[15] := '192.168.0.19';
+		aButtonPos : ARRAY[1..7]OF eOptBtn;
 	END_STRUCT;
 END_TYPE
 
@@ -126,5 +128,13 @@ TYPE
 		McSetMagXcAutoManMode,
 		McSetMagXcAutoMode,
 		McSetMagXcManMode
+		);
+	eOptBtn : 
+		(
+		eNA := 0,
+		eMnlUnload := 1,
+		eRlsNewMag1 := 2,
+		eRlsNewMag2 := 3,
+		eRlsNewMag3 := 4
 		);
 END_TYPE

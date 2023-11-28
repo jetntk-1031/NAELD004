@@ -9,4 +9,6 @@ ACTION Act_InitLocal:
 	p_sProgNm ACCESS ADR(sProgNm);
 	p_bNtSettingsLoadDone ACCESS ADR(bNtSettingsLoadDone);
 	
+	//ADD
+	p_bAlarmWarning ACCESS ADR(bWarning);
 END_ACTION

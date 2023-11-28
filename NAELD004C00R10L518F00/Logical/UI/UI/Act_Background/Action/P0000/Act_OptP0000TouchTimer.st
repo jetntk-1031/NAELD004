@@ -22,12 +22,12 @@ ACTION Act_OptP0000TouchTimer:
 			
 			IF bChgPageDone=FALSE THEN
 				
-				IF eCurrPage<>UIP0002Menu THEN
+				IF eCurrPage<>UIP0003MMenu THEN // Previous - UIP0002Menu
 					CASE eCurrPage OF
 					
 						UIP0900GenIn, UIP0910GenOut, UIP0920MtrNPneuCtrl,UIP0921Shutter, UIP0930MagConv1, UIP0931MagConv2, UIP0932MagConv3, UIP0933PullConv, UIP0934AW, UIP0935Lifter, UIP0936Trav, UIP0939MagConv4, UIP0940CommCtrl, UIP0950Simu:
 
-							eChgPage		:= UIP0002Menu;
+							eChgPage		:= UIP0003MMenu; // Previous - UIP0002Menu
 							
 							tyP0002Menu.tyMenu.tyBtnMnlRst.bRtCompl := TRUE ;
 							
@@ -37,13 +37,13 @@ ACTION Act_OptP0000TouchTimer:
 							
 							IF tyCommon.tySet.tyBtnSave.uiMaskRtStat.0 = FALSE THEN
 								
-								eChgPage	:= UIP0002Menu;
+								eChgPage	:= UIP0003MMenu; // Previous - UIP0002Menu
 								
 								bChgPageDone	:= TRUE;
 								
 							ELSE
 								
-								eChgPage		:= UIP0002Menu;
+								eChgPage		:= UIP0003MMenu;
 								
 								IF eCurrPage= UIP1021McSetGen THEN
 								
@@ -94,7 +94,7 @@ ACTION Act_OptP0000TouchTimer:
 							END_IF
 							
 						ELSE
-							eChgPage		:= UIP0002Menu;
+							eChgPage		:= UIP0003MMenu;
 							
 							bChgPageDone	:= TRUE;
 							

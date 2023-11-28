@@ -294,4 +294,9 @@ VAR
 	p_UITrolleyUnlck1 : UDINT;
 	p_UITrolleyUnlck2 : UDINT;
 END_VAR
+(*//ADD*)
+VAR
+	p_UIUpdtHMIIPAddr : UDINT;
+	p_UISetHMIIPAddr : UDINT;
+END_VAR
 (**)

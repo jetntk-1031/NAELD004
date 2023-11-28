@@ -497,6 +497,7 @@ TYPE
 		bTrolleyLckTwoCtrlIn2 : BOOL := FALSE;
 		tTrolleyLckExtTO2 : TIME := T#6s;
 		tTrolleyLckRetTO2 : TIME := T#6s;
+		tyUIBtnPosLmt : tyUILmt := (diMax:=1,diMin:=1);
 	END_STRUCT;
 END_TYPE
 

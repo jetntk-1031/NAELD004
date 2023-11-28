@@ -30,6 +30,36 @@ TYPE
 	END_STRUCT;
 END_TYPE
 
+(* *)
+
+TYPE
+	tyUIP0003MMenu : 	STRUCT 
+		tyMMenuGen : tyLyrP0003MMenuGen;
+		tyMMenuBtn : tyOptBtn;
+		tyMsgBoxHide : tyLyrC0008MsgBox := (tyBitmapIcon:=(uiRtStat:=1),tyBtnNo:=(uiRtStat:=1),tyBtnYes:=(uiRtStat:=1),tyTxtMsg:=(uiRtStat:=1),tyTxtTitle:=(uiRtStat:=1),tyLyr:=(uiRtStat:=1));
+		tyMsgBoxUnloadAsk : tyLyrC0008MsgBox := (tyBitmapIcon:=(usiValueIdx:=1),tyBtnNo:=(usiBitmapIdx:=3,usiTxtIdx:=2),tyBtnYes:=(usiBitmapIdx:=1,usiTxtIdx:=1),tyTxtMsg:=(usiValueIdx:=145),tyTxtTitle:=(usiValueIdx:=7));
+		tyMsgBoxResumeAsk : tyLyrC0008MsgBox := (tyBitmapIcon:=(usiValueIdx:=1),tyBtnNo:=(usiBitmapIdx:=3,usiTxtIdx:=2),tyBtnYes:=(usiBitmapIdx:=1,usiTxtIdx:=1),tyTxtMsg:=(usiValueIdx:=146),tyTxtTitle:=(usiValueIdx:=7));
+	END_STRUCT;
+	tyOptBtn : 	STRUCT 
+		tyBtnAuto : tyUIBtn;
+		tyBtnStop : tyUIBtn;
+		tyBtnBuz : tyUIBtn;
+		tyBtnReset : tyUIBtn;
+		tyBtnUnload : tyUIBtn := (usiTxtIdx:=5);
+		tyBtnRlsNewMag1 : tyUIBtn;
+		tyBtnRlsNewMag2 : tyUIBtn;
+		tyBtnRlsNewMag3 : tyUIBtn;
+		tyBtn5 : tyUIBtn := (uiRtStat:=1);
+		tyBtn6 : tyUIBtn := (uiRtStat:=1);
+		tyBtn7 : tyUIBtn := (uiRtStat:=1);
+		tyBtnAccDat : tyUIBtn := (usiTxtIdx:=7);
+		tyBtnHide : tyUIBtn := (uiRtStat:=1);
+		tyBtnRlsNewMagBk1 : tyUIBtn := (usiTxtIdx:=6);
+		tyBtnRlsNewMagBk2 : tyUIBtn := (usiTxtIdx:=8);
+		tyBtnRlsNewMagBk3 : tyUIBtn := (usiTxtIdx:=10);
+	END_STRUCT;
+END_TYPE
+
 (**)
 
 TYPE
@@ -610,7 +640,7 @@ END_TYPE
 
 TYPE
 	tyUIP1021McSetGen : 	STRUCT 
-		tyGen : tyLyrP1021McSetGen := (tyStringMcNm:=(sKeypadTitle:='Machine Name'),tyDrpDnDefaultMcMod:=(usiValueMaxIdx:=2,usiValueMinIdx:=0),tyDrpDnDefaultFlippedBrd:=(usiValueMaxIdx:=2,usiValueMinIdx:=0),tyNumSSaverTm:=(diValueMax:=1800,diValueMin:=10,sKeypadTitle:='Screen Saver Time'),tyStringIPAddr:=(sKeypadTitle:='IP Address'),tyStringSubnetMask:=(sKeypadTitle:='Subnet Mask'),tyNumWidthAtHm:=(sKeypadTitle:='Width At Home Position'),tyNumConvInitTm:=(diValueMax:=60000,diValueMin:=5000,sKeypadTitle:='Conveyor Initialize Time'),tyNumTranOutErrDlyTm:=(diValueMax:=120000,diValueMin:=1000,sKeypadTitle:='Transfer Out Error Delay Time'),tyNumMag1ConvRunTm:=(diValueMax:=60000,diValueMin:=5000,sKeypadTitle:='Mag1 Conv Run Time Out'),tyNumMag2ConvRunTm:=(diValueMax:=60000,diValueMin:=5000,sKeypadTitle:='Mag2 Conv Run Time Out'),tyNumMag3ConvRunTm:=(diValueMax:=60000,diValueMin:=5000,sKeypadTitle:='Mag3 Conv Run Time Out'),tyNumTravPosLaneA:=(diValueMax:=1200000,diValueMin:=-10000,sKeypadTitle:='Trav Position LaneA'),tyNumLiftPosLaneA:=(diValueMax:=600000,diValueMin:=-10000,sKeypadTitle:='Lifter Position LaneA'),tyNumTravPosLaneB:=(diValueMax:=1200000,diValueMin:=-10000,sKeypadTitle:='Trav Position LaneB'),tyNumLiftPosLaneB:=(diValueMax:=600000,diValueMin:=-10000,sKeypadTitle:='Lifter Position LaneB'),tyNumTravFixtoFixPosOutlet:=(sKeypadTitle:='Fix To Fix Rail Distance'),tyNumLMCFbTm:=(diValueMax:=180000,sKeypadTitle:='LMC Feedback Time'),tyNumMag1WidthChkDetDist:=(diValue:=2000,diValueMax:=7000,diValueMin:=2000,sKeypadTitle:='Mag1 Detection Dist'),tyNumMag2WidthChkDetDist:=(diValue:=2000,diValueMax:=7000,diValueMin:=2000,sKeypadTitle:='Mag2 Detection Dist'),tyNumMag3WidthChkDetDist:=(diValue:=2000,diValueMax:=7000,diValueMin:=2000,sKeypadTitle:='Mag3 Detection Dist'),tyNumRFIDWrTO:=(diValueMax:=1800000,diValueMin:=1000,sKeypadTitle:='Write RFID Time Out'),tyNumTravLaneBOffset:=(diValueMax:=50000,diValueMin:=-50000));
+		tyGen : tyLyrP1021McSetGen := (tyStringMcNm:=(sKeypadTitle:='Machine Name'),tyDrpDnDefaultMcMod:=(usiValueMaxIdx:=2,usiValueMinIdx:=0),tyDrpDnDefaultFlippedBrd:=(usiValueMaxIdx:=2,usiValueMinIdx:=0),tyNumSSaverTm:=(diValueMax:=1800,diValueMin:=10,sKeypadTitle:='Screen Saver Time'),tyStringIPAddr:=(sKeypadTitle:='IP Address'),tyStringSubnetMask:=(sKeypadTitle:='Subnet Mask'),tyStringHMIIPAddr:=(sKeypadTitle:='HMI IP Address'),tyNumWidthAtHm:=(sKeypadTitle:='Width At Home Position'),tyNumConvInitTm:=(diValueMax:=60000,diValueMin:=5000,sKeypadTitle:='Conveyor Initialize Time'),tyNumTranOutErrDlyTm:=(diValueMax:=120000,diValueMin:=1000,sKeypadTitle:='Transfer Out Error Delay Time'),tyNumMag1ConvRunTm:=(diValueMax:=60000,diValueMin:=5000,sKeypadTitle:='Mag1 Conv Run Time Out'),tyNumMag2ConvRunTm:=(diValueMax:=60000,diValueMin:=5000,sKeypadTitle:='Mag2 Conv Run Time Out'),tyNumMag3ConvRunTm:=(diValueMax:=60000,diValueMin:=5000,sKeypadTitle:='Mag3 Conv Run Time Out'),tyNumTravPosLaneA:=(diValueMax:=1200000,diValueMin:=-10000,sKeypadTitle:='Trav Position LaneA'),tyNumLiftPosLaneA:=(diValueMax:=600000,diValueMin:=-10000,sKeypadTitle:='Lifter Position LaneA'),tyNumTravPosLaneB:=(diValueMax:=1200000,diValueMin:=-10000,sKeypadTitle:='Trav Position LaneB'),tyNumLiftPosLaneB:=(diValueMax:=600000,diValueMin:=-10000,sKeypadTitle:='Lifter Position LaneB'),tyNumTravFixtoFixPosOutlet:=(sKeypadTitle:='Fix To Fix Rail Distance'),tyNumLMCFbTm:=(diValueMax:=180000,sKeypadTitle:='LMC Feedback Time'),tyNumMag1WidthChkDetDist:=(diValue:=2000,diValueMax:=7000,diValueMin:=2000,sKeypadTitle:='Mag1 Detection Dist'),tyNumMag2WidthChkDetDist:=(diValue:=2000,diValueMax:=7000,diValueMin:=2000,sKeypadTitle:='Mag2 Detection Dist'),tyNumMag3WidthChkDetDist:=(diValue:=2000,diValueMax:=7000,diValueMin:=2000,sKeypadTitle:='Mag3 Detection Dist'),tyNumRFIDWrTO:=(diValueMax:=1800000,diValueMin:=1000,sKeypadTitle:='Write RFID Time Out'),tyNumTravLaneBOffset:=(diValueMax:=50000,diValueMin:=-50000),tyNumMmenuButtonPos:=[7((uiRtStat:=1))]);
 		tyGenBkUp : tyLyrP1021McSetGen;
 		tyNetwork : tyLyrP1021McSetNetwork := (tyStringIPAddr:=(sKeypadTitle:='IP Address'),tyStringSubnetMask:=(sKeypadTitle:='Subnet Mask'),tyLyr:=(uiRtStat:=1));
 		tyNaviLyr1 : tyLyrC0004Navi := (tyBtnLeft:=(uiRtStat:=0),tyBtnRgt:=(uiRtStat:=0),tyBtnBack:=(uiRtStat:=0),tyBitmapPageDisp:=(uiRtStat:=0,usiValueIdx:=1));
@@ -631,6 +661,12 @@ TYPE
 		tyMsgBoxGetIPAddrErr : tyLyrC0008MsgBox := (tyBitmapIcon:=(usiValueIdx:=1),tyBtnNo:=(usiBitmapIdx:=1,usiTxtIdx:=3),tyBtnYes:=(uiRtStat:=1),tyTxtMsg:=(usiValueIdx:=106),tyTxtTitle:=(usiValueIdx:=14));
 		tyMsgBoxGetSubnetErr : tyLyrC0008MsgBox := (tyBitmapIcon:=(usiValueIdx:=1),tyBtnNo:=(usiBitmapIdx:=1,usiTxtIdx:=3),tyBtnYes:=(uiRtStat:=1),tyTxtMsg:=(usiValueIdx:=107),tyTxtTitle:=(usiValueIdx:=14));
 		tyMsgBoxSetDHCPError : tyLyrC0008MsgBox := (tyBitmapIcon:=(usiValueIdx:=1),tyBtnNo:=(usiBitmapIdx:=1,usiTxtIdx:=3),tyBtnYes:=(uiRtStat:=1),tyTxtMsg:=(usiValueIdx:=108),tyTxtTitle:=(usiValueIdx:=14));
+		tyMsgBoxUpdtHMIIPAddrAsk : tyLyrC0008MsgBox := (tyBitmapIcon:=(usiValueIdx:=1),tyBtnNo:=(usiBitmapIdx:=3,usiTxtIdx:=2),tyBtnYes:=(usiBitmapIdx:=1,usiTxtIdx:=1),tyTxtMsg:=(usiValueIdx:=195),tyTxtTitle:=(usiValueIdx:=14));
+		tyMsgBoxUpdtHMIIPAddrErr : tyLyrC0008MsgBox := (tyBitmapIcon:=(usiValueIdx:=1),tyBtnNo:=(usiBitmapIdx:=1,usiTxtIdx:=3),tyBtnYes:=(uiRtStat:=1),tyTxtMsg:=(usiValueIdx:=73),tyTxtTitle:=(usiValueIdx:=14));
+		tyMsgBoxHMIIPAddrInvalid : tyLyrC0008MsgBox := (tyBitmapIcon:=(usiValueIdx:=1),tyBtnNo:=(usiBitmapIdx:=1,usiTxtIdx:=3),tyBtnYes:=(uiRtStat:=1),tyTxtMsg:=(usiValueIdx:=74),tyTxtTitle:=(usiValueIdx:=14));
+		tyMsgBoxHMIIPAddrInvalidEdit : tyLyrC0008MsgBox := (tyBitmapIcon:=(usiValueIdx:=1),tyBtnNo:=(usiBitmapIdx:=1,usiTxtIdx:=3),tyBtnYes:=(uiRtStat:=1),tyTxtMsg:=(usiValueIdx:=104),tyTxtTitle:=(usiValueIdx:=14));
+		tyMsgBoxGetHMIIPAddrErr : tyLyrC0008MsgBox := (tyBitmapIcon:=(usiValueIdx:=1),tyBtnNo:=(usiBitmapIdx:=1,usiTxtIdx:=3),tyBtnYes:=(uiRtStat:=1),tyTxtMsg:=(usiValueIdx:=107),tyTxtTitle:=(usiValueIdx:=14));
+		tyMsgBoxBtnPosDuplicate : tyLyrC0008MsgBox := (tyBitmapIcon:=(usiValueIdx:=1),tyBtnNo:=(usiBitmapIdx:=1,usiTxtIdx:=3),tyBtnYes:=(uiRtStat:=1),tyTxtMsg:=(usiValueIdx:=147),tyTxtTitle:=(usiValueIdx:=14));
 	END_STRUCT;
 END_TYPE
 
@@ -905,6 +941,7 @@ END_TYPE
 TYPE
 	tyUICom : 	STRUCT 
 		tyMain : tyLyrC0005Main := (tyBtnStep:=(uiRtStat:=1),tyBtnReset:=(uiMaskRtStat:=0),tyBtnStop:=(uiMaskRtStat:=0));
+		tyMain1 : tyLyrC0005Main := (tyBtnStart:=(uiRtStat:=1),tyBtnBuzzer:=(uiRtStat:=1),tyBtnStep:=(uiRtStat:=1),tyBtnReset:=(uiRtStat:=1),tyBtnStop:=(uiRtStat:=1),tyBtnAlarm:=(uiRtStat:=1),tyHotspotNaviStart:=(uiRtStat:=1),tyBtnGoMain:=(uiRtStat:=1));
 		tySet : tyLyrC0006Set := (tyBtnSave:=(uiMaskRtStat:=0));
 		tyNotif : tyLyrC0007Notif := (tyLyr:=(uiRtStat:=1));
 		tyInfo : tyLyrC0009Info := (tyLyr:=(uiRtStat:=1));

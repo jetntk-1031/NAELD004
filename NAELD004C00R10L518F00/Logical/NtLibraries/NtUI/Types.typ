@@ -61,6 +61,16 @@ TYPE
 		usiColor : USINT := 0; (*Color Datapoint*)
 		usiValueIdx : USINT := 0; (*Value Index Datapoint*)
 	END_STRUCT;
+	tyUILString : 	STRUCT  (*UI String*)
+		bRtCompl : BOOL := FALSE; (*Completion Datapoint*)
+		bRtLk : BOOL := FALSE; (*Locking Datapoint*)
+		sValue : STRING[254] := ''; (*Value Datapoint*)
+		uiMaskRtStat : UINT := 1; (*Mask Status Datapoint*)
+		uiRtStat : UINT := 0; (*Status Datapoint*)
+		usiColor : USINT := 0; (*Color Datapoint*)
+		sKeypadTitle : STRING[30]; (*Keypad Title*)
+		udiValueIdx : UDINT;
+	END_STRUCT;
 	tyUIAlmTxt : 	STRUCT  (*UI Text*)
 		bHighlighting : BOOL := FALSE; (*Highlighting Datapoint*)
 		sTxt : STRING[30] := ''; (*Text Datapoint*)
@@ -83,16 +93,6 @@ TYPE
 		uiRtStat : UINT := 0; (*Status Datapoint*)
 		usiColor : USINT := 0; (*Color Datapoint*)
 		sKeypadTitle : STRING[30]; (*Keypad Title*)
-	END_STRUCT;
-	tyUILString : 	STRUCT  (*UI String*)
-		bRtCompl : BOOL := FALSE; (*Completion Datapoint*)
-		bRtLk : BOOL := FALSE; (*Locking Datapoint*)
-		sValue : STRING[254] := ''; (*Value Datapoint*)
-		uiMaskRtStat : UINT := 1; (*Mask Status Datapoint*)
-		uiRtStat : UINT := 0; (*Status Datapoint*)
-		usiColor : USINT := 0; (*Color Datapoint*)
-		sKeypadTitle : STRING[30]; (*Keypad Title*)
-		udiValueIdx : UDINT;
 	END_STRUCT;
 	tyUINum : 	STRUCT  (*UI Numeric*)
 		bRtCompl : BOOL := FALSE; (*Completion Datapoint*)
