@@ -28,6 +28,7 @@ ACTION Act_Initial:
 	fbConnect.tyOPCUAParam.sPort	:= '4840';
 	fbConnect(bEn := FALSE);
 	
+	fbGetNodeHdlListWr.usiNSIdx				:= 6;
 	fbGetNodeHdlListWr.uiTagNmCnt			:= 17;
 	fbGetNodeHdlListWr.a_sServerTagNm[0]	:= CONCAT(CONCAT('::' , p_sFollowerProgTagNm) , ':tyLeaderToFollowerTag.sReqProdRcpNm');
 	fbGetNodeHdlListWr.a_sServerTagNm[1]	:= CONCAT(CONCAT('::' , p_sFollowerProgTagNm) , ':tyLeaderToFollowerTag.diReqProdRcpWidth');
@@ -48,6 +49,7 @@ ACTION Act_Initial:
 	fbGetNodeHdlListWr.a_sServerTagNm[16]	:= CONCAT(CONCAT('::' , p_sFollowerProgTagNm) , ':tyLeaderToFollowerTag.bLeaderSeqCtrlInActive');
 	fbGetNodeHdlListWr(bEn := FALSE);
 	
+	fbGetNodeHdlListRd.usiNSIdx				:= 6;
 	fbGetNodeHdlListRd.uiTagNmCnt			:= 14;
 	fbGetNodeHdlListRd.a_sServerTagNm[0]	:= CONCAT(CONCAT('::' , p_sFollowerProgTagNm) , ':tyFollowerToLeaderTag.sCurrProdRcp');
 	fbGetNodeHdlListRd.a_sServerTagNm[1]	:= CONCAT(CONCAT('::' , p_sFollowerProgTagNm) , ':tyFollowerToLeaderTag.diCurrProdWidthUS');

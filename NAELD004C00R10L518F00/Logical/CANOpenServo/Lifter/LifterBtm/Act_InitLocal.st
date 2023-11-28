@@ -43,7 +43,6 @@ ACTION Act_InitLocal:
 	p_bInterruptSensor3 ACCESS ADR(bInterruptSensor3);
 	p_bInterruptSensor4 ACCESS ADR(bInterruptSensor4);
 	p_bInterruptSensor5 ACCESS ADR(bInterruptSensor5);
-	p_bInterruptSensor6 ACCESS ADR(bInterruptSensor6);
 	p_bDir ACCESS ADR(bDir);
 	p_bNoIndexPulse ACCESS ADR(bNoIndexPulse);
 	p_usiNode ACCESS ADR(usiNode);

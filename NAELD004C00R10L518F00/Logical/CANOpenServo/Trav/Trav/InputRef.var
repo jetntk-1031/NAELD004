@@ -52,6 +52,4 @@ VAR
 	p_bPullerExtSen : REFERENCE TO BOOL;
 	p_bPullerRetSen : REFERENCE TO BOOL;
 	p_bPullerRotHmRS : REFERENCE TO BOOL;
-	p_bDIConvClrSen : REFERENCE TO BOOL;
-	p_bDIConvLftSen : REFERENCE TO BOOL;
 END_VAR

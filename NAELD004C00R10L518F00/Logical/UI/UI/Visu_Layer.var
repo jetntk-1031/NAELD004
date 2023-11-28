@@ -56,6 +56,24 @@ END_VAR
 VAR
 	p_tyP0002Menu : REFERENCE TO tyLyrP0002Menu; (*Menu*)
 END_VAR
+(* *)
+VAR
+	p_tyP0003BtnAuto : REFERENCE TO tyUIBtn; (*Menu*)
+	p_tyP0003BtnStop : REFERENCE TO tyUIBtn; (*Menu*)
+	p_tyP0003BtnBuz : REFERENCE TO tyUIBtn;
+	p_tyP0003BtnReset : REFERENCE TO tyUIBtn;
+	p_tyP0003AcceptData : REFERENCE TO tyUIBtn;
+	p_eCurrBtnPos : REFERENCE TO eOptBtn;
+	p_tyCurrBtn : REFERENCE TO tyUIBtn;
+	p_tyP0003Gen : REFERENCE TO tyLyrP0003MMenuGen;
+	p_tyP0003Btn1 : REFERENCE TO tyUIBtn;
+	p_tyP0003Btn2 : REFERENCE TO tyUIBtn;
+	p_tyP0003Btn3 : REFERENCE TO tyUIBtn;
+	p_tyP0003Btn4 : REFERENCE TO tyUIBtn;
+	p_tyP0003Btn5 : REFERENCE TO tyUIBtn;
+	p_tyP0003Btn6 : REFERENCE TO tyUIBtn;
+	p_tyP0003Btn7 : REFERENCE TO tyUIBtn;
+END_VAR
 (**)
 VAR
 	p_tyP0100Login : REFERENCE TO tyLyrP0100Login; (*Login*)

@@ -65,6 +65,7 @@ VAR
 	eMag3SafetyBarAct : ePneuAction;
 	eTrolleyLckAct1 : ePneuAction;
 	eTrolleyLckAct2 : ePneuAction;
+	usiDuplicate : USINT;
 END_VAR
 (*Simu*)
 VAR
@@ -429,3 +430,33 @@ VAR
 	iSlotId : INT := 0;
 END_VAR
 (*end Hermes var*)
+(*//ADD*)
+VAR
+	usiSaveHMIIPAddrStep : USINT;
+	sSetHMIIPAddr : STRING[15];
+	sHMIIPAddr : STRING[15];
+	bUpdtHMIIPAddr : BOOL;
+	usiGenSaveStep : USINT;
+	usidx : USINT;
+	diTemp : DINT;
+	usiPosidx : USINT;
+	a_tyPtrtoAddr : {REDUND_UNREPLICABLE} ARRAY[1..7] OF UDINT;
+	usiBtnCntr : USINT;
+	bBtnPosbRtCompl : BOOL;
+	diSumToCheckDup : DINT;
+	usidx2 : USINT;
+	minidx : USINT;
+	minidx2 : USINT;
+	a_eChkIdx : ARRAY[1..7] OF eOptBtn;
+	bSettingContentNtSame : BOOL;
+	a_HMIButtonPos : ARRAY[1..7] OF UDINT;
+	a_eChkIdx2 : ARRAY[1..7] OF eOptBtn;
+	sum1 : USINT;
+	a_eButtonPosIdx : ARRAY[1..7] OF eOptBtn;
+	sum2 : USINT;
+	a_eNonSelectedButtonPos : ARRAY[1..7] OF eOptBtn;
+	eBtnIdxTemp : eOptBtn;
+	usiButtonEnum : USINT;
+	bFound : BOOL;
+	usicheck : USINT;
+END_VAR

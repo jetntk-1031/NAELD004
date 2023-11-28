@@ -49,7 +49,7 @@ ACTION Act_OptPage:
 				Act_OptP0200UpdtDat;
 				Act_OptP0200VSMEMA;
 				Act_OptP0200RcyMsg;
-				Act_OptP0200ToP0204AccDat;
+				Act_OptP0200ToP0204_P0003AccDat;
 				Act_OptP0200ToP0204BypsInitConv;
 				Act_OptP0202RstMnl;
 				Act_OptP0203RstMnl;
@@ -63,7 +63,7 @@ ACTION Act_OptPage:
 				Act_OptP0201UpdtDat;
 				Act_OptP0201IOMonitor;
 				Act_OptP0201ChgParam;
-				Act_OptP0200ToP0204AccDat;
+				Act_OptP0200ToP0204_P0003AccDat;
 				Act_OptP0200ToP0204BypsInitConv;
 				Act_OptP0201CurrWorkOrderInfo; //new for Hermes 1.3
 				Act_OptP0201QueryWorkOrderInfo; //new for Hermes 1.3
@@ -75,33 +75,33 @@ ACTION Act_OptPage:
 				Act_OptP0202UpdtDat;
 				Act_OptP0202IOMonitor;
 				Act_OptP0202ChgPage;
-				Act_OptP0202AIVDat;
+				Act_OptP0202_P0003AIVDat;
 				Act_OptP0202ChgParam;
-				Act_OptP0200ToP0204AccDat;
+				Act_OptP0200ToP0204_P0003AccDat;
 				Act_OptP0200ToP0204BypsInitConv;
-				Act_OptP0202ToP0204UnloadMag;
+				Act_OptP0202ToP0204_P0003UnloadMag;
 				
 			UIP0203OpsMag2:
 				Act_OptP0203Navi;
 				Act_OptP0203UpdtDat;
 				Act_OptP0203IOMonitor;
 				Act_OptP0203ChgPage;
-				Act_OptP0203AIVDat;
+				Act_OptP0203_P0003AIVDat;
 				Act_OptP0203ChgParam;
-				Act_OptP0200ToP0204AccDat;
+				Act_OptP0200ToP0204_P0003AccDat;
 				Act_OptP0200ToP0204BypsInitConv;
-				Act_OptP0202ToP0204UnloadMag;
+				Act_OptP0202ToP0204_P0003UnloadMag;
 				
 			UIP0204OpsMag3:
 				Act_OptP0204Navi;
 				Act_OptP0204UpdtDat;
 				Act_OptP0204IOMonitor;
 				Act_OptP0204ChgPage;
-				Act_OptP0204AIVDat;
+				Act_OptP0204_P0003AIVDat;
 				Act_OptP0204ChgParam;
-				Act_OptP0200ToP0204AccDat;
+				Act_OptP0200ToP0204_P0003AccDat;
 				Act_OptP0200ToP0204BypsInitConv;
-				Act_OptP0202ToP0204UnloadMag;
+				Act_OptP0202ToP0204_P0003UnloadMag;
 				
 			UIP0205OpsAIV:
 				Act_OptP0205Navi;
@@ -112,11 +112,11 @@ ACTION Act_OptPage:
 				Act_OptP0206UpdtDat;
 				Act_OptP0206IOMonitor;
 				Act_OptP0206ChgPage;
-				Act_OptP0206AIVDat;
+				Act_OptP0206_P0003AIVDat;
 				Act_OptP0206ChgParam;
-				Act_OptP0200ToP0204AccDat;
+				Act_OptP0200ToP0204_P0003AccDat;
 				Act_OptP0200ToP0204BypsInitConv;
-				Act_OptP0202ToP0204UnloadMag;
+				Act_OptP0202ToP0204_P0003UnloadMag;
 				
 			UIP0300McInfo:
 				
@@ -158,12 +158,22 @@ ACTION Act_OptPage:
 				Act_OptP0800Table4;
 				Act_OptP0800Mag4Updt;
 				
-			UIP0002Menu, UIP0900GenIn, UIP0910GenOut, UIP0920MtrNPneuCtrl, UIP0921Shutter, UIP0923SafetyBar, UIP0924TrolleyLck, UIP0930MagConv1, UIP0931MagConv2, UIP0932MagConv3, UIP0933PullConv, UIP0934AW, UIP0935Lifter, UIP0936Trav, UIP0937AWPushOrPuller, UIP0939MagConv4, UIP0940CommCtrl:
+			UIP0002Menu,UIP0003MMenu, UIP0900GenIn, UIP0910GenOut, UIP0920MtrNPneuCtrl, UIP0921Shutter, UIP0923SafetyBar, UIP0924TrolleyLck, UIP0930MagConv1, UIP0931MagConv2, UIP0932MagConv3, UIP0933PullConv, UIP0934AW, UIP0935Lifter, UIP0936Trav, UIP0937AWPushOrPuller, UIP0939MagConv4, UIP0940CommCtrl:
 				IF eCurrPage = UIP0002Menu THEN	
 					Act_OptP0002Mask;
 					Act_OptP0002ChgPage;
 					Act_OptP0002MsgGuide;
 					Act_OptP0002UpdtData;
+				END_IF
+				
+				IF eCurrPage =  UIP0003MMenu THEN
+					Act_OptP0003UpdtStat;
+					Act_OptP0200ToP0204_P0003AccDat;
+					Act_OptP0202ToP0204_P0003UnloadMag;
+					Act_OptP0202_P0003AIVDat;
+					Act_OptP0203_P0003AIVDat;
+					Act_OptP0204_P0003AIVDat;
+					Act_OptP0206_P0003AIVDat;
 				END_IF
 				
 				Act_OptP0002ManualCtrl;
@@ -364,6 +374,7 @@ ACTION Act_OptPage:
 				Act_OptP1021Teach;
 				Act_OptP1021IPAddr;
 				Act_OptP1021SubnetMask;
+				Act_OptP1021HMIIPAddr;
 				Act_OptP1021DHCPSetting;
 				
 			UIP1022McSetVComm:

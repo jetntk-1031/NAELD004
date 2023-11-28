@@ -192,7 +192,6 @@
     <LibraryObject Name="NtLogFile" Source="NtLibraries.NtLogFile.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtMem" Source="NtLibraries.NtMem.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtMessage" Source="NtLibraries.NtMessage.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="NtOPCUA" Source="NtLibraries.NtOPCUA.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtOvenInfo" Source="NtLibraries.NtOvenInfo.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtPneu" Source="NtLibraries.NtPneu.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtRS232" Source="NtLibraries.NtRS232.lby" Memory="UserROM" Language="Binary" Debugging="true" />

@@ -24,6 +24,10 @@ END_VAR
 VAR
 	tyP0002Menu : tyUIP0002Menu; (*Menu*)
 END_VAR
+(* *)
+VAR
+	tyP0003MMenu : tyUIP0003MMenu; (*Menu*)
+END_VAR
 (**)
 VAR
 	tyP0100Login : tyUIP0100Login; (*Login*)

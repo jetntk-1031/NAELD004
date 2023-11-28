@@ -176,7 +176,6 @@
   <Libraries>
     <LibraryObject Name="standard" Source="Libraries.standard.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="runtime" Source="Libraries.runtime.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="NtLF" Source="NtLibraries.NtLF.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="astime" Source="Libraries.astime.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asstring" Source="Libraries.asstring.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="operator" Source="Libraries.operator.lby" Memory="UserROM" Language="Binary" Debugging="true" />
@@ -191,37 +190,37 @@
     <LibraryObject Name="AsARCfg" Source="Libraries.AsARCfg.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="sys_lib" Source="Libraries.sys_lib.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="AsTCP" Source="Libraries.AsTCP.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="MpRecipe" Source="Libraries.MpRecipe.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="AsFltGen" Source="Libraries.AsFltGen.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="brsystem" Source="Libraries.brsystem.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="AsUSB" Source="Libraries.AsUSB.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="MpBase" Source="Libraries.MpBase.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="MpRecipe" Source="Libraries.MpRecipe.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="MpCom" Source="Libraries.MpCom.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="sprintf" Source="Libraries.sprintf.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="AsMath" Source="Libraries.AsMath.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="NtBuffer" Source="NtLibraries.NtBuffer.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtConv" Source="NtLibraries.NtConv.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtFileIO" Source="NtLibraries.NtFileIO.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtLogFile" Source="NtLibraries.NtLogFile.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="NtSMEMA" Source="NtLibraries.NtSMEMA.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtMem" Source="NtLibraries.NtMem.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtMessage" Source="NtLibraries.NtMessage.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="NtOPCUA" Source="NtLibraries.NtOPCUA.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtOvenInfo" Source="NtLibraries.NtOvenInfo.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtPneu" Source="NtLibraries.NtPneu.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtRS232" Source="NtLibraries.NtRS232.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtTLBuz" Source="NtLibraries.NtTLBuz.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtTCP" Source="NtLibraries.NtTCP.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtVersion" Source="NtLibraries.NtVersion.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="MpCom" Source="Libraries.MpCom.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="MpBase" Source="Libraries.MpBase.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="AsUSB" Source="Libraries.AsUSB.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="NtSMEMA" Source="NtLibraries.NtSMEMA.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtSOT" Source="NtLibraries.NtSOT.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtUSB" Source="NtLibraries.NtUSB.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="NtLF" Source="NtLibraries.NtLF.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtRecipe" Source="NtLibraries.NtRecipe.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtGeneral" Source="NtLibraries.NtGeneral.lby" Memory="UserROM" Language="IEC" Debugging="true" />
     <LibraryObject Name="NtUI" Source="NtLibraries.NtUI.lby" Memory="UserROM" Language="IEC" Debugging="true" />
     <LibraryObject Name="NtMotion" Source="NtLibraries.NtMotion.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="sprintf" Source="Libraries.sprintf.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="NtHermes" Source="NtLibraries.NtHermes.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="vcresman" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="dataobj" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="asmath" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="powerlnk" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>

@@ -124,6 +124,8 @@ ACTION Act_Main_P1021:
 	tyP1021McSetGen.tyGen.tyBtnSSaverEn.bValue					:= p_tyMcParamCurr.bSSaverEn;
 	tyP1021McSetGen.tyGen.tyStringIPAddr.sValue					:= p_sHWInfoIPAddr;
 	tyP1021McSetGen.tyGen.tyStringSubnetMask.sValue				:= p_sHWInfoSubnetMask;
+	//ADD
+	tyP1021McSetGen.tyGen.tyStringHMIIPAddr.sValue				:= p_tyMcParamCurr.sHMIIPAddr;
 	tyP1021McSetGen.tyGen.tyNumWidthAtHm.diValue				:= p_tyMcParamCurr.diWidthAtHmPosInUM;
 	tyP1021McSetGen.tyGen.tyNumConvInitTm.diValue				:= p_tyMcParamCurr.diConvInitTmInMS;
 	tyP1021McSetGen.tyGen.tyNumTranOutErrDlyTm.diValue			:= p_tyMcParamCurr.diTranOutErrDlyTmInMS;
@@ -174,6 +176,20 @@ ACTION Act_Main_P1021:
 	tyP1021McSetGen.tyGen.tyDrpDnNetworkMod.usiValueMinIdx		:= DINT_TO_USINT(p_tyNtParamCurr.tyNetworkMode.diMin);
 	tyP1021McSetGen.tyGen.tyDrpDnNetworkMod.usiValueMaxIdx		:= DINT_TO_USINT(p_tyNtParamCurr.tyNetworkMode.diMax);
 	tyP1021McSetGen.tyGen.tyDrpDnNetworkMod.usiValueIdx			:= DINT_TO_USINT(p_tyMcParamCurr.eNetworkMod);
+	
+	
+	//Button Position Limit
+
+	
+	//  For Example	
+	//	tyP1021McSetGen.tyGen.tyDrpDnPos1.uiRtStat.0				:= NOT (p_tyNtParamCurr.tyUIBtnPosLmt.diMax > 1);
+	//	tyP1021McSetGen.tyGen.tyDrpDnPos2.uiRtStat.0				:= NOT (p_tyNtParamCurr.tyUIBtnPosLmt.diMax > 1);
+	//	tyP1021McSetGen.tyGen.tyDrpDnPos3.uiRtStat.0				:= NOT (p_tyNtParamCurr.tyUIBtnPosLmt.diMax > 2);
+	
+
+	
+	
+	
 	
 	tyP1021McSetGen.tyGen.tyBtnLFBuzMute.bValue					:= p_tyMcParamCurr.bLFBuzMute;
 	
@@ -236,5 +252,89 @@ ACTION Act_Main_P1021:
 	//trav b offset
 	tyP1021McSetGen.tyGen.tyNumTravLaneBOffset.diValue		:= p_tyMcParamCurr.diTravLaneBOffset;
 
+	//need a array contain (type and string for the button),where the order is important and can be swapped
+	usiBtnCntr := 0;
+	memset(ADR(a_eChkIdx),0,SIZEOF(a_eChkIdx));
+	memset(ADR(a_eChkIdx2),0,SIZEOF(a_eChkIdx2));
+	IF  p_tyNtParamCurr.bProjLifterMagPlatform THEN
+		usiBtnCntr := usiBtnCntr +1 ;
+		tyP1021McSetGen.tyGen.tyNumMmenuButtonPos[usiBtnCntr].sKeypadTitle := as_Idx[eMnlUnload];
+		tyP1021McSetGen.tyGen.tyNumMmenuButtonPos[usiBtnCntr].usiAddDigits := UDINT_TO_USINT(eMnlUnload);
+		a_eChkIdx[usiBtnCntr] := eMnlUnload;
+	END_IF
+	
+	IF NOT(p_tyNtParamCurr.bProjLifterMagPlatform) AND p_tyNtParamCurr.eProjMag >= LDMagDual THEN
+		usiBtnCntr := usiBtnCntr +1 ;
+		tyP1021McSetGen.tyGen.tyNumMmenuButtonPos[usiBtnCntr].sKeypadTitle := as_Idx[eRlsNewMag1];
+		tyP1021McSetGen.tyGen.tyNumMmenuButtonPos[usiBtnCntr].usiAddDigits := UDINT_TO_USINT(eRlsNewMag1);
+		a_eChkIdx[usiBtnCntr] := eRlsNewMag1;
+	END_IF
+	
+	IF NOT(p_tyNtParamCurr.bProjLifterMagPlatform) AND p_tyNtParamCurr.eProjMag >= LDMagDual THEN
+		usiBtnCntr := usiBtnCntr +1 ;
+		tyP1021McSetGen.tyGen.tyNumMmenuButtonPos[usiBtnCntr].sKeypadTitle := as_Idx[eRlsNewMag2];
+		tyP1021McSetGen.tyGen.tyNumMmenuButtonPos[usiBtnCntr].usiAddDigits := UDINT_TO_USINT(eRlsNewMag2);
+		a_eChkIdx[usiBtnCntr] := eRlsNewMag2;
+	END_IF
+	
+	IF NOT(p_tyNtParamCurr.bProjLifterMagPlatform) AND p_tyNtParamCurr.eProjMag >= LDMagTriple THEN
+		usiBtnCntr := usiBtnCntr +1 ;
+		tyP1021McSetGen.tyGen.tyNumMmenuButtonPos[usiBtnCntr].sKeypadTitle := as_Idx[eRlsNewMag3];
+		tyP1021McSetGen.tyGen.tyNumMmenuButtonPos[usiBtnCntr].usiAddDigits := UDINT_TO_USINT(eRlsNewMag3);
+		a_eChkIdx[usiBtnCntr] := eRlsNewMag3;
+	END_IF
+	
+	a_eChkIdx2:= p_tyMcParamCurr.aButtonPos;
+	FOR usidx := 1 TO usiBtnCntr  DO
+		tyP1021McSetGen.tyGen.tyNumMmenuButtonPos[usidx].uiRtStat := 0;
+		tyP1021McSetGen.tyGen.tyNumMmenuButtonPos[usidx].diValueMax := usiBtnCntr;
+		tyP1021McSetGen.tyGen.tyNumMmenuButtonPos[usidx].diValueMin := 1;
+		//diSumToCheckDup := diSumToCheckDup + USINT_TO_DINT(tyP1021McSetGen.tyGen.tyNumMmenuButtonPos[usidx].usiAddDigits);
+		
+		
+		//selection sorting
+		minidx :=  usidx;
+		minidx2 := usidx;
+	
+		FOR usidx2 :=  1 TO usiBtnCntr DO
+			IF usidx2 >= usidx THEN
+				IF a_eChkIdx[minidx] > a_eChkIdx[usidx2]  THEN
+					minidx := usidx2;
+				END_IF
+		
+
+				IF a_eChkIdx2[minidx2] > a_eChkIdx2[usidx2]  THEN
+					minidx2 := usidx2;
+				END_IF
+			END_IF
+			//Mapping Array Pos, to HMI button value
+			IF tyP1021McSetGen.tyGen.tyNumMmenuButtonPos[usidx2].usiAddDigits = UDINT_TO_USINT(p_tyMcParamCurr.aButtonPos[usidx]) THEN
+				a_HMIButtonPos[usidx2] := usidx; 
+			END_IF
+		END_FOR 
+		eBtnIdxTemp := a_eChkIdx[usidx];
+		a_eChkIdx[usidx]  := a_eChkIdx[minidx];
+		a_eChkIdx[minidx] := eBtnIdxTemp;
+		
+		eBtnIdxTemp := a_eChkIdx2[usidx];
+		a_eChkIdx2[usidx]  := a_eChkIdx2[minidx2];
+		a_eChkIdx2[minidx2] := eBtnIdxTemp;
+	END_FOR 
+	
+	//finished sorting then compare machine setting and current truth setting
+	bSettingContentNtSame := memcmp(ADR(a_eChkIdx),ADR(a_eChkIdx2),usiBtnCntr*SIZEOF(a_eChkIdx)/SIZEOF(a_eChkIdx[1])) <>0;
+	IF bSettingContentNtSame THEN
+		//not match then overwrite the setitng
+		p_tyMcParamCurr.aButtonPos := a_eChkIdx;
+	END_IF
+	
+	
+	FOR usidx := 1 TO usiBtnCntr DO
+		IF NOT(bSettingContentNtSame) THEN
+			tyP1021McSetGen.tyGen.tyNumMmenuButtonPos[usidx].diValue :=	a_HMIButtonPos[usidx];
+		ELSE
+			tyP1021McSetGen.tyGen.tyNumMmenuButtonPos[usidx].diValue :=	usidx;
+		END_IF
+	END_FOR
 	
 END_ACTION

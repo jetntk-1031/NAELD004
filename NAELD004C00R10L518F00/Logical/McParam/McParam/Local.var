@@ -46,3 +46,31 @@ VAR
 	fbFileWrite2 : fbFileFullWrite;
 	udiModuleNum : UINT := 5251;
 END_VAR
+(*//ADD*)
+VAR
+	sHMIIPAddr : STRING[15];
+	sVNCIPAddr : STRING[15];
+	uiNSIdx : UINT;
+	fbConnectOPCUA : fbOPCUAConnect;
+	fbDisconnectOPCUA : fbOPCUADisconnect;
+	dwConnectionHdl : DWORD;
+	sHMIAddrNodeID : STRING[15];
+	sVNCAddrNodeID : STRING[5];
+	fbReadGetNodeHdlList : fbOPCUAGetNodeHdlList;
+	fbReadList : fbOPCUAReadList;
+	tyReadHdls : tyOPCUAHdlList;
+	fbWriteGetNodeHdlList : fbOPCUAGetNodeHdlList;
+	fbWriteList : fbOPCUAWriteList;
+	tyWriteHdls : tyOPCUAHdlList;
+	sObjIDNodeID : STRING[5];
+	sSaveCfgNodeID : STRING[5];
+	fbSaveCfgMethodGetHdl : fbOPCUAMethodGetHandle;
+	fbSaveCfgMethodCall : fbOPCUAMethodCall;
+	sLoadCfgNodeID : STRING[5];
+	fbLoadCfgMethodGetHdl : fbOPCUAMethodGetHandle;
+	fbLoadCfgMethodCall : fbOPCUAMethodCall;
+	dwMethodHdl : DWORD;
+	usiChkIpAddrStep : USINT;
+	bWarning : BOOL;
+	bConnected : BOOL;
+END_VAR

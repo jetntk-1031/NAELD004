@@ -1,15 +1,25 @@
 
 ACTION Act_OptC0005Buzzer: 
 
-	IF tyCommon.tyMain.tyBtnBuzzer.bRtCompl = TRUE THEN	
-		tyCommon.tyMain.tyBtnBuzzer.bRtCompl	:= FALSE;
+	IF tyCommon.tyMain.tyBtnBuzzer.bRtCompl = TRUE OR tyP0003MMenu.tyMMenuBtn.tyBtnBuz.bRtCompl = TRUE THEN	
+		tyCommon.tyMain.tyBtnBuzzer.bRtCompl		:= FALSE;
+		tyP0003MMenu.tyMMenuBtn.tyBtnBuz.bRtCompl	:= FALSE;
 		
-		IF tyCommon.tyMain.tyBtnBuzzer.bValue = TRUE THEN
-			tyCommon.tyMain.tyBtnBuzzer.usiBitmapIdx	:= 2;
+		IF eCurrPage = UIP0003MMenu THEN
+			tyCommon.tyMain.tyBtnBuzzer.bValue		:= tyP0003MMenu.tyMMenuBtn.tyBtnBuz.bValue;
+		ELSE
+			tyP0003MMenu.tyMMenuBtn.tyBtnBuz.bValue 	:=  tyCommon.tyMain.tyBtnBuzzer.bValue;
+		END_IF
+		
+		
+		IF tyCommon.tyMain.tyBtnBuzzer.bValue = TRUE OR tyP0003MMenu.tyMMenuBtn.tyBtnBuz.bValue = TRUE THEN
+			tyCommon.tyMain.tyBtnBuzzer.usiBitmapIdx		:= 2;
+			tyP0003MMenu.tyMMenuBtn.tyBtnBuz.usiBitmapIdx 	:= 2;
 	
 			bMuteBuz	:= TRUE;
 		ELSE
-			tyCommon.tyMain.tyBtnBuzzer.usiBitmapIdx	:= 1;
+			tyCommon.tyMain.tyBtnBuzzer.usiBitmapIdx		:= 1;
+			tyP0003MMenu.tyMMenuBtn.tyBtnBuz.usiBitmapIdx 	:= 1;
 	
 			bMuteBuz	:= FALSE;
 		END_IF

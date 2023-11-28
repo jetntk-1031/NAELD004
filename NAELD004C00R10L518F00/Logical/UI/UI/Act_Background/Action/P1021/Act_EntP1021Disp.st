@@ -62,4 +62,7 @@ ACTION Act_EntP1021Disp:
 	
 	tyP1021McSetGen.tyGen.tyBtnRFIDEn.bValue := p_tyMcParamCurr.bMesRFIDEn; 
 	tyP1021McSetGen.tyGen.tyBtnHermesSvyEn.bValue := p_tyMcParamCurr.bHermesSvyEn; 
+	
+	
+	
 END_ACTION

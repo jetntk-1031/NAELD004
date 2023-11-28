@@ -7,6 +7,7 @@ TYPE
 		UIP0000SSaver := 0, (*Page Screen Saver*)
 		UIP0001Startup := 1, (*Page Startup*)
 		UIP0002Menu := 2, (*Page Menu*)
+		UIP0003MMenu,
 		UIP0100Login := 100, (*Page Login*)
 		UIP0200OpsGen := 200, (*Page Operation*)
 		UIP0201OpsTravLifter := 201, (*Page Operation Traverser Lifter*)

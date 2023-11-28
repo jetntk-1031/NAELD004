@@ -1,6 +1,5 @@
-25/9/2023
-Solved Inlet Shutter buffer empty close
-added interlock to stop traverser and lifter when left or clear sensor sensed
+2023-09-05 S0
+Add the Additional HMI page for easy access to operators P0003MMenu
 
 2023-08-21, 2023-09-04, 2023-09-06   (R10)
 DInput ,Doutput, OpsLifTrav - added outletshutter 2 (0276)

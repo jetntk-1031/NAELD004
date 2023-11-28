@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<Library Version="5.01.0" SubType="IEC" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="Exported functions and function blocks">NtOPCUA.fun</File>
+    <File Description="Exported data types">Types.typ</File>
+    <File>fbOPCUAConnect.st</File>
+    <File>fbOPCUADisconnect.st</File>
+    <File>fbOPCUAGetConnectionStatus.st</File>
+    <File>fbOPCUAGetNodeHdlList.st</File>
+    <File>fbOPCUARlsNodeHdlList.st</File>
+    <File>fbOPCUAReadList.st</File>
+    <File>fbOPCUAWriteList.st</File>
+    <File>fbOPCUAMethodGetHandle.st</File>
+    <File>fbOPCUAMethodCall.st</File>
+    <File>fbOPCUASubcriptionCreate.st</File>
+    <File>fbOPCUAMonitoredItemAddList.st</File>
+    <File>fbOPCUAMoniteredItemRemoveList.st</File>
+    <File>fbOPCUASubscriptionDelete.st</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="NtGeneral" />
+  </Dependencies>
+</Library>

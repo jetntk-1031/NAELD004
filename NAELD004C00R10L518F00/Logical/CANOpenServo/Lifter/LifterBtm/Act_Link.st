@@ -67,12 +67,7 @@ ACTION Act_Link:
 			p_bInterruptSensor5 := FALSE;	
 		END_IF
 	END_IF	
-	
-
-	p_bInterruptSensor6 := (NOT(p_bLinkProjLifterMagPlatform) AND p_bDIConvClrSen) OR p_bDIConvLftSen; 
-	
-	//p_bDIConvClrSen OR p_bDIConvLftSen;
-	
+		
 	IF p_bManual = TRUE THEN
 		p_diGoASlt ACCESS p_UIMnlLifterBtmMag1GoSlt;
 		p_diGoBSlt ACCESS p_UIMnlLifterBtmMag2GoSlt;

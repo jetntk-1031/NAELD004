@@ -13,5 +13,6 @@
     <Object Type="Configuration" Description="Reference Job: 2023-0230A01">3Mag_RotMtrPuller_Delta</Object>
     <Object Type="Configuration" Description="Reference Job: 2021-0534A01">3Mag_RotMtrPuller_Del_NoRoller</Object>
     <Object Type="Configuration" Description="Reference Job: 2021-0137A01">3Mag_LD_pneuRot_roller</Object>
+    <Object Type="Configuration" Description="Reference Job: 2023-0230A01">Demo</Object>
   </Objects>
 </Physical>

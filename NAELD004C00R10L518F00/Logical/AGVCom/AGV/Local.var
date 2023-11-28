@@ -69,3 +69,26 @@ VAR
 	tyTagFromMes : tyStatFromMES;
 	udiModuleNum : UDINT := 6111;
 END_VAR
+(* *)
+VAR
+	tyPubSubHdls : tyOPCUAHdlList;
+	bTest : BOOL;
+	fbConnect : fbOPCUAConnect;
+	fbGetNodeHdlListCrtSub : fbOPCUAGetNodeHdlList;
+	fbGetNodeHdlListRd : fbOPCUAGetNodeHdlList;
+	fbCreateSub : fbOPCUASubscriptionCreate;
+	fbDeleteSub : fbOPCUASubscriptionDelete;
+	fbAddMoniteredList : fbOPCUAMoniteredItemAddList;
+	fbRmvMoniteredList : fbOPCUAMoniteredItemRemoveList;
+	fbRlsNodeHdlList : fbOPCUARlsNodeHdlList;
+	fbDisconnect : fbOPCUADisconnect;
+END_VAR
+(*AGV Batch Count*)
+VAR
+	tyTagFromLoader : tyStatFromLoader;
+	a_dwMonitoringHdl : ARRAY[0..MAX_INDEX_MONITORLIST] OF DWORD;
+	uiTagNmCount : UINT;
+	dwConnectionHdl : DWORD;
+	dwSubHdl : DWORD;
+	bDisconnect : BOOL;
+END_VAR

@@ -190,11 +190,12 @@
     <Text ID="638461" Value=""/>
     <Text ID="638462" Value=""/>
     <Text ID="638463" Value=""/>
-    <Text ID="638464" Value=""/>
+    <Text ID="638464" Value="Update HMI IP Address? (May Cause System Malfunction)"/>
     <Text ID="638465" Value="Save All Recipe To XML File?"/>
     <Text ID="638466" Value="Save All Recipe To XML File Error."/>
     <Text ID="638467" Value="Load All Recipe From XML File?"/>
     <Text ID="638468" Value="Load All Recipe From XML File Error."/>
+    <Text ID="1043771" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="de">
     <Text ID="549624" Value=""/>
@@ -378,6 +379,7 @@
     <Text ID="638466" Value=""/>
     <Text ID="638467" Value=""/>
     <Text ID="638468" Value=""/>
+    <Text ID="1043771" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="zh">
     <Text ID="549624" Value=""/>
@@ -561,6 +563,7 @@
     <Text ID="638466" Value=""/>
     <Text ID="638467" Value=""/>
     <Text ID="638468" Value=""/>
+    <Text ID="1043771" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="pt">
     <Text ID="549624" Value=""/>
@@ -744,6 +747,7 @@
     <Text ID="638466" Value=""/>
     <Text ID="638467" Value=""/>
     <Text ID="638468" Value=""/>
+    <Text ID="1043771" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="549624" Value="0"/>
@@ -922,10 +926,11 @@
     <Index ID="638461" Value="177"/>
     <Index ID="638462" Value="178"/>
     <Index ID="638463" Value="179"/>
-    <Index ID="638464" Value="180"/>
+    <Index ID="638464" Value="195"/>
     <Index ID="638465" Value="61"/>
     <Index ID="638466" Value="62"/>
     <Index ID="638467" Value="63"/>
     <Index ID="638468" Value="64"/>
+    <Index ID="1043771" Value="180"/>
   </IndexMap>
 </TextGroup>

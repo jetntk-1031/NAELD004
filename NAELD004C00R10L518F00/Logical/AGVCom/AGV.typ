@@ -82,3 +82,15 @@ TYPE
 		bAvailable : BOOL;
 	END_STRUCT;
 END_TYPE
+
+(*AGV Test*)
+
+TYPE
+	tyStatFromLoader : 	STRUCT 
+		tyTagStatOfPlatForms : ARRAY[1..4]OF tyStatPlatformFromLoader;
+	END_STRUCT;
+	tyStatPlatformFromLoader : 	STRUCT 
+		usiMagBrdUnloadCnt : USINT;
+		bFinishedLoading : BOOL;
+	END_STRUCT;
+END_TYPE
