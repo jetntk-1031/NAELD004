@@ -100,6 +100,7 @@ TYPE
 		bMesRFIDEn : BOOL := FALSE;
 		diMesRFIDTOInMS : DINT := 5000;
 		diTravLaneBOffset : DINT := 0;
+		diProjCntrPullLmt : DINT;
 	END_STRUCT;
 END_TYPE
 

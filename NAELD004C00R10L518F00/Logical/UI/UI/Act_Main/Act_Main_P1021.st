@@ -235,6 +235,9 @@ ACTION Act_Main_P1021:
 	tyP1021McSetGen.tyGen.tyNumRFIDWrTO.diValue			:= p_tyMcParamCurr.diMesRFIDTOInMS;
 	//trav b offset
 	tyP1021McSetGen.tyGen.tyNumTravLaneBOffset.diValue		:= p_tyMcParamCurr.diTravLaneBOffset;
+	//pull limit from Mcparam
+	tyP1021McSetGen.tyGen.tyNumMtyPullSlt.diValue 		:= p_tyMcParamCurr.diProjCntrPullLmt	;
+	tyP1021McSetGen.tyGen.tyNumMtyPullSlt.diValueMax 		:= p_tyNtParamCurr.diProjMagMaxSlt	;
+	tyP1021McSetGen.tyGen.tyNumMtyPullSlt.uiRtStat 		:= NOT(p_tyNtParamCurr.siProjCntrPullLmt <> -1 )	;
 
-	
 END_ACTION

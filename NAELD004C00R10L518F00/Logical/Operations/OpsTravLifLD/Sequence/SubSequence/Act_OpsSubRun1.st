@@ -993,6 +993,7 @@ ACTION Act_OpsSubRun1:
 							p_tyLocalBufferStat ACCESS ADR(p_tyBufferStat1);
 							usiLocalAccMag := 1;
 							
+							p_usiLocalFlushMag ACCESS ADR(usiLocalFlushMag1);
 						ELSIF eTravLifPosGo = TravLifLDPosUS2 THEN
 							p_eLocalUSCommMod ACCESS ADR(p_eUSCommMod2);
 							
@@ -1029,7 +1030,8 @@ ACTION Act_OpsSubRun1:
 							END_IF
 							
 							usiLocalAccMag := 2;
-
+							
+							p_usiLocalFlushMag ACCESS ADR(usiLocalFlushMag2);
 						ELSIF eTravLifPosGo = TravLifLDPosUS3 THEN
 							p_eLocalUSCommMod ACCESS ADR(p_eUSCommMod3);
 							
@@ -1066,6 +1068,7 @@ ACTION Act_OpsSubRun1:
 							END_IF
 							usiLocalAccMag := 3;
 
+							p_usiLocalFlushMag ACCESS ADR(usiLocalFlushMag3);
 						ELSIF eTravLifPosGo = TravLifLDPosUS4 THEN
 							p_eLocalUSCommMod ACCESS ADR(p_eUSCommMod4);
 							
@@ -2105,8 +2108,19 @@ ACTION Act_OpsSubRun1:
 					IF p_bConvHvBrd = FALSE THEN
 						fbCTDPullLmt(CD:= TRUE);
 						fbCTDPullLmt(CD:= FALSE);
-						IF p_eNtParamCustomerReq = Bosch_China AND fbCTDPullLmt.Q = TRUE AND p_siCntrPullLmt <> -1 THEN
-							eGotoOpsStep1	 :=	TravLifLDStep1ConvEntBrdLostErr;
+						IF fbCTDPullLmt.Q = TRUE AND p_siCntrPullLmt <> -1 AND (p_eNtParamCustomerReq = Bosch_China OR p_eNtParamCustomerReq = Bosch_Portugal OR p_eNtParamCustomerReq = Bosch_America OR p_eNtParamCustomerReq = Bosch_Malaysia  )THEN
+							IF p_eNtParamCustomerReq = Bosch_China THEN 
+								eGotoOpsStep1	 :=	TravLifLDStep1ConvEntBrdLostErr;
+							ELSE
+								p_eLocalInletPneuAct := PneuActExt;
+								p_usiLocalFlushMag := p_usiLocalFlushMag +1;
+								IF p_eLocalInletPneuStatus = Done AND p_eLocalInletPneuStat = PneuActExt THEN
+									p_eLocalInletPneuAct :=  PneuActIdle;
+									eGotoOpsStep1	:= TravLifLDStep1USSigWait;
+									fbCTDPullLmt(LOAD:= TRUE);
+									fbCTDPullLmt(LOAD:= FALSE);
+								END_IF
+							END_IF
 						ELSE
 						END_IF
 					END_IF

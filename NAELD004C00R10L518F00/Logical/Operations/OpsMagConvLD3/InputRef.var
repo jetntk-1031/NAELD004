@@ -166,6 +166,7 @@ VAR
 	p_bOpsTravLifLDUSMagWidthChk : REFERENCE TO BOOL;
 	p_bOpsTravLifMove : REFERENCE TO BOOL;
 	p_bEjectMag : REFERENCE TO BOOL;
+	p_usiLocalFlushMag : REFERENCE TO USINT;
 END_VAR
 (**)
 (**)

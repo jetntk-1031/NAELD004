@@ -178,7 +178,7 @@ ACTION Act_InitGlobal:
 	p_bOpsTravLifMove ACCESS p_OpsTravLifMove;
 	
 	p_bEjectMag ACCESS p_UIEjectMag3;
-	
+	p_usiLocalFlushMag ACCESS p_OpsTravLifLDFlushMag3;
 	(* Always Change If Project Change *)
 	
 END_ACTION

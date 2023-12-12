@@ -17810,6 +17810,46 @@
               <Property Name="VCType" Value="INTEGER"/>
             </DataPoint>
           </Folder>
+          <Folder Name="tyNumMtyPullSlt">
+            <Property Name="Description" Value=""/>
+            <Property Name="FolderType" Value="Struct"/>
+            <DataPoint Name="diValue">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="UI\Visu"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="DINT"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="INTEGER"/>
+            </DataPoint>
+            <DataPoint Name="diValueMax">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="UI\Visu"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="DINT"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="INTEGER"/>
+            </DataPoint>
+            <DataPoint Name="diValueMin">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="UI\Visu"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="DINT"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="INTEGER"/>
+            </DataPoint>
+            <DataPoint Name="uiRtStat">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="UI\Visu"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="UINT"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="INTEGER"/>
+            </DataPoint>
+          </Folder>
         </Folder>
         <Folder Name="p_tyP1030MagSet">
           <Property Name="Description" Value=""/>

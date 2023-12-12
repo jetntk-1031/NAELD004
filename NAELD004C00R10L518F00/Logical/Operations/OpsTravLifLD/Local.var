@@ -291,6 +291,9 @@ VAR
 	siCntrPullLmt : SINT := -1;
 	fbCTDPullLmt : CTD;
 	fb2SenTm : TON;
+	usiLocalFlushMag1 : USINT;
+	usiLocalFlushMag2 : USINT;
+	usiLocalFlushMag3 : USINT;
 END_VAR
 (**)
 (*Reference*)
@@ -324,4 +327,5 @@ VAR
 	p_bLocalInShutterExtended : REFERENCE TO BOOL;
 	p_bLocalnShutterRetracted : REFERENCE TO BOOL;
 	p_tyLocalBufferStat : REFERENCE TO tyBffrStat;
+	p_usiLocalFlushMag : REFERENCE TO USINT;
 END_VAR

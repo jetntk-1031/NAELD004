@@ -190,6 +190,7 @@ VAR
 	fbSltLckSenFailTmr : TON := (PT:=T#1s);
 	bTrllyRetDone : BOOL := FALSE;
 	eTrolleyLck : ePneuAction;
+	usiLocalFlushMag : USINT;
 END_VAR
 (*Step Logger*)
 VAR

@@ -1,3 +1,6 @@
+12/12/2023
+Added McParam PullerSltCntr to allow flushing magazine (need to test)
+
 25/9/2023
 Solved Inlet Shutter buffer empty close
 added interlock to stop traverser and lifter when left or clear sensor sensed

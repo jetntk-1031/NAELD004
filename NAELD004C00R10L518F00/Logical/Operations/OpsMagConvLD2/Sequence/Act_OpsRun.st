@@ -673,11 +673,14 @@ ACTION Act_OpsRun:
 					
 					ELSIF bOpsTravLifULUpdatePullSlot AND p_eOpsTravLifLDPosGo = TravLifLDPosUS2 THEN
 						bMagBffrAvl		:= FALSE;
-						IF p_tyLocalBufferStat.bBffrMty = FALSE AND p_bUIP800Press2 = FALSE THEN	
+						IF usiLocalFlushMag <> p_usiLocalFlushMag THEN
+							usiLocalFlushMag := p_usiLocalFlushMag;
+							eDSSMEMAAct		:= SMEMAActIdle;
+							eGotoOpsStep	:= MagConvLDStepMagExitMnl;
+						ELSIF p_tyLocalBufferStat.bBffrMty = FALSE AND p_bUIP800Press2 = FALSE THEN	
 							eGotoOpsStep	:= MagConvLDStepUnloadBffr;
 						ELSE
 							eGotoOpsStep	:= MagConvLDStepBffrStatChk;
-							bMagBffrAvl		:= FALSE;
 						END_IF
 						
 					ELSIF p_bRlsMag = TRUE THEN

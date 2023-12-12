@@ -260,7 +260,7 @@
     <Text ID="601168" Value="Magazine Conveyor Direction"/>
     <Text ID="605660" Value="Mag 2 Width Check Detection Distance"/>
     <Text ID="605661" Value="Mag 3 Width Check Detection Distance"/>
-    <Text ID="605662" Value=""/>
+    <Text ID="605662" Value="No. of Empty Pull"/>
     <Text ID="605663" Value=""/>
     <Text ID="605664" Value="Enter IP Address Manually"/>
     <Text ID="605665" Value="Get IP Address From DHCP Server"/>

@@ -2064,6 +2064,7 @@ TYPE
 		tyBtnRFIDEn : tyUIBtn;
 		tyNumRFIDWrTO : tyUINum;
 		tyNumTravLaneBOffset : tyUINum;
+		tyNumMtyPullSlt : tyUINum;
 	END_STRUCT;
 	tyLyrP1021McSetNetwork : 	STRUCT 
 		tyStringIPAddr : tyUIString;

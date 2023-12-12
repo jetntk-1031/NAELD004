@@ -60,4 +60,7 @@ VAR
 	p_OpsTravLifWChkErrCmdUnclmp3 : UDINT;
 	p_OpsTravLifMove : UDINT;
 	p_OpsTravLifStandby : UDINT;
+	p_OpsTravLifLDFlushMag1 : UDINT;
+	p_OpsTravLifLDFlushMag2 : UDINT;
+	p_OpsTravLifLDFlushMag3 : UDINT;
 END_VAR

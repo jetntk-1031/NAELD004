@@ -27,7 +27,8 @@ ACTION Act_OptP1021Save:
 		OR tyP1021McSetGen.tyGen.tyNumMag2WidthChkDetDist.bRtCompl OR tyP1021McSetGen.tyGen.tyNumMag3WidthChkDetDist.bRtCompl
 		OR tyP1021McSetGen.tyGen.tyBtnDBAOnRgtSen.bRtCompl OR tyP1021McSetGen.tyGen.tyBtnHermesSvyEn.bRtCompl     //new for Hermes 1.3
 		OR tyP1021McSetGen.tyGen.tyBtnRFIDEn.bRtCompl OR tyP1021McSetGen.tyGen.tyNumRFIDWrTO.bRtCompl 
-		OR tyP1021McSetGen.tyGen.tyNumTravLaneBOffset.bRtCompl 
+		OR tyP1021McSetGen.tyGen.tyNumTravLaneBOffset.bRtCompl OR tyP1021McSetGen.tyGen.tyNumTravLaneBOffset.bRtCompl
+		OR tyP1021McSetGen.tyGen.tyNumMtyPullSlt.bRtCompl
 		THEN
 		
 		fUIInRtStatHide(ADR(tyCommon.tySet.tyBtnSave.uiMaskRtStat));
@@ -82,7 +83,7 @@ ACTION Act_OptP1021Save:
 		tyP1021McSetGen.tyGen.tyBtnRFIDEn.bRtCompl 			:= FALSE;
 		tyP1021McSetGen.tyGen.tyNumRFIDWrTO.bRtCompl 			:= FALSE;
 		tyP1021McSetGen.tyGen.tyNumTravLaneBOffset.bRtCompl 	:= FALSE;
-		
+		tyP1021McSetGen.tyGen.tyNumMtyPullSlt.bRtCompl			:= FALSE;
 	END_IF
 	
 	IF tyCommon.tySet.tyBtnSave.bRtCompl = TRUE AND bSaveNetworkPriority=FALSE THEN 
@@ -139,7 +140,8 @@ ACTION Act_OptP1021Save:
 		tyMcParamWr.bMesRFIDEn				:= tyP1021McSetGen.tyGen.tyBtnRFIDEn.bValue;
 		tyMcParamWr.diMesRFIDTOInMS			:= tyP1021McSetGen.tyGen.tyNumRFIDWrTO.diValue;
 		tyMcParamWr.diTravLaneBOffset		:= tyP1021McSetGen.tyGen.tyNumTravLaneBOffset.diValue;
-
+		tyMcParamWr.diProjCntrPullLmt		:= tyP1021McSetGen.tyGen.tyNumMtyPullSlt.diValue;
+		
 		IF tyP1021McSetGen.tyGen.tyDrpDnNetworkMod.usiValueIdx =DINT_TO_USINT(SetIPManually) THEN
 			tyMcParamWr.sIPAddr				:= tyP1021McSetGen.tyGen.tyStringIPAddr.sValue;
 			tyMcParamWr.sSubnetMask			:= tyP1021McSetGen.tyGen.tyStringSubnetMask.sValue;

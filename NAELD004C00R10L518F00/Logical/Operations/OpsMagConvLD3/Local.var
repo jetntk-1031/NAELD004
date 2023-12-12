@@ -180,6 +180,7 @@ VAR
 	bRlsMagBtnUnmask : BOOL;
 	bExtMesStdByChk : BOOL;
 	bHCommModChgDone : BOOL;
+	usiLocalFlushMag : USINT;
 END_VAR
 (*Step Logger*)
 VAR

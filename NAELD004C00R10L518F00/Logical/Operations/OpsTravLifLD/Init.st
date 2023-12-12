@@ -62,6 +62,9 @@ PROGRAM _INIT
 	p_OpsTravLifMove				 	:= ADR (bTraLifMoving);
 	p_OpsTravLifStandby					:= ADR(bStandby);
 
+	p_OpsTravLifLDFlushMag1				:= ADR(usiLocalFlushMag1);
+	p_OpsTravLifLDFlushMag2				:= ADR(usiLocalFlushMag2);
+	p_OpsTravLifLDFlushMag3				:= ADR(usiLocalFlushMag3);
 	(* Always Change If Project Change *)
 	
 END_PROGRAM
